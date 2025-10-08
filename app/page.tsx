@@ -30,7 +30,7 @@ export default function Home() {
             className="flex justify-between items-center mb-16"
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, ease: 'easeOut' }}
+            transition={{ duration: 0.5, ease: 'easeOut' }}
           >
             <div className="text-body text-sm">UX/UI Designer</div>
             <div className="text-accent text-sm font-medium">Available for projects</div>
@@ -39,9 +39,9 @@ export default function Home() {
           {/* Main content */}
           <div className="text-center space-y-8">
             {/* Main headline */}
-            <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 1, delay: 0.3, ease: 'easeOut' }}>
+            <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6, delay: 0.1, ease: 'easeOut' }}>
               <h1 className="font-heading text-5xl sm:text-6xl md:text-7xl text-headings leading-tight tracking-tight">
-                <motion.span className="inline-block" initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8, delay: 0.5 }}>
+                <motion.span className="inline-block" initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5, delay: 0.2 }}>
                   Creating digital
                 </motion.span>
                 <br />
@@ -49,7 +49,7 @@ export default function Home() {
                   className="inline-block text-accent"
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.8, delay: 0.7 }}
+                  transition={{ duration: 0.5, delay: 0.3 }}
                 >
                   experiences
                 </motion.span>
@@ -57,7 +57,7 @@ export default function Home() {
                   className="inline-block ml-2"
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.8, delay: 0.9 }}
+                  transition={{ duration: 0.5, delay: 0.4 }}
                 >
                   that matter
                 </motion.span>
@@ -69,7 +69,7 @@ export default function Home() {
               className="space-y-4"
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 1.8, ease: 'easeOut' }}
+              transition={{ duration: 0.6, delay: 0.6, ease: 'easeOut' }}
             >
               <p className="text-body text-lg max-w-2xl mx-auto leading-relaxed">
                 I'm <span className="text-accent font-medium">Joakim Strandlund</span>, a UX/UI Designer focused on solving real problems through user-centered
@@ -82,7 +82,7 @@ export default function Home() {
               className="flex flex-col sm:flex-row gap-6 justify-center items-center mb-16"
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 2.2, ease: 'easeOut' }}
+              transition={{ duration: 0.6, delay: 0.9, ease: 'easeOut' }}
             >
               <motion.a
                 href="#projects"
@@ -115,7 +115,7 @@ export default function Home() {
               className="flex flex-col items-center gap-3 text-body text-sm"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 2.8, ease: 'easeOut' }}
+              transition={{ duration: 0.6, delay: 1.2, ease: 'easeOut' }}
             >
               <span>Scroll to explore</span>
               <motion.div
@@ -146,7 +146,7 @@ export default function Home() {
               className="bg-secondary/40 border border-stroke/30 rounded-lg p-4 text-xs font-mono text-body"
               initial={{ opacity: 0, x: -50 }}
               animate={{ opacity: 0.2, x: 0 }}
-              transition={{ duration: 1, delay: 3 }}
+              transition={{ duration: 0.6, delay: 1.5 }}
             >
               <div className="text-accent">const</div>
               <div className="text-headings">userExperience</div>
@@ -163,7 +163,7 @@ export default function Home() {
               className="bg-secondary/40 border border-stroke/30 rounded-lg p-4 text-xs font-mono text-body"
               initial={{ opacity: 0, x: 50 }}
               animate={{ opacity: 0.2, x: 0 }}
-              transition={{ duration: 1, delay: 3.5 }}
+              transition={{ duration: 0.6, delay: 1.7 }}
             >
               <div className="text-accent">function</div>
               <div className="text-headings">solveProblem</div>
@@ -299,12 +299,24 @@ export default function Home() {
       <section className="bg-primary pt-20 pb-8">
         <div className="max-w-4xl mx-auto px-6">
           {/* Section header */}
-          <div className="text-center mb-8">
+          <motion.div
+            className="text-center mb-8"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, margin: '-100px' }}
+            transition={{ duration: 0.5, ease: 'easeOut' }}
+          >
             <div className="text-xs uppercase tracking-wide text-body">Testimonial</div>
-          </div>
+          </motion.div>
 
           {/* Testimonial card */}
-          <div className="bg-primary/40 border border-stroke/30 rounded-2xl p-8 sm:p-12">
+          <motion.div
+            className="bg-primary/40 border border-stroke/30 rounded-2xl p-8 sm:p-12"
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, margin: '-100px' }}
+            transition={{ duration: 0.6, ease: 'easeOut' }}
+          >
             {/* Quote */}
             <blockquote className="font-heading text-headings text-lg sm:text-xl leading-relaxed mb-8 text-center">
               &quot;It&apos;s been a real pleasure working with Joakim. He&apos;s fast, pragmatic, and has a great instinct for delivering MVPs and PoCs that
@@ -324,7 +336,7 @@ export default function Home() {
                 </div>
               </div>
             </div>
-          </div>
+          </motion.div>
         </div>
       </section>
     </main>
@@ -348,7 +360,7 @@ const cards = [
   },
   {
     title: 'Restaurang Apotek',
-    year: '2025',
+    year: '2024',
     tags: ['UX/UI', 'Web', 'Restaurant'],
     description: 'Modern restaurant website design focusing on user experience and visual storytelling.',
     href: '/case-studies/restaurang-apotek',

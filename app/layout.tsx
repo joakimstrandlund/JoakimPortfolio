@@ -25,7 +25,7 @@ export default function RootLayout({
 
         {children}
 
-        <footer className="bg-secondary border-t border-stroke mt-16">
+        <footer id="contact" className="bg-secondary border-t border-stroke mt-16">
           <div className="max-w-6xl mx-auto px-6 py-12">
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
               {/* Brand / Blurb */}
@@ -45,7 +45,7 @@ export default function RootLayout({
                     <Github className="h-4 w-4" />
                   </a>
                   <a
-                    href="https://www.linkedin.com/in/joakimstrandlund"
+                    href="https://www.linkedin.com/in/joakim-strandlund-14717817a/"
                     target="_blank"
                     rel="noopener noreferrer"
                     aria-label="LinkedIn"
@@ -56,15 +56,10 @@ export default function RootLayout({
                 </div>
               </div>
 
-              {/* Quick Links */}
+              {/* Contact Information */}
               <nav className="space-y-3">
-                <div className="text-xs uppercase tracking-wide text-body">Explore</div>
+                <div className="text-xs uppercase tracking-wide text-body">Contact Information</div>
                 <ul className="space-y-2 text-sm">
-                  <li>
-                    <Link href="#projects" className="text-body hover:text-headings transition-colors">
-                      Projects
-                    </Link>
-                  </li>
                   <li>
                     <a href="mailto:joakimstrandlund@gmail.com" className="text-body hover:text-headings transition-colors inline-flex items-center gap-2">
                       <Mail className="h-4 w-4" /> joakimstrandlund@gmail.com
@@ -77,7 +72,7 @@ export default function RootLayout({
                   </li>
                   <li>
                     <a
-                      href="https://www.linkedin.com/in/joakimstrandlund"
+                      href="https://www.linkedin.com/in/joakim-strandlund-14717817a/"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="text-body hover:text-headings transition-colors"

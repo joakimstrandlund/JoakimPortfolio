@@ -262,21 +262,7 @@ export default function Page() {
               <div className="mb-3 md:mb-4">
                 <Image
                   src="/loggi - checkin step1.png"
-                  alt="Loggi daily check-in step 1 - Start"
-                  width={200}
-                  height={400}
-                  className="w-full max-w-[120px] md:max-w-none h-auto rounded-lg shadow-lg mx-auto"
-                />
-              </div>
-              <h3 className="font-heading text-headings text-sm md:text-lg mb-1 md:mb-2">Start</h3>
-              <p className="text-body text-xs md:text-sm">Gentle prompt</p>
-            </div>
-
-            <div className="bg-secondary/20 border border-stroke/30 rounded-xl p-3 md:p-6 text-center">
-              <div className="mb-3 md:mb-4">
-                <Image
-                  src="/loggi - checkin step2.png"
-                  alt="Loggi daily check-in step 2 - Mood"
+                  alt="Loggi daily check-in step 1 - Mood assessment"
                   width={200}
                   height={400}
                   className="w-full max-w-[120px] md:max-w-none h-auto rounded-lg shadow-lg mx-auto"
@@ -289,43 +275,57 @@ export default function Page() {
             <div className="bg-secondary/20 border border-stroke/30 rounded-xl p-3 md:p-6 text-center">
               <div className="mb-3 md:mb-4">
                 <Image
-                  src="/loggi - checkin step3.png"
-                  alt="Loggi daily check-in step 3 - Sleep"
+                  src="/loggi - checkin step2.png"
+                  alt="Loggi daily check-in step 2 - Sleep quality"
                   width={200}
                   height={400}
                   className="w-full max-w-[120px] md:max-w-none h-auto rounded-lg shadow-lg mx-auto"
                 />
               </div>
               <h3 className="font-heading text-headings text-sm md:text-lg mb-1 md:mb-2">Sleep</h3>
-              <p className="text-body text-xs md:text-sm">Rest quality</p>
+              <p className="text-body text-xs md:text-sm">How have you slept?</p>
             </div>
 
             <div className="bg-secondary/20 border border-stroke/30 rounded-xl p-3 md:p-6 text-center">
               <div className="mb-3 md:mb-4">
                 <Image
-                  src="/loggi - checkin step4.png"
-                  alt="Loggi daily check-in step 4 - Stress"
+                  src="/loggi - checkin step3.png"
+                  alt="Loggi daily check-in step 3 - Stress level"
                   width={200}
                   height={400}
                   className="w-full max-w-[120px] md:max-w-none h-auto rounded-lg shadow-lg mx-auto"
                 />
               </div>
               <h3 className="font-heading text-headings text-sm md:text-lg mb-1 md:mb-2">Stress</h3>
-              <p className="text-body text-xs md:text-sm">Energy level</p>
+              <p className="text-body text-xs md:text-sm">Stress level today?</p>
+            </div>
+
+            <div className="bg-secondary/20 border border-stroke/30 rounded-xl p-3 md:p-6 text-center">
+              <div className="mb-3 md:mb-4">
+                <Image
+                  src="/loggi - checkin step4.png"
+                  alt="Loggi daily check-in step 4 - Reflection"
+                  width={200}
+                  height={400}
+                  className="w-full max-w-[120px] md:max-w-none h-auto rounded-lg shadow-lg mx-auto"
+                />
+              </div>
+              <h3 className="font-heading text-headings text-sm md:text-lg mb-1 md:mb-2">Reflection</h3>
+              <p className="text-body text-xs md:text-sm">Optional note</p>
             </div>
 
             <div className="bg-secondary/20 border border-stroke/30 rounded-xl p-3 md:p-6 text-center">
               <div className="mb-3 md:mb-4">
                 <Image
                   src="/loggi - checkin step5.png"
-                  alt="Loggi daily check-in step 5 - Complete"
+                  alt="Loggi daily check-in step 5 - Completion"
                   width={200}
                   height={400}
                   className="w-full max-w-[120px] md:max-w-none h-auto rounded-lg shadow-lg mx-auto"
                 />
               </div>
-              <h3 className="font-heading text-headings text-sm md:text-lg mb-1 md:mb-2">Done</h3>
-              <p className="text-body text-xs md:text-sm">Positive close</p>
+              <h3 className="font-heading text-headings text-sm md:text-lg mb-1 md:mb-2">Complete</h3>
+              <p className="text-body text-xs md:text-sm">Thank you for checking in</p>
             </div>
           </div>
 
@@ -424,7 +424,7 @@ export default function Page() {
       </section>
 
       {/* Testing & Iteration */}
-      <section className="pb-16">
+      <section className="py-16">
         <div className="max-w-4xl mx-auto px-6">
           <div className="mb-12">
             <span className="text-xs uppercase tracking-wide text-accent">Validation</span>
@@ -525,7 +525,7 @@ export default function Page() {
       </section>
 
       {/* Next Steps */}
-      <section className="pb-16">
+      <section className="py-16">
         <div className="max-w-4xl mx-auto px-6">
           <div className="mb-8">
             <span className="text-xs uppercase tracking-wide text-accent">Future Vision</span>

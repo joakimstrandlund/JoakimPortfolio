@@ -40,13 +40,13 @@ export default function Navbar() {
 
           {/* Desktop nav */}
           <nav className="hidden sm:flex items-center gap-6 text-sm">
-            <Link href="#projects" className="link-underline">
+            <Link href="/#projects" className="link-underline">
               Projects
             </Link>
             <Link href="/about" className="link-underline">
               About me
             </Link>
-            <Link href="#contact" className="link-underline">
+            <Link href="/#contact" className="link-underline">
               Contact
             </Link>
           </nav>
@@ -116,7 +116,7 @@ export default function Navbar() {
             <nav className="absolute inset-0 flex items-center justify-end pr-6">
               <ul className="text-right flex flex-col items-end gap-8">
                 <li>
-                  <Link onClick={() => setOpen(false)} href="#projects" className="font-heading text-headings2 text-2xl link-underline">
+                  <Link onClick={() => setOpen(false)} href="/#projects" className="font-heading text-headings2 text-2xl link-underline">
                     Projects
                   </Link>
                 </li>
@@ -126,7 +126,7 @@ export default function Navbar() {
                   </Link>
                 </li>
                 <li>
-                  <Link onClick={() => setOpen(false)} href="#contact" className="font-heading text-headings2 text-2xl link-underline">
+                  <Link onClick={() => setOpen(false)} href="/#contact" className="font-heading text-headings2 text-2xl link-underline">
                     Contact
                   </Link>
                 </li>

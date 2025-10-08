@@ -7,7 +7,7 @@ export default function Page() {
       <section className="pt-8 pb-6">
         <div className="max-w-3xl mx-auto px-6 text-center">
           <h1 className="font-heading text-headings text-3xl sm:text-4xl md:text-5xl tracking-tight">Restaurang Apotek</h1>
-          <p className="mt-3 text-body2">2025 · UX/UI · Web · Restaurant</p>
+          <p className="mt-3 text-body2">2024 · UX/UI · Web · Restaurant</p>
           <p className="mt-4">Redesigning a restaurant website with focus on accessibility, mobile experience, and user-centered design.</p>
         </div>
       </section>
@@ -176,7 +176,7 @@ export default function Page() {
       </section>
 
       {/* Navigation Solution */}
-      <section className="pb-16">
+      <section className="py-16">
         <div className="max-w-6xl mx-auto px-6">
           <div className="max-w-4xl mx-auto mb-12">
             <span className="text-xs uppercase tracking-wide text-accent">Navigation</span>
@@ -298,7 +298,7 @@ export default function Page() {
       </section>
 
       {/* Gallery */}
-      <section className="pb-16">
+      <section className="py-16">
         <div className="max-w-6xl mx-auto px-6">
           <div className="max-w-4xl mx-auto mb-12">
             <span className="text-xs uppercase tracking-wide text-accent">Visual Storytelling</span>
@@ -386,7 +386,7 @@ export default function Page() {
       </section>
 
       {/* Testing & Iteration */}
-      <section className="pb-16">
+      <section className="py-16">
         <div className="max-w-4xl mx-auto px-6">
           <div className="mb-12">
             <span className="text-xs uppercase tracking-wide text-accent">Validation</span>
@@ -504,7 +504,7 @@ export default function Page() {
       </section>
 
       {/* Future Improvements */}
-      <section className="pb-16">
+      <section className="py-16">
         <div className="max-w-4xl mx-auto px-6">
           <div className="mb-8">
             <span className="text-xs uppercase tracking-wide text-accent">Next Steps</span>
