@@ -1,3 +1,5 @@
+import Image from 'next/image';
+
 export default function Page() {
   return (
     <article className="bg-primary text-body">
@@ -6,510 +8,535 @@ export default function Page() {
         <div className="max-w-3xl mx-auto px-6 text-center">
           <h1 className="font-heading text-headings text-3xl sm:text-4xl md:text-5xl tracking-tight">Restaurang Apotek</h1>
           <p className="mt-3 text-body2">2025 · UX/UI · Web · Restaurant</p>
-          <p className="mt-4">Modern restaurant website design focusing on user experience and visual storytelling.</p>
+          <p className="mt-4">Redesigning a restaurant website with focus on accessibility, mobile experience, and user-centered design.</p>
         </div>
       </section>
 
       {/* Hero visual */}
-      <section className="pb-12">
+      <section className="pb-16">
         <div className="max-w-6xl mx-auto px-6">
-          <div className="rounded-2xl border border-stroke bg-gradient-to-br from-tertiary/40 to-tertiary/60 p-12 text-center">
-            <div className="max-w-4xl mx-auto">
-              <div className="text-6xl mb-6">🍽️</div>
-              <h3 className="text-3xl font-heading text-headings mb-4">Restaurant Website Redesign</h3>
-              <p className="text-body2 text-lg mb-8">Modern, accessible website design for a locally renowned restaurant</p>
-              <div className="flex justify-center gap-4 text-sm text-body">
-                <div className="bg-secondary/40 px-4 py-2 rounded-lg">Accessibility Focus</div>
-                <div className="bg-secondary/40 px-4 py-2 rounded-lg">Mobile-First</div>
-                <div className="bg-secondary/40 px-4 py-2 rounded-lg">User Research</div>
+          <div className="rounded-2xl border border-stroke bg-tertiary/20 p-8">
+            <div className="relative">
+              <div className="bg-gradient-to-br from-slate-900 to-slate-800 rounded-xl p-8">
+                <div className="max-w-5xl mx-auto">
+                  <div className="relative rounded-2xl overflow-hidden">
+                    <Image
+                      src="/Restaurang apotek - hero section.png"
+                      alt="Restaurang Apotek website redesign overview"
+                      width={1200}
+                      height={800}
+                      className="w-full h-auto rounded-2xl shadow-2xl"
+                      priority
+                    />
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </section>
 
+      {/* Story begins */}
       <section className="pb-16">
-        <div className="max-w-4xl mx-auto px-6 space-y-16">
-          {/* About the project */}
-          <div className="relative">
-            <div className="absolute -left-4 top-0 w-1 h-16 bg-accent rounded-full"></div>
-            <h2 className="font-heading text-headings text-3xl mb-8 flex items-center gap-4">
-              <span className="text-4xl">🍽️</span>
-              About the project
-            </h2>
-            <div className="bg-secondary/20 border border-stroke/30 rounded-xl p-8 space-y-6 text-body leading-relaxed">
-              <p className="text-lg">
-                Restaurang Apotek is a locally renowned restaurant known for its bold interior and modern take on traditional dining. When I joined the project,
-                the restaurant&apos;s website no longer matched the brand&apos;s evolving identity. It lacked accessibility, was difficult to navigate
-                especially on mobile and couldn&apos;t be updated without technical help.
-              </p>
-              <p>
-                My role was to redesign the website from the ground up. The goal was to create a modern, accessible and consistent digital experience that felt
-                aligned with the restaurant&apos;s personality. Key objectives included improving the booking flow, simplifying navigation, and ensuring the
-                restaurant team could easily update the content themselves.
-              </p>
-            </div>
-          </div>
-
-          {/* Research & Discovery */}
-          <div className="relative">
-            <div className="absolute -left-4 top-0 w-1 h-16 bg-accent2 rounded-full"></div>
-            <h2 className="font-heading text-headings text-3xl mb-8 flex items-center gap-4">
-              <span className="text-4xl">🔍</span>
-              Research & Discovery
-            </h2>
-            <div className="bg-secondary/20 border border-stroke/30 rounded-xl p-8 space-y-6 text-body leading-relaxed">
-              <p>
-                Our design process started by understanding what was broken. We combined usability reviews, interviews, and observational studies to uncover key
-                frustrations and align them with both user and business needs.
-              </p>
-
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <div className="bg-tertiary/20 rounded-lg p-6">
-                  <h4 className="font-heading text-headings text-lg mb-4 flex items-center gap-2">
-                    <span>🔍</span>
-                    Heuristic Evaluation
-                  </h4>
-                  <p className="text-sm text-body mb-3">The Old Website</p>
-                  <ul className="space-y-2 text-sm">
-                    <li className="flex items-start gap-3">
-                      <span className="text-accent mt-1">•</span>
-                      <span>Menus were placed in unclear PDF files</span>
-                    </li>
-                    <li className="flex items-start gap-3">
-                      <span className="text-accent mt-1">•</span>
-                      <span>Site was not responsive for mobile devices</span>
-                    </li>
-                    <li className="flex items-start gap-3">
-                      <span className="text-accent mt-1">•</span>
-                      <span>Important elements like phone number were hard to find</span>
-                    </li>
-                    <li className="flex items-start gap-3">
-                      <span className="text-accent mt-1">•</span>
-                      <span>Design felt disconnected from restaurant&apos;s visual identity</span>
-                    </li>
-                  </ul>
-                </div>
-
-                <div className="bg-tertiary/20 rounded-lg p-6">
-                  <h4 className="font-heading text-headings text-lg mb-4 flex items-center gap-2">
-                    <span>👥</span>
-                    User Research
-                  </h4>
-                  <p className="text-sm text-body mb-3">Methods used</p>
-                  <ul className="space-y-2 text-sm">
-                    <li className="flex items-start gap-3">
-                      <span className="text-accent mt-1">•</span>
-                      <span>User Interviews (12 participants)</span>
-                    </li>
-                    <li className="flex items-start gap-3">
-                      <span className="text-accent mt-1">•</span>
-                      <span>User Observations</span>
-                    </li>
-                    <li className="flex items-start gap-3">
-                      <span className="text-accent mt-1">•</span>
-                      <span>Accessibility Audit (WCAG guidelines)</span>
-                    </li>
-                    <li className="flex items-start gap-3">
-                      <span className="text-accent mt-1">•</span>
-                      <span>Competitive Analysis (12 restaurant websites)</span>
-                    </li>
-                  </ul>
-                </div>
+        <div className="max-w-4xl mx-auto px-6">
+          <div className="space-y-16">
+            {/* The Challenge */}
+            <div>
+              <div className="mb-8">
+                <span className="text-xs uppercase tracking-wide text-accent">The Challenge</span>
+                <h2 className="mt-2 font-heading text-headings text-3xl">A beloved restaurant with a broken website</h2>
               </div>
-            </div>
-          </div>
-
-          {/* Key Insights */}
-          <div className="relative">
-            <div className="absolute -left-4 top-0 w-1 h-16 bg-accent rounded-full"></div>
-            <h2 className="font-heading text-headings text-3xl mb-8 flex items-center gap-4">
-              <span className="text-4xl">💬</span>
-              Key Insights – The User's Voice
-            </h2>
-            <div className="space-y-6">
-              <div className="bg-red-500/10 border border-red-500/20 rounded-xl p-6">
-                <blockquote className="text-body italic mb-3">"At first, I thought the logo was a button… it was confusing!"</blockquote>
-                <p className="text-sm font-medium text-red-400">
-                  Problem: Unclear navigation – users struggled to understand where they were and how to move around.
+              <div className="space-y-6 text-body leading-relaxed">
+                <p className="text-lg text-body2">
+                  Restaurang Apotek is a locally renowned restaurant known for its bold interior and modern take on traditional dining. But their website? It
+                  didn't match.
                 </p>
-              </div>
-
-              <div className="bg-red-500/10 border border-red-500/20 rounded-xl p-6">
-                <blockquote className="text-body italic mb-3">"I tried tabbing through the page, but I couldn't even complete a reservation."</blockquote>
-                <p className="text-sm font-medium text-red-400">
-                  Problem: No functional keyboard navigation – focus indicators were weak, and interactions didn't work as expected.
+                <p>
+                  It lacked accessibility, was difficult to navigate especially on mobile, and couldn't be updated without technical help. Menus were buried in
+                  PDFs, the booking flow was confusing, and the design felt disconnected from the restaurant's actual brand.
                 </p>
-              </div>
-
-              <div className="bg-red-500/10 border border-red-500/20 rounded-xl p-6">
-                <blockquote className="text-body italic mb-3">"Why is the phone number hidden? I just want to book a table!"</blockquote>
-                <p className="text-sm font-medium text-red-400">
-                  Problem: Important information like the booking button and contact details were hard to find.
-                </p>
-              </div>
-
-              <div className="bg-red-500/10 border border-red-500/20 rounded-xl p-6">
-                <blockquote className="text-body italic mb-3">"Instagram looks cool, but the website feels completely different."</blockquote>
-                <p className="text-sm font-medium text-red-400">
-                  Problem: Inconsistent branding – the website did not match the restaurant's visual identity on social media.
+                <p>
+                  My role was to redesign the website from the ground up, creating a modern, accessible experience that aligned with the restaurant's
+                  personality while making it easy for the team to maintain.
                 </p>
               </div>
             </div>
-          </div>
 
-          {/* Target Audience & Key Needs */}
-          <div className="relative">
-            <div className="absolute -left-4 top-0 w-1 h-16 bg-accent2 rounded-full"></div>
-            <h2 className="font-heading text-headings text-3xl mb-8 flex items-center gap-4">
-              <span className="text-4xl">🎯</span>
-              Target Audience & Key Needs
-            </h2>
-            <div className="bg-secondary/20 border border-stroke/30 rounded-xl p-8 space-y-6 text-body leading-relaxed">
-              <p>
-                Based on our research, we identified three key user groups—each with different needs and expectations when interacting with the restaurant's
-                website.
-              </p>
+            {/* Research */}
+            <div>
+              <div className="mb-8">
+                <span className="text-xs uppercase tracking-wide text-accent">Discovery</span>
+                <h2 className="mt-2 font-heading text-headings text-3xl">Understanding what was broken</h2>
+              </div>
+              <div className="space-y-6">
+                <p>
+                  I started by conducting usability reviews, user interviews, and accessibility audits. The goal was to uncover the biggest pain points and
+                  understand what users actually needed.
+                </p>
 
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-                <div className="bg-tertiary/20 rounded-lg p-6">
-                  <h4 className="font-heading text-headings text-lg mb-4 flex items-center gap-2">
-                    <span>👥</span>
-                    Adults planning a visit
-                  </h4>
-                  <p className="text-sm text-body">Need quick access to the menu, opening hours, and booking functionality.</p>
-                </div>
-                <div className="bg-tertiary/20 rounded-lg p-6">
-                  <h4 className="font-heading text-headings text-lg mb-4 flex items-center gap-2">
-                    <span>📱</span>
-                    Social media users
-                  </h4>
-                  <p className="text-sm text-body">Expect the design to reflect the restaurant's brand identity.</p>
-                </div>
-                <div className="bg-tertiary/20 rounded-lg p-6">
-                  <h4 className="font-heading text-headings text-lg mb-4 flex items-center gap-2">
-                    <span>♿</span>
-                    People with disabilities
-                  </h4>
-                  <p className="text-sm text-body">Need an accessible website with clear navigation and adapted interaction.</p>
+                <div className="grid md:grid-cols-2 gap-6 mt-8">
+                  <div className="bg-red-500/10 border border-red-500/20 rounded-lg p-6">
+                    <h3 className="font-heading text-headings text-lg mb-3 flex items-center gap-2">
+                      <span className="text-2xl">⚠️</span>
+                      What users struggled with
+                    </h3>
+                    <ul className="space-y-3 text-sm">
+                      <li className="flex items-start gap-3">
+                        <span className="text-accent mt-1">•</span>
+                        <span>"At first, I thought the logo was a button... it was confusing!"</span>
+                      </li>
+                      <li className="flex items-start gap-3">
+                        <span className="text-accent mt-1">•</span>
+                        <span>"I tried tabbing through the page, but I couldn't even complete a reservation."</span>
+                      </li>
+                      <li className="flex items-start gap-3">
+                        <span className="text-accent mt-1">•</span>
+                        <span>"Why is the phone number hidden? I just want to book a table!"</span>
+                      </li>
+                      <li className="flex items-start gap-3">
+                        <span className="text-accent mt-1">•</span>
+                        <span>"Instagram looks cool, but the website feels completely different."</span>
+                      </li>
+                    </ul>
+                  </div>
+
+                  <div className="bg-accent/10 border border-accent/20 rounded-lg p-6">
+                    <h3 className="font-heading text-headings text-lg mb-3 flex items-center gap-2">
+                      <span className="text-2xl">🎯</span>
+                      Business needs
+                    </h3>
+                    <ul className="space-y-3 text-sm">
+                      <li className="flex items-start gap-3">
+                        <span className="text-accent mt-1">•</span>
+                        <span>Increase completed bookings</span>
+                      </li>
+                      <li className="flex items-start gap-3">
+                        <span className="text-accent mt-1">•</span>
+                        <span>Reach more users through accessibility</span>
+                      </li>
+                      <li className="flex items-start gap-3">
+                        <span className="text-accent mt-1">•</span>
+                        <span>Empower staff to update content easily</span>
+                      </li>
+                      <li className="flex items-start gap-3">
+                        <span className="text-accent mt-1">•</span>
+                        <span>Align digital presence with brand identity</span>
+                      </li>
+                    </ul>
+                  </div>
                 </div>
               </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
-              <div className="bg-accent/10 border border-accent/20 rounded-lg p-6 mt-6">
-                <h3 className="font-heading text-headings text-lg mb-4">Key Needs:</h3>
-                <ul className="space-y-2 text-sm">
+      {/* Landing Page Design */}
+      <section className="pb-16 bg-secondary/10">
+        <div className="max-w-6xl mx-auto px-6 py-16">
+          <div className="max-w-4xl mx-auto mb-12">
+            <span className="text-xs uppercase tracking-wide text-accent">Solution</span>
+            <h2 className="mt-2 font-heading text-headings text-3xl mb-6">A welcoming first impression</h2>
+            <p className="text-body2 text-lg">
+              The landing page needed to immediately communicate the restaurant's character while making it easy to find key information like hours, location,
+              and booking.
+            </p>
+          </div>
+
+          <div className="max-w-md mx-auto">
+            <div className="bg-primary/40 border border-stroke/30 rounded-xl p-6">
+              <div className="mb-6">
+                <Image
+                  src="/Rstaurang apotek - landingpage phone.png"
+                  alt="Restaurang Apotek landing page mobile view"
+                  width={300}
+                  height={600}
+                  className="w-full max-w-[280px] h-auto rounded-lg shadow-lg mx-auto"
+                />
+              </div>
+              <h3 className="font-heading text-headings text-xl mb-3 text-center">Landing Page</h3>
+              <p className="text-body text-sm text-center mb-4">Clean hero section with immediate access to booking and essential information.</p>
+              <ul className="space-y-2 text-xs text-body">
+                <li className="flex items-start gap-2">
+                  <span className="text-accent mt-1">•</span>
+                  <span>Clear visual hierarchy guiding users to key actions</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-accent mt-1">•</span>
+                  <span>Mobile-first design with touch-friendly elements</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-accent mt-1">•</span>
+                  <span>Bold imagery reflecting the restaurant's personality</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Navigation Solution */}
+      <section className="pb-16">
+        <div className="max-w-6xl mx-auto px-6">
+          <div className="max-w-4xl mx-auto mb-12">
+            <span className="text-xs uppercase tracking-wide text-accent">Navigation</span>
+            <h2 className="mt-2 font-heading text-headings text-3xl mb-6">Making navigation intuitive</h2>
+            <p className="text-body2 text-lg mb-4">
+              The old navigation was cluttered and confusing. Users couldn't find what they needed, and the mobile experience was broken.
+            </p>
+            <p className="text-body">
+              I redesigned it with clear structure, accessible touch targets, and a clean mobile menu that prioritizes the most important actions.
+            </p>
+          </div>
+
+          <div className="max-w-md mx-auto">
+            <div className="bg-secondary/20 border border-stroke/30 rounded-xl p-6">
+              <div className="mb-6">
+                <Image
+                  src="/Rstaurang apotek - navabar open phone.png"
+                  alt="Restaurang Apotek mobile navigation menu"
+                  width={300}
+                  height={600}
+                  className="w-full max-w-[280px] h-auto rounded-lg shadow-lg mx-auto"
+                />
+              </div>
+              <h3 className="font-heading text-headings text-xl mb-3 text-center">Mobile Navigation</h3>
+              <p className="text-body text-sm text-center mb-4">Clean, accessible menu with clear hierarchy and easy-to-tap elements.</p>
+              <ul className="space-y-2 text-xs text-body">
+                <li className="flex items-start gap-2">
+                  <span className="text-accent mt-1">•</span>
+                  <span>Prominent booking CTA at the top</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-accent mt-1">•</span>
+                  <span>Clear close button (X) for better usability</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-accent mt-1">•</span>
+                  <span>Phone number easily accessible</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-accent mt-1">•</span>
+                  <span>Large touch targets for mobile users</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Menus Section */}
+      <section className="pb-16 bg-secondary/10">
+        <div className="max-w-6xl mx-auto px-6 py-16">
+          <div className="max-w-4xl mx-auto mb-12">
+            <span className="text-xs uppercase tracking-wide text-accent">Content Design</span>
+            <h2 className="mt-2 font-heading text-headings text-3xl mb-6">Making menus readable and accessible</h2>
+            <p className="text-body2 text-lg">
+              The old PDF menus were impossible for screen readers to parse. I redesigned them as web-native content with clear typography, pricing, and
+              categories.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+            <div className="bg-primary/40 border border-stroke/30 rounded-xl p-6">
+              <div className="mb-6">
+                <Image
+                  src="/Rstaurang apotek - foodmeny phone.png"
+                  alt="Restaurang Apotek food menu mobile view"
+                  width={300}
+                  height={600}
+                  className="w-full max-w-[240px] h-auto rounded-lg shadow-lg mx-auto"
+                />
+              </div>
+              <h3 className="font-heading text-headings text-xl mb-3 text-center">Food Menu</h3>
+              <p className="text-body text-sm text-center mb-4">Clean layout with clear categories, pricing, and descriptions.</p>
+              <ul className="space-y-2 text-xs text-body">
+                <li className="flex items-start gap-2">
+                  <span className="text-accent mt-1">•</span>
+                  <span>Improved typographic hierarchy for scanning</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-accent mt-1">•</span>
+                  <span>Clear pricing and portion information</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-accent mt-1">•</span>
+                  <span>Screen reader compatible HTML structure</span>
+                </li>
+              </ul>
+            </div>
+
+            <div className="bg-primary/40 border border-stroke/30 rounded-xl p-6">
+              <div className="mb-6">
+                <Image
+                  src="/Rstaurang apotek - cocktail phone.png"
+                  alt="Restaurang Apotek cocktail menu mobile view"
+                  width={300}
+                  height={600}
+                  className="w-full max-w-[240px] h-auto rounded-lg shadow-lg mx-auto"
+                />
+              </div>
+              <h3 className="font-heading text-headings text-xl mb-3 text-center">Cocktail Menu</h3>
+              <p className="text-body text-sm text-center mb-4">Visual menu design highlighting drinks with proper categorization.</p>
+              <ul className="space-y-2 text-xs text-body">
+                <li className="flex items-start gap-2">
+                  <span className="text-accent mt-1">•</span>
+                  <span>Added "Mocktails" explanation to avoid confusion</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-accent mt-1">•</span>
+                  <span>Clear distinction between alcoholic and non-alcoholic</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-accent mt-1">•</span>
+                  <span>Consistent pricing format throughout</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Gallery */}
+      <section className="pb-16">
+        <div className="max-w-6xl mx-auto px-6">
+          <div className="max-w-4xl mx-auto mb-12">
+            <span className="text-xs uppercase tracking-wide text-accent">Visual Storytelling</span>
+            <h2 className="mt-2 font-heading text-headings text-3xl mb-6">Showcasing the atmosphere</h2>
+            <p className="text-body2 text-lg">
+              A restaurant's atmosphere is everything. I designed a gallery section that lets the images speak for themselves while maintaining fast load times
+              and accessibility.
+            </p>
+          </div>
+
+          <div className="max-w-md mx-auto">
+            <div className="bg-secondary/20 border border-stroke/30 rounded-xl p-6">
+              <div className="mb-6">
+                <Image
+                  src="/Rstaurang apotek - galleri phone.png"
+                  alt="Restaurang Apotek gallery section mobile view"
+                  width={300}
+                  height={600}
+                  className="w-full max-w-[280px] h-auto rounded-lg shadow-lg mx-auto"
+                />
+              </div>
+              <h3 className="font-heading text-headings text-xl mb-3 text-center">Gallery</h3>
+              <p className="text-body text-sm text-center mb-4">Image grid optimized for mobile with lazy loading and proper aspect ratios.</p>
+              <ul className="space-y-2 text-xs text-body">
+                <li className="flex items-start gap-2">
+                  <span className="text-accent mt-1">•</span>
+                  <span>Responsive grid layout adapting to screen size</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-accent mt-1">•</span>
+                  <span>Optimized images for fast loading</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-accent mt-1">•</span>
+                  <span>Alt text for all images for accessibility</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Footer */}
+      <section className="pb-16 bg-secondary/10">
+        <div className="max-w-6xl mx-auto px-6 py-16">
+          <div className="max-w-4xl mx-auto mb-12">
+            <span className="text-xs uppercase tracking-wide text-accent">Information Architecture</span>
+            <h2 className="mt-2 font-heading text-headings text-3xl mb-6">Making contact easy</h2>
+            <p className="text-body2 text-lg">
+              The footer became a crucial touchpoint for users looking for practical information. I designed it to be scannable, accessible, and
+              mobile-friendly.
+            </p>
+          </div>
+
+          <div className="max-w-md mx-auto">
+            <div className="bg-primary/40 border border-stroke/30 rounded-xl p-6">
+              <div className="mb-6">
+                <Image
+                  src="/Rstaurang apotek - footer phone.png"
+                  alt="Restaurang Apotek footer section mobile view"
+                  width={300}
+                  height={600}
+                  className="w-full max-w-[280px] h-auto rounded-lg shadow-lg mx-auto"
+                />
+              </div>
+              <h3 className="font-heading text-headings text-xl mb-3 text-center">Footer</h3>
+              <p className="text-body text-sm text-center mb-4">Organized footer with opening hours, contact details, and location.</p>
+              <ul className="space-y-2 text-xs text-body">
+                <li className="flex items-start gap-2">
+                  <span className="text-accent mt-1">•</span>
+                  <span>Clear grouping of information for easy scanning</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-accent mt-1">•</span>
+                  <span>Clickable phone numbers and email addresses</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-accent mt-1">•</span>
+                  <span>Social media links with proper labels</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Testing & Iteration */}
+      <section className="pb-16">
+        <div className="max-w-4xl mx-auto px-6">
+          <div className="mb-12">
+            <span className="text-xs uppercase tracking-wide text-accent">Validation</span>
+            <h2 className="mt-2 font-heading text-headings text-3xl mb-6">Testing and refining</h2>
+          </div>
+
+          <div className="space-y-8">
+            <p className="text-lg text-body2">I tested the redesign with users and iterated based on feedback. Some decisions needed adjusting.</p>
+
+            <div className="bg-secondary/20 border border-stroke/30 rounded-xl p-8 space-y-6">
+              <h3 className="font-heading text-headings text-xl mb-4">Key Iteration: Mobile Navigation</h3>
+              <p className="text-body text-sm">
+                Initially, I placed the phone number and booking button at the top of the navigation. Testing revealed this created a "fast food chain" feeling
+                and caused confusion.
+              </p>
+              <p className="text-body text-sm">
+                Moving these elements into the dropdown menu resulted in clearer visual hierarchy, a more intuitive flow, and better focus on navigation.
+              </p>
+              <div className="bg-accent/10 border border-accent/20 rounded-lg p-4 mt-4">
+                <p className="text-accent text-sm font-medium">
+                  Lesson learned: Sometimes less visible doesn't mean less accessible. Context and clarity matter more than prominence.
+                </p>
+              </div>
+            </div>
+
+            <div className="grid md:grid-cols-2 gap-8">
+              <div className="bg-secondary/20 border border-stroke/30 rounded-xl p-6">
+                <h3 className="font-heading text-headings text-lg mb-4 flex items-center gap-2">
+                  <span className="text-2xl">✅</span>
+                  What worked
+                </h3>
+                <ul className="space-y-3 text-sm">
                   <li className="flex items-start gap-3">
                     <span className="text-accent mt-1">•</span>
-                    <span>
-                      <strong>Quick access</strong> to menu, opening hours, and booking
-                    </span>
+                    <span>Booking button became immediately findable</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <span className="text-accent mt-1">•</span>
-                    <span>
-                      <strong>Clear images</strong> of the venue and food
-                    </span>
+                    <span>Navigation clarity improved significantly</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <span className="text-accent mt-1">•</span>
-                    <span>
-                      <strong>Accessible design</strong> with screen reader support and keyboard navigation
-                    </span>
+                    <span>Users described design as "clean and professional"</span>
+                  </li>
+                </ul>
+              </div>
+
+              <div className="bg-secondary/20 border border-stroke/30 rounded-xl p-6">
+                <h3 className="font-heading text-headings text-lg mb-4 flex items-center gap-2">
+                  <span className="text-2xl">🎯</span>
+                  Impact
+                </h3>
+                <ul className="space-y-3 text-sm">
+                  <li className="flex items-start gap-3">
+                    <span className="text-accent mt-1">•</span>
+                    <span>All users could complete booking flow</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <span className="text-accent mt-1">•</span>
+                    <span>Keyboard navigation fully functional</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <span className="text-accent mt-1">•</span>
+                    <span>Staff could update content without developer help</span>
                   </li>
                 </ul>
               </div>
             </div>
           </div>
+        </div>
+      </section>
 
-          {/* Problem statement & goals */}
-          <div className="relative">
-            <div className="absolute -left-4 top-0 w-1 h-16 bg-accent rounded-full"></div>
-            <h2 className="font-heading text-headings text-3xl mb-8 flex items-center gap-4">
-              <span className="text-4xl">🎯</span>
-              Problem statement & goals
-            </h2>
-            <div className="space-y-8">
-              <div className="bg-accent/10 border border-accent/20 rounded-xl p-8">
-                <h3 className="font-heading text-headings text-xl mb-4">The Challenge</h3>
-                <p className="text-body leading-relaxed">
-                  How might we redesign the restaurant's website to offer a more accessible, intuitive and trustworthy user experience, while also making it
-                  easier for the business to maintain and convert visitors into bookings?
+      {/* Reflections */}
+      <section className="pb-16 bg-accent/5">
+        <div className="max-w-4xl mx-auto px-6 py-16">
+          <div className="mb-8">
+            <span className="text-xs uppercase tracking-wide text-accent">Reflections</span>
+            <h2 className="mt-2 font-heading text-headings text-3xl mb-6">What I learned</h2>
+          </div>
+
+          <div className="space-y-8">
+            <p className="text-lg text-body2">
+              This project taught me that good design isn't just about aesthetics. It's about solving real problems for real people.
+            </p>
+
+            <div className="space-y-6">
+              <div className="bg-primary/60 border border-stroke/30 rounded-lg p-6">
+                <h3 className="font-heading text-headings text-lg mb-3">Accessibility opens doors</h3>
+                <p className="text-sm text-body">
+                  Building for accessibility from the start made the site better for everyone, not just users with disabilities. Clear navigation and semantic
+                  HTML improved the entire experience.
                 </p>
               </div>
 
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                <div className="bg-red-500/10 border border-red-500/20 rounded-xl p-6">
-                  <h3 className="font-heading text-headings text-xl mb-4 flex items-center gap-2">
-                    <span>⚠️</span>
-                    User pain points
-                  </h3>
-                  <ul className="space-y-2 text-sm">
-                    <li className="flex items-start gap-3">
-                      <span className="text-accent mt-1">•</span>
-                      <span>Unclear Booking Flow</span>
-                    </li>
-                    <li className="flex items-start gap-3">
-                      <span className="text-accent mt-1">•</span>
-                      <span>PDF Menus (not screen reader compatible)</span>
-                    </li>
-                    <li className="flex items-start gap-3">
-                      <span className="text-accent mt-1">•</span>
-                      <span>Lack of Accessibility</span>
-                    </li>
-                    <li className="flex items-start gap-3">
-                      <span className="text-accent mt-1">•</span>
-                      <span>Weak First Impression</span>
-                    </li>
-                    <li className="flex items-start gap-3">
-                      <span className="text-accent mt-1">•</span>
-                      <span>Poor Mobile Experience</span>
-                    </li>
-                  </ul>
-                </div>
-
-                <div className="bg-accent/10 border border-accent/20 rounded-xl p-6">
-                  <h3 className="font-heading text-headings text-xl mb-4 flex items-center gap-2">
-                    <span>🎯</span>
-                    Business goals
-                  </h3>
-                  <ul className="space-y-2 text-sm">
-                    <li className="flex items-start gap-3">
-                      <span className="text-accent mt-1">•</span>
-                      <span>Improve overall user experience</span>
-                    </li>
-                    <li className="flex items-start gap-3">
-                      <span className="text-accent mt-1">•</span>
-                      <span>Reach more users (full accessibility)</span>
-                    </li>
-                    <li className="flex items-start gap-3">
-                      <span className="text-accent mt-1">•</span>
-                      <span>Increase completed bookings</span>
-                    </li>
-                    <li className="flex items-start gap-3">
-                      <span className="text-accent mt-1">•</span>
-                      <span>Empower restaurant staff</span>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          {/* Design process */}
-          <div className="relative">
-            <div className="absolute -left-4 top-0 w-1 h-16 bg-accent2 rounded-full"></div>
-            <h2 className="font-heading text-headings text-3xl mb-8 flex items-center gap-4">
-              <span className="text-4xl">🛠️</span>
-              Design process
-            </h2>
-            <div className="bg-secondary/20 border border-stroke/30 rounded-xl p-8 space-y-6 text-body leading-relaxed">
-              <p>
-                To turn our insights into a tangible solution, we began with a Design Studio session. We quickly sketched out ideas based on our research,
-                allowing us to explore multiple concepts and identify the best directions to improve the user experience.
-              </p>
-
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-                <div className="bg-tertiary/20 rounded-lg p-6">
-                  <h4 className="font-heading text-headings text-lg mb-4 flex items-center gap-2">
-                    <span>✏️</span>
-                    Sketches
-                  </h4>
-                  <p className="text-sm text-body">Design studio workshop to explore multiple concepts</p>
-                </div>
-                <div className="bg-tertiary/20 rounded-lg p-6">
-                  <h4 className="font-heading text-headings text-lg mb-4 flex items-center gap-2">
-                    <span>📐</span>
-                    Wireframes
-                  </h4>
-                  <p className="text-sm text-body">Low-fidelity wireframes to define layout and structure</p>
-                </div>
-                <div className="bg-tertiary/20 rounded-lg p-6">
-                  <h4 className="font-heading text-headings text-lg mb-4 flex items-center gap-2">
-                    <span>🎨</span>
-                    HI-FI Mockups
-                  </h4>
-                  <p className="text-sm text-body">Polished mockups focusing on quick information access</p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          {/* Iteration & Improvements */}
-          <div className="relative">
-            <div className="absolute -left-4 top-0 w-1 h-16 bg-accent rounded-full"></div>
-            <h2 className="font-heading text-headings text-3xl mb-8 flex items-center gap-4">
-              <span className="text-4xl">🔄</span>
-              Iteration & Improvements
-            </h2>
-            <div className="space-y-8">
-              <div className="bg-secondary/20 border border-stroke/30 rounded-xl p-8 space-y-6 text-body leading-relaxed">
-                <p>
-                  Through usability testing, we identified friction points and refined the design accordingly. We clarified the mobile navigation, improved menu
-                  readability. Each iteration brought us closer to a seamless experience for all users.
+              <div className="bg-primary/60 border border-stroke/30 rounded-lg p-6">
+                <h3 className="font-heading text-headings text-lg mb-3">User testing catches blind spots</h3>
+                <p className="text-sm text-body">
+                  What seemed clear to me wasn't always clear to users. Testing revealed issues I would have missed, and their feedback shaped better solutions.
                 </p>
-
-                <div className="bg-tertiary/20 rounded-lg p-6">
-                  <h3 className="font-heading text-headings text-lg mb-4 flex items-center gap-2">
-                    <span>📱</span>
-                    Iteration: Navbar mobile
-                  </h3>
-                  <p className="text-sm text-body mb-4">
-                    User testing revealed that placing the phone number and the "book a table" button at the top of the navigation didn't work as intended. It
-                    created a "fast food chain" feeling, where key CTAs competed for attention and caused confusion.
-                  </p>
-                  <p className="text-sm text-body mb-4">We therefore moved these elements into the dropdown menu, which resulted in:</p>
-                  <ul className="space-y-2 text-sm">
-                    <li className="flex items-start gap-3">
-                      <span className="text-accent mt-1">•</span>
-                      <span>Clearer visual hierarchy</span>
-                    </li>
-                    <li className="flex items-start gap-3">
-                      <span className="text-accent mt-1">•</span>
-                      <span>A more intuitive user flow</span>
-                    </li>
-                    <li className="flex items-start gap-3">
-                      <span className="text-accent mt-1">•</span>
-                      <span>Better focus on navigation and interaction</span>
-                    </li>
-                  </ul>
-                  <p className="text-sm text-body mt-4">
-                    The menu icon was also changed to a close (X) symbol to make it easier to exit the menu and strengthen recognition.
-                  </p>
-                </div>
-
-                <div className="bg-tertiary/20 rounded-lg p-6">
-                  <h3 className="font-heading text-headings text-lg mb-4 flex items-center gap-2">
-                    <span>📋</span>
-                    Iteration: Clarifying the Menu
-                  </h3>
-                  <p className="text-sm text-body mb-4">
-                    Previously, price information and non-alcoholic options were unclear. We iterated on the menu by improving the typographic hierarchy and
-                    adding a short explanation of "Mocktails" to avoid misunderstandings.
-                  </p>
-                  <p className="text-sm text-body">
-                    The result is a more readable menu where information is easier to scan — especially for new guests or those looking for non-alcoholic
-                    options.
-                  </p>
-                </div>
               </div>
-            </div>
-          </div>
 
-          {/* Results */}
-          <div className="relative">
-            <div className="absolute -left-4 top-0 w-1 h-16 bg-accent2 rounded-full"></div>
-            <h2 className="font-heading text-headings text-3xl mb-8 flex items-center gap-4">
-              <span className="text-4xl">📊</span>
-              Results
-            </h2>
-            <div className="bg-secondary/20 border border-stroke/30 rounded-xl p-8 space-y-6 text-body leading-relaxed">
-              <p>After user testing and design iterations, we saw clear improvements in the experience:</p>
-
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <div className="bg-accent/10 border border-accent/20 rounded-lg p-6">
-                  <h4 className="font-heading text-headings text-lg mb-4 flex items-center gap-2">
-                    <span>✅</span>
-                    Clearer path to booking
-                  </h4>
-                  <p className="text-sm text-body">
-                    The booking button was previously difficult to find. After the design changes, all test participants located it immediately.
-                  </p>
-                </div>
-                <div className="bg-accent/10 border border-accent/20 rounded-lg p-6">
-                  <h4 className="font-heading text-headings text-lg mb-4 flex items-center gap-2">
-                    <span>🧭</span>
-                    Improved navigation clarity
-                  </h4>
-                  <p className="text-sm text-body">The navigation became easier to understand, helping users identify where they were on the page.</p>
-                </div>
-                <div className="bg-accent/10 border border-accent/20 rounded-lg p-6">
-                  <h4 className="font-heading text-headings text-lg mb-4 flex items-center gap-2">
-                    <span>✨</span>
-                    Stronger first impression
-                  </h4>
-                  <p className="text-sm text-body">
-                    The new visual hierarchy created a calmer, more professional look. Users described the design as "clean" and "easy to understand."
-                  </p>
-                </div>
-                <div className="bg-accent/10 border border-accent/20 rounded-lg p-6">
-                  <h4 className="font-heading text-headings text-lg mb-4 flex items-center gap-2">
-                    <span>♿</span>
-                    Consistent and accessible experience
-                  </h4>
-                  <p className="text-sm text-body">
-                    The navigation became clearer, helping users orient themselves and move through the site more confidently.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          {/* Reflection & Lessons Learned */}
-          <div className="relative">
-            <div className="absolute -left-4 top-0 w-1 h-16 bg-accent rounded-full"></div>
-            <h2 className="font-heading text-headings text-3xl mb-8 flex items-center gap-4">
-              <span className="text-4xl">📚</span>
-              Reflection & Lessons Learned
-            </h2>
-            <div className="space-y-8">
-              <div className="bg-secondary/20 border border-stroke/30 rounded-xl p-8 space-y-6 text-body leading-relaxed">
-                <p>
-                  This project showed how small UX details can have a big impact – especially around clarity, structure and accessibility. I learned the value
-                  of early testing, real feedback, and aligning the product with both user needs and business goals.
+              <div className="bg-primary/60 border border-stroke/30 rounded-lg p-6">
+                <h3 className="font-heading text-headings text-lg mb-3">Mobile-first matters</h3>
+                <p className="text-sm text-body">
+                  Most users were browsing on mobile. Designing for small screens first ensured the experience worked where it mattered most.
                 </p>
-
-                <div className="bg-accent/10 border border-accent/20 rounded-lg p-6">
-                  <h3 className="font-heading text-headings text-lg mb-4">Key takeaways:</h3>
-                  <ul className="space-y-2 text-sm">
-                    <li className="flex items-start gap-3">
-                      <span className="text-accent mt-1">•</span>
-                      <span>
-                        <strong>Always be open to iteration</strong> - the first design is rarely the best one
-                      </span>
-                    </li>
-                    <li className="flex items-start gap-3">
-                      <span className="text-accent mt-1">•</span>
-                      <span>
-                        <strong>User feedback is invaluable</strong> and often reveals blind spots in the design
-                      </span>
-                    </li>
-                    <li className="flex items-start gap-3">
-                      <span className="text-accent mt-1">•</span>
-                      <span>
-                        <strong>Accessibility should be considered from the start</strong>, not as an afterthought
-                      </span>
-                    </li>
-                  </ul>
-                </div>
-
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                  <div className="bg-tertiary/20 rounded-lg p-6">
-                    <h4 className="font-heading text-headings text-lg mb-4 flex items-center gap-2">
-                      <span>🧪</span>
-                      User testing
-                    </h4>
-                    <p className="text-sm text-body">
-                      I learned the importance of testing early, listening carefully to users, and daring to iterate even when something 'looks finished'.
-                    </p>
-                  </div>
-                  <div className="bg-tertiary/20 rounded-lg p-6">
-                    <h4 className="font-heading text-headings text-lg mb-4 flex items-center gap-2">
-                      <span>🎨</span>
-                      Visual Language
-                    </h4>
-                    <p className="text-sm text-body">Thoughtful use of colors, typography and spacing helped guide the user and reduce cognitive load.</p>
-                  </div>
-                </div>
-
-                <div className="bg-accent/10 border border-accent/20 rounded-lg p-6">
-                  <h3 className="font-heading text-headings text-lg mb-4">Future Improvements</h3>
-                  <p className="text-sm text-body">
-                    If I had had more time, I would have liked to go even deeper into responsive design and work more structured with WCAG accessibility
-                    criteria. If we had more time, we'd further develop responsive behavior and refine the experience for all devices.
-                  </p>
-                </div>
               </div>
             </div>
+
+            <div className="mt-12 bg-accent/10 border border-accent/20 rounded-xl p-8">
+              <p className="text-accent font-medium text-center text-lg">"The best designs solve problems you didn't know existed until users showed you."</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Future Improvements */}
+      <section className="pb-16">
+        <div className="max-w-4xl mx-auto px-6">
+          <div className="mb-8">
+            <span className="text-xs uppercase tracking-wide text-accent">Next Steps</span>
+            <h2 className="mt-2 font-heading text-headings text-3xl mb-6">If I had more time...</h2>
+          </div>
+
+          <div className="space-y-6 text-body">
+            <p>While the redesign solved the major issues, there's always room to go deeper:</p>
+
+            <ul className="space-y-4">
+              <li className="flex items-start gap-4">
+                <span className="text-accent text-xl mt-1">→</span>
+                <div>
+                  <h3 className="font-heading text-headings mb-1">Enhanced WCAG compliance</h3>
+                  <p className="text-sm">Conduct a full AA-level audit and implement remaining improvements</p>
+                </div>
+              </li>
+              <li className="flex items-start gap-4">
+                <span className="text-accent text-xl mt-1">→</span>
+                <div>
+                  <h3 className="font-heading text-headings mb-1">Online ordering integration</h3>
+                  <p className="text-sm">Explore adding takeout ordering functionality for additional revenue</p>
+                </div>
+              </li>
+              <li className="flex items-start gap-4">
+                <span className="text-accent text-xl mt-1">→</span>
+                <div>
+                  <h3 className="font-heading text-headings mb-1">Performance optimization</h3>
+                  <p className="text-sm">Further optimize images and implement progressive loading strategies</p>
+                </div>
+              </li>
+            </ul>
           </div>
         </div>
       </section>

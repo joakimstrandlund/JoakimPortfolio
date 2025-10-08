@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import { ArrowLeft } from 'lucide-react';
 
 export default function About() {
@@ -25,15 +26,8 @@ export default function About() {
         {/* Profile image */}
         <div className="flex justify-center mb-16">
           <div className="relative">
-            <div className="w-48 h-48 sm:w-56 sm:h-56 rounded-2xl bg-gradient-to-br from-tertiary/40 to-tertiary/60 border border-stroke/30 overflow-hidden">
-              <div className="absolute inset-0 flex items-center justify-center">
-                <div className="text-center">
-                  <div className="w-16 h-16 mx-auto mb-3 rounded-xl bg-accent/10 border border-accent/20 flex items-center justify-center">
-                    <div className="w-8 h-8 rounded-lg bg-accent/30" />
-                  </div>
-                  <div className="text-body2 text-sm font-medium">Profile Photo</div>
-                </div>
-              </div>
+            <div className="w-48 h-48 sm:w-56 sm:h-56 rounded-2xl border border-stroke/30 overflow-hidden">
+              <Image src="/Bild joakim .png" alt="Joakim Strandlund profile photo" width={224} height={224} className="w-full h-full object-cover" />
             </div>
             {/* Decorative elements */}
             <div className="absolute -top-2 -right-2 w-6 h-6 bg-accent/20 rounded-full border border-accent/30" />

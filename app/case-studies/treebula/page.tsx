@@ -1,35 +1,35 @@
+import Image from 'next/image';
+
 export default function Page() {
   return (
     <article className="bg-primary text-body">
       {/* Header */}
       <section className="pt-8 pb-6">
         <div className="max-w-3xl mx-auto px-6 text-center">
-          <h1 className="font-heading text-headings text-3xl sm:text-4xl md:text-5xl tracking-tight">Treebula — Forest Monitoring</h1>
+          <h1 className="font-heading text-headings text-3xl sm:text-4xl md:text-5xl tracking-tight">Treebula Forest Monitoring</h1>
           <p className="mt-3 text-body2">2025 · Product · Mobile · AI/Satellite</p>
           <p className="mt-4">Mobile-first service for forest owners to monitor risk, damage and local conditions using AI & satellite data.</p>
         </div>
       </section>
 
       {/* Hero visual */}
-      <section className="pb-12">
+      <section className="pb-16">
         <div className="max-w-6xl mx-auto px-6">
           <div className="rounded-2xl border border-stroke bg-tertiary/20 p-8">
-            {/* Temporary placeholder - replace with actual image */}
-            <div className="bg-gradient-to-br from-gray-800 to-gray-900 rounded-xl p-12 text-center">
-              <div className="max-w-4xl mx-auto">
-                <div className="text-6xl mb-6">🌲</div>
-                <h3 className="text-2xl font-heading text-headings mb-4">Forest Monitoring App</h3>
-                <p className="text-body2 mb-8">
-                  Mobile interface showing forest monitoring dashboard with AI-powered insights:
-                  <br />
-                  Risk alerts, weather data, and property overview screens
-                </p>
-                <div className="flex justify-center gap-4 text-sm text-body">
-                  <div className="bg-secondary/40 px-4 py-2 rounded-lg">Dashboard View</div>
-                  <div className="bg-secondary/40 px-4 py-2 rounded-lg">Risk Alerts</div>
-                  <div className="bg-secondary/40 px-4 py-2 rounded-lg">Weather Data</div>
+            <div className="relative">
+              <div className="bg-gradient-to-br from-slate-900 to-slate-800 rounded-xl p-8">
+                <div className="max-w-5xl mx-auto">
+                  <div className="relative rounded-2xl overflow-hidden">
+                    <Image
+                      src="/Treebula - hero section.png"
+                      alt="Treebula forest monitoring app overview"
+                      width={1200}
+                      height={800}
+                      className="w-full h-auto rounded-2xl shadow-2xl"
+                      priority
+                    />
+                  </div>
                 </div>
-                <p className="text-xs text-body mt-6">Replace this placeholder with your actual app screenshots</p>
               </div>
             </div>
           </div>

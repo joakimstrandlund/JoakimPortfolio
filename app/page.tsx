@@ -1,6 +1,7 @@
 'use client';
 
 import Link from 'next/link';
+import Image from 'next/image';
 import { motion } from 'framer-motion';
 import { ArrowRight } from 'lucide-react';
 
@@ -195,39 +196,77 @@ export default function Home() {
 
                   {/* Image placeholder */}
                   <div className="aspect-[16/10] bg-gradient-to-br from-tertiary/30 to-tertiary/50 relative overflow-hidden group-hover:scale-105 transition-transform duration-500 ease-out rounded-t-2xl">
-                    {/* Background pattern */}
-                    <div className="absolute inset-0 opacity-20 rounded-t-2xl overflow-hidden">
-                      <div className="absolute inset-0 bg-gradient-to-br from-accent/10 via-transparent to-accent/5" />
-                      <div className="absolute top-4 left-4 w-8 h-8 border border-accent/20 rounded-lg" />
-                      <div className="absolute top-4 right-4 w-6 h-6 border border-accent/20 rounded-full" />
-                      <div className="absolute bottom-4 left-4 w-4 h-4 border border-accent/20 rounded" />
-                      <div className="absolute bottom-4 right-4 w-10 h-2 bg-accent/20 rounded-full" />
-                    </div>
+                    {card.title.includes('Loggi') ? (
+                      <>
+                        {/* Loggi project image */}
+                        <Image
+                          src="/Loggi - new hero section.png"
+                          alt="Loggi wellness app preview"
+                          fill
+                          className="object-cover"
+                          sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                        />
+                        {/* Overlay */}
+                        <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent transition-all duration-300 rounded-t-2xl" />
+                      </>
+                    ) : card.title.includes('Restaurang') ? (
+                      <>
+                        {/* Restaurang Apotek project image */}
+                        <Image
+                          src="/Restaurang apotek - hero section.png"
+                          alt="Restaurang Apotek website preview"
+                          fill
+                          className="object-cover"
+                          sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                        />
+                        {/* Overlay */}
+                        <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent transition-all duration-300 rounded-t-2xl" />
+                      </>
+                    ) : card.title.includes('Treebula') ? (
+                      <>
+                        {/* Treebula project image */}
+                        <Image
+                          src="/Treebula - hero section.png"
+                          alt="Treebula forest monitoring app preview"
+                          fill
+                          className="object-cover"
+                          sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                        />
+                        {/* Overlay */}
+                        <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent transition-all duration-300 rounded-t-2xl" />
+                      </>
+                    ) : (
+                      <>
+                        {/* Background pattern for other projects */}
+                        <div className="absolute inset-0 opacity-20 rounded-t-2xl overflow-hidden">
+                          <div className="absolute inset-0 bg-gradient-to-br from-accent/10 via-transparent to-accent/5" />
+                          <div className="absolute top-4 left-4 w-8 h-8 border border-accent/20 rounded-lg" />
+                          <div className="absolute top-4 right-4 w-6 h-6 border border-accent/20 rounded-full" />
+                          <div className="absolute bottom-4 left-4 w-4 h-4 border border-accent/20 rounded" />
+                          <div className="absolute bottom-4 right-4 w-10 h-2 bg-accent/20 rounded-full" />
+                        </div>
 
-                    {/* Main content */}
-                    <div className="absolute inset-0 flex items-center justify-center">
-                      <div className="text-center">
-                        {card.title.includes('Loggi') && (
-                          <div className="w-20 h-20 mx-auto mb-4 rounded-3xl bg-gradient-to-br from-blue-500/30 to-purple-500/30 border border-blue-400/40 flex items-center justify-center group-hover:from-blue-500/50 group-hover:to-purple-500/50 group-hover:border-blue-400/60 group-hover:scale-110 transition-all duration-500 shadow-lg shadow-blue-500/20">
-                            <div className="text-3xl group-hover:scale-110 transition-transform duration-300">💙</div>
+                        {/* Main content */}
+                        <div className="absolute inset-0 flex items-center justify-center">
+                          <div className="text-center">
+                            {card.title.includes('Treebula') && (
+                              <div className="w-20 h-20 mx-auto mb-4 rounded-3xl bg-gradient-to-br from-green-500/30 to-emerald-500/30 border border-green-400/40 flex items-center justify-center group-hover:from-green-500/50 group-hover:to-emerald-500/50 group-hover:border-green-400/60 group-hover:scale-110 transition-all duration-500 shadow-lg shadow-green-500/20">
+                                <div className="text-3xl group-hover:scale-110 transition-transform duration-300">🌲</div>
+                              </div>
+                            )}
+                            {card.title.includes('Restaurang') && (
+                              <div className="w-20 h-20 mx-auto mb-4 rounded-3xl bg-gradient-to-br from-orange-500/30 to-red-500/30 border border-orange-400/40 flex items-center justify-center group-hover:from-orange-500/50 group-hover:to-red-500/50 group-hover:border-orange-400/60 group-hover:scale-110 transition-all duration-500 shadow-lg shadow-orange-500/20">
+                                <div className="text-3xl group-hover:scale-110 transition-transform duration-300">🍽️</div>
+                              </div>
+                            )}
+                            <div className="text-body2 text-sm font-medium group-hover:text-headings2 transition-colors duration-300">Project Preview</div>
                           </div>
-                        )}
-                        {card.title.includes('Treebula') && (
-                          <div className="w-20 h-20 mx-auto mb-4 rounded-3xl bg-gradient-to-br from-green-500/30 to-emerald-500/30 border border-green-400/40 flex items-center justify-center group-hover:from-green-500/50 group-hover:to-emerald-500/50 group-hover:border-green-400/60 group-hover:scale-110 transition-all duration-500 shadow-lg shadow-green-500/20">
-                            <div className="text-3xl group-hover:scale-110 transition-transform duration-300">🌲</div>
-                          </div>
-                        )}
-                        {card.title.includes('Restaurang') && (
-                          <div className="w-20 h-20 mx-auto mb-4 rounded-3xl bg-gradient-to-br from-orange-500/30 to-red-500/30 border border-orange-400/40 flex items-center justify-center group-hover:from-orange-500/50 group-hover:to-red-500/50 group-hover:border-orange-400/60 group-hover:scale-110 transition-all duration-500 shadow-lg shadow-orange-500/20">
-                            <div className="text-3xl group-hover:scale-110 transition-transform duration-300">🍽️</div>
-                          </div>
-                        )}
-                        <div className="text-body2 text-sm font-medium group-hover:text-headings2 transition-colors duration-300">Project Preview</div>
-                      </div>
-                    </div>
+                        </div>
 
-                    {/* Overlay effects */}
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/5 via-transparent to-transparent transition-all duration-300 rounded-t-2xl" />
+                        {/* Overlay effects */}
+                        <div className="absolute inset-0 bg-gradient-to-t from-black/5 via-transparent to-transparent transition-all duration-300 rounded-t-2xl" />
+                      </>
+                    )}
                   </div>
 
                   {/* Content */}
