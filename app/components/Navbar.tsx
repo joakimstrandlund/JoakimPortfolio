@@ -11,10 +11,23 @@ export default function Navbar() {
   // Prevent background scroll when menu is open
   useEffect(() => {
     if (open) {
+      const scrollY = window.scrollY;
       const original = document.body.style.overflow;
+      const originalPosition = document.body.style.position;
+      const originalTop = document.body.style.top;
+      const originalWidth = document.body.style.width;
+
+      document.body.style.position = 'fixed';
+      document.body.style.top = `-${scrollY}px`;
+      document.body.style.width = '100%';
       document.body.style.overflow = 'hidden';
+
       return () => {
+        document.body.style.position = originalPosition;
+        document.body.style.top = originalTop;
+        document.body.style.width = originalWidth;
         document.body.style.overflow = original;
+        window.scrollTo(0, scrollY);
       };
     }
   }, [open]);
