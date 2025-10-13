@@ -51,64 +51,36 @@ export default function Home() {
             </div>
 
             {/* Tagline */}
-            <motion.div
-              className="space-y-4"
-              initial={{ opacity: 0, y: 30 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.6, ease: 'easeOut' }}
-            >
+            <div className="space-y-4">
               <p className="text-body text-lg max-w-2xl mx-auto leading-relaxed">
                 I'm <span className="text-accent font-medium">Joakim Strandlund</span>, a UX/UI Designer focused on solving real problems through user-centered
                 design, clean interfaces, and thoughtful interactions.
               </p>
-            </motion.div>
+            </div>
 
             {/* Interactive elements */}
-            <motion.div
-              className="flex flex-col sm:flex-row gap-6 justify-center items-center mb-16"
-              initial={{ opacity: 0, y: 30 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.9, ease: 'easeOut' }}
-            >
-              <motion.a
+            <div className="flex flex-col sm:flex-row gap-6 justify-center items-center mb-16">
+              <a
                 href="#projects"
                 className="btn btn-primary text-lg px-8 py-4"
-                whileHover={{
-                  scale: 1.05,
-                  boxShadow: '0 10px 30px rgba(255, 224, 125, 0.3)',
-                }}
-                whileTap={{ scale: 0.95 }}
-                transition={{ type: 'spring', stiffness: 300 }}
               >
                 Explore my work
-              </motion.a>
+              </a>
 
-              <motion.div className="flex items-center gap-4" whileHover={{ scale: 1.02 }} transition={{ type: 'spring', stiffness: 300 }}>
-                <motion.a
+              <div className="flex items-center gap-4">
+                <a
                   href="mailto:joakimstrandlund@gmail.com"
                   className="btn text-lg px-8 py-4"
-                  whileHover={{ scale: 1.05 }}
-                  whileTap={{ scale: 0.95 }}
-                  transition={{ type: 'spring', stiffness: 300 }}
                 >
                   Get in touch
-                </motion.a>
-              </motion.div>
-            </motion.div>
+                </a>
+              </div>
+            </div>
 
             {/* Scroll indicator */}
-            <motion.div
-              className="flex flex-col items-center gap-3 text-body text-sm"
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 1.2, ease: 'easeOut' }}
-            >
+            <div className="flex flex-col items-center gap-3 text-body text-sm">
               <span>Scroll to explore</span>
-              <motion.div
-                className="w-6 h-6 flex items-center justify-center"
-                animate={{ y: [0, 8, 0] }}
-                transition={{ duration: 2, repeat: Infinity, ease: 'easeInOut' }}
-              >
+              <div className="w-6 h-6 flex items-center justify-center">
                 <svg
                   width="16"
                   height="16"
@@ -122,18 +94,13 @@ export default function Home() {
                 >
                   <path d="M12 5v14M19 12l-7 7-7-7" />
                 </svg>
-              </motion.div>
-            </motion.div>
+              </div>
+            </div>
           </div>
 
           {/* Floating code snippets */}
           <div className="absolute top-1/4 left-8 opacity-20">
-            <motion.div
-              className="bg-secondary/40 border border-stroke/30 rounded-lg p-4 text-xs font-mono text-body"
-              initial={{ opacity: 0, x: -50 }}
-              animate={{ opacity: 0.2, x: 0 }}
-              transition={{ duration: 0.6, delay: 1.5 }}
-            >
+            <div className="bg-secondary/40 border border-stroke/30 rounded-lg p-4 text-xs font-mono text-body">
               <div className="text-accent">const</div>
               <div className="text-headings">userExperience</div>
               <div className="text-body">= {`{`}</div>
@@ -141,23 +108,18 @@ export default function Home() {
               <div className="ml-4 text-body">design: true,</div>
               <div className="ml-4 text-body">test: true</div>
               <div className="text-body">{`}`}</div>
-            </motion.div>
+            </div>
           </div>
 
           <div className="absolute top-1/3 right-8 opacity-20">
-            <motion.div
-              className="bg-secondary/40 border border-stroke/30 rounded-lg p-4 text-xs font-mono text-body"
-              initial={{ opacity: 0, x: 50 }}
-              animate={{ opacity: 0.2, x: 0 }}
-              transition={{ duration: 0.6, delay: 1.7 }}
-            >
+            <div className="bg-secondary/40 border border-stroke/30 rounded-lg p-4 text-xs font-mono text-body">
               <div className="text-accent">function</div>
               <div className="text-headings">solveProblem</div>
               <div className="text-body">() {`{`}</div>
               <div className="ml-4 text-body">return</div>
               <div className="ml-8 text-accent">"thoughtful design"</div>
               <div className="text-body">{`}`}</div>
-            </motion.div>
+            </div>
           </div>
         </div>
       </section>
@@ -172,7 +134,7 @@ export default function Home() {
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 lg:gap-10">
             {cards.map((card, index) => (
-              <motion.div key={card.href} initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5, delay: index * 0.1 }}>
+              <div key={card.href}>
                 <Link
                   href={card.href}
                   className="group block h-full relative overflow-hidden transform transition-all duration-500 hover:-translate-y-3 hover:scale-[1.02] rounded-2xl"
@@ -278,7 +240,7 @@ export default function Home() {
                     </div>
                   </div>
                 </Link>
-              </motion.div>
+              </div>
             ))}
           </div>
         </div>
@@ -288,24 +250,12 @@ export default function Home() {
       <section className="bg-primary pt-20 pb-8">
         <div className="max-w-4xl mx-auto px-6">
           {/* Section header */}
-          <motion.div
-            className="text-center mb-8"
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, margin: '-100px' }}
-            transition={{ duration: 0.5, ease: 'easeOut' }}
-          >
+          <div className="text-center mb-8">
             <div className="text-xs uppercase tracking-wide text-body">Testimonial</div>
-          </motion.div>
+          </div>
 
           {/* Testimonial card */}
-          <motion.div
-            className="bg-primary/40 border border-stroke/30 rounded-2xl p-8 sm:p-12"
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, margin: '-100px' }}
-            transition={{ duration: 0.6, ease: 'easeOut' }}
-          >
+          <div className="bg-primary/40 border border-stroke/30 rounded-2xl p-8 sm:p-12">
             {/* Quote */}
             <blockquote className="font-display text-headings text-lg sm:text-xl leading-relaxed mb-8 text-center">
               &quot;It&apos;s been a real pleasure working with Joakim. He&apos;s fast, pragmatic, and has a great instinct for delivering MVPs and PoCs that
@@ -325,7 +275,7 @@ export default function Home() {
                 </div>
               </div>
             </div>
-          </motion.div>
+          </div>
         </div>
       </section>
     </main>
