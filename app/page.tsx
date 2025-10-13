@@ -134,18 +134,18 @@ export default function Home() {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 lg:gap-10">
             {cards.map((card, index) => (
               <div key={card.href}>
-                <Link
-                  href={card.href}
-                  className="group block h-full relative overflow-hidden transform transition-all duration-500 hover:-translate-y-3 hover:scale-[1.02] rounded-2xl"
-                  style={{
-                    transitionTimingFunction: 'cubic-bezier(0.34, 1.56, 0.64, 1)',
-                  }}
-                >
-                  {/* Card background with subtle border */}
-                  <div className="absolute inset-0 bg-secondary/10 border border-stroke/30 rounded-2xl group-hover:border-accent/30 transition-all duration-500 group-hover:shadow-2xl group-hover:shadow-accent/10 group-hover:bg-secondary/20" />
+                        <Link
+                          href={card.href}
+                          className="group block h-full relative overflow-hidden transform transition-all duration-500 hover:-translate-y-3 hover:scale-[1.02]"
+                          style={{
+                            transitionTimingFunction: 'cubic-bezier(0.34, 1.56, 0.64, 1)',
+                          }}
+                        >
+                          {/* Card background with light border */}
+                          <div className="absolute inset-0 bg-secondary/10 border border-stroke group-hover:border-accent/30 transition-all duration-500 group-hover:shadow-2xl group-hover:shadow-accent/10 group-hover:bg-secondary/20" />
 
                   {/* Image placeholder */}
-                  <div className="aspect-[16/10] bg-gradient-to-br from-tertiary/30 to-tertiary/50 relative overflow-hidden group-hover:scale-105 transition-transform duration-500 ease-out rounded-t-2xl">
+                  <div className="aspect-[16/10] bg-gradient-to-br from-tertiary/30 to-tertiary/50 relative overflow-hidden group-hover:scale-105 transition-transform duration-500 ease-out">
                     {card.title.includes('Loggi') ? (
                       <>
                         {/* Loggi project image */}
@@ -155,11 +155,11 @@ export default function Home() {
                           fill
                           className="object-cover"
                           sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                        />
-                        {/* Overlay */}
-                        <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent transition-all duration-300 rounded-t-2xl" />
-                      </>
-                    ) : card.title.includes('Restaurang') ? (
+                                />
+                                {/* Overlay */}
+                                <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent transition-all duration-300" />
+                              </>
+                            ) : card.title.includes('Restaurang') ? (
                       <>
                         {/* Restaurang Apotek project image */}
                         <Image
@@ -168,11 +168,11 @@ export default function Home() {
                           fill
                           className="object-cover"
                           sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                        />
-                        {/* Overlay */}
-                        <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent transition-all duration-300 rounded-t-2xl" />
-                      </>
-                    ) : card.title.includes('Treebula') ? (
+                                />
+                                {/* Overlay */}
+                                <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent transition-all duration-300" />
+                              </>
+                            ) : card.title.includes('Treebula') ? (
                       <>
                         {/* Treebula project image */}
                         <Image
@@ -181,14 +181,14 @@ export default function Home() {
                           fill
                           className="object-cover"
                           sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                        />
-                        {/* Overlay */}
-                        <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent transition-all duration-300 rounded-t-2xl" />
-                      </>
-                    ) : (
+                                />
+                                {/* Overlay */}
+                                <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent transition-all duration-300" />
+                              </>
+                            ) : (
                       <>
                         {/* Background pattern for other projects */}
-                        <div className="absolute inset-0 opacity-20 rounded-t-2xl overflow-hidden">
+                        <div className="absolute inset-0 opacity-20 overflow-hidden">
                           <div className="absolute inset-0 bg-gradient-to-br from-accent/10 via-transparent to-accent/5" />
                           <div className="absolute top-4 left-4 w-8 h-8 border border-accent/20 rounded-lg" />
                           <div className="absolute top-4 right-4 w-6 h-6 border border-accent/20 rounded-full" />
@@ -213,14 +213,14 @@ export default function Home() {
                           </div>
                         </div>
 
-                        {/* Overlay effects */}
-                        <div className="absolute inset-0 bg-gradient-to-t from-black/5 via-transparent to-transparent transition-all duration-300 rounded-t-2xl" />
+                                {/* Overlay effects */}
+                                <div className="absolute inset-0 bg-gradient-to-t from-black/5 via-transparent to-transparent transition-all duration-300" />
                       </>
                     )}
                   </div>
 
                   {/* Content */}
-                  <div className="relative p-6 flex flex-col flex-grow transition-all duration-500 rounded-b-2xl">
+                  <div className="relative p-6 flex flex-col flex-grow transition-all duration-500">
                     {/* Title and year */}
                     <div className="flex items-start justify-between mb-4">
                       <h3 className="font-display text-headings text-lg leading-tight group-hover:text-headings2 group-hover:scale-105 transform transition-all duration-300">
