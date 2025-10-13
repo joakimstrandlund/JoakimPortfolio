@@ -426,7 +426,7 @@ export default function Page() {
             <p className="text-lg text-body2">I tested the redesign with users and iterated based on feedback. Some decisions needed adjusting.</p>
 
             <div className="bg-secondary border border-stroke/30 xl p-8 space-y-6">
-              <h3 className="font-grotesk font-semibold text-headings text-xl mb-4">Key Iteration: Mobile Navigation</h3>
+              <h3 className="font-grotesk font-semibold text-headings text-xl mb-3">Key Iteration: Mobile Navigation</h3>
               <p className="text-body text-sm">
                 Initially, I placed the phone number and booking button at the top of the navigation. Testing revealed this created a "fast food chain" feeling
                 and caused confusion.
@@ -443,7 +443,7 @@ export default function Page() {
 
             <div className="grid md:grid-cols-2 gap-8">
               <div className="bg-secondary border border-stroke/30 xl p-6">
-                <h3 className="font-grotesk font-semibold text-headings text-lg mb-4 flex items-center gap-2">
+                <h3 className="font-grotesk font-semibold text-headings text-lg mb-3 flex items-center gap-2">
                   <span className="text-2xl">✅</span>
                   What worked
                 </h3>
@@ -464,7 +464,7 @@ export default function Page() {
               </div>
 
               <div className="bg-secondary border border-stroke/30 xl p-6">
-                <h3 className="font-grotesk font-semibold text-headings text-lg mb-4 flex items-center gap-2">
+                <h3 className="font-grotesk font-semibold text-headings text-lg mb-3 flex items-center gap-2">
                   <span className="text-2xl">🎯</span>
                   Impact
                 </h3>

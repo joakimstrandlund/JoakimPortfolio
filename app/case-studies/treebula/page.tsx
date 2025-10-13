@@ -122,7 +122,7 @@ export default function Page() {
                 </p>
 
                 <div className="bg-secondary border border-stroke/30 lg p-6 mt-8">
-                  <h3 className="font-grotesk font-semibold text-headings text-lg mb-4">Key Insights</h3>
+                  <h3 className="font-grotesk font-semibold text-headings text-lg mb-3">Key Insights</h3>
                   <ul className="space-y-3 text-sm">
                     <li className="flex items-start gap-3">
                       <span className="text-accent mt-1">•</span>
@@ -218,7 +218,7 @@ export default function Page() {
 
             <div className="grid md:grid-cols-2 gap-6">
               <div className="bg-secondary border border-stroke/30 xl p-6">
-                <h3 className="font-grotesk font-semibold text-headings text-lg mb-4 flex items-center gap-2">
+                <h3 className="font-grotesk font-semibold text-headings text-lg mb-3 flex items-center gap-2">
                   <span className="text-2xl">🌲</span>
                   Property Overview
                 </h3>
@@ -226,7 +226,7 @@ export default function Page() {
               </div>
 
               <div className="bg-secondary border border-stroke/30 xl p-6">
-                <h3 className="font-grotesk font-semibold text-headings text-lg mb-4 flex items-center gap-2">
+                <h3 className="font-grotesk font-semibold text-headings text-lg mb-3 flex items-center gap-2">
                   <span className="text-2xl">⚠️</span>
                   Risk Alerts
                 </h3>
@@ -234,7 +234,7 @@ export default function Page() {
               </div>
 
               <div className="bg-secondary border border-stroke/30 xl p-6">
-                <h3 className="font-grotesk font-semibold text-headings text-lg mb-4 flex items-center gap-2">
+                <h3 className="font-grotesk font-semibold text-headings text-lg mb-3 flex items-center gap-2">
                   <span className="text-2xl">🌪️</span>
                   Wind Analysis
                 </h3>
@@ -242,7 +242,7 @@ export default function Page() {
               </div>
 
               <div className="bg-secondary border border-stroke/30 xl p-6">
-                <h3 className="font-grotesk font-semibold text-headings text-lg mb-4 flex items-center gap-2">
+                <h3 className="font-grotesk font-semibold text-headings text-lg mb-3 flex items-center gap-2">
                   <span className="text-2xl">🌤️</span>
                   Weather Forecast
                 </h3>
@@ -299,7 +299,7 @@ export default function Page() {
             </div>
 
             <div className="bg-secondary border border-stroke/30 lg p-6 mt-8">
-              <h3 className="font-display text-headings text-lg mb-4">Designing for the target group</h3>
+              <h3 className="font-display text-headings text-lg mb-3">Designing for the target group</h3>
               <p className="text-body text-sm mb-4">With users aged 55–80, clarity and simplicity were non-negotiable. Every design decision focused on:</p>
               <ul className="space-y-2 text-sm">
                 <li className="flex items-start gap-3">
@@ -341,7 +341,7 @@ export default function Page() {
 
             <div className="grid md:grid-cols-2 gap-8">
               <div className="bg-secondary border border-stroke/30 xl p-6">
-                <h3 className="font-grotesk font-semibold text-headings text-lg mb-4 flex items-center gap-2">
+                <h3 className="font-grotesk font-semibold text-headings text-lg mb-3 flex items-center gap-2">
                   <span className="text-2xl">🤝</span>
                   Cross-functional teamwork
                 </h3>
@@ -354,7 +354,7 @@ export default function Page() {
               </div>
 
               <div className="bg-secondary border border-stroke/30 xl p-6">
-                <h3 className="font-grotesk font-semibold text-headings text-lg mb-4 flex items-center gap-2">
+                <h3 className="font-grotesk font-semibold text-headings text-lg mb-3 flex items-center gap-2">
                   <span className="text-2xl">⚡</span>
                   Rapid iteration
                 </h3>

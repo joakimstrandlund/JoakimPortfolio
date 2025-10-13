@@ -439,7 +439,7 @@ export default function Page() {
 
             <div className="grid md:grid-cols-2 gap-8">
               <div className="bg-secondary border border-stroke/30 xl p-6">
-                <h3 className="font-grotesk font-semibold text-headings text-lg mb-4 flex items-center gap-2">
+                <h3 className="font-grotesk font-semibold text-headings text-lg mb-3 flex items-center gap-2">
                   <span className="text-2xl">✅</span>
                   What worked
                 </h3>
@@ -460,7 +460,7 @@ export default function Page() {
               </div>
 
               <div className="bg-secondary border border-stroke/30 xl p-6">
-                <h3 className="font-grotesk font-semibold text-headings text-lg mb-4 flex items-center gap-2">
+                <h3 className="font-grotesk font-semibold text-headings text-lg mb-3 flex items-center gap-2">
                   <span className="text-2xl">🔄</span>
                   What I improved
                 </h3>
