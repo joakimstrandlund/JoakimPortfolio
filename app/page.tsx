@@ -27,43 +27,28 @@ export default function Home() {
 
         <div className="max-w-6xl mx-auto px-6 w-full relative z-10">
           {/* Top status bar */}
-          <motion.div
-            className="flex justify-between items-center mb-16"
-            initial={{ opacity: 0, y: -20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, ease: 'easeOut' }}
-          >
+                  <div className="flex justify-between items-center mb-16">
             <div className="text-body text-sm">UX/UI Designer</div>
             <div className="text-accent text-sm font-medium">Available for projects</div>
-          </motion.div>
+          </div>
 
           {/* Main content */}
           <div className="text-center space-y-8">
             {/* Main headline */}
-            <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6, delay: 0.1, ease: 'easeOut' }}>
+            <div>
               <h1 className="font-display text-5xl sm:text-6xl md:text-7xl text-headings leading-tight tracking-tight">
-                <motion.span className="inline-block" initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5, delay: 0.2 }}>
+                <span className="inline-block">
                   Creating digital
-                </motion.span>
+                </span>
                 <br />
-                <motion.span
-                  className="inline-block text-accent"
-                  initial={{ opacity: 0, y: 20 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.5, delay: 0.3 }}
-                >
+                <span className="inline-block text-accent">
                   experiences
-                </motion.span>
-                <motion.span
-                  className="inline-block ml-2"
-                  initial={{ opacity: 0, y: 20 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.5, delay: 0.4 }}
-                >
+                </span>
+                <span className="inline-block ml-2">
                   that matter
-                </motion.span>
+                </span>
               </h1>
-            </motion.div>
+            </div>
 
             {/* Tagline */}
             <motion.div
