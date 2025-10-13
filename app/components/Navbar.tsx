@@ -65,7 +65,7 @@ export default function Navbar() {
 
           {/* Mobile toggle */}
           <button
-            className="sm:hidden inline-flex h-10 w-10 items-center justify-center rounded-full border border-stroke bg-tertiary/60 text-headings hover:border-stroke2 transition touch-manipulation"
+            className="sm:hidden inline-flex h-10 w-10 items-center justify-center border border-stroke bg-tertiary/60 text-headings hover:border-stroke2 transition touch-manipulation"
             aria-label={open ? 'Close menu' : 'Open menu'}
             onClick={() => setOpen(!open)}
             style={{ touchAction: 'manipulation' }}
@@ -111,7 +111,7 @@ export default function Navbar() {
                   setOpen(false);
                 }}
                 aria-label="Close menu"
-                className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-stroke bg-tertiary/60 text-headings hover:border-stroke2 transition touch-manipulation relative z-10"
+                className="inline-flex h-10 w-10 items-center justify-center border border-stroke bg-tertiary/60 text-headings hover:border-stroke2 transition touch-manipulation relative z-10"
                 style={{ touchAction: 'manipulation', pointerEvents: 'auto' }}
               >
                 <X className="h-5 w-5" />

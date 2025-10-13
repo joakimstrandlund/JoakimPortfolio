@@ -26,7 +26,7 @@ export default function Home() {
 
         <div className="max-w-6xl mx-auto px-6 w-full relative z-10">
           {/* Top status bar */}
-                  <div className="flex justify-between items-center mb-16">
+          <div className="flex justify-between items-center mb-16">
             <div className="text-body text-sm">UX/UI Designer</div>
             <div className="text-accent text-sm font-medium">Available for projects</div>
           </div>
@@ -36,16 +36,10 @@ export default function Home() {
             {/* Main headline */}
             <div>
               <h1 className="font-display text-5xl sm:text-6xl md:text-7xl text-headings leading-tight tracking-tight">
-                <span className="inline-block">
-                  Creating digital
-                </span>
+                <span className="inline-block">Creating digital</span>
                 <br />
-                <span className="inline-block text-accent">
-                  experiences
-                </span>
-                <span className="inline-block ml-2">
-                  that matter
-                </span>
+                <span className="inline-block text-accent">experiences</span>
+                <span className="inline-block ml-2">that matter</span>
               </h1>
             </div>
 
@@ -59,18 +53,12 @@ export default function Home() {
 
             {/* Interactive elements */}
             <div className="flex flex-col sm:flex-row gap-6 justify-center items-center mb-16">
-              <a
-                href="#projects"
-                className="btn btn-primary text-lg px-8 py-4"
-              >
+              <a href="#projects" className="btn btn-primary text-lg px-8 py-4">
                 Explore my work
               </a>
 
               <div className="flex items-center gap-4">
-                <a
-                  href="mailto:joakimstrandlund@gmail.com"
-                  className="btn text-lg px-8 py-4"
-                >
+                <a href="mailto:joakimstrandlund@gmail.com" className="btn text-lg px-8 py-4">
                   Get in touch
                 </a>
               </div>
@@ -134,15 +122,15 @@ export default function Home() {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 lg:gap-10">
             {cards.map((card, index) => (
               <div key={card.href}>
-                        <Link
-                          href={card.href}
-                          className="group block h-full relative overflow-hidden transform transition-all duration-500 hover:-translate-y-3 hover:scale-[1.02]"
-                          style={{
-                            transitionTimingFunction: 'cubic-bezier(0.34, 1.56, 0.64, 1)',
-                          }}
-                        >
-                          {/* Card background with light border */}
-                          <div className="absolute inset-0 bg-secondary/10 border border-stroke group-hover:border-accent/30 transition-all duration-500 group-hover:shadow-2xl group-hover:shadow-accent/10 group-hover:bg-secondary/20" />
+                <Link
+                  href={card.href}
+                  className="group block h-full relative overflow-hidden transform transition-all duration-500 hover:-translate-y-3 hover:scale-[1.02]"
+                  style={{
+                    transitionTimingFunction: 'cubic-bezier(0.34, 1.56, 0.64, 1)',
+                  }}
+                >
+                  {/* Card background with light border */}
+                  <div className="absolute inset-0 bg-secondary/10 border border-stroke group-hover:border-accent/30 transition-all duration-500 group-hover:shadow-2xl group-hover:shadow-accent/10 group-hover:bg-secondary/20" />
 
                   {/* Image placeholder */}
                   <div className="aspect-[16/10] bg-gradient-to-br from-tertiary/30 to-tertiary/50 relative overflow-hidden group-hover:scale-105 transition-transform duration-500 ease-out">
@@ -155,11 +143,11 @@ export default function Home() {
                           fill
                           className="object-cover"
                           sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                                />
-                                {/* Overlay */}
-                                <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent transition-all duration-300" />
-                              </>
-                            ) : card.title.includes('Restaurang') ? (
+                        />
+                        {/* Overlay */}
+                        <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent transition-all duration-300" />
+                      </>
+                    ) : card.title.includes('Restaurang') ? (
                       <>
                         {/* Restaurang Apotek project image */}
                         <Image
@@ -168,11 +156,11 @@ export default function Home() {
                           fill
                           className="object-cover"
                           sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                                />
-                                {/* Overlay */}
-                                <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent transition-all duration-300" />
-                              </>
-                            ) : card.title.includes('Treebula') ? (
+                        />
+                        {/* Overlay */}
+                        <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent transition-all duration-300" />
+                      </>
+                    ) : card.title.includes('Treebula') ? (
                       <>
                         {/* Treebula project image */}
                         <Image
@@ -181,11 +169,11 @@ export default function Home() {
                           fill
                           className="object-cover"
                           sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                                />
-                                {/* Overlay */}
-                                <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent transition-all duration-300" />
-                              </>
-                            ) : (
+                        />
+                        {/* Overlay */}
+                        <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent transition-all duration-300" />
+                      </>
+                    ) : (
                       <>
                         {/* Background pattern for other projects */}
                         <div className="absolute inset-0 opacity-20 overflow-hidden">
@@ -213,8 +201,8 @@ export default function Home() {
                           </div>
                         </div>
 
-                                {/* Overlay effects */}
-                                <div className="absolute inset-0 bg-gradient-to-t from-black/5 via-transparent to-transparent transition-all duration-300" />
+                        {/* Overlay effects */}
+                        <div className="absolute inset-0 bg-gradient-to-t from-black/5 via-transparent to-transparent transition-all duration-300" />
                       </>
                     )}
                   </div>

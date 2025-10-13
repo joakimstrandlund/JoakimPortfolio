@@ -39,13 +39,13 @@ export default function RootLayout({
                   UX/UI Designer crafting user-friendly, modern digital experiences. Calm, pragmatic, and focused on outcomes.
                 </p>
                 <div className="flex items-center gap-3 pt-1">
-                  <a
-                    href="https://github.com/joakimstrandlund"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    aria-label="GitHub"
-                    className="inline-flex h-9 w-9 items-center justify-center rounded-full border border-stroke bg-tertiary/60 text-headings hover:border-stroke2 transition"
-                  >
+                          <a
+                            href="https://github.com/joakimstrandlund"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="GitHub"
+                            className="inline-flex h-9 w-9 items-center justify-center border border-stroke bg-tertiary/60 text-headings hover:border-stroke2 transition"
+                          >
                     <Github className="h-4 w-4" />
                   </a>
                   <a
@@ -53,7 +53,7 @@ export default function RootLayout({
                     target="_blank"
                     rel="noopener noreferrer"
                     aria-label="LinkedIn"
-                    className="inline-flex h-9 w-9 items-center justify-center rounded-full border border-stroke bg-tertiary/60 text-headings hover:border-stroke2 transition"
+                    className="inline-flex h-9 w-9 items-center justify-center border border-stroke bg-tertiary/60 text-headings hover:border-stroke2 transition"
                   >
                     <Linkedin className="h-4 w-4" />
                   </a>
