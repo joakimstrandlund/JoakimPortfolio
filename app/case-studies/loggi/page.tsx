@@ -16,7 +16,7 @@ export default function Page() {
       {/* Hero visual */}
       <section className="pb-16">
         <div className="max-w-6xl mx-auto px-6">
-          <div className="2xl border border-stroke bg-tertiary/20 p-8">
+          <div className="2xl bg-tertiary/20 p-8">
             <div className="relative">
               <div className="bg-gradient-to-br from-slate-900 to-slate-800 xl p-8">
                 <div className="max-w-5xl mx-auto">
