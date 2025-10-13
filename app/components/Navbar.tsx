@@ -79,7 +79,7 @@ export default function Navbar() {
       {open && (
         <aside
           className="fixed inset-0 z-50 sm:hidden"
-          style={{ backgroundColor: '#121212' }}
+          style={{ backgroundColor: 'var(--color-primary)' }}
           aria-modal="true"
           role="dialog"
           onClick={(e) => {
@@ -122,17 +122,17 @@ export default function Navbar() {
           <nav className="absolute inset-0 flex items-center justify-end pr-6">
             <ul className="text-right flex flex-col items-end gap-8">
               <li>
-                <Link onClick={() => setOpen(false)} href="/#projects" className="font-display text-headings2 text-2xl link-underline">
+                <Link onClick={() => setOpen(false)} href="/#projects" className="font-grotesk font-semibold text-headings2 text-2xl link-underline">
                   Projects
                 </Link>
               </li>
               <li>
-                <Link onClick={() => setOpen(false)} href="/about" className="font-display text-headings2 text-2xl link-underline">
+                <Link onClick={() => setOpen(false)} href="/about" className="font-grotesk font-semibold text-headings2 text-2xl link-underline">
                   About me
                 </Link>
               </li>
               <li>
-                <Link onClick={() => setOpen(false)} href="/#contact" className="font-display text-headings2 text-2xl link-underline">
+                <Link onClick={() => setOpen(false)} href="/#contact" className="font-grotesk font-semibold text-headings2 text-2xl link-underline">
                   Contact
                 </Link>
               </li>
