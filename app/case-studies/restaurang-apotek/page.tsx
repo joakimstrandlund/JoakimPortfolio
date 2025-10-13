@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from 'next/link';
 
 export default function Page() {
   return (
@@ -537,6 +538,25 @@ export default function Page() {
                 </div>
               </li>
             </ul>
+          </div>
+        </div>
+      </section>
+
+      {/* Next Project Navigation */}
+      <section className="py-16 border-t border-stroke/30">
+        <div className="max-w-4xl mx-auto px-6 text-center">
+          <div className="space-y-4 mb-8">
+            <p className="text-body2 text-lg">Thanks for reading! 🙌</p>
+            <p className="text-body">I hope you enjoyed learning about Restaurang Apotek.</p>
+            <p className="text-body">Feel free to explore more of my work or get in touch.</p>
+          </div>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+            <Link href="/case-studies/loggi" className="btn btn-primary">
+              Next Project: Loggi →
+            </Link>
+            <Link href="/#projects" className="btn">
+              All Projects
+            </Link>
           </div>
         </div>
       </section>
