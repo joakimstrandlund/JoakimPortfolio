@@ -208,7 +208,7 @@ export default function Page() {
                     className="w-full max-w-[280px] h-auto lg shadow-lg"
                   />
                 </div>
-                
+
                 {/* Text content */}
                 <div className="text-center lg:text-left">
                   <h3 className="font-grotesk font-semibold text-headings text-xl mb-3">Mobile Navigation</h3>
@@ -250,61 +250,63 @@ export default function Page() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
-            <div>
-              <div className="mb-6">
-                <Image
-                  src="/Rstaurang apotek - foodmeny phone.png"
-                  alt="Restaurang Apotek food menu mobile view"
-                  width={300}
-                  height={600}
-                  className="w-full max-w-[240px] h-auto lg shadow-lg mx-auto"
-                />
+          <div className="bg-secondary/20 border border-stroke/30 p-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+              <div>
+                <div className="mb-6">
+                  <Image
+                    src="/Rstaurang apotek - foodmeny phone.png"
+                    alt="Restaurang Apotek food menu mobile view"
+                    width={300}
+                    height={600}
+                    className="w-full max-w-[240px] h-auto lg shadow-lg mx-auto"
+                  />
+                </div>
+                <h3 className="font-grotesk font-semibold text-headings text-xl mb-3 text-center">Food Menu</h3>
+                <p className="text-body text-sm text-center mb-4">Clean layout with clear categories, pricing, and descriptions.</p>
+                <ul className="space-y-2 text-xs text-body">
+                  <li className="flex items-start gap-2">
+                    <span className="text-accent mt-1">•</span>
+                    <span>Improved typographic hierarchy for scanning</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-accent mt-1">•</span>
+                    <span>Clear pricing and portion information</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-accent mt-1">•</span>
+                    <span>Screen reader compatible HTML structure</span>
+                  </li>
+                </ul>
               </div>
-              <h3 className="font-grotesk font-semibold text-headings text-xl mb-3 text-center">Food Menu</h3>
-              <p className="text-body text-sm text-center mb-4">Clean layout with clear categories, pricing, and descriptions.</p>
-              <ul className="space-y-2 text-xs text-body">
-                <li className="flex items-start gap-2">
-                  <span className="text-accent mt-1">•</span>
-                  <span>Improved typographic hierarchy for scanning</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-accent mt-1">•</span>
-                  <span>Clear pricing and portion information</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-accent mt-1">•</span>
-                  <span>Screen reader compatible HTML structure</span>
-                </li>
-              </ul>
-            </div>
 
-            <div>
-              <div className="mb-6">
-                <Image
-                  src="/Rstaurang apotek - cocktail phone.png"
-                  alt="Restaurang Apotek cocktail menu mobile view"
-                  width={300}
-                  height={600}
-                  className="w-full max-w-[240px] h-auto lg shadow-lg mx-auto"
-                />
+              <div>
+                <div className="mb-6">
+                  <Image
+                    src="/Rstaurang apotek - cocktail phone.png"
+                    alt="Restaurang Apotek cocktail menu mobile view"
+                    width={300}
+                    height={600}
+                    className="w-full max-w-[240px] h-auto lg shadow-lg mx-auto"
+                  />
+                </div>
+                <h3 className="font-grotesk font-semibold text-headings text-xl mb-3 text-center">Cocktail Menu</h3>
+                <p className="text-body text-sm text-center mb-4">Visual menu design highlighting drinks with proper categorization.</p>
+                <ul className="space-y-2 text-xs text-body">
+                  <li className="flex items-start gap-2">
+                    <span className="text-accent mt-1">•</span>
+                    <span>Added "Mocktails" explanation to avoid confusion</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-accent mt-1">•</span>
+                    <span>Clear distinction between alcoholic and non-alcoholic</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-accent mt-1">•</span>
+                    <span>Consistent pricing format throughout</span>
+                  </li>
+                </ul>
               </div>
-              <h3 className="font-grotesk font-semibold text-headings text-xl mb-3 text-center">Cocktail Menu</h3>
-              <p className="text-body text-sm text-center mb-4">Visual menu design highlighting drinks with proper categorization.</p>
-              <ul className="space-y-2 text-xs text-body">
-                <li className="flex items-start gap-2">
-                  <span className="text-accent mt-1">•</span>
-                  <span>Added "Mocktails" explanation to avoid confusion</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-accent mt-1">•</span>
-                  <span>Clear distinction between alcoholic and non-alcoholic</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-accent mt-1">•</span>
-                  <span>Consistent pricing format throughout</span>
-                </li>
-              </ul>
             </div>
           </div>
         </div>
@@ -335,7 +337,7 @@ export default function Page() {
                     className="w-full max-w-[280px] h-auto lg shadow-lg"
                   />
                 </div>
-                
+
                 {/* Text content */}
                 <div className="text-center lg:text-left">
                   <h3 className="font-grotesk font-semibold text-headings text-xl mb-3">Gallery</h3>
@@ -386,7 +388,7 @@ export default function Page() {
                     className="w-full max-w-[280px] h-auto lg shadow-lg"
                   />
                 </div>
-                
+
                 {/* Text content */}
                 <div className="text-center lg:text-left">
                   <h3 className="font-grotesk font-semibold text-headings text-xl mb-3">Footer</h3>
@@ -423,7 +425,7 @@ export default function Page() {
           <div className="space-y-8">
             <p className="text-lg text-body2">I tested the redesign with users and iterated based on feedback. Some decisions needed adjusting.</p>
 
-            <div className="bg-secondary xl p-8 space-y-6">
+            <div className="bg-secondary border border-stroke/30 xl p-8 space-y-6">
               <h3 className="font-grotesk font-semibold text-headings text-xl mb-4">Key Iteration: Mobile Navigation</h3>
               <p className="text-body text-sm">
                 Initially, I placed the phone number and booking button at the top of the navigation. Testing revealed this created a "fast food chain" feeling
@@ -432,7 +434,7 @@ export default function Page() {
               <p className="text-body text-sm">
                 Moving these elements into the dropdown menu resulted in clearer visual hierarchy, a more intuitive flow, and better focus on navigation.
               </p>
-              <div className="bg-secondary lg p-4 mt-4">
+              <div className="bg-secondary border border-stroke/30 lg p-4 mt-4">
                 <p className="text-accent text-sm font-medium">
                   Lesson learned: Sometimes less visible doesn't mean less accessible. Context and clarity matter more than prominence.
                 </p>
@@ -440,7 +442,7 @@ export default function Page() {
             </div>
 
             <div className="grid md:grid-cols-2 gap-8">
-              <div className="bg-secondary xl p-6">
+              <div className="bg-secondary border border-stroke/30 xl p-6">
                 <h3 className="font-grotesk font-semibold text-headings text-lg mb-4 flex items-center gap-2">
                   <span className="text-2xl">✅</span>
                   What worked
@@ -461,7 +463,7 @@ export default function Page() {
                 </ul>
               </div>
 
-              <div className="bg-secondary xl p-6">
+              <div className="bg-secondary border border-stroke/30 xl p-6">
                 <h3 className="font-grotesk font-semibold text-headings text-lg mb-4 flex items-center gap-2">
                   <span className="text-2xl">🎯</span>
                   Impact
