@@ -205,7 +205,7 @@ export default function Home() {
 
       {/* Testimonial */}
       <section className="bg-primary pt-20 pb-8">
-        <div className="max-w-4xl mx-auto px-6">
+        <div className="max-w-6xl mx-auto px-6">
           {/* Section header */}
           <div className="text-center mb-8">
             <div className="text-xs uppercase tracking-wide text-body">Testimonial</div>
