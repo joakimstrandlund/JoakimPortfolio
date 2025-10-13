@@ -24,12 +24,7 @@ export default function Home() {
           ></div>
         </div>
 
-        <div className="max-w-6xl mx-auto px-6 w-full relative z-10">
-          {/* Top status bar */}
-          <div className="flex justify-between items-center mb-16">
-            <div className="text-body text-sm">UX/UI Designer</div>
-            <div className="text-accent text-sm font-medium">Available for projects</div>
-          </div>
+                <div className="max-w-6xl mx-auto px-6 w-full relative z-10">
 
           {/* Main content */}
           <div className="text-center space-y-8">
