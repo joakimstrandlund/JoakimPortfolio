@@ -16,17 +16,17 @@ export default function Page() {
       {/* Hero visual */}
       <section className="pb-16">
         <div className="max-w-6xl mx-auto px-6">
-          <div className="rounded-2xl border border-stroke bg-tertiary/20 p-8">
+          <div className="2xl border border-stroke bg-tertiary/20 p-8">
             <div className="relative">
-              <div className="bg-gradient-to-br from-slate-900 to-slate-800 rounded-xl p-8">
+              <div className="bg-gradient-to-br from-slate-900 to-slate-800 xl p-8">
                 <div className="max-w-5xl mx-auto">
-                  <div className="relative rounded-2xl overflow-hidden">
+                  <div className="relative 2xl overflow-hidden">
                     <Image
                       src="/Treebula - hero section.png"
                       alt="Treebula forest monitoring app overview"
                       width={1200}
                       height={800}
-                      className="w-full h-auto rounded-2xl shadow-2xl"
+                      className="w-full h-auto 2xl shadow-2xl"
                       priority
                     />
                   </div>
@@ -72,9 +72,9 @@ export default function Page() {
                 <span className="text-xs uppercase tracking-wide text-accent">Target Users</span>
                 <h2 className="mt-2 font-display text-headings text-3xl">Designing for forest owners</h2>
               </div>
-              <div className="bg-secondary/20 border border-stroke/30 rounded-xl p-8 space-y-6">
+              <div className="bg-secondary/20 border border-stroke/30 xl p-8 space-y-6">
                 <div className="flex items-center gap-4 mb-4">
-                  <div className="w-16 h-16 bg-accent/20 rounded-full flex items-center justify-center">
+                  <div className="w-16 h-16 bg-accent/20 full flex items-center justify-center">
                     <span className="text-2xl">👴</span>
                   </div>
                   <div>
@@ -87,19 +87,19 @@ export default function Page() {
                   decision.
                 </p>
                 <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mt-6">
-                  <div className="bg-tertiary/20 rounded-lg p-4 text-center">
+                  <div className="bg-tertiary/20 lg p-4 text-center">
                     <div className="text-2xl mb-2">📡</div>
                     <div className="text-xs font-display text-headings">Remote monitoring</div>
                   </div>
-                  <div className="bg-tertiary/20 rounded-lg p-4 text-center">
+                  <div className="bg-tertiary/20 lg p-4 text-center">
                     <div className="text-2xl mb-2">⚡</div>
                     <div className="text-xs font-display text-headings">Quick updates</div>
                   </div>
-                  <div className="bg-tertiary/20 rounded-lg p-4 text-center">
+                  <div className="bg-tertiary/20 lg p-4 text-center">
                     <div className="text-2xl mb-2">🛡️</div>
                     <div className="text-xs font-display text-headings">Security</div>
                   </div>
-                  <div className="bg-tertiary/20 rounded-lg p-4 text-center">
+                  <div className="bg-tertiary/20 lg p-4 text-center">
                     <div className="text-2xl mb-2">🎯</div>
                     <div className="text-xs font-display text-headings">Simplicity</div>
                   </div>
@@ -123,7 +123,7 @@ export default function Page() {
                   challenges. This made it possible to quickly test ideas, iterate, and ensure every function created real value.
                 </p>
 
-                <div className="bg-accent/10 border border-accent/20 rounded-lg p-6 mt-8">
+                <div className="bg-accent/10 border border-accent/20 lg p-6 mt-8">
                   <h3 className="font-display text-headings text-lg mb-4">Key Insights</h3>
                   <ul className="space-y-3 text-sm">
                     <li className="flex items-start gap-3">
@@ -170,32 +170,32 @@ export default function Page() {
           </div>
 
           <div className="grid grid-cols-2 md:grid-cols-3 gap-6 max-w-5xl mx-auto">
-            <div className="bg-primary/40 border border-stroke/30 rounded-lg p-6 text-center">
+            <div className="bg-primary/40 border border-stroke/30 lg p-6 text-center">
               <div className="text-3xl mb-3">💡</div>
               <h3 className="font-display text-headings text-lg mb-2">Simple & Clear</h3>
               <p className="text-body text-sm">Minimal technical competence required</p>
             </div>
-            <div className="bg-primary/40 border border-stroke/30 rounded-lg p-6 text-center">
+            <div className="bg-primary/40 border border-stroke/30 lg p-6 text-center">
               <div className="text-3xl mb-3">♿</div>
               <h3 className="font-display text-headings text-lg mb-2">Accessible</h3>
               <p className="text-body text-sm">WCAG guidelines and clear contrasts</p>
             </div>
-            <div className="bg-primary/40 border border-stroke/30 rounded-lg p-6 text-center">
+            <div className="bg-primary/40 border border-stroke/30 lg p-6 text-center">
               <div className="text-3xl mb-3">✨</div>
               <h3 className="font-display text-headings text-lg mb-2">Modern</h3>
               <p className="text-body text-sm">Clean aesthetics signaling innovation</p>
             </div>
-            <div className="bg-primary/40 border border-stroke/30 rounded-lg p-6 text-center">
+            <div className="bg-primary/40 border border-stroke/30 lg p-6 text-center">
               <div className="text-3xl mb-3">📱</div>
               <h3 className="font-display text-headings text-lg mb-2">Mobile-First</h3>
               <p className="text-body text-sm">Optimized for on-the-go access</p>
             </div>
-            <div className="bg-primary/40 border border-stroke/30 rounded-lg p-6 text-center">
+            <div className="bg-primary/40 border border-stroke/30 lg p-6 text-center">
               <div className="text-3xl mb-3">🎯</div>
               <h3 className="font-display text-headings text-lg mb-2">Focused</h3>
               <p className="text-body text-sm">Minimal choices to reduce cognitive load</p>
             </div>
-            <div className="bg-primary/40 border border-stroke/30 rounded-lg p-6 text-center">
+            <div className="bg-primary/40 border border-stroke/30 lg p-6 text-center">
               <div className="text-3xl mb-3">🌲</div>
               <h3 className="font-display text-headings text-lg mb-2">Contextual</h3>
               <p className="text-body text-sm">Property-specific, relevant data</p>
@@ -219,7 +219,7 @@ export default function Page() {
             </p>
 
             <div className="grid md:grid-cols-2 gap-6">
-              <div className="bg-secondary/20 border border-stroke/30 rounded-xl p-6">
+              <div className="bg-secondary/20 border border-stroke/30 xl p-6">
                 <h3 className="font-display text-headings text-lg mb-4 flex items-center gap-2">
                   <span className="text-2xl">🌲</span>
                   Property Overview
@@ -227,7 +227,7 @@ export default function Page() {
                 <p className="text-sm text-body">Dashboard showing forest status, recent events, and risk indicators at a glance</p>
               </div>
 
-              <div className="bg-secondary/20 border border-stroke/30 rounded-xl p-6">
+              <div className="bg-secondary/20 border border-stroke/30 xl p-6">
                 <h3 className="font-display text-headings text-lg mb-4 flex items-center gap-2">
                   <span className="text-2xl">⚠️</span>
                   Risk Alerts
@@ -235,7 +235,7 @@ export default function Page() {
                 <p className="text-sm text-body">Real-time notifications about storm damage, bark beetle risks, and other threats</p>
               </div>
 
-              <div className="bg-secondary/20 border border-stroke/30 rounded-xl p-6">
+              <div className="bg-secondary/20 border border-stroke/30 xl p-6">
                 <h3 className="font-display text-headings text-lg mb-4 flex items-center gap-2">
                   <span className="text-2xl">🌪️</span>
                   Wind Analysis
@@ -243,7 +243,7 @@ export default function Page() {
                 <p className="text-sm text-body">Interactive wind rose showing wind patterns specific to the property</p>
               </div>
 
-              <div className="bg-secondary/20 border border-stroke/30 rounded-xl p-6">
+              <div className="bg-secondary/20 border border-stroke/30 xl p-6">
                 <h3 className="font-display text-headings text-lg mb-4 flex items-center gap-2">
                   <span className="text-2xl">🌤️</span>
                   Weather Forecast
@@ -275,7 +275,7 @@ export default function Page() {
             </p>
 
             <div className="grid md:grid-cols-3 gap-6 mt-8">
-              <div className="bg-primary/40 border border-stroke/30 rounded-lg p-6">
+              <div className="bg-primary/40 border border-stroke/30 lg p-6">
                 <h3 className="font-display text-headings text-lg mb-3 flex items-center gap-2">
                   <span className="text-2xl">📐</span>
                   Wireframes
@@ -283,7 +283,7 @@ export default function Page() {
                 <p className="text-sm text-body">Quick wireframes to visualize the product's basic structure and flow</p>
               </div>
 
-              <div className="bg-primary/40 border border-stroke/30 rounded-lg p-6">
+              <div className="bg-primary/40 border border-stroke/30 lg p-6">
                 <h3 className="font-display text-headings text-lg mb-3 flex items-center gap-2">
                   <span className="text-2xl">🎨</span>
                   Prototypes
@@ -291,7 +291,7 @@ export default function Page() {
                 <p className="text-sm text-body">Interactive prototypes in Figma to test interactions and flows</p>
               </div>
 
-              <div className="bg-primary/40 border border-stroke/30 rounded-lg p-6">
+              <div className="bg-primary/40 border border-stroke/30 lg p-6">
                 <h3 className="font-display text-headings text-lg mb-3 flex items-center gap-2">
                   <span className="text-2xl">🔄</span>
                   Iterations
@@ -300,7 +300,7 @@ export default function Page() {
               </div>
             </div>
 
-            <div className="bg-accent/10 border border-accent/20 rounded-lg p-6 mt-8">
+            <div className="bg-accent/10 border border-accent/20 lg p-6 mt-8">
               <h3 className="font-display text-headings text-lg mb-4">Designing for the target group</h3>
               <p className="text-body text-sm mb-4">With users aged 55–80, clarity and simplicity were non-negotiable. Every design decision focused on:</p>
               <ul className="space-y-2 text-sm">
@@ -342,7 +342,7 @@ export default function Page() {
             <p className="text-lg text-body2">This project showed me the power of tight collaboration between design, development, and business.</p>
 
             <div className="grid md:grid-cols-2 gap-8">
-              <div className="bg-secondary/20 border border-stroke/30 rounded-xl p-6">
+              <div className="bg-secondary/20 border border-stroke/30 xl p-6">
                 <h3 className="font-display text-headings text-lg mb-4 flex items-center gap-2">
                   <span className="text-2xl">🤝</span>
                   Cross-functional teamwork
@@ -355,7 +355,7 @@ export default function Page() {
                 </p>
               </div>
 
-              <div className="bg-secondary/20 border border-stroke/30 rounded-xl p-6">
+              <div className="bg-secondary/20 border border-stroke/30 xl p-6">
                 <h3 className="font-display text-headings text-lg mb-4 flex items-center gap-2">
                   <span className="text-2xl">⚡</span>
                   Rapid iteration
@@ -387,7 +387,7 @@ export default function Page() {
               inexperienced target group.
             </p>
 
-            <div className="bg-accent/10 border border-accent/20 rounded-xl p-8 mt-8">
+            <div className="bg-accent/10 border border-accent/20 xl p-8 mt-8">
               <p className="text-accent font-medium text-center text-lg">
                 "This project proved how close collaboration between design, development, and business can create products that strengthen the brand and meet
                 real needs in a traditionally analog industry."
@@ -412,7 +412,7 @@ export default function Page() {
             </p>
 
             <div className="space-y-6">
-              <div className="bg-secondary/20 border border-stroke/30 rounded-lg p-6">
+              <div className="bg-secondary/20 border border-stroke/30 lg p-6">
                 <h3 className="font-display text-headings text-lg mb-3">Research isn't always traditional</h3>
                 <p className="text-sm text-body">
                   User research doesn't always follow a textbook pattern. In this case, the strongest insights came from internal expertise deeply rooted in the
@@ -420,7 +420,7 @@ export default function Page() {
                 </p>
               </div>
 
-              <div className="bg-secondary/20 border border-stroke/30 rounded-lg p-6">
+              <div className="bg-secondary/20 border border-stroke/30 lg p-6">
                 <h3 className="font-display text-headings text-lg mb-3">Balance function and aesthetics</h3>
                 <p className="text-sm text-body">
                   Designing for an older, less tech-savvy audience without compromising modern feel deepened my understanding of how design can unite usability
@@ -428,7 +428,7 @@ export default function Page() {
                 </p>
               </div>
 
-              <div className="bg-secondary/20 border border-stroke/30 rounded-lg p-6">
+              <div className="bg-secondary/20 border border-stroke/30 lg p-6">
                 <h3 className="font-display text-headings text-lg mb-3">Collaboration drives success</h3>
                 <p className="text-sm text-body">
                   When design, technology, and business goals work together, you can create products that not only work but actually make a difference.

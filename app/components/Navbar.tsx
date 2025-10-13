@@ -89,55 +89,55 @@ export default function Navbar() {
             }
           }}
         >
-            {/* Header with logo and close button */}
-            <div className="absolute top-0 left-0 right-0 h-14 flex items-center justify-between px-6 z-20" style={{ pointerEvents: 'auto' }}>
-              {/* Logo - same as desktop */}
-              <Link href="/" className="font-display text-headings tracking-wide">
-                J.STRANDLUND
-              </Link>
+          {/* Header with logo and close button */}
+          <div className="absolute top-0 left-0 right-0 h-14 flex items-center justify-between px-6 z-20" style={{ pointerEvents: 'auto' }}>
+            {/* Logo - same as desktop */}
+            <Link href="/" className="font-display text-headings tracking-wide">
+              J.STRANDLUND
+            </Link>
 
-              {/* Close button - same styling as hamburger */}
-              <button
-                onClick={(e) => {
-                  console.log('Close button clicked');
-                  e.preventDefault();
-                  e.stopPropagation();
-                  setOpen(false);
-                }}
-                onTouchEnd={(e) => {
-                  console.log('Close button touched');
-                  e.preventDefault();
-                  e.stopPropagation();
-                  setOpen(false);
-                }}
-                aria-label="Close menu"
-                className="inline-flex h-10 w-10 items-center justify-center border border-stroke bg-tertiary/60 text-headings hover:border-stroke2 transition touch-manipulation relative z-10"
-                style={{ touchAction: 'manipulation', pointerEvents: 'auto' }}
-              >
-                <X className="h-5 w-5" />
-              </button>
-            </div>
+            {/* Close button - same styling as hamburger */}
+            <button
+              onClick={(e) => {
+                console.log('Close button clicked');
+                e.preventDefault();
+                e.stopPropagation();
+                setOpen(false);
+              }}
+              onTouchEnd={(e) => {
+                console.log('Close button touched');
+                e.preventDefault();
+                e.stopPropagation();
+                setOpen(false);
+              }}
+              aria-label="Close menu"
+              className="inline-flex h-10 w-10 items-center justify-center border border-stroke bg-tertiary/60 text-headings hover:border-stroke2 transition touch-manipulation relative z-10"
+              style={{ touchAction: 'manipulation', pointerEvents: 'auto' }}
+            >
+              <X className="h-5 w-5" />
+            </button>
+          </div>
 
-            {/* Navigation links */}
-            <nav className="absolute inset-0 flex items-center justify-end pr-6">
-              <ul className="text-right flex flex-col items-end gap-8">
-                <li>
-                  <Link onClick={() => setOpen(false)} href="/#projects" className="font-display text-headings2 text-2xl link-underline">
-                    Projects
-                  </Link>
-                </li>
-                <li>
-                  <Link onClick={() => setOpen(false)} href="/about" className="font-display text-headings2 text-2xl link-underline">
-                    About me
-                  </Link>
-                </li>
-                <li>
-                  <Link onClick={() => setOpen(false)} href="/#contact" className="font-display text-headings2 text-2xl link-underline">
-                    Contact
-                  </Link>
-                </li>
-              </ul>
-            </nav>
+          {/* Navigation links */}
+          <nav className="absolute inset-0 flex items-center justify-end pr-6">
+            <ul className="text-right flex flex-col items-end gap-8">
+              <li>
+                <Link onClick={() => setOpen(false)} href="/#projects" className="font-display text-headings2 text-2xl link-underline">
+                  Projects
+                </Link>
+              </li>
+              <li>
+                <Link onClick={() => setOpen(false)} href="/about" className="font-display text-headings2 text-2xl link-underline">
+                  About me
+                </Link>
+              </li>
+              <li>
+                <Link onClick={() => setOpen(false)} href="/#contact" className="font-display text-headings2 text-2xl link-underline">
+                  Contact
+                </Link>
+              </li>
+            </ul>
+          </nav>
         </aside>
       )}
     </>

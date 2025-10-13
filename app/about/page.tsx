@@ -26,12 +26,12 @@ export default function About() {
         {/* Profile image */}
         <div className="flex justify-center mb-16">
           <div className="relative">
-            <div className="w-48 h-48 sm:w-56 sm:h-56 rounded-2xl border border-stroke/30 overflow-hidden">
+            <div className="w-48 h-48 sm:w-56 sm:h-56 2xl border border-stroke/30 overflow-hidden">
               <Image src="/Bild joakim .png" alt="Joakim Strandlund profile photo" width={224} height={224} className="w-full h-full object-cover" />
             </div>
             {/* Decorative elements */}
-            <div className="absolute -top-2 -right-2 w-6 h-6 bg-accent/20 rounded-full border border-accent/30" />
-            <div className="absolute -bottom-2 -left-2 w-4 h-4 bg-accent2/20 rounded-full border border-accent2/30" />
+            <div className="absolute -top-2 -right-2 w-6 h-6 bg-accent/20 full border border-accent/30" />
+            <div className="absolute -bottom-2 -left-2 w-4 h-4 bg-accent2/20 full border border-accent2/30" />
           </div>
         </div>
 
@@ -96,29 +96,29 @@ export default function About() {
           <section>
             <h2 className="font-heading text-headings text-2xl mb-6">What I do</h2>
             <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-              <div className="bg-secondary/20 border border-stroke/30 rounded-xl p-6">
+              <div className="bg-secondary/20 border border-stroke/30 xl p-6">
                 <h3 className="font-heading text-headings text-lg mb-3">User Research</h3>
                 <p className="text-body text-sm leading-relaxed">
                   Interviews, usability testing, user journeys, and persona development to understand user needs.
                 </p>
               </div>
-              <div className="bg-secondary/20 border border-stroke/30 rounded-xl p-6">
+              <div className="bg-secondary/20 border border-stroke/30 xl p-6">
                 <h3 className="font-heading text-headings text-lg mb-3">Interface Design</h3>
                 <p className="text-body text-sm leading-relaxed">Creating intuitive and beautiful interfaces that guide users toward their goals.</p>
               </div>
-              <div className="bg-secondary/20 border border-stroke/30 rounded-xl p-6">
+              <div className="bg-secondary/20 border border-stroke/30 xl p-6">
                 <h3 className="font-heading text-headings text-lg mb-3">Prototyping</h3>
                 <p className="text-body text-sm leading-relaxed">Interactive prototypes to test ideas and communicate design concepts effectively.</p>
               </div>
-              <div className="bg-secondary/20 border border-stroke/30 rounded-xl p-6">
+              <div className="bg-secondary/20 border border-stroke/30 xl p-6">
                 <h3 className="font-heading text-headings text-lg mb-3">Design Systems</h3>
                 <p className="text-body text-sm leading-relaxed">Building scalable design systems that ensure consistency and efficiency across products.</p>
               </div>
-              <div className="bg-secondary/20 border border-stroke/30 rounded-xl p-6">
+              <div className="bg-secondary/20 border border-stroke/30 xl p-6">
                 <h3 className="font-heading text-headings text-lg mb-3">Strategy</h3>
                 <p className="text-body text-sm leading-relaxed">Aligning design decisions with business goals and user needs for sustainable growth.</p>
               </div>
-              <div className="bg-secondary/20 border border-stroke/30 rounded-xl p-6">
+              <div className="bg-secondary/20 border border-stroke/30 xl p-6">
                 <h3 className="font-heading text-headings text-lg mb-3">Collaboration</h3>
                 <p className="text-body text-sm leading-relaxed">Working closely with cross-functional teams to bring designs to life.</p>
               </div>

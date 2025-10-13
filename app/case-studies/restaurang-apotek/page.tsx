@@ -16,17 +16,17 @@ export default function Page() {
       {/* Hero visual */}
       <section className="pb-16">
         <div className="max-w-6xl mx-auto px-6">
-          <div className="rounded-2xl border border-stroke bg-tertiary/20 p-8">
+          <div className="2xl border border-stroke bg-tertiary/20 p-8">
             <div className="relative">
-              <div className="bg-gradient-to-br from-slate-900 to-slate-800 rounded-xl p-8">
+              <div className="bg-gradient-to-br from-slate-900 to-slate-800 xl p-8">
                 <div className="max-w-5xl mx-auto">
-                  <div className="relative rounded-2xl overflow-hidden">
+                  <div className="relative 2xl overflow-hidden">
                     <Image
                       src="/Restaurang apotek - hero section.png"
                       alt="Restaurang Apotek website redesign overview"
                       width={1200}
                       height={800}
-                      className="w-full h-auto rounded-2xl shadow-2xl"
+                      className="w-full h-auto 2xl shadow-2xl"
                       priority
                     />
                   </div>
@@ -76,7 +76,7 @@ export default function Page() {
                 </p>
 
                 <div className="grid md:grid-cols-2 gap-6 mt-8">
-                  <div className="bg-red-500/10 border border-red-500/20 rounded-lg p-6">
+                  <div className="bg-red-500/10 border border-red-500/20 lg p-6">
                     <h3 className="font-display text-headings text-lg mb-3 flex items-center gap-2">
                       <span className="text-2xl">⚠️</span>
                       What users struggled with
@@ -101,7 +101,7 @@ export default function Page() {
                     </ul>
                   </div>
 
-                  <div className="bg-accent/10 border border-accent/20 rounded-lg p-6">
+                  <div className="bg-accent/10 border border-accent/20 lg p-6">
                     <h3 className="font-display text-headings text-lg mb-3 flex items-center gap-2">
                       <span className="text-2xl">🎯</span>
                       Business needs
@@ -145,14 +145,14 @@ export default function Page() {
           </div>
 
           <div className="max-w-md mx-auto">
-            <div className="bg-primary/40 border border-stroke/30 rounded-xl p-6">
+            <div className="bg-primary/40 border border-stroke/30 xl p-6">
               <div className="mb-6">
                 <Image
                   src="/Rstaurang apotek - landingpage phone.png"
                   alt="Restaurang Apotek landing page mobile view"
                   width={300}
                   height={600}
-                  className="w-full max-w-[280px] h-auto rounded-lg shadow-lg mx-auto"
+                  className="w-full max-w-[280px] h-auto lg shadow-lg mx-auto"
                 />
               </div>
               <h3 className="font-display text-headings text-xl mb-3 text-center">Landing Page</h3>
@@ -191,14 +191,14 @@ export default function Page() {
           </div>
 
           <div className="max-w-md mx-auto">
-            <div className="bg-secondary/20 border border-stroke/30 rounded-xl p-6">
+            <div className="bg-secondary/20 border border-stroke/30 xl p-6">
               <div className="mb-6">
                 <Image
                   src="/Rstaurang apotek - navabar open phone.png"
                   alt="Restaurang Apotek mobile navigation menu"
                   width={300}
                   height={600}
-                  className="w-full max-w-[280px] h-auto rounded-lg shadow-lg mx-auto"
+                  className="w-full max-w-[280px] h-auto lg shadow-lg mx-auto"
                 />
               </div>
               <h3 className="font-display text-headings text-xl mb-3 text-center">Mobile Navigation</h3>
@@ -239,14 +239,14 @@ export default function Page() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
-            <div className="bg-primary/40 border border-stroke/30 rounded-xl p-6">
+            <div className="bg-primary/40 border border-stroke/30 xl p-6">
               <div className="mb-6">
                 <Image
                   src="/Rstaurang apotek - foodmeny phone.png"
                   alt="Restaurang Apotek food menu mobile view"
                   width={300}
                   height={600}
-                  className="w-full max-w-[240px] h-auto rounded-lg shadow-lg mx-auto"
+                  className="w-full max-w-[240px] h-auto lg shadow-lg mx-auto"
                 />
               </div>
               <h3 className="font-display text-headings text-xl mb-3 text-center">Food Menu</h3>
@@ -267,14 +267,14 @@ export default function Page() {
               </ul>
             </div>
 
-            <div className="bg-primary/40 border border-stroke/30 rounded-xl p-6">
+            <div className="bg-primary/40 border border-stroke/30 xl p-6">
               <div className="mb-6">
                 <Image
                   src="/Rstaurang apotek - cocktail phone.png"
                   alt="Restaurang Apotek cocktail menu mobile view"
                   width={300}
                   height={600}
-                  className="w-full max-w-[240px] h-auto rounded-lg shadow-lg mx-auto"
+                  className="w-full max-w-[240px] h-auto lg shadow-lg mx-auto"
                 />
               </div>
               <h3 className="font-display text-headings text-xl mb-3 text-center">Cocktail Menu</h3>
@@ -311,14 +311,14 @@ export default function Page() {
           </div>
 
           <div className="max-w-md mx-auto">
-            <div className="bg-secondary/20 border border-stroke/30 rounded-xl p-6">
+            <div className="bg-secondary/20 border border-stroke/30 xl p-6">
               <div className="mb-6">
                 <Image
                   src="/Rstaurang apotek - galleri phone.png"
                   alt="Restaurang Apotek gallery section mobile view"
                   width={300}
                   height={600}
-                  className="w-full max-w-[280px] h-auto rounded-lg shadow-lg mx-auto"
+                  className="w-full max-w-[280px] h-auto lg shadow-lg mx-auto"
                 />
               </div>
               <h3 className="font-display text-headings text-xl mb-3 text-center">Gallery</h3>
@@ -355,14 +355,14 @@ export default function Page() {
           </div>
 
           <div className="max-w-md mx-auto">
-            <div className="bg-primary/40 border border-stroke/30 rounded-xl p-6">
+            <div className="bg-primary/40 border border-stroke/30 xl p-6">
               <div className="mb-6">
                 <Image
                   src="/Rstaurang apotek - footer phone.png"
                   alt="Restaurang Apotek footer section mobile view"
                   width={300}
                   height={600}
-                  className="w-full max-w-[280px] h-auto rounded-lg shadow-lg mx-auto"
+                  className="w-full max-w-[280px] h-auto lg shadow-lg mx-auto"
                 />
               </div>
               <h3 className="font-display text-headings text-xl mb-3 text-center">Footer</h3>
@@ -397,7 +397,7 @@ export default function Page() {
           <div className="space-y-8">
             <p className="text-lg text-body2">I tested the redesign with users and iterated based on feedback. Some decisions needed adjusting.</p>
 
-            <div className="bg-secondary/20 border border-stroke/30 rounded-xl p-8 space-y-6">
+            <div className="bg-secondary/20 border border-stroke/30 xl p-8 space-y-6">
               <h3 className="font-display text-headings text-xl mb-4">Key Iteration: Mobile Navigation</h3>
               <p className="text-body text-sm">
                 Initially, I placed the phone number and booking button at the top of the navigation. Testing revealed this created a "fast food chain" feeling
@@ -406,7 +406,7 @@ export default function Page() {
               <p className="text-body text-sm">
                 Moving these elements into the dropdown menu resulted in clearer visual hierarchy, a more intuitive flow, and better focus on navigation.
               </p>
-              <div className="bg-accent/10 border border-accent/20 rounded-lg p-4 mt-4">
+              <div className="bg-accent/10 border border-accent/20 lg p-4 mt-4">
                 <p className="text-accent text-sm font-medium">
                   Lesson learned: Sometimes less visible doesn't mean less accessible. Context and clarity matter more than prominence.
                 </p>
@@ -414,7 +414,7 @@ export default function Page() {
             </div>
 
             <div className="grid md:grid-cols-2 gap-8">
-              <div className="bg-secondary/20 border border-stroke/30 rounded-xl p-6">
+              <div className="bg-secondary/20 border border-stroke/30 xl p-6">
                 <h3 className="font-display text-headings text-lg mb-4 flex items-center gap-2">
                   <span className="text-2xl">✅</span>
                   What worked
@@ -435,7 +435,7 @@ export default function Page() {
                 </ul>
               </div>
 
-              <div className="bg-secondary/20 border border-stroke/30 rounded-xl p-6">
+              <div className="bg-secondary/20 border border-stroke/30 xl p-6">
                 <h3 className="font-display text-headings text-lg mb-4 flex items-center gap-2">
                   <span className="text-2xl">🎯</span>
                   Impact
@@ -474,7 +474,7 @@ export default function Page() {
             </p>
 
             <div className="space-y-6">
-              <div className="bg-primary/60 border border-stroke/30 rounded-lg p-6">
+              <div className="bg-primary/60 border border-stroke/30 lg p-6">
                 <h3 className="font-display text-headings text-lg mb-3">Accessibility opens doors</h3>
                 <p className="text-sm text-body">
                   Building for accessibility from the start made the site better for everyone, not just users with disabilities. Clear navigation and semantic
@@ -482,14 +482,14 @@ export default function Page() {
                 </p>
               </div>
 
-              <div className="bg-primary/60 border border-stroke/30 rounded-lg p-6">
+              <div className="bg-primary/60 border border-stroke/30 lg p-6">
                 <h3 className="font-display text-headings text-lg mb-3">User testing catches blind spots</h3>
                 <p className="text-sm text-body">
                   What seemed clear to me wasn't always clear to users. Testing revealed issues I would have missed, and their feedback shaped better solutions.
                 </p>
               </div>
 
-              <div className="bg-primary/60 border border-stroke/30 rounded-lg p-6">
+              <div className="bg-primary/60 border border-stroke/30 lg p-6">
                 <h3 className="font-display text-headings text-lg mb-3">Mobile-first matters</h3>
                 <p className="text-sm text-body">
                   Most users were browsing on mobile. Designing for small screens first ensured the experience worked where it mattered most.
@@ -497,7 +497,7 @@ export default function Page() {
               </div>
             </div>
 
-            <div className="mt-12 bg-accent/10 border border-accent/20 rounded-xl p-8">
+            <div className="mt-12 bg-accent/10 border border-accent/20 xl p-8">
               <p className="text-accent font-medium text-center text-lg">"The best designs solve problems you didn't know existed until users showed you."</p>
             </div>
           </div>

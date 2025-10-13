@@ -87,7 +87,7 @@ export default function Home() {
 
           {/* Floating code snippets */}
           <div className="absolute top-1/4 left-8 opacity-20">
-            <div className="bg-secondary/40 border border-stroke/30 rounded-lg p-4 text-xs font-mono text-body">
+            <div className="bg-secondary/40 border border-stroke/30 p-4 text-xs font-mono text-body">
               <div className="text-accent">const</div>
               <div className="text-headings">userExperience</div>
               <div className="text-body">= {`{`}</div>
@@ -99,7 +99,7 @@ export default function Home() {
           </div>
 
           <div className="absolute top-1/3 right-8 opacity-20">
-            <div className="bg-secondary/40 border border-stroke/30 rounded-lg p-4 text-xs font-mono text-body">
+            <div className="bg-secondary/40 border border-stroke/30 p-4 text-xs font-mono text-body">
               <div className="text-accent">function</div>
               <div className="text-headings">solveProblem</div>
               <div className="text-body">() {`{`}</div>
@@ -178,22 +178,22 @@ export default function Home() {
                         {/* Background pattern for other projects */}
                         <div className="absolute inset-0 opacity-20 overflow-hidden">
                           <div className="absolute inset-0 bg-gradient-to-br from-accent/10 via-transparent to-accent/5" />
-                          <div className="absolute top-4 left-4 w-8 h-8 border border-accent/20 rounded-lg" />
-                          <div className="absolute top-4 right-4 w-6 h-6 border border-accent/20 rounded-full" />
-                          <div className="absolute bottom-4 left-4 w-4 h-4 border border-accent/20 rounded" />
-                          <div className="absolute bottom-4 right-4 w-10 h-2 bg-accent/20 rounded-full" />
+                          <div className="absolute top-4 left-4 w-8 h-8 border border-accent/20" />
+                          <div className="absolute top-4 right-4 w-6 h-6 border border-accent/20" />
+                          <div className="absolute bottom-4 left-4 w-4 h-4 border border-accent/20" />
+                          <div className="absolute bottom-4 right-4 w-10 h-2 bg-accent/20" />
                         </div>
 
                         {/* Main content */}
                         <div className="absolute inset-0 flex items-center justify-center">
                           <div className="text-center">
                             {card.title.includes('Treebula') && (
-                              <div className="w-20 h-20 mx-auto mb-4 rounded-3xl bg-gradient-to-br from-green-500/30 to-emerald-500/30 border border-green-400/40 flex items-center justify-center group-hover:from-green-500/50 group-hover:to-emerald-500/50 group-hover:border-green-400/60 group-hover:scale-110 transition-all duration-500 shadow-lg shadow-green-500/20">
+                              <div className="w-20 h-20 mx-auto mb-4 bg-gradient-to-br from-green-500/30 to-emerald-500/30 border border-green-400/40 flex items-center justify-center group-hover:from-green-500/50 group-hover:to-emerald-500/50 group-hover:border-green-400/60 group-hover:scale-110 transition-all duration-500 shadow-lg shadow-green-500/20">
                                 <div className="text-3xl group-hover:scale-110 transition-transform duration-300">🌲</div>
                               </div>
                             )}
                             {card.title.includes('Restaurang') && (
-                              <div className="w-20 h-20 mx-auto mb-4 rounded-3xl bg-gradient-to-br from-orange-500/30 to-red-500/30 border border-orange-400/40 flex items-center justify-center group-hover:from-orange-500/50 group-hover:to-red-500/50 group-hover:border-orange-400/60 group-hover:scale-110 transition-all duration-500 shadow-lg shadow-orange-500/20">
+                              <div className="w-20 h-20 mx-auto mb-4 bg-gradient-to-br from-orange-500/30 to-red-500/30 border border-orange-400/40 flex items-center justify-center group-hover:from-orange-500/50 group-hover:to-red-500/50 group-hover:border-orange-400/60 group-hover:scale-110 transition-all duration-500 shadow-lg shadow-orange-500/20">
                                 <div className="text-3xl group-hover:scale-110 transition-transform duration-300">🍽️</div>
                               </div>
                             )}
@@ -242,7 +242,7 @@ export default function Home() {
           </div>
 
           {/* Testimonial card */}
-          <div className="bg-primary/40 border border-stroke/30 rounded-2xl p-8 sm:p-12">
+          <div className="bg-primary/40 border border-stroke/30 p-8 sm:p-12">
             {/* Quote */}
             <blockquote className="font-display text-headings text-lg sm:text-xl leading-relaxed mb-8 text-center">
               &quot;It&apos;s been a real pleasure working with Joakim. He&apos;s fast, pragmatic, and has a great instinct for delivering MVPs and PoCs that
@@ -252,7 +252,7 @@ export default function Home() {
 
             {/* Attribution */}
             <div className="flex items-center justify-center gap-4 pt-4 border-t border-stroke/30">
-              <div className="w-12 h-12 rounded-full bg-accent/20 border border-accent/30 flex items-center justify-center">
+              <div className="w-12 h-12 bg-accent/20 border border-accent/30 flex items-center justify-center">
                 <span className="text-accent font-heading font-bold text-lg">ML</span>
               </div>
               <div className="text-left">
