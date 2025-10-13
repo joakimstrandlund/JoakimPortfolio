@@ -101,7 +101,7 @@ export default function Home() {
                   }}
                 >
                   {/* Card background with light border */}
-                  <div className="absolute inset-0 bg-secondary/10 border border-stroke group-hover:border-accent/30 transition-all duration-500 group-hover:shadow-2xl group-hover:shadow-accent/10 group-hover:bg-secondary/20" />
+                  <div className="absolute inset-0 bg-secondary/10 border border-stroke group-hover:border-stroke2 transition-all duration-500 group-hover:shadow-2xl group-hover:shadow-black/20 group-hover:bg-secondary/20" />
 
                   {/* Image placeholder */}
                   <div className="aspect-[16/10] bg-gradient-to-br from-tertiary/30 to-tertiary/50 relative overflow-hidden group-hover:scale-105 transition-transform duration-500 ease-out">
