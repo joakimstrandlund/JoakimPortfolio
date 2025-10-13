@@ -10,7 +10,7 @@ module.exports = {
         grotesk: ['var(--font-familjen-grotesk)', 'ui-sans-serif', 'system-ui', 'Segoe UI', 'Helvetica', 'Arial', 'sans-serif'],
       },
       colors: {
-        primary: '#242329',
+                primary: '#202024',
         secondary: '#1e1e1e',
         tertiary: '#121417',
         headings: '#f5f5f5',
