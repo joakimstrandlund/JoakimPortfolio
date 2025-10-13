@@ -10,7 +10,7 @@ html {
 :root {
   --font-inter: 'Inter Variable';
   --font-familjen-grotesk: 'Familjen Grotesk Variable';
-  --font-spicy-rice: 'Spicy Rice';
+  --font-spicy-rice: 'Spicy Rice', cursive;
 
   /* Color variables for custom classes */
   --color-primary: #121212;

@@ -1,7 +1,6 @@
 import type { Metadata } from 'next';
 import '@fontsource-variable/inter';
 import '@fontsource-variable/familjen-grotesk';
-import '@fontsource/spicy-rice';
 import './globals.css';
 import Link from 'next/link';
 import { Github, Linkedin, Mail } from 'lucide-react';
@@ -19,8 +18,13 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className="font-sans antialiased">
+        <html lang="en">
+          <head>
+            <link rel="preconnect" href="https://fonts.googleapis.com" />
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+            <link href="https://fonts.googleapis.com/css2?family=Spicy+Rice&display=swap" rel="stylesheet" />
+          </head>
+          <body className="font-sans antialiased">
         <Navbar />
 
         {children}
@@ -30,7 +34,7 @@ export default function RootLayout({
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
               {/* Brand / Blurb */}
               <div className="space-y-3">
-                        <div className="font-display text-headings text-lg">Joakim Strandlund</div>
+                <div className="font-display text-headings text-lg">Joakim Strandlund</div>
                 <p className="text-sm text-body">
                   UX/UI Designer crafting user-friendly, modern digital experiences. Calm, pragmatic, and focused on outcomes.
                 </p>
