@@ -99,7 +99,7 @@ export default function Page() {
                     </ul>
                   </div>
 
-                  <div className="bg-accent/10 border border-accent/20 lg p-6">
+                  <div className="bg-secondary lg p-6">
                     <h3 className="font-grotesk font-semibold text-headings text-lg mb-3 flex items-center gap-2">
                       <span className="text-2xl">🎯</span>
                       Business needs
@@ -404,7 +404,7 @@ export default function Page() {
               <p className="text-body text-sm">
                 Moving these elements into the dropdown menu resulted in clearer visual hierarchy, a more intuitive flow, and better focus on navigation.
               </p>
-              <div className="bg-accent/10 border border-accent/20 lg p-4 mt-4">
+              <div className="bg-secondary lg p-4 mt-4">
                 <p className="text-accent text-sm font-medium">
                   Lesson learned: Sometimes less visible doesn't mean less accessible. Context and clarity matter more than prominence.
                 </p>
@@ -495,7 +495,7 @@ export default function Page() {
               </div>
             </div>
 
-            <div className="mt-12 bg-accent/10 border border-accent/20 xl p-8">
+            <div className="mt-12 bg-secondary xl p-8">
               <p className="text-accent font-medium text-center text-lg">"The best designs solve problems you didn't know existed until users showed you."</p>
             </div>
           </div>

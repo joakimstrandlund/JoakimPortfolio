@@ -118,7 +118,7 @@ export default function Page() {
                     </ul>
                   </div>
 
-                  <div className="bg-accent/10 lg p-6">
+                  <div className="bg-secondary lg p-6">
                     <h3 className="font-grotesk font-semibold text-headings text-lg mb-3 flex items-center gap-2">
                       <span className="text-2xl">🎯</span>
                       Design Hypothesis
@@ -333,7 +333,7 @@ export default function Page() {
               Each step uses simple icons, clear labels, and supportive microcopy. The progress is visible but not overwhelming. Users can go back, skip, or
               pause anytime.
             </p>
-            <div className="bg-accent/10 border border-accent/20 lg p-6">
+            <div className="bg-secondary lg p-6">
               <p className="text-accent font-medium">
                 "The flow respects the user's time while gathering meaningful insights. No guilt. No pressure. Just care."
               </p>
@@ -516,7 +516,7 @@ export default function Page() {
               </div>
             </div>
 
-            <div className="mt-12 bg-accent/10 border border-accent/20 xl p-8">
+            <div className="mt-12 bg-secondary xl p-8">
               <p className="text-accent font-medium text-center text-lg">"Good UX isn't always about more features. It's often about fewer, clearer steps."</p>
             </div>
           </div>

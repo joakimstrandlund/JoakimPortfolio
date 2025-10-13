@@ -121,7 +121,7 @@ export default function Page() {
                   challenges. This made it possible to quickly test ideas, iterate, and ensure every function created real value.
                 </p>
 
-                <div className="bg-accent/10 border border-accent/20 lg p-6 mt-8">
+                <div className="bg-secondary lg p-6 mt-8">
                   <h3 className="font-grotesk font-semibold text-headings text-lg mb-4">Key Insights</h3>
                   <ul className="space-y-3 text-sm">
                     <li className="flex items-start gap-3">
@@ -298,7 +298,7 @@ export default function Page() {
               </div>
             </div>
 
-            <div className="bg-accent/10 border border-accent/20 lg p-6 mt-8">
+            <div className="bg-secondary lg p-6 mt-8">
               <h3 className="font-display text-headings text-lg mb-4">Designing for the target group</h3>
               <p className="text-body text-sm mb-4">With users aged 55–80, clarity and simplicity were non-negotiable. Every design decision focused on:</p>
               <ul className="space-y-2 text-sm">
@@ -385,7 +385,7 @@ export default function Page() {
               inexperienced target group.
             </p>
 
-            <div className="bg-accent/10 border border-accent/20 xl p-8 mt-8">
+            <div className="bg-secondary xl p-8 mt-8">
               <p className="text-accent font-medium text-center text-lg">
                 "This project proved how close collaboration between design, development, and business can create products that strengthen the brand and meet
                 real needs in a traditionally analog industry."
