@@ -29,9 +29,6 @@ export default function About() {
             <div className="w-48 h-48 sm:w-56 sm:h-56 2xl border border-stroke/30 overflow-hidden">
               <Image src="/Bild joakim .png" alt="Joakim Strandlund profile photo" width={224} height={224} className="w-full h-full object-cover" />
             </div>
-            {/* Decorative elements */}
-            <div className="absolute -top-2 -right-2 w-6 h-6 bg-accent/20 full border border-accent/30" />
-            <div className="absolute -bottom-2 -left-2 w-4 h-4 bg-accent2/20 full border border-accent2/30" />
           </div>
         </div>
 
