@@ -5,11 +5,11 @@ module.exports = {
     extend: {
       fontFamily: {
         sans: ['var(--font-inter)', 'ui-sans-serif', 'system-ui', 'Segoe UI', 'Helvetica', 'Arial', 'sans-serif'],
-              heading: ['var(--font-spicy-rice)', 'cursive', 'ui-sans-serif', 'system-ui', 'Segoe UI', 'Helvetica', 'Arial', 'sans-serif'],
-              display: ['var(--font-spicy-rice)', 'cursive', 'ui-sans-serif', 'system-ui', 'Segoe UI', 'Helvetica', 'Arial', 'sans-serif'],
+        heading: ['var(--font-spicy-rice)', 'cursive', 'ui-sans-serif', 'system-ui', 'Segoe UI', 'Helvetica', 'Arial', 'sans-serif'],
+        display: ['var(--font-spicy-rice)', 'cursive', 'ui-sans-serif', 'system-ui', 'Segoe UI', 'Helvetica', 'Arial', 'sans-serif'],
       },
-              colors: {
-                primary: '#2D2C32',
+      colors: {
+        primary: '#2D2C32',
         secondary: '#1e1e1e',
         tertiary: '#121417',
         headings: '#f5f5f5',
@@ -19,8 +19,8 @@ module.exports = {
         accent: '#ffe07d',
         hover: '#ffda4b',
         accent2: '#6a2b89',
-        stroke: '#2a2a2a',
-        stroke2: '#3c3c3c',
+        stroke: '#ffffff',
+        stroke2: '#e0e0e0',
         tagBg: '#3a3200',
         tagText: '#ffe07d',
         link: '#ffe07d',
