@@ -18,18 +18,16 @@ export default function Page() {
         <div className="max-w-6xl mx-auto px-6">
           <div className="2xl bg-tertiary/20 p-8">
             <div className="relative">
-              <div className="bg-gradient-to-br from-slate-900 to-slate-800 xl p-8">
-                <div className="max-w-5xl mx-auto">
-                  <div className="relative 2xl overflow-hidden">
-                    <Image
-                      src="/Loggi - new hero section.png"
-                      alt="Loggi wellness app overview showing multiple screens and features"
-                      width={1200}
-                      height={800}
-                      className="w-full h-auto 2xl shadow-2xl"
-                      priority
-                    />
-                  </div>
+              <div className="max-w-5xl mx-auto">
+                <div className="relative 2xl overflow-hidden">
+                  <Image
+                    src="/Loggi - new hero section.png"
+                    alt="Loggi wellness app overview showing multiple screens and features"
+                    width={1200}
+                    height={800}
+                    className="w-full h-auto 2xl shadow-2xl"
+                    priority
+                  />
                 </div>
               </div>
             </div>
