@@ -168,32 +168,32 @@ export default function Page() {
           </div>
 
           <div className="grid grid-cols-2 md:grid-cols-3 gap-6 max-w-5xl mx-auto">
-            <div className="bg-primary/40 lg p-6 text-center">
+            <div className="bg-secondary lg p-6 text-center">
               <div className="text-3xl mb-3">💡</div>
               <h3 className="font-grotesk font-semibold text-headings text-lg mb-2">Simple & Clear</h3>
               <p className="text-body text-sm">Minimal technical competence required</p>
             </div>
-            <div className="bg-primary/40 lg p-6 text-center">
+            <div className="bg-secondary lg p-6 text-center">
               <div className="text-3xl mb-3">♿</div>
               <h3 className="font-grotesk font-semibold text-headings text-lg mb-2">Accessible</h3>
               <p className="text-body text-sm">WCAG guidelines and clear contrasts</p>
             </div>
-            <div className="bg-primary/40 lg p-6 text-center">
+            <div className="bg-secondary lg p-6 text-center">
               <div className="text-3xl mb-3">✨</div>
               <h3 className="font-grotesk font-semibold text-headings text-lg mb-2">Modern</h3>
               <p className="text-body text-sm">Clean aesthetics signaling innovation</p>
             </div>
-            <div className="bg-primary/40 lg p-6 text-center">
+            <div className="bg-secondary lg p-6 text-center">
               <div className="text-3xl mb-3">📱</div>
               <h3 className="font-grotesk font-semibold text-headings text-lg mb-2">Mobile-First</h3>
               <p className="text-body text-sm">Optimized for on-the-go access</p>
             </div>
-            <div className="bg-primary/40 lg p-6 text-center">
+            <div className="bg-secondary lg p-6 text-center">
               <div className="text-3xl mb-3">🎯</div>
               <h3 className="font-grotesk font-semibold text-headings text-lg mb-2">Focused</h3>
               <p className="text-body text-sm">Minimal choices to reduce cognitive load</p>
             </div>
-            <div className="bg-primary/40 lg p-6 text-center">
+            <div className="bg-secondary lg p-6 text-center">
               <div className="text-3xl mb-3">🌲</div>
               <h3 className="font-grotesk font-semibold text-headings text-lg mb-2">Contextual</h3>
               <p className="text-body text-sm">Property-specific, relevant data</p>
@@ -273,7 +273,7 @@ export default function Page() {
             </p>
 
             <div className="grid md:grid-cols-3 gap-6 mt-8">
-              <div className="bg-primary/40 lg p-6">
+              <div className="bg-secondary lg p-6">
                 <h3 className="font-grotesk font-semibold text-headings text-lg mb-3 flex items-center gap-2">
                   <span className="text-2xl">📐</span>
                   Wireframes
@@ -281,7 +281,7 @@ export default function Page() {
                 <p className="text-sm text-body">Quick wireframes to visualize the product's basic structure and flow</p>
               </div>
 
-              <div className="bg-primary/40 lg p-6">
+              <div className="bg-secondary lg p-6">
                 <h3 className="font-grotesk font-semibold text-headings text-lg mb-3 flex items-center gap-2">
                   <span className="text-2xl">🎨</span>
                   Prototypes
@@ -289,7 +289,7 @@ export default function Page() {
                 <p className="text-sm text-body">Interactive prototypes in Figma to test interactions and flows</p>
               </div>
 
-              <div className="bg-primary/40 lg p-6">
+              <div className="bg-secondary lg p-6">
                 <h3 className="font-grotesk font-semibold text-headings text-lg mb-3 flex items-center gap-2">
                   <span className="text-2xl">🔄</span>
                   Iterations
