@@ -9,7 +9,7 @@ module.exports = {
         display: ['var(--font-spicy-rice)', 'cursive', 'ui-sans-serif', 'system-ui', 'Segoe UI', 'Helvetica', 'Arial', 'sans-serif'],
       },
       colors: {
-        primary: '#2D2C32',
+                primary: '#242329',
         secondary: '#1e1e1e',
         tertiary: '#121417',
         headings: '#f5f5f5',
