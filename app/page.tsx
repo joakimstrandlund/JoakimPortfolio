@@ -61,7 +61,7 @@ export default function Home() {
             {/* Scroll indicator */}
             <div className="flex flex-col items-center gap-3 text-body text-sm animate-fadeIn delay-600">
               <span>Scroll to explore</span>
-              <div className="w-6 h-6 flex items-center justify-center">
+              <div className="w-6 h-6 flex items-center justify-center animate-bounce">
                 <svg
                   width="16"
                   height="16"

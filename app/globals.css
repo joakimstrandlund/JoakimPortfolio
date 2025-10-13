@@ -147,6 +147,20 @@ body {
 .animate-fadeIn {
   opacity: 0;
 }
+
+/* Bounce animation for scroll arrow */
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+.animate-bounce {
+  animation: bounce 2s ease-in-out infinite;
+}
 .link-underline::after {
   content: '';
   position: absolute;
