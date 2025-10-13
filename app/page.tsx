@@ -187,12 +187,15 @@ export default function Home() {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 lg:gap-10">
             {cards.map((card, index) => (
               <motion.div key={card.href} initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5, delay: index * 0.1 }}>
-                <Link
-                  href={card.href}
-                  className="group block h-full relative overflow-hidden transform transition-all duration-300 hover:-translate-y-2 rounded-2xl"
-                >
+                        <Link
+                          href={card.href}
+                          className="group block h-full relative overflow-hidden transform transition-all duration-500 hover:-translate-y-3 hover:scale-[1.02] rounded-2xl"
+                          style={{
+                            transitionTimingFunction: 'cubic-bezier(0.34, 1.56, 0.64, 1)'
+                          }}
+                        >
                   {/* Card background with subtle border */}
-                  <div className="absolute inset-0 bg-secondary/10 border border-stroke/30 rounded-2xl group-hover:border-stroke/50 transition-all duration-300 group-hover:shadow-lg group-hover:shadow-black/10" />
+                  <div className="absolute inset-0 bg-secondary/10 border border-stroke/30 rounded-2xl group-hover:border-accent/30 transition-all duration-500 group-hover:shadow-2xl group-hover:shadow-accent/10 group-hover:bg-secondary/20" />
 
                   {/* Image placeholder */}
                   <div className="aspect-[16/10] bg-gradient-to-br from-tertiary/30 to-tertiary/50 relative overflow-hidden group-hover:scale-105 transition-transform duration-500 ease-out rounded-t-2xl">
