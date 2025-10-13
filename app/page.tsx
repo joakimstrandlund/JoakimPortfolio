@@ -30,23 +30,23 @@ export default function Home() {
             {/* Main headline */}
             <div>
               <h1 className="font-display text-5xl sm:text-6xl md:text-7xl text-headings leading-tight tracking-tight">
-                <span className="inline-block">Creating digital</span>
+                <span className="inline-block animate-fadeInUp">Creating digital</span>
                 <br />
-                <span className="inline-block text-accent">experiences</span>
-                <span className="inline-block ml-2">that matter</span>
+                <span className="inline-block text-accent animate-fadeInUp delay-200">experiences</span>
+                <span className="inline-block ml-2 animate-fadeInUp delay-300">that matter</span>
               </h1>
             </div>
 
             {/* Tagline */}
             <div className="space-y-4">
-              <p className="text-body text-lg max-w-2xl mx-auto leading-relaxed">
+              <p className="text-body text-lg max-w-2xl mx-auto leading-relaxed animate-fadeIn delay-400">
                 I'm <span className="text-accent font-medium">Joakim Strandlund</span>, a UX/UI Designer focused on solving real problems through user-centered
                 design, clean interfaces, and thoughtful interactions.
               </p>
             </div>
 
             {/* Interactive elements */}
-            <div className="flex flex-col sm:flex-row gap-6 justify-center items-center mb-16">
+            <div className="flex flex-col sm:flex-row gap-6 justify-center items-center mb-16 animate-fadeIn delay-500">
               <a href="#projects" className="btn btn-primary text-lg px-8 py-4">
                 Explore my work
               </a>
@@ -59,7 +59,7 @@ export default function Home() {
             </div>
 
             {/* Scroll indicator */}
-            <div className="flex flex-col items-center gap-3 text-body text-sm">
+            <div className="flex flex-col items-center gap-3 text-body text-sm animate-fadeIn delay-600">
               <span>Scroll to explore</span>
               <div className="w-6 h-6 flex items-center justify-center">
                 <svg
