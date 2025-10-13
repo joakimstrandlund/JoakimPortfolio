@@ -273,7 +273,7 @@ export default function Page() {
             </p>
 
             <div className="grid md:grid-cols-3 gap-6 mt-8">
-              <div className="bg-secondary lg p-6 border-l-4 border-accent">
+              <div className="border border-stroke/30 p-6">
                 <h3 className="font-grotesk font-semibold text-headings text-lg mb-3 flex items-center gap-2">
                   <span className="text-2xl">📐</span>
                   Wireframes
@@ -281,7 +281,7 @@ export default function Page() {
                 <p className="text-sm text-body">Quick wireframes to visualize the product's basic structure and flow</p>
               </div>
 
-              <div className="bg-secondary lg p-6 border-l-4 border-accent">
+              <div className="border border-stroke/30 p-6">
                 <h3 className="font-grotesk font-semibold text-headings text-lg mb-3 flex items-center gap-2">
                   <span className="text-2xl">🎨</span>
                   Prototypes
@@ -289,7 +289,7 @@ export default function Page() {
                 <p className="text-sm text-body">Interactive prototypes in Figma to test interactions and flows</p>
               </div>
 
-              <div className="bg-secondary lg p-6 border-l-4 border-accent">
+              <div className="border border-stroke/30 p-6">
                 <h3 className="font-grotesk font-semibold text-headings text-lg mb-3 flex items-center gap-2">
                   <span className="text-2xl">🔄</span>
                   Iterations
@@ -410,7 +410,7 @@ export default function Page() {
             </p>
 
             <div className="space-y-6">
-              <div className="bg-secondary lg p-6 border-l-4 border-accent">
+              <div className="border border-stroke/30 p-6">
                 <h3 className="font-grotesk font-semibold text-headings text-lg mb-3">Research isn't always traditional</h3>
                 <p className="text-sm text-body">
                   User research doesn't always follow a textbook pattern. In this case, the strongest insights came from internal expertise deeply rooted in the
@@ -418,7 +418,7 @@ export default function Page() {
                 </p>
               </div>
 
-              <div className="bg-secondary lg p-6 border-l-4 border-accent">
+              <div className="border border-stroke/30 p-6">
                 <h3 className="font-grotesk font-semibold text-headings text-lg mb-3">Balance function and aesthetics</h3>
                 <p className="text-sm text-body">
                   Designing for an older, less tech-savvy audience without compromising modern feel deepened my understanding of how design can unite usability
@@ -426,7 +426,7 @@ export default function Page() {
                 </p>
               </div>
 
-              <div className="bg-secondary lg p-6 border-l-4 border-accent">
+              <div className="border border-stroke/30 p-6">
                 <h3 className="font-grotesk font-semibold text-headings text-lg mb-3">Collaboration drives success</h3>
                 <p className="text-sm text-body">
                   When design, technology, and business goals work together, you can create products that not only work but actually make a difference.
