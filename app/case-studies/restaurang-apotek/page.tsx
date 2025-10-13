@@ -15,7 +15,7 @@ export default function Page() {
 
       {/* Hero visual */}
       <section className="pb-16">
-        <div className="max-w-6xl mx-auto px-6">
+        <div className="max-w-4xl mx-auto px-6">
           <div className="2xl bg-secondary p-8">
             <div className="relative">
               <div className="max-w-5xl mx-auto">
@@ -176,7 +176,7 @@ export default function Page() {
 
       {/* Navigation Solution */}
       <section className="py-16">
-        <div className="max-w-6xl mx-auto px-6">
+        <div className="max-w-4xl mx-auto px-6">
           <div className="max-w-4xl mx-auto mb-12">
             <span className="text-xs uppercase tracking-wide text-accent">Navigation</span>
             <h2 className="mt-2 font-grotesk font-semibold text-headings text-3xl mb-6">Making navigation intuitive</h2>
@@ -298,7 +298,7 @@ export default function Page() {
 
       {/* Gallery */}
       <section className="py-16">
-        <div className="max-w-6xl mx-auto px-6">
+        <div className="max-w-4xl mx-auto px-6">
           <div className="max-w-4xl mx-auto mb-12">
             <span className="text-xs uppercase tracking-wide text-accent">Visual Storytelling</span>
             <h2 className="mt-2 font-grotesk font-semibold text-headings text-3xl mb-6">Showcasing the atmosphere</h2>
