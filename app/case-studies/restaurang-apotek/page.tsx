@@ -142,33 +142,40 @@ export default function Page() {
             </p>
           </div>
 
-          <div className="max-w-md mx-auto">
-            <div>
-              <div className="mb-6">
-                <Image
-                  src="/Rstaurang apotek - landingpage phone.png"
-                  alt="Restaurang Apotek landing page mobile view"
-                  width={300}
-                  height={600}
-                  className="w-full max-w-[280px] h-auto lg shadow-lg mx-auto"
-                />
+          <div className="max-w-4xl mx-auto">
+            <div className="bg-secondary/20 border border-stroke/30 p-8">
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+                {/* Mobile phone image */}
+                <div className="flex justify-center lg:justify-start">
+                  <Image
+                    src="/Rstaurang apotek - landingpage phone.png"
+                    alt="Restaurang Apotek landing page mobile view"
+                    width={300}
+                    height={600}
+                    className="w-full max-w-[280px] h-auto lg shadow-lg"
+                  />
+                </div>
+
+                {/* Text content */}
+                <div className="text-center lg:text-left">
+                  <h3 className="font-grotesk font-semibold text-headings text-xl mb-3">Landing Page</h3>
+                  <p className="text-body text-sm mb-4">Clean hero section with immediate access to booking and essential information.</p>
+                  <ul className="space-y-2 text-xs text-body">
+                    <li className="flex items-start gap-2">
+                      <span className="text-accent mt-1">•</span>
+                      <span>Clear visual hierarchy guiding users to key actions</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-accent mt-1">•</span>
+                      <span>Mobile-first design with touch-friendly elements</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-accent mt-1">•</span>
+                      <span>Bold imagery reflecting the restaurant's personality</span>
+                    </li>
+                  </ul>
+                </div>
               </div>
-              <h3 className="font-grotesk font-semibold text-headings text-xl mb-3 text-center">Landing Page</h3>
-              <p className="text-body text-sm text-center mb-4">Clean hero section with immediate access to booking and essential information.</p>
-              <ul className="space-y-2 text-xs text-body">
-                <li className="flex items-start gap-2">
-                  <span className="text-accent mt-1">•</span>
-                  <span>Clear visual hierarchy guiding users to key actions</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-accent mt-1">•</span>
-                  <span>Mobile-first design with touch-friendly elements</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-accent mt-1">•</span>
-                  <span>Bold imagery reflecting the restaurant's personality</span>
-                </li>
-              </ul>
             </div>
           </div>
         </div>
@@ -188,37 +195,44 @@ export default function Page() {
             </p>
           </div>
 
-          <div className="max-w-md mx-auto">
-            <div>
-              <div className="mb-6">
-                <Image
-                  src="/Rstaurang apotek - navabar open phone.png"
-                  alt="Restaurang Apotek mobile navigation menu"
-                  width={300}
-                  height={600}
-                  className="w-full max-w-[280px] h-auto lg shadow-lg mx-auto"
-                />
+          <div className="max-w-4xl mx-auto">
+            <div className="bg-secondary/20 border border-stroke/30 p-8">
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+                {/* Mobile phone image */}
+                <div className="flex justify-center lg:justify-start">
+                  <Image
+                    src="/Rstaurang apotek - navabar open phone.png"
+                    alt="Restaurang Apotek mobile navigation menu"
+                    width={300}
+                    height={600}
+                    className="w-full max-w-[280px] h-auto lg shadow-lg"
+                  />
+                </div>
+                
+                {/* Text content */}
+                <div className="text-center lg:text-left">
+                  <h3 className="font-grotesk font-semibold text-headings text-xl mb-3">Mobile Navigation</h3>
+                  <p className="text-body text-sm mb-4">Clean, accessible menu with clear hierarchy and easy-to-tap elements.</p>
+                  <ul className="space-y-2 text-xs text-body">
+                    <li className="flex items-start gap-2">
+                      <span className="text-accent mt-1">•</span>
+                      <span>Prominent booking CTA at the top</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-accent mt-1">•</span>
+                      <span>Clear close button (X) for better usability</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-accent mt-1">•</span>
+                      <span>Phone number easily accessible</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-accent mt-1">•</span>
+                      <span>Large touch targets for mobile users</span>
+                    </li>
+                  </ul>
+                </div>
               </div>
-              <h3 className="font-grotesk font-semibold text-headings text-xl mb-3 text-center">Mobile Navigation</h3>
-              <p className="text-body text-sm text-center mb-4">Clean, accessible menu with clear hierarchy and easy-to-tap elements.</p>
-              <ul className="space-y-2 text-xs text-body">
-                <li className="flex items-start gap-2">
-                  <span className="text-accent mt-1">•</span>
-                  <span>Prominent booking CTA at the top</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-accent mt-1">•</span>
-                  <span>Clear close button (X) for better usability</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-accent mt-1">•</span>
-                  <span>Phone number easily accessible</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-accent mt-1">•</span>
-                  <span>Large touch targets for mobile users</span>
-                </li>
-              </ul>
             </div>
           </div>
         </div>
@@ -308,33 +322,40 @@ export default function Page() {
             </p>
           </div>
 
-          <div className="max-w-md mx-auto">
-            <div>
-              <div className="mb-6">
-                <Image
-                  src="/Rstaurang apotek - galleri phone.png"
-                  alt="Restaurang Apotek gallery section mobile view"
-                  width={300}
-                  height={600}
-                  className="w-full max-w-[280px] h-auto lg shadow-lg mx-auto"
-                />
+          <div className="max-w-4xl mx-auto">
+            <div className="bg-secondary/20 border border-stroke/30 p-8">
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+                {/* Mobile phone image */}
+                <div className="flex justify-center lg:justify-start">
+                  <Image
+                    src="/Rstaurang apotek - galleri phone.png"
+                    alt="Restaurang Apotek gallery section mobile view"
+                    width={300}
+                    height={600}
+                    className="w-full max-w-[280px] h-auto lg shadow-lg"
+                  />
+                </div>
+                
+                {/* Text content */}
+                <div className="text-center lg:text-left">
+                  <h3 className="font-grotesk font-semibold text-headings text-xl mb-3">Gallery</h3>
+                  <p className="text-body text-sm mb-4">Image grid optimized for mobile with lazy loading and proper aspect ratios.</p>
+                  <ul className="space-y-2 text-xs text-body">
+                    <li className="flex items-start gap-2">
+                      <span className="text-accent mt-1">•</span>
+                      <span>Responsive grid layout adapting to screen size</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-accent mt-1">•</span>
+                      <span>Optimized images for fast loading</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-accent mt-1">•</span>
+                      <span>Alt text for all images for accessibility</span>
+                    </li>
+                  </ul>
+                </div>
               </div>
-              <h3 className="font-grotesk font-semibold text-headings text-xl mb-3 text-center">Gallery</h3>
-              <p className="text-body text-sm text-center mb-4">Image grid optimized for mobile with lazy loading and proper aspect ratios.</p>
-              <ul className="space-y-2 text-xs text-body">
-                <li className="flex items-start gap-2">
-                  <span className="text-accent mt-1">•</span>
-                  <span>Responsive grid layout adapting to screen size</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-accent mt-1">•</span>
-                  <span>Optimized images for fast loading</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-accent mt-1">•</span>
-                  <span>Alt text for all images for accessibility</span>
-                </li>
-              </ul>
             </div>
           </div>
         </div>
@@ -352,33 +373,40 @@ export default function Page() {
             </p>
           </div>
 
-          <div className="max-w-md mx-auto">
-            <div>
-              <div className="mb-6">
-                <Image
-                  src="/Rstaurang apotek - footer phone.png"
-                  alt="Restaurang Apotek footer section mobile view"
-                  width={300}
-                  height={600}
-                  className="w-full max-w-[280px] h-auto lg shadow-lg mx-auto"
-                />
+          <div className="max-w-4xl mx-auto">
+            <div className="bg-secondary/20 border border-stroke/30 p-8">
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+                {/* Mobile phone image */}
+                <div className="flex justify-center lg:justify-start">
+                  <Image
+                    src="/Rstaurang apotek - footer phone.png"
+                    alt="Restaurang Apotek footer section mobile view"
+                    width={300}
+                    height={600}
+                    className="w-full max-w-[280px] h-auto lg shadow-lg"
+                  />
+                </div>
+                
+                {/* Text content */}
+                <div className="text-center lg:text-left">
+                  <h3 className="font-grotesk font-semibold text-headings text-xl mb-3">Footer</h3>
+                  <p className="text-body text-sm mb-4">Organized footer with opening hours, contact details, and location.</p>
+                  <ul className="space-y-2 text-xs text-body">
+                    <li className="flex items-start gap-2">
+                      <span className="text-accent mt-1">•</span>
+                      <span>Clear grouping of information for easy scanning</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-accent mt-1">•</span>
+                      <span>Clickable phone numbers and email addresses</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-accent mt-1">•</span>
+                      <span>Social media links with proper labels</span>
+                    </li>
+                  </ul>
+                </div>
               </div>
-              <h3 className="font-grotesk font-semibold text-headings text-xl mb-3 text-center">Footer</h3>
-              <p className="text-body text-sm text-center mb-4">Organized footer with opening hours, contact details, and location.</p>
-              <ul className="space-y-2 text-xs text-body">
-                <li className="flex items-start gap-2">
-                  <span className="text-accent mt-1">•</span>
-                  <span>Clear grouping of information for easy scanning</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-accent mt-1">•</span>
-                  <span>Clickable phone numbers and email addresses</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-accent mt-1">•</span>
-                  <span>Social media links with proper labels</span>
-                </li>
-              </ul>
             </div>
           </div>
         </div>
