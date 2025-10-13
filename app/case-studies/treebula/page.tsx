@@ -45,7 +45,7 @@ export default function Page() {
             <div>
               <div className="mb-8">
                 <span className="text-xs uppercase tracking-wide text-accent">The Challenge</span>
-                <h2 className="mt-2 font-semibold text-headings text-3xl">Distance creates worry</h2>
+                <h2 className="mt-2 font-grotesk font-semibold text-headings text-3xl">Distance creates worry</h2>
               </div>
               <div className="space-y-6 text-body leading-relaxed">
                 <p className="text-lg text-body2">
@@ -70,7 +70,7 @@ export default function Page() {
             <div>
               <div className="mb-8">
                 <span className="text-xs uppercase tracking-wide text-accent">Target Users</span>
-                <h2 className="mt-2 font-semibold text-headings text-3xl">Designing for forest owners</h2>
+                <h2 className="mt-2 font-grotesk font-semibold text-headings text-3xl">Designing for forest owners</h2>
               </div>
               <div className="bg-secondary/20 border border-stroke/30 xl p-8 space-y-6">
                 <div className="flex items-center gap-4 mb-4">
@@ -78,7 +78,7 @@ export default function Page() {
                     <span className="text-2xl">👴</span>
                   </div>
                   <div>
-                    <h3 className="font-semibold text-headings text-xl">Private forest owners</h3>
+                    <h3 className="font-grotesk font-semibold text-headings text-xl">Private forest owners</h3>
                     <p className="text-body2">Age group: 55–80 years</p>
                   </div>
                 </div>
@@ -89,19 +89,19 @@ export default function Page() {
                 <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mt-6">
                   <div className="bg-tertiary/20 lg p-4 text-center">
                     <div className="text-2xl mb-2">📡</div>
-                    <div className="text-xs font-semibold text-headings">Remote monitoring</div>
+                    <div className="text-xs font-grotesk font-semibold text-headings">Remote monitoring</div>
                   </div>
                   <div className="bg-tertiary/20 lg p-4 text-center">
                     <div className="text-2xl mb-2">⚡</div>
-                    <div className="text-xs font-semibold text-headings">Quick updates</div>
+                    <div className="text-xs font-grotesk font-semibold text-headings">Quick updates</div>
                   </div>
                   <div className="bg-tertiary/20 lg p-4 text-center">
                     <div className="text-2xl mb-2">🛡️</div>
-                    <div className="text-xs font-semibold text-headings">Security</div>
+                    <div className="text-xs font-grotesk font-semibold text-headings">Security</div>
                   </div>
                   <div className="bg-tertiary/20 lg p-4 text-center">
                     <div className="text-2xl mb-2">🎯</div>
-                    <div className="text-xs font-semibold text-headings">Simplicity</div>
+                    <div className="text-xs font-grotesk font-semibold text-headings">Simplicity</div>
                   </div>
                 </div>
               </div>
@@ -111,7 +111,7 @@ export default function Page() {
             <div>
               <div className="mb-8">
                 <span className="text-xs uppercase tracking-wide text-accent">Discovery</span>
-                <h2 className="mt-2 font-semibold text-headings text-3xl">Building on internal expertise</h2>
+                <h2 className="mt-2 font-grotesk font-semibold text-headings text-3xl">Building on internal expertise</h2>
               </div>
               <div className="space-y-6">
                 <p>
@@ -124,7 +124,7 @@ export default function Page() {
                 </p>
 
                 <div className="bg-accent/10 border border-accent/20 lg p-6 mt-8">
-                  <h3 className="font-semibold text-headings text-lg mb-4">Key Insights</h3>
+                  <h3 className="font-grotesk font-semibold text-headings text-lg mb-4">Key Insights</h3>
                   <ul className="space-y-3 text-sm">
                     <li className="flex items-start gap-3">
                       <span className="text-accent mt-1">•</span>
@@ -163,7 +163,7 @@ export default function Page() {
         <div className="max-w-6xl mx-auto px-6 py-16">
           <div className="max-w-4xl mx-auto mb-12">
             <span className="text-xs uppercase tracking-wide text-accent">Strategy</span>
-            <h2 className="mt-2 font-semibold text-headings text-3xl mb-6">Balancing modern innovation with accessibility</h2>
+            <h2 className="mt-2 font-grotesk font-semibold text-headings text-3xl mb-6">Balancing modern innovation with accessibility</h2>
             <p className="text-body2 text-lg">
               The biggest challenge was designing for users aged 55–80 while maintaining Treebula's identity as a modern, innovative tech company.
             </p>
@@ -172,32 +172,32 @@ export default function Page() {
           <div className="grid grid-cols-2 md:grid-cols-3 gap-6 max-w-5xl mx-auto">
             <div className="bg-primary/40 border border-stroke/30 lg p-6 text-center">
               <div className="text-3xl mb-3">💡</div>
-              <h3 className="font-semibold text-headings text-lg mb-2">Simple & Clear</h3>
+              <h3 className="font-grotesk font-semibold text-headings text-lg mb-2">Simple & Clear</h3>
               <p className="text-body text-sm">Minimal technical competence required</p>
             </div>
             <div className="bg-primary/40 border border-stroke/30 lg p-6 text-center">
               <div className="text-3xl mb-3">♿</div>
-              <h3 className="font-semibold text-headings text-lg mb-2">Accessible</h3>
+              <h3 className="font-grotesk font-semibold text-headings text-lg mb-2">Accessible</h3>
               <p className="text-body text-sm">WCAG guidelines and clear contrasts</p>
             </div>
             <div className="bg-primary/40 border border-stroke/30 lg p-6 text-center">
               <div className="text-3xl mb-3">✨</div>
-              <h3 className="font-semibold text-headings text-lg mb-2">Modern</h3>
+              <h3 className="font-grotesk font-semibold text-headings text-lg mb-2">Modern</h3>
               <p className="text-body text-sm">Clean aesthetics signaling innovation</p>
             </div>
             <div className="bg-primary/40 border border-stroke/30 lg p-6 text-center">
               <div className="text-3xl mb-3">📱</div>
-              <h3 className="font-semibold text-headings text-lg mb-2">Mobile-First</h3>
+              <h3 className="font-grotesk font-semibold text-headings text-lg mb-2">Mobile-First</h3>
               <p className="text-body text-sm">Optimized for on-the-go access</p>
             </div>
             <div className="bg-primary/40 border border-stroke/30 lg p-6 text-center">
               <div className="text-3xl mb-3">🎯</div>
-              <h3 className="font-semibold text-headings text-lg mb-2">Focused</h3>
+              <h3 className="font-grotesk font-semibold text-headings text-lg mb-2">Focused</h3>
               <p className="text-body text-sm">Minimal choices to reduce cognitive load</p>
             </div>
             <div className="bg-primary/40 border border-stroke/30 lg p-6 text-center">
               <div className="text-3xl mb-3">🌲</div>
-              <h3 className="font-semibold text-headings text-lg mb-2">Contextual</h3>
+              <h3 className="font-grotesk font-semibold text-headings text-lg mb-2">Contextual</h3>
               <p className="text-body text-sm">Property-specific, relevant data</p>
             </div>
           </div>
@@ -209,7 +209,7 @@ export default function Page() {
         <div className="max-w-4xl mx-auto px-6">
           <div className="mb-12">
             <span className="text-xs uppercase tracking-wide text-accent">Solution</span>
-            <h2 className="mt-2 font-semibold text-headings text-3xl mb-6">What we built</h2>
+            <h2 className="mt-2 font-grotesk font-semibold text-headings text-3xl mb-6">What we built</h2>
           </div>
 
           <div className="space-y-8">
@@ -220,7 +220,7 @@ export default function Page() {
 
             <div className="grid md:grid-cols-2 gap-6">
               <div className="bg-secondary/20 border border-stroke/30 xl p-6">
-                <h3 className="font-semibold text-headings text-lg mb-4 flex items-center gap-2">
+                <h3 className="font-grotesk font-semibold text-headings text-lg mb-4 flex items-center gap-2">
                   <span className="text-2xl">🌲</span>
                   Property Overview
                 </h3>
@@ -228,7 +228,7 @@ export default function Page() {
               </div>
 
               <div className="bg-secondary/20 border border-stroke/30 xl p-6">
-                <h3 className="font-semibold text-headings text-lg mb-4 flex items-center gap-2">
+                <h3 className="font-grotesk font-semibold text-headings text-lg mb-4 flex items-center gap-2">
                   <span className="text-2xl">⚠️</span>
                   Risk Alerts
                 </h3>
@@ -236,7 +236,7 @@ export default function Page() {
               </div>
 
               <div className="bg-secondary/20 border border-stroke/30 xl p-6">
-                <h3 className="font-semibold text-headings text-lg mb-4 flex items-center gap-2">
+                <h3 className="font-grotesk font-semibold text-headings text-lg mb-4 flex items-center gap-2">
                   <span className="text-2xl">🌪️</span>
                   Wind Analysis
                 </h3>
@@ -244,7 +244,7 @@ export default function Page() {
               </div>
 
               <div className="bg-secondary/20 border border-stroke/30 xl p-6">
-                <h3 className="font-semibold text-headings text-lg mb-4 flex items-center gap-2">
+                <h3 className="font-grotesk font-semibold text-headings text-lg mb-4 flex items-center gap-2">
                   <span className="text-2xl">🌤️</span>
                   Weather Forecast
                 </h3>
@@ -260,7 +260,7 @@ export default function Page() {
         <div className="max-w-4xl mx-auto px-6 py-16">
           <div className="mb-12">
             <span className="text-xs uppercase tracking-wide text-accent">Process</span>
-            <h2 className="mt-2 font-semibold text-headings text-3xl mb-6">From idea to product</h2>
+            <h2 className="mt-2 font-grotesk font-semibold text-headings text-3xl mb-6">From idea to product</h2>
           </div>
 
           <div className="space-y-8">
@@ -276,7 +276,7 @@ export default function Page() {
 
             <div className="grid md:grid-cols-3 gap-6 mt-8">
               <div className="bg-primary/40 border border-stroke/30 lg p-6">
-                <h3 className="font-semibold text-headings text-lg mb-3 flex items-center gap-2">
+                <h3 className="font-grotesk font-semibold text-headings text-lg mb-3 flex items-center gap-2">
                   <span className="text-2xl">📐</span>
                   Wireframes
                 </h3>
@@ -284,7 +284,7 @@ export default function Page() {
               </div>
 
               <div className="bg-primary/40 border border-stroke/30 lg p-6">
-                <h3 className="font-semibold text-headings text-lg mb-3 flex items-center gap-2">
+                <h3 className="font-grotesk font-semibold text-headings text-lg mb-3 flex items-center gap-2">
                   <span className="text-2xl">🎨</span>
                   Prototypes
                 </h3>
@@ -292,7 +292,7 @@ export default function Page() {
               </div>
 
               <div className="bg-primary/40 border border-stroke/30 lg p-6">
-                <h3 className="font-semibold text-headings text-lg mb-3 flex items-center gap-2">
+                <h3 className="font-grotesk font-semibold text-headings text-lg mb-3 flex items-center gap-2">
                   <span className="text-2xl">🔄</span>
                   Iterations
                 </h3>
@@ -335,7 +335,7 @@ export default function Page() {
         <div className="max-w-4xl mx-auto px-6">
           <div className="mb-12">
             <span className="text-xs uppercase tracking-wide text-accent">Team Dynamics</span>
-            <h2 className="mt-2 font-semibold text-headings text-3xl mb-6">Close collaboration was key</h2>
+            <h2 className="mt-2 font-grotesk font-semibold text-headings text-3xl mb-6">Close collaboration was key</h2>
           </div>
 
           <div className="space-y-8">
@@ -343,7 +343,7 @@ export default function Page() {
 
             <div className="grid md:grid-cols-2 gap-8">
               <div className="bg-secondary/20 border border-stroke/30 xl p-6">
-                <h3 className="font-semibold text-headings text-lg mb-4 flex items-center gap-2">
+                <h3 className="font-grotesk font-semibold text-headings text-lg mb-4 flex items-center gap-2">
                   <span className="text-2xl">🤝</span>
                   Cross-functional teamwork
                 </h3>
@@ -356,7 +356,7 @@ export default function Page() {
               </div>
 
               <div className="bg-secondary/20 border border-stroke/30 xl p-6">
-                <h3 className="font-semibold text-headings text-lg mb-4 flex items-center gap-2">
+                <h3 className="font-grotesk font-semibold text-headings text-lg mb-4 flex items-center gap-2">
                   <span className="text-2xl">⚡</span>
                   Rapid iteration
                 </h3>
@@ -375,7 +375,7 @@ export default function Page() {
         <div className="max-w-4xl mx-auto px-6 py-16">
           <div className="mb-12">
             <span className="text-xs uppercase tracking-wide text-accent">Impact</span>
-            <h2 className="mt-2 font-semibold text-headings text-3xl mb-6">Bringing forest monitoring to mobile</h2>
+            <h2 className="mt-2 font-grotesk font-semibold text-headings text-3xl mb-6">Bringing forest monitoring to mobile</h2>
           </div>
 
           <div className="space-y-8">
@@ -402,7 +402,7 @@ export default function Page() {
         <div className="max-w-4xl mx-auto px-6">
           <div className="mb-12">
             <span className="text-xs uppercase tracking-wide text-accent">Reflections</span>
-            <h2 className="mt-2 font-semibold text-headings text-3xl mb-6">What I learned</h2>
+            <h2 className="mt-2 font-grotesk font-semibold text-headings text-3xl mb-6">What I learned</h2>
           </div>
 
           <div className="space-y-8">
@@ -413,7 +413,7 @@ export default function Page() {
 
             <div className="space-y-6">
               <div className="bg-secondary/20 border border-stroke/30 lg p-6">
-                <h3 className="font-semibold text-headings text-lg mb-3">Research isn't always traditional</h3>
+                <h3 className="font-grotesk font-semibold text-headings text-lg mb-3">Research isn't always traditional</h3>
                 <p className="text-sm text-body">
                   User research doesn't always follow a textbook pattern. In this case, the strongest insights came from internal expertise deeply rooted in the
                   target group's reality.
@@ -421,7 +421,7 @@ export default function Page() {
               </div>
 
               <div className="bg-secondary/20 border border-stroke/30 lg p-6">
-                <h3 className="font-semibold text-headings text-lg mb-3">Balance function and aesthetics</h3>
+                <h3 className="font-grotesk font-semibold text-headings text-lg mb-3">Balance function and aesthetics</h3>
                 <p className="text-sm text-body">
                   Designing for an older, less tech-savvy audience without compromising modern feel deepened my understanding of how design can unite usability
                   and innovation.
@@ -429,7 +429,7 @@ export default function Page() {
               </div>
 
               <div className="bg-secondary/20 border border-stroke/30 lg p-6">
-                <h3 className="font-semibold text-headings text-lg mb-3">Collaboration drives success</h3>
+                <h3 className="font-grotesk font-semibold text-headings text-lg mb-3">Collaboration drives success</h3>
                 <p className="text-sm text-body">
                   When design, technology, and business goals work together, you can create products that not only work but actually make a difference.
                 </p>
@@ -444,7 +444,7 @@ export default function Page() {
         <div className="max-w-4xl mx-auto px-6 py-16">
           <div className="mb-8">
             <span className="text-xs uppercase tracking-wide text-accent">Future Vision</span>
-            <h2 className="mt-2 font-semibold text-headings text-3xl mb-6">What's next</h2>
+            <h2 className="mt-2 font-grotesk font-semibold text-headings text-3xl mb-6">What's next</h2>
           </div>
 
           <div className="space-y-6 text-body">
@@ -456,21 +456,21 @@ export default function Page() {
               <li className="flex items-start gap-4">
                 <span className="text-accent text-xl mt-1">→</span>
                 <div>
-                  <h3 className="font-semibold text-headings mb-1">Test with real forest owners</h3>
+                  <h3 className="font-grotesk font-semibold text-headings mb-1">Test with real forest owners</h3>
                   <p className="text-sm">Validate the interface with the 55–80 age group and identify usability issues</p>
                 </div>
               </li>
               <li className="flex items-start gap-4">
                 <span className="text-accent text-xl mt-1">→</span>
                 <div>
-                  <h3 className="font-semibold text-headings mb-1">Refine based on feedback</h3>
+                  <h3 className="font-grotesk font-semibold text-headings mb-1">Refine based on feedback</h3>
                   <p className="text-sm">Prioritize improvements and new features based on actual user behavior</p>
                 </div>
               </li>
               <li className="flex items-start gap-4">
                 <span className="text-accent text-xl mt-1">→</span>
                 <div>
-                  <h3 className="font-semibold text-headings mb-1">Expand functionality</h3>
+                  <h3 className="font-grotesk font-semibold text-headings mb-1">Expand functionality</h3>
                   <p className="text-sm">Explore additional features that provide value without adding complexity</p>
                 </div>
               </li>

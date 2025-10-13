@@ -86,7 +86,7 @@ export default function Home() {
         <div className="max-w-6xl mx-auto px-6">
           <div className="mb-8">
             <div className="text-xs uppercase tracking-wide text-body">Selected</div>
-            <h2 className="mt-2 font-semibold text-2xl sm:text-3xl text-headings">Case studies</h2>
+            <h2 className="mt-2 font-grotesk font-semibold text-2xl sm:text-3xl text-headings">Case studies</h2>
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 lg:gap-10">
@@ -181,7 +181,7 @@ export default function Home() {
                   <div className="relative p-6 flex flex-col flex-grow transition-all duration-500">
                     {/* Title and year */}
                     <div className="flex items-start justify-between mb-4">
-                      <h3 className="font-semibold text-headings text-lg leading-tight group-hover:text-headings2 group-hover:scale-105 transform transition-all duration-300">
+                      <h3 className="font-grotesk font-semibold text-headings text-lg leading-tight group-hover:text-headings2 group-hover:scale-105 transform transition-all duration-300">
                         {card.title}
                       </h3>
                       {card.year && <span className="text-xs text-body2 font-medium group-hover:text-accent transition-colors duration-300">{card.year}</span>}
@@ -226,7 +226,7 @@ export default function Home() {
                 <span className="text-accent font-heading font-bold text-lg">ML</span>
               </div>
               <div className="text-left">
-                <div className="font-semibold text-headings text-lg">Martin Lofti</div>
+                <div className="font-grotesk font-semibold text-headings text-lg">Martin Lofti</div>
                 <div className="text-body text-sm">
                   CTO at <span className="text-accent font-medium">Treebula</span>
                 </div>
