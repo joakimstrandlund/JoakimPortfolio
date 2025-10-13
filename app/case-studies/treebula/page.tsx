@@ -70,7 +70,7 @@ export default function Page() {
                 <span className="text-xs uppercase tracking-wide text-accent">Target Users</span>
                 <h2 className="mt-2 font-grotesk font-semibold text-headings text-3xl">Designing for forest owners</h2>
               </div>
-              <div className="bg-secondary xl p-8 space-y-6">
+              <div className="border border-stroke/30 p-8 space-y-6">
                 <div className="flex items-center gap-4 mb-4">
                   <div className="w-16 h-16 bg-accent/20 full flex items-center justify-center">
                     <span className="text-2xl">👴</span>
