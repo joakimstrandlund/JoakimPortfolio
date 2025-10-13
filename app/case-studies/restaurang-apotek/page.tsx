@@ -99,7 +99,7 @@ export default function Page() {
                     </ul>
                   </div>
 
-                  <div className="bg-secondary lg p-6">
+                  <div className="bg-secondary lg p-6 border-l-4 border-accent">
                     <h3 className="font-grotesk font-semibold text-headings text-lg mb-3 flex items-center gap-2">
                       <span className="text-2xl">🎯</span>
                       Business needs
@@ -143,7 +143,7 @@ export default function Page() {
           </div>
 
           <div className="max-w-md mx-auto">
-            <div className="bg-secondary xl p-6">
+            <div className="bg-secondary xl p-6 border-l-4 border-accent">
               <div className="mb-6">
                 <Image
                   src="/Rstaurang apotek - landingpage phone.png"
@@ -189,7 +189,7 @@ export default function Page() {
           </div>
 
           <div className="max-w-md mx-auto">
-            <div className="bg-secondary xl p-6">
+            <div className="bg-secondary xl p-6 border-l-4 border-accent">
               <div className="mb-6">
                 <Image
                   src="/Rstaurang apotek - navabar open phone.png"
@@ -237,7 +237,7 @@ export default function Page() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
-            <div className="bg-secondary xl p-6">
+            <div className="bg-secondary xl p-6 border-l-4 border-accent">
               <div className="mb-6">
                 <Image
                   src="/Rstaurang apotek - foodmeny phone.png"
@@ -265,7 +265,7 @@ export default function Page() {
               </ul>
             </div>
 
-            <div className="bg-secondary xl p-6">
+            <div className="bg-secondary xl p-6 border-l-4 border-accent">
               <div className="mb-6">
                 <Image
                   src="/Rstaurang apotek - cocktail phone.png"
@@ -309,7 +309,7 @@ export default function Page() {
           </div>
 
           <div className="max-w-md mx-auto">
-            <div className="bg-secondary xl p-6">
+            <div className="bg-secondary xl p-6 border-l-4 border-accent">
               <div className="mb-6">
                 <Image
                   src="/Rstaurang apotek - galleri phone.png"
@@ -353,7 +353,7 @@ export default function Page() {
           </div>
 
           <div className="max-w-md mx-auto">
-            <div className="bg-secondary xl p-6">
+            <div className="bg-secondary xl p-6 border-l-4 border-accent">
               <div className="mb-6">
                 <Image
                   src="/Rstaurang apotek - footer phone.png"
@@ -412,7 +412,7 @@ export default function Page() {
             </div>
 
             <div className="grid md:grid-cols-2 gap-8">
-              <div className="bg-secondary xl p-6">
+              <div className="bg-secondary xl p-6 border-l-4 border-accent">
                 <h3 className="font-grotesk font-semibold text-headings text-lg mb-4 flex items-center gap-2">
                   <span className="text-2xl">✅</span>
                   What worked
@@ -433,7 +433,7 @@ export default function Page() {
                 </ul>
               </div>
 
-              <div className="bg-secondary xl p-6">
+              <div className="bg-secondary xl p-6 border-l-4 border-accent">
                 <h3 className="font-grotesk font-semibold text-headings text-lg mb-4 flex items-center gap-2">
                   <span className="text-2xl">🎯</span>
                   Impact
@@ -472,7 +472,7 @@ export default function Page() {
             </p>
 
             <div className="space-y-6">
-              <div className="bg-secondary lg p-6">
+              <div className="bg-secondary lg p-6 border-l-4 border-accent">
                 <h3 className="font-grotesk font-semibold text-headings text-lg mb-3">Accessibility opens doors</h3>
                 <p className="text-sm text-body">
                   Building for accessibility from the start made the site better for everyone, not just users with disabilities. Clear navigation and semantic
@@ -480,14 +480,14 @@ export default function Page() {
                 </p>
               </div>
 
-              <div className="bg-secondary lg p-6">
+              <div className="bg-secondary lg p-6 border-l-4 border-accent">
                 <h3 className="font-grotesk font-semibold text-headings text-lg mb-3">User testing catches blind spots</h3>
                 <p className="text-sm text-body">
                   What seemed clear to me wasn't always clear to users. Testing revealed issues I would have missed, and their feedback shaped better solutions.
                 </p>
               </div>
 
-              <div className="bg-secondary lg p-6">
+              <div className="bg-secondary lg p-6 border-l-4 border-accent">
                 <h3 className="font-grotesk font-semibold text-headings text-lg mb-3">Mobile-first matters</h3>
                 <p className="text-sm text-body">
                   Most users were browsing on mobile. Designing for small screens first ensured the experience worked where it mattered most.
