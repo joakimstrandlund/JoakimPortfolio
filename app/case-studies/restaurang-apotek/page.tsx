@@ -495,8 +495,8 @@ export default function Page() {
               </div>
             </div>
 
-            <div className="mt-12 bg-secondary xl p-8">
-              <p className="text-accent font-medium text-center text-lg">"The best designs solve problems you didn't know existed until users showed you."</p>
+            <div className="mt-12 bg-tagBg border border-stroke/30 p-8">
+              <p className="text-tagText font-medium text-center text-lg">"The best designs solve problems you didn't know existed until users showed you."</p>
             </div>
           </div>
         </div>
