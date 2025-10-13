@@ -217,7 +217,7 @@ export default function Page() {
             </p>
 
             <div className="grid md:grid-cols-2 gap-6">
-              <div className="bg-secondary xl p-6 border-l-4 border-accent">
+              <div className="bg-secondary xl p-6">
                 <h3 className="font-grotesk font-semibold text-headings text-lg mb-4 flex items-center gap-2">
                   <span className="text-2xl">🌲</span>
                   Property Overview
@@ -225,7 +225,7 @@ export default function Page() {
                 <p className="text-sm text-body">Dashboard showing forest status, recent events, and risk indicators at a glance</p>
               </div>
 
-              <div className="bg-secondary xl p-6 border-l-4 border-accent">
+              <div className="bg-secondary xl p-6">
                 <h3 className="font-grotesk font-semibold text-headings text-lg mb-4 flex items-center gap-2">
                   <span className="text-2xl">⚠️</span>
                   Risk Alerts
@@ -233,7 +233,7 @@ export default function Page() {
                 <p className="text-sm text-body">Real-time notifications about storm damage, bark beetle risks, and other threats</p>
               </div>
 
-              <div className="bg-secondary xl p-6 border-l-4 border-accent">
+              <div className="bg-secondary xl p-6">
                 <h3 className="font-grotesk font-semibold text-headings text-lg mb-4 flex items-center gap-2">
                   <span className="text-2xl">🌪️</span>
                   Wind Analysis
@@ -241,7 +241,7 @@ export default function Page() {
                 <p className="text-sm text-body">Interactive wind rose showing wind patterns specific to the property</p>
               </div>
 
-              <div className="bg-secondary xl p-6 border-l-4 border-accent">
+              <div className="bg-secondary xl p-6">
                 <h3 className="font-grotesk font-semibold text-headings text-lg mb-4 flex items-center gap-2">
                   <span className="text-2xl">🌤️</span>
                   Weather Forecast
@@ -340,7 +340,7 @@ export default function Page() {
             <p className="text-lg text-body2">This project showed me the power of tight collaboration between design, development, and business.</p>
 
             <div className="grid md:grid-cols-2 gap-8">
-              <div className="bg-secondary xl p-6 border-l-4 border-accent">
+              <div className="bg-secondary xl p-6">
                 <h3 className="font-grotesk font-semibold text-headings text-lg mb-4 flex items-center gap-2">
                   <span className="text-2xl">🤝</span>
                   Cross-functional teamwork
@@ -353,7 +353,7 @@ export default function Page() {
                 </p>
               </div>
 
-              <div className="bg-secondary xl p-6 border-l-4 border-accent">
+              <div className="bg-secondary xl p-6">
                 <h3 className="font-grotesk font-semibold text-headings text-lg mb-4 flex items-center gap-2">
                   <span className="text-2xl">⚡</span>
                   Rapid iteration

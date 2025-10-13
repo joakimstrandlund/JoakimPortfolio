@@ -143,7 +143,7 @@ export default function Page() {
           </div>
 
           <div className="max-w-md mx-auto">
-            <div className="bg-secondary xl p-6 border-l-4 border-accent">
+            <div className="bg-secondary xl p-6">
               <div className="mb-6">
                 <Image
                   src="/Rstaurang apotek - landingpage phone.png"
@@ -189,7 +189,7 @@ export default function Page() {
           </div>
 
           <div className="max-w-md mx-auto">
-            <div className="bg-secondary xl p-6 border-l-4 border-accent">
+            <div className="bg-secondary xl p-6">
               <div className="mb-6">
                 <Image
                   src="/Rstaurang apotek - navabar open phone.png"
@@ -237,7 +237,7 @@ export default function Page() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
-            <div className="bg-secondary xl p-6 border-l-4 border-accent">
+            <div className="bg-secondary xl p-6">
               <div className="mb-6">
                 <Image
                   src="/Rstaurang apotek - foodmeny phone.png"
@@ -265,7 +265,7 @@ export default function Page() {
               </ul>
             </div>
 
-            <div className="bg-secondary xl p-6 border-l-4 border-accent">
+            <div className="bg-secondary xl p-6">
               <div className="mb-6">
                 <Image
                   src="/Rstaurang apotek - cocktail phone.png"
@@ -309,7 +309,7 @@ export default function Page() {
           </div>
 
           <div className="max-w-md mx-auto">
-            <div className="bg-secondary xl p-6 border-l-4 border-accent">
+            <div className="bg-secondary xl p-6">
               <div className="mb-6">
                 <Image
                   src="/Rstaurang apotek - galleri phone.png"
@@ -353,7 +353,7 @@ export default function Page() {
           </div>
 
           <div className="max-w-md mx-auto">
-            <div className="bg-secondary xl p-6 border-l-4 border-accent">
+            <div className="bg-secondary xl p-6">
               <div className="mb-6">
                 <Image
                   src="/Rstaurang apotek - footer phone.png"
@@ -412,7 +412,7 @@ export default function Page() {
             </div>
 
             <div className="grid md:grid-cols-2 gap-8">
-              <div className="bg-secondary xl p-6 border-l-4 border-accent">
+              <div className="bg-secondary xl p-6">
                 <h3 className="font-grotesk font-semibold text-headings text-lg mb-4 flex items-center gap-2">
                   <span className="text-2xl">✅</span>
                   What worked
@@ -433,7 +433,7 @@ export default function Page() {
                 </ul>
               </div>
 
-              <div className="bg-secondary xl p-6 border-l-4 border-accent">
+              <div className="bg-secondary xl p-6">
                 <h3 className="font-grotesk font-semibold text-headings text-lg mb-4 flex items-center gap-2">
                   <span className="text-2xl">🎯</span>
                   Impact

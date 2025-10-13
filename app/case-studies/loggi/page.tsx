@@ -142,19 +142,19 @@ export default function Page() {
                 <p>Before diving into screens, I defined the emotional foundation. Loggi needed to feel like a supportive friend, not a demanding coach.</p>
 
                 <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mt-8">
-                  <div className="bg-secondary lg p-4 text-center border-l-4 border-accent">
+                  <div className="bg-secondary lg p-4 text-center">
                     <div className="text-3xl mb-2">🤝</div>
                     <div className="text-sm font-grotesk font-semibold text-headings">Supportive</div>
                   </div>
-                  <div className="bg-secondary lg p-4 text-center border-l-4 border-accent">
+                  <div className="bg-secondary lg p-4 text-center">
                     <div className="text-3xl mb-2">🌸</div>
                     <div className="text-sm font-grotesk font-semibold text-headings">Gentle</div>
                   </div>
-                  <div className="bg-secondary lg p-4 text-center border-l-4 border-accent">
+                  <div className="bg-secondary lg p-4 text-center">
                     <div className="text-3xl mb-2">💙</div>
                     <div className="text-sm font-grotesk font-semibold text-headings">Authentic</div>
                   </div>
-                  <div className="bg-secondary lg p-4 text-center border-l-4 border-accent">
+                  <div className="bg-secondary lg p-4 text-center">
                     <div className="text-3xl mb-2">❤️</div>
                     <div className="text-sm font-grotesk font-semibold text-headings">Empathetic</div>
                   </div>
@@ -356,7 +356,7 @@ export default function Page() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
             <div>
-              <div className="bg-secondary xl p-6 border-l-4 border-accent">
+              <div className="bg-secondary xl p-6">
                 <div className="mb-6">
                   <Image
                     src="/loggi - insight.png"
@@ -388,7 +388,7 @@ export default function Page() {
             </div>
 
             <div>
-              <div className="bg-secondary xl p-6 border-l-4 border-accent">
+              <div className="bg-secondary xl p-6">
                 <div className="mb-6">
                   <Image
                     src="/loggi - profil.png"
@@ -436,7 +436,7 @@ export default function Page() {
             </p>
 
             <div className="grid md:grid-cols-2 gap-8">
-              <div className="bg-secondary xl p-6 border-l-4 border-accent">
+              <div className="bg-secondary xl p-6">
                 <h3 className="font-grotesk font-semibold text-headings text-lg mb-4 flex items-center gap-2">
                   <span className="text-2xl">✅</span>
                   What worked
@@ -457,7 +457,7 @@ export default function Page() {
                 </ul>
               </div>
 
-              <div className="bg-secondary xl p-6 border-l-4 border-accent">
+              <div className="bg-secondary xl p-6">
                 <h3 className="font-grotesk font-semibold text-headings text-lg mb-4 flex items-center gap-2">
                   <span className="text-2xl">🔄</span>
                   What I improved
@@ -494,21 +494,21 @@ export default function Page() {
             <p className="text-lg text-body2">This project deepened my understanding of how small UX decisions shape emotional experience.</p>
 
             <div className="space-y-6">
-              <div className="bg-secondary lg p-6 border-l-4 border-accent">
+              <div className="bg-secondary lg p-6">
                 <h3 className="font-grotesk font-semibold text-headings text-lg mb-3">Microcopy matters more than I thought</h3>
                 <p className="text-sm text-body">
                   Changing "Next" to "Let's go" or "Complete" to "You're done" made the experience feel more human and supportive. Small words, big impact.
                 </p>
               </div>
 
-              <div className="bg-secondary lg p-6 border-l-4 border-accent">
+              <div className="bg-secondary lg p-6">
                 <h3 className="font-grotesk font-semibold text-headings text-lg mb-3">Visual rhythm creates calm</h3>
                 <p className="text-sm text-body">
                   Consistent spacing, subtle animations, and dark UI all contributed to a feeling of "calm focus" that users mentioned in testing.
                 </p>
               </div>
 
-              <div className="bg-secondary lg p-6 border-l-4 border-accent">
+              <div className="bg-secondary lg p-6">
                 <h3 className="font-grotesk font-semibold text-headings text-lg mb-3">Less features, more clarity</h3>
                 <p className="text-sm text-body">
                   I initially wanted to add journaling, meditation timers, and habit tracking. But keeping it simple made the experience more approachable.
