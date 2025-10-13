@@ -16,7 +16,7 @@ export default function Page() {
       {/* Hero visual */}
       <section className="pb-16">
         <div className="max-w-6xl mx-auto px-6">
-          <div className="2xl bg-tertiary/20 p-8">
+          <div className="2xl bg-secondary p-8">
             <div className="relative">
               <div className="max-w-5xl mx-auto">
                 <div className="relative 2xl overflow-hidden">
@@ -70,7 +70,7 @@ export default function Page() {
                 <span className="text-xs uppercase tracking-wide text-accent">Target Users</span>
                 <h2 className="mt-2 font-grotesk font-semibold text-headings text-3xl">Designing for forest owners</h2>
               </div>
-              <div className="bg-secondary/20 xl p-8 space-y-6">
+              <div className="bg-secondary xl p-8 space-y-6">
                 <div className="flex items-center gap-4 mb-4">
                   <div className="w-16 h-16 bg-accent/20 full flex items-center justify-center">
                     <span className="text-2xl">👴</span>
@@ -85,19 +85,19 @@ export default function Page() {
                   decision.
                 </p>
                 <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mt-6">
-                  <div className="bg-tertiary/20 lg p-4 text-center">
+                  <div className="bg-secondary lg p-4 text-center">
                     <div className="text-2xl mb-2">📡</div>
                     <div className="text-xs font-grotesk font-semibold text-headings">Remote monitoring</div>
                   </div>
-                  <div className="bg-tertiary/20 lg p-4 text-center">
+                  <div className="bg-secondary lg p-4 text-center">
                     <div className="text-2xl mb-2">⚡</div>
                     <div className="text-xs font-grotesk font-semibold text-headings">Quick updates</div>
                   </div>
-                  <div className="bg-tertiary/20 lg p-4 text-center">
+                  <div className="bg-secondary lg p-4 text-center">
                     <div className="text-2xl mb-2">🛡️</div>
                     <div className="text-xs font-grotesk font-semibold text-headings">Security</div>
                   </div>
-                  <div className="bg-tertiary/20 lg p-4 text-center">
+                  <div className="bg-secondary lg p-4 text-center">
                     <div className="text-2xl mb-2">🎯</div>
                     <div className="text-xs font-grotesk font-semibold text-headings">Simplicity</div>
                   </div>
@@ -217,7 +217,7 @@ export default function Page() {
             </p>
 
             <div className="grid md:grid-cols-2 gap-6">
-              <div className="bg-secondary/20 xl p-6">
+              <div className="bg-secondary xl p-6">
                 <h3 className="font-grotesk font-semibold text-headings text-lg mb-4 flex items-center gap-2">
                   <span className="text-2xl">🌲</span>
                   Property Overview
@@ -225,7 +225,7 @@ export default function Page() {
                 <p className="text-sm text-body">Dashboard showing forest status, recent events, and risk indicators at a glance</p>
               </div>
 
-              <div className="bg-secondary/20 xl p-6">
+              <div className="bg-secondary xl p-6">
                 <h3 className="font-grotesk font-semibold text-headings text-lg mb-4 flex items-center gap-2">
                   <span className="text-2xl">⚠️</span>
                   Risk Alerts
@@ -233,7 +233,7 @@ export default function Page() {
                 <p className="text-sm text-body">Real-time notifications about storm damage, bark beetle risks, and other threats</p>
               </div>
 
-              <div className="bg-secondary/20 xl p-6">
+              <div className="bg-secondary xl p-6">
                 <h3 className="font-grotesk font-semibold text-headings text-lg mb-4 flex items-center gap-2">
                   <span className="text-2xl">🌪️</span>
                   Wind Analysis
@@ -241,7 +241,7 @@ export default function Page() {
                 <p className="text-sm text-body">Interactive wind rose showing wind patterns specific to the property</p>
               </div>
 
-              <div className="bg-secondary/20 xl p-6">
+              <div className="bg-secondary xl p-6">
                 <h3 className="font-grotesk font-semibold text-headings text-lg mb-4 flex items-center gap-2">
                   <span className="text-2xl">🌤️</span>
                   Weather Forecast
@@ -340,7 +340,7 @@ export default function Page() {
             <p className="text-lg text-body2">This project showed me the power of tight collaboration between design, development, and business.</p>
 
             <div className="grid md:grid-cols-2 gap-8">
-              <div className="bg-secondary/20 xl p-6">
+              <div className="bg-secondary xl p-6">
                 <h3 className="font-grotesk font-semibold text-headings text-lg mb-4 flex items-center gap-2">
                   <span className="text-2xl">🤝</span>
                   Cross-functional teamwork
@@ -353,7 +353,7 @@ export default function Page() {
                 </p>
               </div>
 
-              <div className="bg-secondary/20 xl p-6">
+              <div className="bg-secondary xl p-6">
                 <h3 className="font-grotesk font-semibold text-headings text-lg mb-4 flex items-center gap-2">
                   <span className="text-2xl">⚡</span>
                   Rapid iteration
@@ -410,7 +410,7 @@ export default function Page() {
             </p>
 
             <div className="space-y-6">
-              <div className="bg-secondary/20 lg p-6">
+              <div className="bg-secondary lg p-6">
                 <h3 className="font-grotesk font-semibold text-headings text-lg mb-3">Research isn't always traditional</h3>
                 <p className="text-sm text-body">
                   User research doesn't always follow a textbook pattern. In this case, the strongest insights came from internal expertise deeply rooted in the
@@ -418,7 +418,7 @@ export default function Page() {
                 </p>
               </div>
 
-              <div className="bg-secondary/20 lg p-6">
+              <div className="bg-secondary lg p-6">
                 <h3 className="font-grotesk font-semibold text-headings text-lg mb-3">Balance function and aesthetics</h3>
                 <p className="text-sm text-body">
                   Designing for an older, less tech-savvy audience without compromising modern feel deepened my understanding of how design can unite usability
@@ -426,7 +426,7 @@ export default function Page() {
                 </p>
               </div>
 
-              <div className="bg-secondary/20 lg p-6">
+              <div className="bg-secondary lg p-6">
                 <h3 className="font-grotesk font-semibold text-headings text-lg mb-3">Collaboration drives success</h3>
                 <p className="text-sm text-body">
                   When design, technology, and business goals work together, you can create products that not only work but actually make a difference.

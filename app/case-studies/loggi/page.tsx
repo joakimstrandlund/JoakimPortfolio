@@ -16,7 +16,7 @@ export default function Page() {
       {/* Hero visual */}
       <section className="pb-16">
         <div className="max-w-6xl mx-auto px-6">
-          <div className="2xl bg-tertiary/20 p-8">
+          <div className="2xl bg-secondary p-8">
             <div className="relative">
               <div className="max-w-5xl mx-auto">
                 <div className="relative 2xl overflow-hidden">
@@ -70,7 +70,7 @@ export default function Page() {
                 <span className="text-xs uppercase tracking-wide text-accent">Target Users</span>
                 <h2 className="mt-2 font-grotesk font-semibold text-headings text-3xl">Who needs this?</h2>
               </div>
-              <div className="bg-secondary/20 xl p-8 space-y-4">
+              <div className="bg-secondary xl p-8 space-y-4">
                 <p className="text-body2 text-lg">
                   Loggi was created for people who want to build healthy daily habits but feel overwhelmed by wellness tools that are too intense or rigid.
                 </p>
@@ -93,7 +93,7 @@ export default function Page() {
                 </p>
 
                 <div className="grid md:grid-cols-2 gap-6 mt-8">
-                  <div className="bg-tertiary/20 lg p-6">
+                  <div className="bg-secondary lg p-6">
                     <h3 className="font-grotesk font-semibold text-headings text-lg mb-3 flex items-center gap-2">
                       <span className="text-2xl">💭</span>
                       Key Insights
@@ -142,19 +142,19 @@ export default function Page() {
                 <p>Before diving into screens, I defined the emotional foundation. Loggi needed to feel like a supportive friend, not a demanding coach.</p>
 
                 <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mt-8">
-                  <div className="bg-secondary/20 lg p-4 text-center">
+                  <div className="bg-secondary lg p-4 text-center">
                     <div className="text-3xl mb-2">🤝</div>
                     <div className="text-sm font-grotesk font-semibold text-headings">Supportive</div>
                   </div>
-                  <div className="bg-secondary/20 lg p-4 text-center">
+                  <div className="bg-secondary lg p-4 text-center">
                     <div className="text-3xl mb-2">🌸</div>
                     <div className="text-sm font-grotesk font-semibold text-headings">Gentle</div>
                   </div>
-                  <div className="bg-secondary/20 lg p-4 text-center">
+                  <div className="bg-secondary lg p-4 text-center">
                     <div className="text-3xl mb-2">💙</div>
                     <div className="text-sm font-grotesk font-semibold text-headings">Authentic</div>
                   </div>
-                  <div className="bg-secondary/20 lg p-4 text-center">
+                  <div className="bg-secondary lg p-4 text-center">
                     <div className="text-3xl mb-2">❤️</div>
                     <div className="text-sm font-grotesk font-semibold text-headings">Empathetic</div>
                   </div>
@@ -257,7 +257,7 @@ export default function Page() {
           </div>
 
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 md:gap-6">
-            <div className="bg-secondary/20 xl p-3 md:p-6 text-center">
+            <div className="bg-secondary xl p-3 md:p-6 text-center">
               <div className="mb-3 md:mb-4">
                 <Image
                   src="/loggi - checkin step1.png"
@@ -271,7 +271,7 @@ export default function Page() {
               <p className="text-body text-xs md:text-sm">How are you?</p>
             </div>
 
-            <div className="bg-secondary/20 xl p-3 md:p-6 text-center">
+            <div className="bg-secondary xl p-3 md:p-6 text-center">
               <div className="mb-3 md:mb-4">
                 <Image
                   src="/loggi - checkin step2.png"
@@ -285,7 +285,7 @@ export default function Page() {
               <p className="text-body text-xs md:text-sm">How have you slept?</p>
             </div>
 
-            <div className="bg-secondary/20 xl p-3 md:p-6 text-center">
+            <div className="bg-secondary xl p-3 md:p-6 text-center">
               <div className="mb-3 md:mb-4">
                 <Image
                   src="/loggi - checkin step3.png"
@@ -299,7 +299,7 @@ export default function Page() {
               <p className="text-body text-xs md:text-sm">Stress level today?</p>
             </div>
 
-            <div className="bg-secondary/20 xl p-3 md:p-6 text-center">
+            <div className="bg-secondary xl p-3 md:p-6 text-center">
               <div className="mb-3 md:mb-4">
                 <Image
                   src="/loggi - checkin step4.png"
@@ -313,7 +313,7 @@ export default function Page() {
               <p className="text-body text-xs md:text-sm">Optional note</p>
             </div>
 
-            <div className="bg-secondary/20 xl p-3 md:p-6 text-center">
+            <div className="bg-secondary xl p-3 md:p-6 text-center">
               <div className="mb-3 md:mb-4">
                 <Image
                   src="/loggi - checkin step5.png"
@@ -436,7 +436,7 @@ export default function Page() {
             </p>
 
             <div className="grid md:grid-cols-2 gap-8">
-              <div className="bg-secondary/20 xl p-6">
+              <div className="bg-secondary xl p-6">
                 <h3 className="font-grotesk font-semibold text-headings text-lg mb-4 flex items-center gap-2">
                   <span className="text-2xl">✅</span>
                   What worked
@@ -457,7 +457,7 @@ export default function Page() {
                 </ul>
               </div>
 
-              <div className="bg-secondary/20 xl p-6">
+              <div className="bg-secondary xl p-6">
                 <h3 className="font-grotesk font-semibold text-headings text-lg mb-4 flex items-center gap-2">
                   <span className="text-2xl">🔄</span>
                   What I improved
@@ -494,21 +494,21 @@ export default function Page() {
             <p className="text-lg text-body2">This project deepened my understanding of how small UX decisions shape emotional experience.</p>
 
             <div className="space-y-6">
-              <div className="bg-primary/60 lg p-6">
+              <div className="bg-secondary lg p-6">
                 <h3 className="font-grotesk font-semibold text-headings text-lg mb-3">Microcopy matters more than I thought</h3>
                 <p className="text-sm text-body">
                   Changing "Next" to "Let's go" or "Complete" to "You're done" made the experience feel more human and supportive. Small words, big impact.
                 </p>
               </div>
 
-              <div className="bg-primary/60 lg p-6">
+              <div className="bg-secondary lg p-6">
                 <h3 className="font-grotesk font-semibold text-headings text-lg mb-3">Visual rhythm creates calm</h3>
                 <p className="text-sm text-body">
                   Consistent spacing, subtle animations, and dark UI all contributed to a feeling of "calm focus" that users mentioned in testing.
                 </p>
               </div>
 
-              <div className="bg-primary/60 lg p-6">
+              <div className="bg-secondary lg p-6">
                 <h3 className="font-grotesk font-semibold text-headings text-lg mb-3">Less features, more clarity</h3>
                 <p className="text-sm text-body">
                   I initially wanted to add journaling, meditation timers, and habit tracking. But keeping it simple made the experience more approachable.

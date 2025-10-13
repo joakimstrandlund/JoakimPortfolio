@@ -16,7 +16,7 @@ export default function Page() {
       {/* Hero visual */}
       <section className="pb-16">
         <div className="max-w-6xl mx-auto px-6">
-          <div className="2xl bg-tertiary/20 p-8">
+          <div className="2xl bg-secondary p-8">
             <div className="relative">
               <div className="max-w-5xl mx-auto">
                 <div className="relative 2xl overflow-hidden">
@@ -189,7 +189,7 @@ export default function Page() {
           </div>
 
           <div className="max-w-md mx-auto">
-            <div className="bg-secondary/20 xl p-6">
+            <div className="bg-secondary xl p-6">
               <div className="mb-6">
                 <Image
                   src="/Rstaurang apotek - navabar open phone.png"
@@ -309,7 +309,7 @@ export default function Page() {
           </div>
 
           <div className="max-w-md mx-auto">
-            <div className="bg-secondary/20 xl p-6">
+            <div className="bg-secondary xl p-6">
               <div className="mb-6">
                 <Image
                   src="/Rstaurang apotek - galleri phone.png"
@@ -395,7 +395,7 @@ export default function Page() {
           <div className="space-y-8">
             <p className="text-lg text-body2">I tested the redesign with users and iterated based on feedback. Some decisions needed adjusting.</p>
 
-            <div className="bg-secondary/20 xl p-8 space-y-6">
+            <div className="bg-secondary xl p-8 space-y-6">
               <h3 className="font-grotesk font-semibold text-headings text-xl mb-4">Key Iteration: Mobile Navigation</h3>
               <p className="text-body text-sm">
                 Initially, I placed the phone number and booking button at the top of the navigation. Testing revealed this created a "fast food chain" feeling
@@ -412,7 +412,7 @@ export default function Page() {
             </div>
 
             <div className="grid md:grid-cols-2 gap-8">
-              <div className="bg-secondary/20 xl p-6">
+              <div className="bg-secondary xl p-6">
                 <h3 className="font-grotesk font-semibold text-headings text-lg mb-4 flex items-center gap-2">
                   <span className="text-2xl">✅</span>
                   What worked
@@ -433,7 +433,7 @@ export default function Page() {
                 </ul>
               </div>
 
-              <div className="bg-secondary/20 xl p-6">
+              <div className="bg-secondary xl p-6">
                 <h3 className="font-grotesk font-semibold text-headings text-lg mb-4 flex items-center gap-2">
                   <span className="text-2xl">🎯</span>
                   Impact
@@ -472,7 +472,7 @@ export default function Page() {
             </p>
 
             <div className="space-y-6">
-              <div className="bg-primary/60 border border-stroke/30 lg p-6">
+              <div className="bg-secondary lg p-6">
                 <h3 className="font-grotesk font-semibold text-headings text-lg mb-3">Accessibility opens doors</h3>
                 <p className="text-sm text-body">
                   Building for accessibility from the start made the site better for everyone, not just users with disabilities. Clear navigation and semantic
@@ -480,14 +480,14 @@ export default function Page() {
                 </p>
               </div>
 
-              <div className="bg-primary/60 border border-stroke/30 lg p-6">
+              <div className="bg-secondary lg p-6">
                 <h3 className="font-grotesk font-semibold text-headings text-lg mb-3">User testing catches blind spots</h3>
                 <p className="text-sm text-body">
                   What seemed clear to me wasn't always clear to users. Testing revealed issues I would have missed, and their feedback shaped better solutions.
                 </p>
               </div>
 
-              <div className="bg-primary/60 border border-stroke/30 lg p-6">
+              <div className="bg-secondary lg p-6">
                 <h3 className="font-grotesk font-semibold text-headings text-lg mb-3">Mobile-first matters</h3>
                 <p className="text-sm text-body">
                   Most users were browsing on mobile. Designing for small screens first ensured the experience worked where it mattered most.
