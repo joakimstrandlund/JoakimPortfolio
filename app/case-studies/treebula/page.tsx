@@ -385,8 +385,8 @@ export default function Page() {
               inexperienced target group.
             </p>
 
-            <div className="bg-secondary xl p-8 mt-8">
-              <p className="text-accent font-medium text-center text-lg">
+            <div className="bg-tagBg border border-stroke/30 p-8 mt-8">
+              <p className="text-tagText font-medium text-center text-lg">
                 "This project proved how close collaboration between design, development, and business can create products that strengthen the brand and meet
                 real needs in a traditionally analog industry."
               </p>
