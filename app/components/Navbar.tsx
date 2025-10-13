@@ -47,7 +47,7 @@ export default function Navbar() {
     <>
       <header className="sticky top-0 z-40 bg-primary/70 backdrop-blur border-b border-stroke">
         <div className="max-w-6xl mx-auto px-6 h-14 flex items-center justify-between">
-          <Link href="/" className="font-heading text-headings tracking-wide">
+          <Link href="/" className="font-display text-headings tracking-wide">
             J.STRANDLUND
           </Link>
 
@@ -99,7 +99,7 @@ export default function Navbar() {
             {/* Header with logo and close button */}
             <div className="absolute top-0 left-0 right-0 h-14 flex items-center justify-between px-6 z-20" style={{ pointerEvents: 'auto' }}>
               {/* Logo - same as desktop */}
-              <Link href="/" className="font-heading text-headings tracking-wide">
+              <Link href="/" className="font-display text-headings tracking-wide">
                 J.STRANDLUND
               </Link>
 
@@ -129,17 +129,17 @@ export default function Navbar() {
             <nav className="absolute inset-0 flex items-center justify-end pr-6">
               <ul className="text-right flex flex-col items-end gap-8">
                 <li>
-                  <Link onClick={() => setOpen(false)} href="/#projects" className="font-heading text-headings2 text-2xl link-underline">
+                  <Link onClick={() => setOpen(false)} href="/#projects" className="font-display text-headings2 text-2xl link-underline">
                     Projects
                   </Link>
                 </li>
                 <li>
-                  <Link onClick={() => setOpen(false)} href="/about" className="font-heading text-headings2 text-2xl link-underline">
+                  <Link onClick={() => setOpen(false)} href="/about" className="font-display text-headings2 text-2xl link-underline">
                     About me
                   </Link>
                 </li>
                 <li>
-                  <Link onClick={() => setOpen(false)} href="/#contact" className="font-heading text-headings2 text-2xl link-underline">
+                  <Link onClick={() => setOpen(false)} href="/#contact" className="font-display text-headings2 text-2xl link-underline">
                     Contact
                   </Link>
                 </li>

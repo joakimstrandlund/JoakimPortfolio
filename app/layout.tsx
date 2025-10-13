@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import '@fontsource-variable/inter';
 import '@fontsource-variable/familjen-grotesk';
+import '@fontsource/spicy-rice';
 import './globals.css';
 import Link from 'next/link';
 import { Github, Linkedin, Mail } from 'lucide-react';
@@ -29,7 +30,7 @@ export default function RootLayout({
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
               {/* Brand / Blurb */}
               <div className="space-y-3">
-                <div className="font-heading text-headings text-lg">Joakim Strandlund</div>
+                        <div className="font-display text-headings text-lg">Joakim Strandlund</div>
                 <p className="text-sm text-body">
                   UX/UI Designer crafting user-friendly, modern digital experiences. Calm, pragmatic, and focused on outcomes.
                 </p>

@@ -4,6 +4,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
 import { ArrowRight } from 'lucide-react';
+import PersonalSymbol from './components/PersonalSymbol';
 
 export default function Home() {
   return (
@@ -40,7 +41,7 @@ export default function Home() {
           <div className="text-center space-y-8">
             {/* Main headline */}
             <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6, delay: 0.1, ease: 'easeOut' }}>
-              <h1 className="font-heading text-5xl sm:text-6xl md:text-7xl text-headings leading-tight tracking-tight">
+              <h1 className="font-display text-5xl sm:text-6xl md:text-7xl text-headings leading-tight tracking-tight">
                 <motion.span className="inline-block" initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5, delay: 0.2 }}>
                   Creating digital
                 </motion.span>
@@ -181,19 +182,19 @@ export default function Home() {
         <div className="max-w-6xl mx-auto px-6">
           <div className="mb-8">
             <div className="text-xs uppercase tracking-wide text-body">Selected</div>
-            <h2 className="mt-2 font-heading text-2xl sm:text-3xl text-headings">Case studies</h2>
+                    <h2 className="mt-2 font-display text-2xl sm:text-3xl text-headings">Case studies</h2>
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 lg:gap-10">
             {cards.map((card, index) => (
               <motion.div key={card.href} initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5, delay: index * 0.1 }}>
-                        <Link
-                          href={card.href}
-                          className="group block h-full relative overflow-hidden transform transition-all duration-500 hover:-translate-y-3 hover:scale-[1.02] rounded-2xl"
-                          style={{
-                            transitionTimingFunction: 'cubic-bezier(0.34, 1.56, 0.64, 1)'
-                          }}
-                        >
+                <Link
+                  href={card.href}
+                  className="group block h-full relative overflow-hidden transform transition-all duration-500 hover:-translate-y-3 hover:scale-[1.02] rounded-2xl"
+                  style={{
+                    transitionTimingFunction: 'cubic-bezier(0.34, 1.56, 0.64, 1)',
+                  }}
+                >
                   {/* Card background with subtle border */}
                   <div className="absolute inset-0 bg-secondary/10 border border-stroke/30 rounded-2xl group-hover:border-accent/30 transition-all duration-500 group-hover:shadow-2xl group-hover:shadow-accent/10 group-hover:bg-secondary/20" />
 
@@ -276,7 +277,7 @@ export default function Home() {
                   <div className="relative p-6 flex flex-col flex-grow transition-all duration-500 rounded-b-2xl">
                     {/* Title and year */}
                     <div className="flex items-start justify-between mb-4">
-                      <h3 className="font-heading text-headings text-lg leading-tight group-hover:text-headings2 group-hover:scale-105 transform transition-all duration-300">
+                              <h3 className="font-display text-headings text-lg leading-tight group-hover:text-headings2 group-hover:scale-105 transform transition-all duration-300">
                         {card.title}
                       </h3>
                       {card.year && <span className="text-xs text-body2 font-medium group-hover:text-accent transition-colors duration-300">{card.year}</span>}
@@ -321,7 +322,7 @@ export default function Home() {
             transition={{ duration: 0.6, ease: 'easeOut' }}
           >
             {/* Quote */}
-            <blockquote className="font-heading text-headings text-lg sm:text-xl leading-relaxed mb-8 text-center">
+                    <blockquote className="font-display text-headings text-lg sm:text-xl leading-relaxed mb-8 text-center">
               &quot;It&apos;s been a real pleasure working with Joakim. He&apos;s fast, pragmatic, and has a great instinct for delivering MVPs and PoCs that
               move things forward. At the same time, he builds on solid design principles and creates solutions that are easy to grow and iterate on. A
               dependable team player with a strong foundation—highly recommended.&quot;
@@ -333,7 +334,7 @@ export default function Home() {
                 <span className="text-accent font-heading font-bold text-lg">ML</span>
               </div>
               <div className="text-left">
-                <div className="font-heading text-headings text-lg">Martin Lofti</div>
+                        <div className="font-display text-headings text-lg">Martin Lofti</div>
                 <div className="text-body text-sm">
                   CTO at <span className="text-accent font-medium">Treebula</span>
                 </div>

@@ -10,6 +10,7 @@ html {
 :root {
   --font-inter: 'Inter Variable';
   --font-familjen-grotesk: 'Familjen Grotesk Variable';
+  --font-spicy-rice: 'Spicy Rice';
 
   /* Color variables for custom classes */
   --color-primary: #121212;
@@ -35,12 +36,6 @@ body {
   -moz-osx-font-smoothing: grayscale;
   background-color: var(--color-primary);
   color: var(--color-body);
-  cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"><circle cx="10" cy="10" r="8" fill="none" stroke="%23ffe07d" stroke-width="2"/><circle cx="10" cy="10" r="2" fill="%23ffe07d"/></svg>'), auto;
-}
-
-/* Custom cursor for interactive elements */
-a, button, [role="button"] {
-  cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" fill="%23ffe07d" opacity="0.3"/><circle cx="12" cy="12" r="4" fill="%23ffe07d"/></svg>'), pointer;
 }
 
 /* Reusable buttons */
