@@ -4,6 +4,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { ArrowRight } from 'lucide-react';
 import PersonalSymbol from './components/PersonalSymbol';
+import TestimonialCard from './components/TestimonialCard';
 
 export default function Home() {
   return (
@@ -211,28 +212,8 @@ export default function Home() {
             <div className="text-xs uppercase tracking-wide text-body">Testimonial</div>
           </div>
 
-          {/* Testimonial card */}
-          <div className="bg-primary/40 border border-stroke/30 p-8 sm:p-12">
-            {/* Quote */}
-            <blockquote className="text-headings text-lg sm:text-xl leading-relaxed mb-8 text-center">
-              &quot;It&apos;s been a real pleasure working with Joakim. He&apos;s fast, pragmatic, and has a great instinct for delivering MVPs and PoCs that
-              move things forward. At the same time, he builds on solid design principles and creates solutions that are easy to grow and iterate on. A
-              dependable team player with a strong foundation—highly recommended.&quot;
-            </blockquote>
-
-            {/* Attribution */}
-            <div className="flex items-center justify-center gap-4 pt-4 border-t border-stroke/30">
-              <div className="w-12 h-12 bg-accent/20 border border-accent/30 flex items-center justify-center">
-                <span className="text-accent font-heading font-bold text-lg">ML</span>
-              </div>
-              <div className="text-left">
-                <div className="font-grotesk font-semibold text-headings text-lg">Martin Lofti</div>
-                <div className="text-body text-sm">
-                  CTO at <span className="text-accent font-medium">Treebula</span>
-                </div>
-              </div>
-            </div>
-          </div>
+          {/* Testimonial card with scroll animation */}
+          <TestimonialCard />
         </div>
       </section>
     </main>
