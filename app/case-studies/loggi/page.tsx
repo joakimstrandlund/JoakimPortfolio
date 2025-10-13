@@ -181,7 +181,7 @@ export default function Page() {
 
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6">
             {/* Step 1 */}
-            <div className="bg-secondary xl p-3 md:p-6 text-center">
+            <div className="text-center">
               <div className="mb-3 md:mb-4">
                 <Image
                   src="/loggi - start step1.png"
@@ -195,7 +195,7 @@ export default function Page() {
               <p className="text-body text-xs md:text-sm">Soft introduction</p>
             </div>
 
-            <div className="bg-secondary xl p-3 md:p-6 text-center">
+            <div className="text-center">
               <div className="mb-3 md:mb-4">
                 <Image
                   src="/loggi - start step2.png"
@@ -209,7 +209,7 @@ export default function Page() {
               <p className="text-body text-xs md:text-sm">Clear value</p>
             </div>
 
-            <div className="bg-secondary xl p-3 md:p-6 text-center">
+            <div className="text-center">
               <div className="mb-3 md:mb-4">
                 <Image
                   src="/loggi - start step3.png"
@@ -223,7 +223,7 @@ export default function Page() {
               <p className="text-body text-xs md:text-sm">Light setup</p>
             </div>
 
-            <div className="bg-secondary xl p-3 md:p-6 text-center">
+            <div className="text-center">
               <div className="mb-3 md:mb-4">
                 <Image
                   src="/loggi - start step4.png"
@@ -257,7 +257,7 @@ export default function Page() {
           </div>
 
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 md:gap-6">
-            <div className="bg-secondary xl p-3 md:p-6 text-center">
+            <div className="text-center">
               <div className="mb-3 md:mb-4">
                 <Image
                   src="/loggi - checkin step1.png"
@@ -271,7 +271,7 @@ export default function Page() {
               <p className="text-body text-xs md:text-sm">How are you?</p>
             </div>
 
-            <div className="bg-secondary xl p-3 md:p-6 text-center">
+            <div className="text-center">
               <div className="mb-3 md:mb-4">
                 <Image
                   src="/loggi - checkin step2.png"
@@ -285,7 +285,7 @@ export default function Page() {
               <p className="text-body text-xs md:text-sm">How have you slept?</p>
             </div>
 
-            <div className="bg-secondary xl p-3 md:p-6 text-center">
+            <div className="text-center">
               <div className="mb-3 md:mb-4">
                 <Image
                   src="/loggi - checkin step3.png"
@@ -299,7 +299,7 @@ export default function Page() {
               <p className="text-body text-xs md:text-sm">Stress level today?</p>
             </div>
 
-            <div className="bg-secondary xl p-3 md:p-6 text-center">
+            <div className="text-center">
               <div className="mb-3 md:mb-4">
                 <Image
                   src="/loggi - checkin step4.png"
@@ -313,7 +313,7 @@ export default function Page() {
               <p className="text-body text-xs md:text-sm">Optional note</p>
             </div>
 
-            <div className="bg-secondary xl p-3 md:p-6 text-center">
+            <div className="text-center">
               <div className="mb-3 md:mb-4">
                 <Image
                   src="/loggi - checkin step5.png"
@@ -356,7 +356,7 @@ export default function Page() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
             <div>
-              <div className="bg-secondary xl p-6">
+              <div>
                 <div className="mb-6">
                   <Image
                     src="/loggi - insight.png"
@@ -388,7 +388,7 @@ export default function Page() {
             </div>
 
             <div>
-              <div className="bg-secondary xl p-6">
+              <div>
                 <div className="mb-6">
                   <Image
                     src="/loggi - profil.png"
