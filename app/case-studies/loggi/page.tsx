@@ -516,8 +516,10 @@ export default function Page() {
               </div>
             </div>
 
-            <div className="mt-12 border border-stroke/30 p-8">
-              <p className="text-accent font-medium italic text-center text-lg">"Good UX isn't always about more features. It's often about fewer, clearer steps."</p>
+            <div className="mt-12 bg-tagBg border border-stroke/30 p-8">
+              <p className="text-tagText font-medium italic text-center text-lg">
+                "Good UX isn't always about more features. It's often about fewer, clearer steps."
+              </p>
             </div>
           </div>
         </div>
