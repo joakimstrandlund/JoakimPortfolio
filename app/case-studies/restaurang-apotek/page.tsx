@@ -132,7 +132,7 @@ export default function Page() {
 
       {/* Landing Page Design */}
       <section className="pb-16 bg-secondary/10">
-        <div className="max-w-6xl mx-auto px-6 py-16">
+        <div className="max-w-4xl mx-auto px-6 py-16">
           <div className="max-w-4xl mx-auto mb-12">
             <span className="text-xs uppercase tracking-wide text-accent">Solution</span>
             <h2 className="mt-2 font-grotesk font-semibold text-headings text-3xl mb-6">A welcoming first impression</h2>
@@ -226,7 +226,7 @@ export default function Page() {
 
       {/* Menus Section */}
       <section className="pb-16 bg-secondary/10">
-        <div className="max-w-6xl mx-auto px-6 py-16">
+        <div className="max-w-4xl mx-auto px-6 py-16">
           <div className="max-w-4xl mx-auto mb-12">
             <span className="text-xs uppercase tracking-wide text-accent">Content Design</span>
             <h2 className="mt-2 font-grotesk font-semibold text-headings text-3xl mb-6">Making menus readable and accessible</h2>
@@ -342,7 +342,7 @@ export default function Page() {
 
       {/* Footer */}
       <section className="pb-16 bg-secondary/10">
-        <div className="max-w-6xl mx-auto px-6 py-16">
+        <div className="max-w-4xl mx-auto px-6 py-16">
           <div className="max-w-4xl mx-auto mb-12">
             <span className="text-xs uppercase tracking-wide text-accent">Information Architecture</span>
             <h2 className="mt-2 font-grotesk font-semibold text-headings text-3xl mb-6">Making contact easy</h2>

@@ -158,7 +158,7 @@ export default function Page() {
 
       {/* Design Principles */}
       <section className="pb-16 bg-secondary/10">
-        <div className="max-w-6xl mx-auto px-6 py-16">
+        <div className="max-w-4xl mx-auto px-6 py-16">
           <div className="max-w-4xl mx-auto mb-12">
             <span className="text-xs uppercase tracking-wide text-accent">Strategy</span>
             <h2 className="mt-2 font-grotesk font-semibold text-headings text-3xl mb-6">Balancing modern innovation with accessibility</h2>
@@ -170,32 +170,32 @@ export default function Page() {
           <div className="grid grid-cols-2 md:grid-cols-3 gap-6 max-w-5xl mx-auto">
             <div className="bg-secondary lg p-6 text-center">
               <div className="text-3xl mb-3">💡</div>
-              <h3 className="font-grotesk font-semibold text-headings text-lg mb-2">Simple & Clear</h3>
+              <h3 className="font-grotesk font-semibold text-headings text-lg mb-3">Simple & Clear</h3>
               <p className="text-body text-sm">Minimal technical competence required</p>
             </div>
             <div className="bg-secondary lg p-6 text-center">
               <div className="text-3xl mb-3">♿</div>
-              <h3 className="font-grotesk font-semibold text-headings text-lg mb-2">Accessible</h3>
+              <h3 className="font-grotesk font-semibold text-headings text-lg mb-3">Accessible</h3>
               <p className="text-body text-sm">WCAG guidelines and clear contrasts</p>
             </div>
             <div className="bg-secondary lg p-6 text-center">
               <div className="text-3xl mb-3">✨</div>
-              <h3 className="font-grotesk font-semibold text-headings text-lg mb-2">Modern</h3>
+              <h3 className="font-grotesk font-semibold text-headings text-lg mb-3">Modern</h3>
               <p className="text-body text-sm">Clean aesthetics signaling innovation</p>
             </div>
             <div className="bg-secondary lg p-6 text-center">
               <div className="text-3xl mb-3">📱</div>
-              <h3 className="font-grotesk font-semibold text-headings text-lg mb-2">Mobile-First</h3>
+              <h3 className="font-grotesk font-semibold text-headings text-lg mb-3">Mobile-First</h3>
               <p className="text-body text-sm">Optimized for on-the-go access</p>
             </div>
             <div className="bg-secondary lg p-6 text-center">
               <div className="text-3xl mb-3">🎯</div>
-              <h3 className="font-grotesk font-semibold text-headings text-lg mb-2">Focused</h3>
+              <h3 className="font-grotesk font-semibold text-headings text-lg mb-3">Focused</h3>
               <p className="text-body text-sm">Minimal choices to reduce cognitive load</p>
             </div>
             <div className="bg-secondary lg p-6 text-center">
               <div className="text-3xl mb-3">🌲</div>
-              <h3 className="font-grotesk font-semibold text-headings text-lg mb-2">Contextual</h3>
+              <h3 className="font-grotesk font-semibold text-headings text-lg mb-3">Contextual</h3>
               <p className="text-body text-sm">Property-specific, relevant data</p>
             </div>
           </div>

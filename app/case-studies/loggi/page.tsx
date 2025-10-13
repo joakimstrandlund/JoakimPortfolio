@@ -169,7 +169,7 @@ export default function Page() {
 
       {/* Onboarding Flow - Story */}
       <section className="pb-16 bg-secondary/10">
-        <div className="max-w-6xl mx-auto px-6 py-16">
+        <div className="max-w-4xl mx-auto px-6 py-16">
           <div className="max-w-4xl mx-auto mb-12">
             <span className="text-xs uppercase tracking-wide text-accent">First Impressions</span>
             <h2 className="mt-2 font-grotesk font-semibold text-headings text-3xl mb-6">Welcoming users without pressure</h2>
@@ -246,7 +246,7 @@ export default function Page() {
 
       {/* Daily Check-in Flow - Story */}
       <section className="pb-16">
-        <div className="max-w-6xl mx-auto px-6 py-8">
+        <div className="max-w-4xl mx-auto px-6 py-8">
           <div className="max-w-4xl mx-auto mb-12">
             <span className="text-xs uppercase tracking-wide text-accent">Core Experience</span>
             <h2 className="mt-2 font-grotesk font-semibold text-headings text-3xl mb-6">The heart of Loggi: Daily check-ins</h2>
@@ -344,7 +344,7 @@ export default function Page() {
 
       {/* Insights & Profile - Story */}
       <section className="pb-16 bg-secondary/10">
-        <div className="max-w-6xl mx-auto px-6 py-16">
+        <div className="max-w-4xl mx-auto px-6 py-16">
           <div className="max-w-4xl mx-auto mb-12">
             <span className="text-xs uppercase tracking-wide text-accent">Making Data Meaningful</span>
             <h2 className="mt-2 font-grotesk font-semibold text-headings text-3xl mb-6">Seeing patterns over time</h2>
