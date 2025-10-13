@@ -56,4 +56,3 @@ export default function TestimonialCard() {
     </div>
   );
 }
-

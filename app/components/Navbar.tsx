@@ -46,7 +46,7 @@ export default function Navbar() {
     <>
       <header className="sticky top-0 z-40 bg-primary/70 backdrop-blur border-b border-stroke">
         <div className="max-w-6xl mx-auto px-6 h-14 flex items-center justify-between">
-          <Link href="/" className="font-display text-headings tracking-wide">
+          <Link href="/" className="font-grotesk font-semibold text-headings tracking-wide">
             J.STRANDLUND
           </Link>
 
@@ -92,7 +92,7 @@ export default function Navbar() {
           {/* Header with logo and close button */}
           <div className="absolute top-0 left-0 right-0 h-14 flex items-center justify-between px-6 z-20" style={{ pointerEvents: 'auto' }}>
             {/* Logo - same as desktop */}
-            <Link href="/" className="font-display text-headings tracking-wide">
+            <Link href="/" className="font-grotesk font-semibold text-headings tracking-wide">
               J.STRANDLUND
             </Link>
 
