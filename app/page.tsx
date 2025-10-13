@@ -24,8 +24,7 @@ export default function Home() {
           ></div>
         </div>
 
-                <div className="max-w-6xl mx-auto px-6 w-full relative z-10">
-
+        <div className="max-w-6xl mx-auto px-6 w-full relative z-10">
           {/* Main content */}
           <div className="text-center space-y-8">
             {/* Main headline */}
@@ -80,29 +79,6 @@ export default function Home() {
             </div>
           </div>
 
-          {/* Floating code snippets */}
-          <div className="absolute top-1/4 left-8 opacity-20">
-            <div className="bg-secondary/40 border border-stroke/30 p-4 text-xs font-mono text-body">
-              <div className="text-accent">const</div>
-              <div className="text-headings">userExperience</div>
-              <div className="text-body">= {`{`}</div>
-              <div className="ml-4 text-body">research: true,</div>
-              <div className="ml-4 text-body">design: true,</div>
-              <div className="ml-4 text-body">test: true</div>
-              <div className="text-body">{`}`}</div>
-            </div>
-          </div>
-
-          <div className="absolute top-1/3 right-8 opacity-20">
-            <div className="bg-secondary/40 border border-stroke/30 p-4 text-xs font-mono text-body">
-              <div className="text-accent">function</div>
-              <div className="text-headings">solveProblem</div>
-              <div className="text-body">() {`{`}</div>
-              <div className="ml-4 text-body">return</div>
-              <div className="ml-8 text-accent">"thoughtful design"</div>
-              <div className="text-body">{`}`}</div>
-            </div>
-          </div>
         </div>
       </section>
 
