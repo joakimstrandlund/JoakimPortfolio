@@ -72,7 +72,7 @@ export default function Page() {
                 <span className="text-xs uppercase tracking-wide text-accent">Target Users</span>
                 <h2 className="mt-2 font-grotesk font-semibold text-headings text-3xl">Designing for forest owners</h2>
               </div>
-              <div className="bg-secondary/20 border border-stroke/30 xl p-8 space-y-6">
+              <div className="bg-secondary/20 xl p-8 space-y-6">
                 <div className="flex items-center gap-4 mb-4">
                   <div className="w-16 h-16 bg-accent/20 full flex items-center justify-center">
                     <span className="text-2xl">👴</span>
@@ -170,32 +170,32 @@ export default function Page() {
           </div>
 
           <div className="grid grid-cols-2 md:grid-cols-3 gap-6 max-w-5xl mx-auto">
-            <div className="bg-primary/40 border border-stroke/30 lg p-6 text-center">
+            <div className="bg-primary/40 lg p-6 text-center">
               <div className="text-3xl mb-3">💡</div>
               <h3 className="font-grotesk font-semibold text-headings text-lg mb-2">Simple & Clear</h3>
               <p className="text-body text-sm">Minimal technical competence required</p>
             </div>
-            <div className="bg-primary/40 border border-stroke/30 lg p-6 text-center">
+            <div className="bg-primary/40 lg p-6 text-center">
               <div className="text-3xl mb-3">♿</div>
               <h3 className="font-grotesk font-semibold text-headings text-lg mb-2">Accessible</h3>
               <p className="text-body text-sm">WCAG guidelines and clear contrasts</p>
             </div>
-            <div className="bg-primary/40 border border-stroke/30 lg p-6 text-center">
+            <div className="bg-primary/40 lg p-6 text-center">
               <div className="text-3xl mb-3">✨</div>
               <h3 className="font-grotesk font-semibold text-headings text-lg mb-2">Modern</h3>
               <p className="text-body text-sm">Clean aesthetics signaling innovation</p>
             </div>
-            <div className="bg-primary/40 border border-stroke/30 lg p-6 text-center">
+            <div className="bg-primary/40 lg p-6 text-center">
               <div className="text-3xl mb-3">📱</div>
               <h3 className="font-grotesk font-semibold text-headings text-lg mb-2">Mobile-First</h3>
               <p className="text-body text-sm">Optimized for on-the-go access</p>
             </div>
-            <div className="bg-primary/40 border border-stroke/30 lg p-6 text-center">
+            <div className="bg-primary/40 lg p-6 text-center">
               <div className="text-3xl mb-3">🎯</div>
               <h3 className="font-grotesk font-semibold text-headings text-lg mb-2">Focused</h3>
               <p className="text-body text-sm">Minimal choices to reduce cognitive load</p>
             </div>
-            <div className="bg-primary/40 border border-stroke/30 lg p-6 text-center">
+            <div className="bg-primary/40 lg p-6 text-center">
               <div className="text-3xl mb-3">🌲</div>
               <h3 className="font-grotesk font-semibold text-headings text-lg mb-2">Contextual</h3>
               <p className="text-body text-sm">Property-specific, relevant data</p>
@@ -219,7 +219,7 @@ export default function Page() {
             </p>
 
             <div className="grid md:grid-cols-2 gap-6">
-              <div className="bg-secondary/20 border border-stroke/30 xl p-6">
+              <div className="bg-secondary/20 xl p-6">
                 <h3 className="font-grotesk font-semibold text-headings text-lg mb-4 flex items-center gap-2">
                   <span className="text-2xl">🌲</span>
                   Property Overview
@@ -227,7 +227,7 @@ export default function Page() {
                 <p className="text-sm text-body">Dashboard showing forest status, recent events, and risk indicators at a glance</p>
               </div>
 
-              <div className="bg-secondary/20 border border-stroke/30 xl p-6">
+              <div className="bg-secondary/20 xl p-6">
                 <h3 className="font-grotesk font-semibold text-headings text-lg mb-4 flex items-center gap-2">
                   <span className="text-2xl">⚠️</span>
                   Risk Alerts
@@ -235,7 +235,7 @@ export default function Page() {
                 <p className="text-sm text-body">Real-time notifications about storm damage, bark beetle risks, and other threats</p>
               </div>
 
-              <div className="bg-secondary/20 border border-stroke/30 xl p-6">
+              <div className="bg-secondary/20 xl p-6">
                 <h3 className="font-grotesk font-semibold text-headings text-lg mb-4 flex items-center gap-2">
                   <span className="text-2xl">🌪️</span>
                   Wind Analysis
@@ -243,7 +243,7 @@ export default function Page() {
                 <p className="text-sm text-body">Interactive wind rose showing wind patterns specific to the property</p>
               </div>
 
-              <div className="bg-secondary/20 border border-stroke/30 xl p-6">
+              <div className="bg-secondary/20 xl p-6">
                 <h3 className="font-grotesk font-semibold text-headings text-lg mb-4 flex items-center gap-2">
                   <span className="text-2xl">🌤️</span>
                   Weather Forecast
@@ -275,7 +275,7 @@ export default function Page() {
             </p>
 
             <div className="grid md:grid-cols-3 gap-6 mt-8">
-              <div className="bg-primary/40 border border-stroke/30 lg p-6">
+              <div className="bg-primary/40 lg p-6">
                 <h3 className="font-grotesk font-semibold text-headings text-lg mb-3 flex items-center gap-2">
                   <span className="text-2xl">📐</span>
                   Wireframes
@@ -283,7 +283,7 @@ export default function Page() {
                 <p className="text-sm text-body">Quick wireframes to visualize the product's basic structure and flow</p>
               </div>
 
-              <div className="bg-primary/40 border border-stroke/30 lg p-6">
+              <div className="bg-primary/40 lg p-6">
                 <h3 className="font-grotesk font-semibold text-headings text-lg mb-3 flex items-center gap-2">
                   <span className="text-2xl">🎨</span>
                   Prototypes
@@ -291,7 +291,7 @@ export default function Page() {
                 <p className="text-sm text-body">Interactive prototypes in Figma to test interactions and flows</p>
               </div>
 
-              <div className="bg-primary/40 border border-stroke/30 lg p-6">
+              <div className="bg-primary/40 lg p-6">
                 <h3 className="font-grotesk font-semibold text-headings text-lg mb-3 flex items-center gap-2">
                   <span className="text-2xl">🔄</span>
                   Iterations
@@ -342,7 +342,7 @@ export default function Page() {
             <p className="text-lg text-body2">This project showed me the power of tight collaboration between design, development, and business.</p>
 
             <div className="grid md:grid-cols-2 gap-8">
-              <div className="bg-secondary/20 border border-stroke/30 xl p-6">
+              <div className="bg-secondary/20 xl p-6">
                 <h3 className="font-grotesk font-semibold text-headings text-lg mb-4 flex items-center gap-2">
                   <span className="text-2xl">🤝</span>
                   Cross-functional teamwork
@@ -355,7 +355,7 @@ export default function Page() {
                 </p>
               </div>
 
-              <div className="bg-secondary/20 border border-stroke/30 xl p-6">
+              <div className="bg-secondary/20 xl p-6">
                 <h3 className="font-grotesk font-semibold text-headings text-lg mb-4 flex items-center gap-2">
                   <span className="text-2xl">⚡</span>
                   Rapid iteration
@@ -412,7 +412,7 @@ export default function Page() {
             </p>
 
             <div className="space-y-6">
-              <div className="bg-secondary/20 border border-stroke/30 lg p-6">
+              <div className="bg-secondary/20 lg p-6">
                 <h3 className="font-grotesk font-semibold text-headings text-lg mb-3">Research isn't always traditional</h3>
                 <p className="text-sm text-body">
                   User research doesn't always follow a textbook pattern. In this case, the strongest insights came from internal expertise deeply rooted in the
@@ -420,7 +420,7 @@ export default function Page() {
                 </p>
               </div>
 
-              <div className="bg-secondary/20 border border-stroke/30 lg p-6">
+              <div className="bg-secondary/20 lg p-6">
                 <h3 className="font-grotesk font-semibold text-headings text-lg mb-3">Balance function and aesthetics</h3>
                 <p className="text-sm text-body">
                   Designing for an older, less tech-savvy audience without compromising modern feel deepened my understanding of how design can unite usability
@@ -428,7 +428,7 @@ export default function Page() {
                 </p>
               </div>
 
-              <div className="bg-secondary/20 border border-stroke/30 lg p-6">
+              <div className="bg-secondary/20 lg p-6">
                 <h3 className="font-grotesk font-semibold text-headings text-lg mb-3">Collaboration drives success</h3>
                 <p className="text-sm text-body">
                   When design, technology, and business goals work together, you can create products that not only work but actually make a difference.

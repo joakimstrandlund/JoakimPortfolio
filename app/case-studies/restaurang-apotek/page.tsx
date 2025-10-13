@@ -145,7 +145,7 @@ export default function Page() {
           </div>
 
           <div className="max-w-md mx-auto">
-            <div className="bg-primary/40 border border-stroke/30 xl p-6">
+            <div className="bg-primary/40 xl p-6">
               <div className="mb-6">
                 <Image
                   src="/Rstaurang apotek - landingpage phone.png"
@@ -191,7 +191,7 @@ export default function Page() {
           </div>
 
           <div className="max-w-md mx-auto">
-            <div className="bg-secondary/20 border border-stroke/30 xl p-6">
+            <div className="bg-secondary/20 xl p-6">
               <div className="mb-6">
                 <Image
                   src="/Rstaurang apotek - navabar open phone.png"
@@ -239,7 +239,7 @@ export default function Page() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
-            <div className="bg-primary/40 border border-stroke/30 xl p-6">
+            <div className="bg-primary/40 xl p-6">
               <div className="mb-6">
                 <Image
                   src="/Rstaurang apotek - foodmeny phone.png"
@@ -267,7 +267,7 @@ export default function Page() {
               </ul>
             </div>
 
-            <div className="bg-primary/40 border border-stroke/30 xl p-6">
+            <div className="bg-primary/40 xl p-6">
               <div className="mb-6">
                 <Image
                   src="/Rstaurang apotek - cocktail phone.png"
@@ -311,7 +311,7 @@ export default function Page() {
           </div>
 
           <div className="max-w-md mx-auto">
-            <div className="bg-secondary/20 border border-stroke/30 xl p-6">
+            <div className="bg-secondary/20 xl p-6">
               <div className="mb-6">
                 <Image
                   src="/Rstaurang apotek - galleri phone.png"
@@ -355,7 +355,7 @@ export default function Page() {
           </div>
 
           <div className="max-w-md mx-auto">
-            <div className="bg-primary/40 border border-stroke/30 xl p-6">
+            <div className="bg-primary/40 xl p-6">
               <div className="mb-6">
                 <Image
                   src="/Rstaurang apotek - footer phone.png"
@@ -397,7 +397,7 @@ export default function Page() {
           <div className="space-y-8">
             <p className="text-lg text-body2">I tested the redesign with users and iterated based on feedback. Some decisions needed adjusting.</p>
 
-            <div className="bg-secondary/20 border border-stroke/30 xl p-8 space-y-6">
+            <div className="bg-secondary/20 xl p-8 space-y-6">
               <h3 className="font-grotesk font-semibold text-headings text-xl mb-4">Key Iteration: Mobile Navigation</h3>
               <p className="text-body text-sm">
                 Initially, I placed the phone number and booking button at the top of the navigation. Testing revealed this created a "fast food chain" feeling
@@ -414,7 +414,7 @@ export default function Page() {
             </div>
 
             <div className="grid md:grid-cols-2 gap-8">
-              <div className="bg-secondary/20 border border-stroke/30 xl p-6">
+              <div className="bg-secondary/20 xl p-6">
                 <h3 className="font-grotesk font-semibold text-headings text-lg mb-4 flex items-center gap-2">
                   <span className="text-2xl">✅</span>
                   What worked
@@ -435,7 +435,7 @@ export default function Page() {
                 </ul>
               </div>
 
-              <div className="bg-secondary/20 border border-stroke/30 xl p-6">
+              <div className="bg-secondary/20 xl p-6">
                 <h3 className="font-grotesk font-semibold text-headings text-lg mb-4 flex items-center gap-2">
                   <span className="text-2xl">🎯</span>
                   Impact
