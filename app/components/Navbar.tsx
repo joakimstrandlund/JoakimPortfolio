@@ -3,7 +3,6 @@
 import Link from 'next/link';
 import { useEffect, useState } from 'react';
 import { Menu, X } from 'lucide-react';
-import { AnimatePresence, motion } from 'framer-motion';
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
@@ -77,25 +76,19 @@ export default function Navbar() {
       </header>
 
       {/* Mobile full-screen overlay */}
-      <AnimatePresence mode="wait">
-        {open && (
-          <motion.aside
-            key="mobile-overlay"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
-            transition={{ duration: 0.2, ease: 'easeInOut' }}
-            className="fixed inset-0 z-50 sm:hidden"
-            style={{ backgroundColor: '#121212' }}
-            aria-modal="true"
-            role="dialog"
-            onClick={(e) => {
-              // Close menu when clicking on the overlay background
-              if (e.target === e.currentTarget) {
-                setOpen(false);
-              }
-            }}
-          >
+      {open && (
+        <aside
+          className="fixed inset-0 z-50 sm:hidden"
+          style={{ backgroundColor: '#121212' }}
+          aria-modal="true"
+          role="dialog"
+          onClick={(e) => {
+            // Close menu when clicking on the overlay background
+            if (e.target === e.currentTarget) {
+              setOpen(false);
+            }
+          }}
+        >
             {/* Header with logo and close button */}
             <div className="absolute top-0 left-0 right-0 h-14 flex items-center justify-between px-6 z-20" style={{ pointerEvents: 'auto' }}>
               {/* Logo - same as desktop */}
@@ -145,9 +138,8 @@ export default function Navbar() {
                 </li>
               </ul>
             </nav>
-          </motion.aside>
-        )}
-      </AnimatePresence>
+        </aside>
+      )}
     </>
   );
 }
