@@ -3,12 +3,12 @@ import Link from 'next/link';
 
 export default function Page() {
   return (
-    <article className="bg-primary text-body">
+    <article className="bg-primary-bg text-body">
       {/* Header */}
       <section className="pt-8 pb-6">
         <div className="max-w-3xl mx-auto px-6 text-center">
-          <h1 className="font-display text-headings text-3xl sm:text-4xl md:text-5xl tracking-tight">Restaurang Apotek</h1>
-          <p className="mt-3 text-body2">2024 · UX/UI · Web · Restaurant</p>
+          <h1 className="font-display text-heading text-3xl sm:text-4xl md:text-5xl tracking-tight">Restaurang Apotek</h1>
+          <p className="mt-3 text-muted">2024 · UX/UI · Web · Restaurant</p>
           <p className="mt-4">Redesigning a restaurant website with focus on accessibility, mobile experience, and user-centered design.</p>
         </div>
       </section>
@@ -16,7 +16,7 @@ export default function Page() {
       {/* Hero visual */}
       <section className="pb-16">
         <div className="max-w-4xl mx-auto px-6">
-          <div className="2xl bg-secondary p-8">
+          <div className="2xl bg-secondary-bg p-8">
             <div className="relative">
               <div className="max-w-5xl mx-auto">
                 <div className="relative 2xl overflow-hidden">
@@ -43,10 +43,10 @@ export default function Page() {
             <div>
               <div className="mb-8">
                 <span className="text-xs uppercase tracking-wide text-accent">The Challenge</span>
-                <h2 className="mt-2 font-grotesk font-semibold text-headings text-3xl">A beloved restaurant with a broken website</h2>
+                <h2 className="mt-2 font-grotesk font-semibold text-heading text-3xl">A beloved restaurant with a broken website</h2>
               </div>
               <div className="space-y-6 text-body leading-relaxed">
-                <p className="text-lg text-body2">
+                <p className="text-lg text-muted">
                   Restaurang Apotek is a locally renowned restaurant known for its bold interior and modern take on traditional dining. But their website? It
                   didn't match.
                 </p>
@@ -65,7 +65,7 @@ export default function Page() {
             <div>
               <div className="mb-8">
                 <span className="text-xs uppercase tracking-wide text-accent">Discovery</span>
-                <h2 className="mt-2 font-grotesk font-semibold text-headings text-3xl">Understanding what was broken</h2>
+                <h2 className="mt-2 font-grotesk font-semibold text-heading text-3xl">Understanding what was broken</h2>
               </div>
               <div className="space-y-6">
                 <p>
@@ -74,8 +74,8 @@ export default function Page() {
                 </p>
 
                 <div className="grid md:grid-cols-2 gap-6 mt-8">
-                  <div className="bg-red-500/10 border border-red-500/20 lg p-6">
-                    <h3 className="font-grotesk font-semibold text-headings text-lg mb-3 flex items-center gap-2">
+                  <div className="bg-secondary-bg lg p-6">
+                    <h3 className="font-grotesk font-semibold text-heading text-lg mb-3 flex items-center gap-2">
                       <span className="text-2xl">⚠️</span>
                       What users struggled with
                     </h3>
@@ -99,8 +99,8 @@ export default function Page() {
                     </ul>
                   </div>
 
-                  <div className="border border-stroke/30 p-6">
-                    <h3 className="font-grotesk font-semibold text-headings text-lg mb-3 flex items-center gap-2">
+                  <div className="border border-border p-6">
+                    <h3 className="font-grotesk font-semibold text-heading text-lg mb-3 flex items-center gap-2">
                       <span className="text-2xl">🎯</span>
                       Business needs
                     </h3>
@@ -131,19 +131,19 @@ export default function Page() {
       </section>
 
       {/* Landing Page Design */}
-      <section className="pb-16 bg-secondary/10">
+      <section className="pb-16 bg-secondary-bg/10">
         <div className="max-w-4xl mx-auto px-6 py-16">
           <div className="max-w-4xl mx-auto mb-12">
             <span className="text-xs uppercase tracking-wide text-accent">Solution</span>
-            <h2 className="mt-2 font-grotesk font-semibold text-headings text-3xl mb-6">A welcoming first impression</h2>
-            <p className="text-body2 text-lg">
+            <h2 className="mt-2 font-grotesk font-semibold text-heading text-3xl mb-4">A welcoming first impression</h2>
+            <p className="text-muted text-lg">
               The landing page needed to immediately communicate the restaurant's character while making it easy to find key information like hours, location,
               and booking.
             </p>
           </div>
 
           <div className="max-w-4xl mx-auto">
-            <div className="bg-secondary/20 border border-stroke/30 p-8">
+            <div className="border border-border p-8">
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
                 {/* Mobile phone image */}
                 <div className="flex justify-center lg:justify-start">
@@ -158,7 +158,7 @@ export default function Page() {
 
                 {/* Text content */}
                 <div className="text-center lg:text-left">
-                  <h3 className="font-grotesk font-semibold text-headings text-xl mb-3">Landing Page</h3>
+                  <h3 className="font-grotesk font-semibold text-heading text-xl mb-3">Landing Page</h3>
                   <p className="text-body text-sm mb-4">Clean hero section with immediate access to booking and essential information.</p>
                   <ul className="space-y-2 text-xs text-body">
                     <li className="flex items-start gap-2">
@@ -186,8 +186,8 @@ export default function Page() {
         <div className="max-w-4xl mx-auto px-6">
           <div className="max-w-4xl mx-auto mb-12">
             <span className="text-xs uppercase tracking-wide text-accent">Navigation</span>
-            <h2 className="mt-2 font-grotesk font-semibold text-headings text-3xl mb-6">Making navigation intuitive</h2>
-            <p className="text-body2 text-lg mb-4">
+            <h2 className="mt-2 font-grotesk font-semibold text-heading text-3xl mb-4">Making navigation intuitive</h2>
+            <p className="text-muted text-lg mb-4">
               The old navigation was cluttered and confusing. Users couldn't find what they needed, and the mobile experience was broken.
             </p>
             <p className="text-body">
@@ -196,7 +196,7 @@ export default function Page() {
           </div>
 
           <div className="max-w-4xl mx-auto">
-            <div className="bg-secondary/20 border border-stroke/30 p-8">
+            <div className="border border-border p-8">
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
                 {/* Mobile phone image */}
                 <div className="flex justify-center lg:justify-start">
@@ -211,7 +211,7 @@ export default function Page() {
 
                 {/* Text content */}
                 <div className="text-center lg:text-left">
-                  <h3 className="font-grotesk font-semibold text-headings text-xl mb-3">Mobile Navigation</h3>
+                  <h3 className="font-grotesk font-semibold text-heading text-xl mb-3">Mobile Navigation</h3>
                   <p className="text-body text-sm mb-4">Clean, accessible menu with clear hierarchy and easy-to-tap elements.</p>
                   <ul className="space-y-2 text-xs text-body">
                     <li className="flex items-start gap-2">
@@ -239,18 +239,18 @@ export default function Page() {
       </section>
 
       {/* Menus Section */}
-      <section className="pb-16 bg-secondary/10">
+      <section className="pb-16 bg-secondary-bg/10">
         <div className="max-w-4xl mx-auto px-6 py-16">
           <div className="max-w-4xl mx-auto mb-12">
             <span className="text-xs uppercase tracking-wide text-accent">Content Design</span>
-            <h2 className="mt-2 font-grotesk font-semibold text-headings text-3xl mb-6">Making menus readable and accessible</h2>
-            <p className="text-body2 text-lg">
+            <h2 className="mt-2 font-grotesk font-semibold text-heading text-3xl mb-4">Making menus readable and accessible</h2>
+            <p className="text-muted text-lg">
               The old PDF menus were impossible for screen readers to parse. I redesigned them as web-native content with clear typography, pricing, and
               categories.
             </p>
           </div>
 
-          <div className="bg-secondary/20 border border-stroke/30 p-8">
+          <div className="border border-border p-8">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
               <div>
                 <div className="mb-6">
@@ -262,7 +262,7 @@ export default function Page() {
                     className="w-full max-w-[240px] h-auto lg shadow-lg mx-auto"
                   />
                 </div>
-                <h3 className="font-grotesk font-semibold text-headings text-xl mb-3 text-center">Food Menu</h3>
+                <h3 className="font-grotesk font-semibold text-heading text-xl mb-3 text-center">Food Menu</h3>
                 <p className="text-body text-sm text-center mb-4">Clean layout with clear categories, pricing, and descriptions.</p>
                 <ul className="space-y-2 text-xs text-body">
                   <li className="flex items-start gap-2">
@@ -290,7 +290,7 @@ export default function Page() {
                     className="w-full max-w-[240px] h-auto lg shadow-lg mx-auto"
                   />
                 </div>
-                <h3 className="font-grotesk font-semibold text-headings text-xl mb-3 text-center">Cocktail Menu</h3>
+                <h3 className="font-grotesk font-semibold text-heading text-xl mb-3 text-center">Cocktail Menu</h3>
                 <p className="text-body text-sm text-center mb-4">Visual menu design highlighting drinks with proper categorization.</p>
                 <ul className="space-y-2 text-xs text-body">
                   <li className="flex items-start gap-2">
@@ -317,15 +317,15 @@ export default function Page() {
         <div className="max-w-4xl mx-auto px-6">
           <div className="max-w-4xl mx-auto mb-12">
             <span className="text-xs uppercase tracking-wide text-accent">Visual Storytelling</span>
-            <h2 className="mt-2 font-grotesk font-semibold text-headings text-3xl mb-6">Showcasing the atmosphere</h2>
-            <p className="text-body2 text-lg">
+            <h2 className="mt-2 font-grotesk font-semibold text-heading text-3xl mb-4">Showcasing the atmosphere</h2>
+            <p className="text-muted text-lg">
               A restaurant's atmosphere is everything. I designed a gallery section that lets the images speak for themselves while maintaining fast load times
               and accessibility.
             </p>
           </div>
 
           <div className="max-w-4xl mx-auto">
-            <div className="bg-secondary/20 border border-stroke/30 p-8">
+            <div className="border border-border p-8">
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
                 {/* Mobile phone image */}
                 <div className="flex justify-center lg:justify-start">
@@ -340,7 +340,7 @@ export default function Page() {
 
                 {/* Text content */}
                 <div className="text-center lg:text-left">
-                  <h3 className="font-grotesk font-semibold text-headings text-xl mb-3">Gallery</h3>
+                  <h3 className="font-grotesk font-semibold text-heading text-xl mb-3">Gallery</h3>
                   <p className="text-body text-sm mb-4">Image grid optimized for mobile with lazy loading and proper aspect ratios.</p>
                   <ul className="space-y-2 text-xs text-body">
                     <li className="flex items-start gap-2">
@@ -364,19 +364,19 @@ export default function Page() {
       </section>
 
       {/* Footer */}
-      <section className="pb-16 bg-secondary/10">
+      <section className="pb-16 bg-secondary-bg/10">
         <div className="max-w-4xl mx-auto px-6 py-16">
           <div className="max-w-4xl mx-auto mb-12">
             <span className="text-xs uppercase tracking-wide text-accent">Information Architecture</span>
-            <h2 className="mt-2 font-grotesk font-semibold text-headings text-3xl mb-6">Making contact easy</h2>
-            <p className="text-body2 text-lg">
+            <h2 className="mt-2 font-grotesk font-semibold text-heading text-3xl mb-4">Making contact easy</h2>
+            <p className="text-muted text-lg">
               The footer became a crucial touchpoint for users looking for practical information. I designed it to be scannable, accessible, and
               mobile-friendly.
             </p>
           </div>
 
           <div className="max-w-4xl mx-auto">
-            <div className="bg-secondary/20 border border-stroke/30 p-8">
+            <div className="border border-border p-8">
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
                 {/* Mobile phone image */}
                 <div className="flex justify-center lg:justify-start">
@@ -391,7 +391,7 @@ export default function Page() {
 
                 {/* Text content */}
                 <div className="text-center lg:text-left">
-                  <h3 className="font-grotesk font-semibold text-headings text-xl mb-3">Footer</h3>
+                  <h3 className="font-grotesk font-semibold text-heading text-xl mb-3">Footer</h3>
                   <p className="text-body text-sm mb-4">Organized footer with opening hours, contact details, and location.</p>
                   <ul className="space-y-2 text-xs text-body">
                     <li className="flex items-start gap-2">
@@ -419,14 +419,14 @@ export default function Page() {
         <div className="max-w-4xl mx-auto px-6">
           <div className="mb-12">
             <span className="text-xs uppercase tracking-wide text-accent">Validation</span>
-            <h2 className="mt-2 font-grotesk font-semibold text-headings text-3xl mb-6">Testing and refining</h2>
+            <h2 className="mt-2 font-grotesk font-semibold text-heading text-3xl mb-4">Testing and refining</h2>
           </div>
 
-          <div className="space-y-8">
-            <p className="text-lg text-body2">I tested the redesign with users and iterated based on feedback. Some decisions needed adjusting.</p>
+          <div className="space-y-6">
+            <p className="text-lg text-muted">I tested the redesign with users and iterated based on feedback. Some decisions needed adjusting.</p>
 
-            <div className="bg-secondary border border-stroke/30 xl p-8 space-y-6">
-              <h3 className="font-grotesk font-semibold text-headings text-xl mb-3">Key Iteration: Mobile Navigation</h3>
+            <div className="border border-border xl p-8 space-y-6">
+              <h3 className="font-grotesk font-semibold text-heading text-xl mb-3">Key Iteration: Mobile Navigation</h3>
               <p className="text-body text-sm">
                 Initially, I placed the phone number and booking button at the top of the navigation. Testing revealed this created a "fast food chain" feeling
                 and caused confusion.
@@ -434,7 +434,7 @@ export default function Page() {
               <p className="text-body text-sm">
                 Moving these elements into the dropdown menu resulted in clearer visual hierarchy, a more intuitive flow, and better focus on navigation.
               </p>
-              <div className="bg-secondary border border-stroke/30 lg p-4 mt-4">
+              <div className="bg-secondary-bg lg p-4 mt-4">
                 <p className="text-accent text-sm font-medium">
                   Lesson learned: Sometimes less visible doesn't mean less accessible. Context and clarity matter more than prominence.
                 </p>
@@ -442,8 +442,8 @@ export default function Page() {
             </div>
 
             <div className="grid md:grid-cols-2 gap-8">
-              <div className="bg-secondary border border-stroke/30 xl p-6">
-                <h3 className="font-grotesk font-semibold text-headings text-lg mb-3 flex items-center gap-2">
+              <div className="bg-secondary-bg xl p-6">
+                <h3 className="font-grotesk font-semibold text-heading text-lg mb-3 flex items-center gap-2">
                   <span className="text-2xl">✅</span>
                   What worked
                 </h3>
@@ -463,8 +463,8 @@ export default function Page() {
                 </ul>
               </div>
 
-              <div className="bg-secondary border border-stroke/30 xl p-6">
-                <h3 className="font-grotesk font-semibold text-headings text-lg mb-3 flex items-center gap-2">
+              <div className="bg-secondary-bg xl p-6">
+                <h3 className="font-grotesk font-semibold text-heading text-lg mb-3 flex items-center gap-2">
                   <span className="text-2xl">🎯</span>
                   Impact
                 </h3>
@@ -493,40 +493,40 @@ export default function Page() {
         <div className="max-w-4xl mx-auto px-6 py-16">
           <div className="mb-8">
             <span className="text-xs uppercase tracking-wide text-accent">Reflections</span>
-            <h2 className="mt-2 font-grotesk font-semibold text-headings text-3xl mb-6">What I learned</h2>
+            <h2 className="mt-2 font-grotesk font-semibold text-heading text-3xl mb-4">What I learned</h2>
           </div>
 
-          <div className="space-y-8">
-            <p className="text-lg text-body2">
+          <div className="space-y-6">
+            <p className="text-lg text-muted">
               This project taught me that good design isn't just about aesthetics. It's about solving real problems for real people.
             </p>
 
             <div className="space-y-6">
-              <div className="border border-stroke/30 p-6">
-                <h3 className="font-grotesk font-semibold text-headings text-lg mb-3">Accessibility opens doors</h3>
+              <div className="border border-border p-6">
+                <h3 className="font-grotesk font-semibold text-heading text-lg mb-3">Accessibility opens doors</h3>
                 <p className="text-sm text-body">
                   Building for accessibility from the start made the site better for everyone, not just users with disabilities. Clear navigation and semantic
                   HTML improved the entire experience.
                 </p>
               </div>
 
-              <div className="border border-stroke/30 p-6">
-                <h3 className="font-grotesk font-semibold text-headings text-lg mb-3">User testing catches blind spots</h3>
+              <div className="border border-border p-6">
+                <h3 className="font-grotesk font-semibold text-heading text-lg mb-3">User testing catches blind spots</h3>
                 <p className="text-sm text-body">
                   What seemed clear to me wasn't always clear to users. Testing revealed issues I would have missed, and their feedback shaped better solutions.
                 </p>
               </div>
 
-              <div className="border border-stroke/30 p-6">
-                <h3 className="font-grotesk font-semibold text-headings text-lg mb-3">Mobile-first matters</h3>
+              <div className="border border-border p-6">
+                <h3 className="font-grotesk font-semibold text-heading text-lg mb-3">Mobile-first matters</h3>
                 <p className="text-sm text-body">
                   Most users were browsing on mobile. Designing for small screens first ensured the experience worked where it mattered most.
                 </p>
               </div>
             </div>
 
-            <div className="mt-12 bg-tagBg border border-stroke/30 p-8">
-              <p className="text-tagText font-medium text-center text-lg">"The best designs solve problems you didn't know existed until users showed you."</p>
+            <div className="mt-12 border border-border p-8">
+              <p className="text-accent font-medium text-center text-lg">"The best designs solve problems you didn't know existed until users showed you."</p>
             </div>
           </div>
         </div>
@@ -537,7 +537,7 @@ export default function Page() {
         <div className="max-w-4xl mx-auto px-6">
           <div className="mb-8">
             <span className="text-xs uppercase tracking-wide text-accent">Next Steps</span>
-            <h2 className="mt-2 font-grotesk font-semibold text-headings text-3xl mb-6">If I had more time...</h2>
+            <h2 className="mt-2 font-grotesk font-semibold text-heading text-3xl mb-4">If I had more time...</h2>
           </div>
 
           <div className="space-y-6 text-body">
@@ -547,21 +547,21 @@ export default function Page() {
               <li className="flex items-start gap-4">
                 <span className="text-accent text-xl mt-1">→</span>
                 <div>
-                  <h3 className="font-grotesk font-semibold text-headings mb-1">Enhanced WCAG compliance</h3>
+                  <h3 className="font-grotesk font-semibold text-heading mb-1">Enhanced WCAG compliance</h3>
                   <p className="text-sm">Conduct a full AA-level audit and implement remaining improvements</p>
                 </div>
               </li>
               <li className="flex items-start gap-4">
                 <span className="text-accent text-xl mt-1">→</span>
                 <div>
-                  <h3 className="font-grotesk font-semibold text-headings mb-1">Online ordering integration</h3>
+                  <h3 className="font-grotesk font-semibold text-heading mb-1">Online ordering integration</h3>
                   <p className="text-sm">Explore adding takeout ordering functionality for additional revenue</p>
                 </div>
               </li>
               <li className="flex items-start gap-4">
                 <span className="text-accent text-xl mt-1">→</span>
                 <div>
-                  <h3 className="font-grotesk font-semibold text-headings mb-1">Performance optimization</h3>
+                  <h3 className="font-grotesk font-semibold text-heading mb-1">Performance optimization</h3>
                   <p className="text-sm">Further optimize images and implement progressive loading strategies</p>
                 </div>
               </li>
@@ -571,16 +571,17 @@ export default function Page() {
       </section>
 
       {/* Next Project Navigation */}
-      <section className="py-16 border-t border-stroke/30">
+      <section className="py-16 border-t border-border/30">
         <div className="max-w-4xl mx-auto px-6 text-center">
           <div className="space-y-4 mb-8">
-            <p className="text-body2 text-lg">Thanks for reading! 🙌</p>
+            <p className="text-heading text-xl">Thanks for reading! 🙌</p>
             <p className="text-body">I hope you enjoyed learning about Restaurang Apotek.</p>
             <p className="text-body">Feel free to explore more of my work or get in touch.</p>
           </div>
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <Link href="/case-studies/loggi" className="btn btn-primary">
-              Next Project: Loggi →
+            <Link href="/case-studies/loggi" className="btn btn-primary btn-arrow">
+              Next Project: Loggi
+              <span className="arrow">→</span>
             </Link>
             <Link href="/#projects" className="btn">
               All Projects

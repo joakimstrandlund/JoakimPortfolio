@@ -44,9 +44,9 @@ export default function Navbar() {
 
   return (
     <>
-      <header className="sticky top-0 z-40 bg-primary/70 backdrop-blur border-b border-stroke">
+      <header className="sticky top-0 z-40 bg-primary-bg/70 backdrop-blur border-b border-border">
         <div className="max-w-6xl mx-auto px-6 h-14 flex items-center justify-between">
-          <Link href="/" className="font-grotesk font-semibold text-headings tracking-wide">
+          <Link href="/" className="font-grotesk font-semibold text-heading tracking-wide">
             J.STRANDLUND
           </Link>
 
@@ -65,7 +65,7 @@ export default function Navbar() {
 
           {/* Mobile toggle */}
           <button
-            className="sm:hidden inline-flex h-10 w-10 items-center justify-center border border-stroke bg-tertiary/60 text-headings hover:border-stroke2 transition touch-manipulation"
+            className="sm:hidden inline-flex h-10 w-10 items-center justify-center border border-border bg-tertiary-bg/60 text-heading hover:border-border-hover transition touch-manipulation"
             aria-label={open ? 'Close menu' : 'Open menu'}
             onClick={() => setOpen(!open)}
             style={{ touchAction: 'manipulation' }}
@@ -79,7 +79,7 @@ export default function Navbar() {
       {open && (
         <aside
           className="fixed inset-0 z-50 sm:hidden"
-          style={{ backgroundColor: 'var(--color-primary)' }}
+          style={{ backgroundColor: 'var(--color-primary-bg)' }}
           aria-modal="true"
           role="dialog"
           onClick={(e) => {
@@ -92,7 +92,7 @@ export default function Navbar() {
           {/* Header with logo and close button */}
           <div className="absolute top-0 left-0 right-0 h-14 flex items-center justify-between px-6 z-20" style={{ pointerEvents: 'auto' }}>
             {/* Logo - same as desktop */}
-            <Link href="/" className="font-grotesk font-semibold text-headings tracking-wide">
+            <Link href="/" className="font-grotesk font-semibold text-heading tracking-wide">
               J.STRANDLUND
             </Link>
 
@@ -111,7 +111,7 @@ export default function Navbar() {
                 setOpen(false);
               }}
               aria-label="Close menu"
-              className="inline-flex h-10 w-10 items-center justify-center border border-stroke bg-tertiary/60 text-headings hover:border-stroke2 transition touch-manipulation relative z-10"
+              className="inline-flex h-10 w-10 items-center justify-center border border-border bg-tertiary-bg/60 text-heading hover:border-border-hover transition touch-manipulation relative z-10"
               style={{ touchAction: 'manipulation', pointerEvents: 'auto' }}
             >
               <X className="h-5 w-5" />
@@ -122,17 +122,17 @@ export default function Navbar() {
           <nav className="absolute inset-0 flex items-center justify-end pr-6">
             <ul className="text-right flex flex-col items-end gap-8">
               <li>
-                <Link onClick={() => setOpen(false)} href="/#projects" className="font-grotesk font-semibold text-headings2 text-2xl link-underline">
+                <Link onClick={() => setOpen(false)} href="/#projects" className="font-grotesk font-semibold text-heading text-2xl link-underline">
                   Projects
                 </Link>
               </li>
               <li>
-                <Link onClick={() => setOpen(false)} href="/about" className="font-grotesk font-semibold text-headings2 text-2xl link-underline">
+                <Link onClick={() => setOpen(false)} href="/about" className="font-grotesk font-semibold text-heading text-2xl link-underline">
                   About me
                 </Link>
               </li>
               <li>
-                <Link onClick={() => setOpen(false)} href="/#contact" className="font-grotesk font-semibold text-headings2 text-2xl link-underline">
+                <Link onClick={() => setOpen(false)} href="/#contact" className="font-grotesk font-semibold text-heading text-2xl link-underline">
                   Contact
                 </Link>
               </li>

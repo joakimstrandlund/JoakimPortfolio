@@ -1,20 +1,20 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" style="display: none;">
   <!-- Option 1: Simple Flower -->
   <g id="flower">
-    <circle cx="200" cy="200" r="8" fill="#ffe07d"/>
-    <circle cx="200" cy="180" r="6" fill="#ffe07d" opacity="0.8"/>
-    <circle cx="220" cy="200" r="6" fill="#ffe07d" opacity="0.8"/>
-    <circle cx="200" cy="220" r="6" fill="#ffe07d" opacity="0.8"/>
-    <circle cx="180" cy="200" r="6" fill="#ffe07d" opacity="0.8"/>
-    <circle cx="190" cy="185" r="5" fill="#ffe07d" opacity="0.6"/>
-    <circle cx="210" cy="185" r="5" fill="#ffe07d" opacity="0.6"/>
-    <circle cx="190" cy="215" r="5" fill="#ffe07d" opacity="0.6"/>
-    <circle cx="210" cy="215" r="5" fill="#ffe07d" opacity="0.6"/>
+    <circle cx="200" cy="200" r="8" fill="#ff6b2c"/>
+    <circle cx="200" cy="180" r="6" fill="#ff6b2c" opacity="0.8"/>
+    <circle cx="220" cy="200" r="6" fill="#ff6b2c" opacity="0.8"/>
+    <circle cx="200" cy="220" r="6" fill="#ff6b2c" opacity="0.8"/>
+    <circle cx="180" cy="200" r="6" fill="#ff6b2c" opacity="0.8"/>
+    <circle cx="190" cy="185" r="5" fill="#ff6b2c" opacity="0.6"/>
+    <circle cx="210" cy="185" r="5" fill="#ff6b2c" opacity="0.6"/>
+    <circle cx="190" cy="215" r="5" fill="#ff6b2c" opacity="0.6"/>
+    <circle cx="210" cy="215" r="5" fill="#ff6b2c" opacity="0.6"/>
   </g>
 
   <!-- Option 2: Happy Face -->
   <g id="smiley">
-    <circle cx="200" cy="200" r="40" fill="#ffe07d"/>
+    <circle cx="200" cy="200" r="40" fill="#ff6b2c"/>
     <circle cx="185" cy="185" r="4" fill="#121212"/>
     <circle cx="215" cy="185" r="4" fill="#121212"/>
     <path d="M 175 210 Q 200 230 225 210" stroke="#121212" stroke-width="3" fill="none" stroke-linecap="round"/>
@@ -22,20 +22,20 @@
 
   <!-- Option 3: Star -->
   <g id="star">
-    <path d="M 200 160 L 210 200 L 250 200 L 220 225 L 230 265 L 200 240 L 170 265 L 180 225 L 150 200 L 190 200 Z" fill="#ffe07d"/>
+    <path d="M 200 160 L 210 200 L 250 200 L 220 225 L 230 265 L 200 240 L 170 265 L 180 225 L 150 200 L 190 200 Z" fill="#ff6b2c"/>
   </g>
 
   <!-- Option 4: Heart -->
   <g id="heart">
-    <path d="M 200 220 C 200 200, 180 180, 160 200 C 160 180, 180 160, 200 180 C 220 160, 240 180, 240 200 C 220 180, 200 200, 200 220 Z" fill="#ffe07d"/>
+    <path d="M 200 220 C 200 200, 180 180, 160 200 C 160 180, 180 160, 200 180 C 220 160, 240 180, 240 200 C 220 180, 200 200, 200 220 Z" fill="#ff6b2c"/>
   </g>
 
   <!-- Option 5: Simple Dot Pattern -->
   <g id="dots">
-    <circle cx="200" cy="200" r="6" fill="#ffe07d"/>
-    <circle cx="180" cy="180" r="4" fill="#ffe07d" opacity="0.7"/>
-    <circle cx="220" cy="180" r="4" fill="#ffe07d" opacity="0.7"/>
-    <circle cx="180" cy="220" r="4" fill="#ffe07d" opacity="0.7"/>
-    <circle cx="220" cy="220" r="4" fill="#ffe07d" opacity="0.7"/>
+    <circle cx="200" cy="200" r="6" fill="#ff6b2c"/>
+    <circle cx="180" cy="180" r="4" fill="#ff6b2c" opacity="0.7"/>
+    <circle cx="220" cy="180" r="4" fill="#ff6b2c" opacity="0.7"/>
+    <circle cx="180" cy="220" r="4" fill="#ff6b2c" opacity="0.7"/>
+    <circle cx="220" cy="220" r="4" fill="#ff6b2c" opacity="0.7"/>
   </g>
 </svg>

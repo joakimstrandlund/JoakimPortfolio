@@ -3,12 +3,12 @@ import Link from 'next/link';
 
 export default function Page() {
   return (
-    <article className="bg-primary text-body">
+    <article className="bg-primary-bg text-body">
       {/* Header */}
       <section className="pt-8 pb-6">
         <div className="max-w-3xl mx-auto px-6 text-center">
-          <h1 className="font-display text-headings text-3xl sm:text-4xl md:text-5xl tracking-tight">Loggi Wellness App</h1>
-          <p className="mt-3 text-body2">2025 · UX/UI · Accessibility · Mobile</p>
+          <h1 className="font-display text-heading text-3xl sm:text-4xl md:text-5xl tracking-tight">Loggi Wellness App</h1>
+          <p className="mt-3 text-muted">2025 · UX/UI · Accessibility · Mobile</p>
           <p className="mt-4">A 2-week concept sprint designing a calm, accessible wellness app for daily mood and sleep tracking.</p>
         </div>
       </section>
@@ -16,7 +16,7 @@ export default function Page() {
       {/* Hero visual */}
       <section className="pb-16">
         <div className="max-w-4xl mx-auto px-6">
-          <div className="2xl bg-secondary p-8">
+          <div className="2xl bg-secondary-bg p-8">
             <div className="relative">
               <div className="max-w-5xl mx-auto">
                 <div className="relative 2xl overflow-hidden">
@@ -43,16 +43,16 @@ export default function Page() {
             <div>
               <div className="mb-8">
                 <span className="text-xs uppercase tracking-wide text-accent">The Challenge</span>
-                <h2 className="mt-2 font-grotesk font-semibold text-headings text-3xl">Why another wellness app?</h2>
+                <h2 className="mt-2 font-grotesk font-semibold text-heading text-3xl">Why another wellness app?</h2>
               </div>
               <div className="space-y-6 text-body leading-relaxed">
-                <p className="text-lg text-body2">
+                <p className="text-lg text-muted">
                   Most wellness apps feel overwhelming. They push you to track everything, gamify your emotions, and guilt you when you miss a day. I wanted to
                   explore a different approach.
                 </p>
                 <p>
                   The core question became:{' '}
-                  <span className="text-headings font-medium">
+                  <span className="text-heading font-medium">
                     How might we design a daily wellness tool that feels calm, supportive, and emotionally safe while still helping users build consistent
                     habits over time?
                   </span>
@@ -68,10 +68,10 @@ export default function Page() {
             <div>
               <div className="mb-8">
                 <span className="text-xs uppercase tracking-wide text-accent">Target Users</span>
-                <h2 className="mt-2 font-grotesk font-semibold text-headings text-3xl">Who needs this?</h2>
+                <h2 className="mt-2 font-grotesk font-semibold text-heading text-3xl">Who needs this?</h2>
               </div>
-              <div className="bg-secondary xl p-8 space-y-4 border-l-4 border-accent">
-                <p className="text-body2 text-lg">
+              <div className="bg-secondary-bg xl p-8 space-y-4 border-l-4 border-accent">
+                <p className="text-muted text-lg">
                   Loggi was created for people who want to build healthy daily habits but feel overwhelmed by wellness tools that are too intense or rigid.
                 </p>
                 <p>
@@ -84,7 +84,7 @@ export default function Page() {
             <div>
               <div className="mb-8">
                 <span className="text-xs uppercase tracking-wide text-accent">Research</span>
-                <h2 className="mt-2 font-grotesk font-semibold text-headings text-3xl">Understanding the landscape</h2>
+                <h2 className="mt-2 font-grotesk font-semibold text-heading text-3xl">Understanding the landscape</h2>
               </div>
               <div className="space-y-6">
                 <p>
@@ -93,8 +93,8 @@ export default function Page() {
                 </p>
 
                 <div className="grid md:grid-cols-2 gap-6 mt-8">
-                  <div className="border border-stroke/30 p-6">
-                    <h3 className="font-grotesk font-semibold text-headings text-lg mb-3 flex items-center gap-2">
+                  <div className="border border-border p-6">
+                    <h3 className="font-grotesk font-semibold text-heading text-lg mb-3 flex items-center gap-2">
                       <span className="text-2xl">💭</span>
                       Key Insights
                     </h3>
@@ -118,8 +118,8 @@ export default function Page() {
                     </ul>
                   </div>
 
-                  <div className="border border-stroke/30 p-6">
-                    <h3 className="font-grotesk font-semibold text-headings text-lg mb-3 flex items-center gap-2">
+                  <div className="border border-border p-6">
+                    <h3 className="font-grotesk font-semibold text-heading text-lg mb-3 flex items-center gap-2">
                       <span className="text-2xl">🎯</span>
                       Design Hypothesis
                     </h3>
@@ -136,27 +136,27 @@ export default function Page() {
             <div>
               <div className="mb-8">
                 <span className="text-xs uppercase tracking-wide text-accent">Strategy</span>
-                <h2 className="mt-2 font-grotesk font-semibold text-headings text-3xl">Shaping the emotional tone</h2>
+                <h2 className="mt-2 font-grotesk font-semibold text-heading text-3xl">Shaping the emotional tone</h2>
               </div>
               <div className="space-y-6">
                 <p>Before diving into screens, I defined the emotional foundation. Loggi needed to feel like a supportive friend, not a demanding coach.</p>
 
                 <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mt-8">
-                  <div className="bg-secondary border border-stroke/30 lg p-4 text-center">
+                  <div className="bg-secondary-bg lg p-4 text-center">
                     <div className="text-3xl mb-2">🤝</div>
-                    <div className="text-sm font-grotesk font-semibold text-headings">Supportive</div>
+                    <div className="text-sm font-grotesk font-semibold text-heading">Supportive</div>
                   </div>
-                  <div className="bg-secondary border border-stroke/30 lg p-4 text-center">
+                  <div className="bg-secondary-bg lg p-4 text-center">
                     <div className="text-3xl mb-2">🌸</div>
-                    <div className="text-sm font-grotesk font-semibold text-headings">Gentle</div>
+                    <div className="text-sm font-grotesk font-semibold text-heading">Gentle</div>
                   </div>
-                  <div className="bg-secondary border border-stroke/30 lg p-4 text-center">
+                  <div className="bg-secondary-bg lg p-4 text-center">
                     <div className="text-3xl mb-2">💙</div>
-                    <div className="text-sm font-grotesk font-semibold text-headings">Authentic</div>
+                    <div className="text-sm font-grotesk font-semibold text-heading">Authentic</div>
                   </div>
-                  <div className="bg-secondary border border-stroke/30 lg p-4 text-center">
+                  <div className="bg-secondary-bg lg p-4 text-center">
                     <div className="text-3xl mb-2">❤️</div>
-                    <div className="text-sm font-grotesk font-semibold text-headings">Empathetic</div>
+                    <div className="text-sm font-grotesk font-semibold text-heading">Empathetic</div>
                   </div>
                 </div>
 
@@ -168,12 +168,14 @@ export default function Page() {
       </section>
 
       {/* Onboarding Flow - Story */}
-      <section className="pb-16 bg-secondary/10">
+      <section className="pb-16 bg-secondary-bg/10">
         <div className="max-w-4xl mx-auto px-6 py-16">
           <div className="max-w-4xl mx-auto mb-12">
-            <span className="text-xs uppercase tracking-wide text-accent">First Impressions</span>
-            <h2 className="mt-2 font-grotesk font-semibold text-headings text-3xl mb-6">Welcoming users without pressure</h2>
-            <p className="text-body2 text-lg">
+            <div className="mb-8">
+              <span className="text-xs uppercase tracking-wide text-accent">Onboarding Flow</span>
+            </div>
+            <h2 className="mt-2 font-grotesk font-semibold text-heading text-3xl mb-4">Welcoming users without pressure</h2>
+            <p className="text-muted text-lg">
               The onboarding needed to set the right tone from the start. I designed a 4-step flow that feels calm and goal-oriented without overwhelming new
               users with too much information.
             </p>
@@ -191,7 +193,7 @@ export default function Page() {
                   className="w-full max-w-[120px] md:max-w-none h-auto lg shadow-lg mx-auto"
                 />
               </div>
-              <h3 className="font-grotesk font-semibold text-headings text-sm md:text-lg mb-1 md:mb-2">Welcome</h3>
+              <h3 className="font-grotesk font-semibold text-heading text-sm md:text-lg mb-1 md:mb-2">Welcome</h3>
               <p className="text-body text-xs md:text-sm">Soft introduction</p>
             </div>
 
@@ -205,7 +207,7 @@ export default function Page() {
                   className="w-full max-w-[120px] md:max-w-none h-auto lg shadow-lg mx-auto"
                 />
               </div>
-              <h3 className="font-grotesk font-semibold text-headings text-sm md:text-lg mb-1 md:mb-2">Purpose</h3>
+              <h3 className="font-grotesk font-semibold text-heading text-sm md:text-lg mb-1 md:mb-2">Purpose</h3>
               <p className="text-body text-xs md:text-sm">Clear value</p>
             </div>
 
@@ -219,7 +221,7 @@ export default function Page() {
                   className="w-full max-w-[120px] md:max-w-none h-auto lg shadow-lg mx-auto"
                 />
               </div>
-              <h3 className="font-grotesk font-semibold text-headings text-sm md:text-lg mb-1 md:mb-2">Preferences</h3>
+              <h3 className="font-grotesk font-semibold text-heading text-sm md:text-lg mb-1 md:mb-2">Preferences</h3>
               <p className="text-body text-xs md:text-sm">Light setup</p>
             </div>
 
@@ -233,7 +235,7 @@ export default function Page() {
                   className="w-full max-w-[120px] md:max-w-none h-auto lg shadow-lg mx-auto"
                 />
               </div>
-              <h3 className="font-grotesk font-semibold text-headings text-sm md:text-lg mb-1 md:mb-2">Ready</h3>
+              <h3 className="font-grotesk font-semibold text-heading text-sm md:text-lg mb-1 md:mb-2">Ready</h3>
               <p className="text-body text-xs md:text-sm">Encouragement</p>
             </div>
           </div>
@@ -249,8 +251,8 @@ export default function Page() {
         <div className="max-w-4xl mx-auto px-6 py-8">
           <div className="max-w-4xl mx-auto mb-12">
             <span className="text-xs uppercase tracking-wide text-accent">Core Experience</span>
-            <h2 className="mt-2 font-grotesk font-semibold text-headings text-3xl mb-6">The heart of Loggi: Daily check-ins</h2>
-            <p className="text-body2 text-lg mb-4">
+            <h2 className="mt-2 font-grotesk font-semibold text-heading text-3xl mb-4">The heart of Loggi: Daily check-ins</h2>
+            <p className="text-muted text-lg mb-4">
               This is where the design philosophy comes to life. A 5-step flow designed to take under 60 seconds, with clear visual feedback and no judgment.
             </p>
             <p className="text-body">The goal was to make checking in feel like an act of self-care, not another task on a to-do list.</p>
@@ -267,7 +269,7 @@ export default function Page() {
                   className="w-full max-w-[120px] md:max-w-none h-auto lg shadow-lg mx-auto"
                 />
               </div>
-              <h3 className="font-grotesk font-semibold text-headings text-sm md:text-lg mb-1 md:mb-2">Mood</h3>
+              <h3 className="font-grotesk font-semibold text-heading text-sm md:text-lg mb-1 md:mb-2">Mood</h3>
               <p className="text-body text-xs md:text-sm">How are you?</p>
             </div>
 
@@ -281,7 +283,7 @@ export default function Page() {
                   className="w-full max-w-[120px] md:max-w-none h-auto lg shadow-lg mx-auto"
                 />
               </div>
-              <h3 className="font-grotesk font-semibold text-headings text-sm md:text-lg mb-1 md:mb-2">Sleep</h3>
+              <h3 className="font-grotesk font-semibold text-heading text-sm md:text-lg mb-1 md:mb-2">Sleep</h3>
               <p className="text-body text-xs md:text-sm">How have you slept?</p>
             </div>
 
@@ -295,7 +297,7 @@ export default function Page() {
                   className="w-full max-w-[120px] md:max-w-none h-auto lg shadow-lg mx-auto"
                 />
               </div>
-              <h3 className="font-grotesk font-semibold text-headings text-sm md:text-lg mb-1 md:mb-2">Stress</h3>
+              <h3 className="font-grotesk font-semibold text-heading text-sm md:text-lg mb-1 md:mb-2">Stress</h3>
               <p className="text-body text-xs md:text-sm">Stress level today?</p>
             </div>
 
@@ -309,7 +311,7 @@ export default function Page() {
                   className="w-full max-w-[120px] md:max-w-none h-auto lg shadow-lg mx-auto"
                 />
               </div>
-              <h3 className="font-grotesk font-semibold text-headings text-sm md:text-lg mb-1 md:mb-2">Reflection</h3>
+              <h3 className="font-grotesk font-semibold text-heading text-sm md:text-lg mb-1 md:mb-2">Reflection</h3>
               <p className="text-body text-xs md:text-sm">Optional note</p>
             </div>
 
@@ -323,7 +325,7 @@ export default function Page() {
                   className="w-full max-w-[120px] md:max-w-none h-auto lg shadow-lg mx-auto"
                 />
               </div>
-              <h3 className="font-grotesk font-semibold text-headings text-sm md:text-lg mb-1 md:mb-2">Complete</h3>
+              <h3 className="font-grotesk font-semibold text-heading text-sm md:text-lg mb-1 md:mb-2">Complete</h3>
               <p className="text-body text-xs md:text-sm">Thank you for checking in</p>
             </div>
           </div>
@@ -333,7 +335,7 @@ export default function Page() {
               Each step uses simple icons, clear labels, and supportive microcopy. The progress is visible but not overwhelming. Users can go back, skip, or
               pause anytime.
             </p>
-            <div className="border border-stroke/30 p-6">
+            <div className="bg-secondary-bg p-6">
               <p className="text-accent font-medium italic">
                 "The flow respects the user's time while gathering meaningful insights. No guilt. No pressure. Just care."
               </p>
@@ -343,18 +345,18 @@ export default function Page() {
       </section>
 
       {/* Insights & Profile - Story */}
-      <section className="pb-16 bg-secondary/10">
+      <section className="pb-16 bg-secondary-bg/10">
         <div className="max-w-4xl mx-auto px-6 py-16">
           <div className="max-w-4xl mx-auto mb-12">
             <span className="text-xs uppercase tracking-wide text-accent">Making Data Meaningful</span>
-            <h2 className="mt-2 font-grotesk font-semibold text-headings text-3xl mb-6">Seeing patterns over time</h2>
-            <p className="text-body2 text-lg">
+            <h2 className="mt-2 font-grotesk font-semibold text-heading text-3xl mb-4">Seeing patterns over time</h2>
+            <p className="text-muted text-lg">
               Check-ins are just the beginning. The real value comes from helping users see patterns, understand trends, and feel more aware of their wellness
               journey.
             </p>
           </div>
 
-          <div className="bg-secondary/20 border border-stroke/30 p-8">
+          <div className="border border-border p-8">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
               <div>
                 <div>
@@ -367,7 +369,7 @@ export default function Page() {
                       className="w-full max-w-[240px] h-auto lg shadow-lg mx-auto"
                     />
                   </div>
-                  <h3 className="font-grotesk font-semibold text-headings text-xl mb-3 text-center">Insights</h3>
+                  <h3 className="font-grotesk font-semibold text-heading text-xl mb-3 text-center">Insights</h3>
                   <p className="text-body text-sm text-center mb-4">
                     Visualized trends help users understand their mood and sleep patterns without feeling data-overwhelmed.
                   </p>
@@ -399,7 +401,7 @@ export default function Page() {
                       className="w-full max-w-[240px] h-auto lg shadow-lg mx-auto"
                     />
                   </div>
-                  <h3 className="font-grotesk font-semibold text-headings text-xl mb-3 text-center">Profile</h3>
+                  <h3 className="font-grotesk font-semibold text-heading text-xl mb-3 text-center">Profile</h3>
                   <p className="text-body text-sm text-center mb-4">
                     A clean, accessible space for users to manage preferences and personalize their experience.
                   </p>
@@ -429,17 +431,17 @@ export default function Page() {
         <div className="max-w-4xl mx-auto px-6">
           <div className="mb-12">
             <span className="text-xs uppercase tracking-wide text-accent">Validation</span>
-            <h2 className="mt-2 font-grotesk font-semibold text-headings text-3xl mb-6">Testing with real users</h2>
+            <h2 className="mt-2 font-grotesk font-semibold text-heading text-3xl mb-4">Testing with real users</h2>
           </div>
 
-          <div className="space-y-8">
-            <p className="text-lg text-body2">
+          <div className="space-y-6">
+            <p className="text-lg text-muted">
               I tested the high-fidelity prototype with 5 peers to validate the emotional tone, flow clarity, and overall usability.
             </p>
 
             <div className="grid md:grid-cols-2 gap-8">
-              <div className="bg-secondary border border-stroke/30 xl p-6">
-                <h3 className="font-grotesk font-semibold text-headings text-lg mb-3 flex items-center gap-2">
+              <div className="bg-secondary-bg xl p-6">
+                <h3 className="font-grotesk font-semibold text-heading text-lg mb-3 flex items-center gap-2">
                   <span className="text-2xl">✅</span>
                   What worked
                 </h3>
@@ -459,8 +461,8 @@ export default function Page() {
                 </ul>
               </div>
 
-              <div className="bg-secondary border border-stroke/30 xl p-6">
-                <h3 className="font-grotesk font-semibold text-headings text-lg mb-3 flex items-center gap-2">
+              <div className="bg-secondary-bg xl p-6">
+                <h3 className="font-grotesk font-semibold text-heading text-lg mb-3 flex items-center gap-2">
                   <span className="text-2xl">🔄</span>
                   What I improved
                 </h3>
@@ -489,37 +491,37 @@ export default function Page() {
         <div className="max-w-4xl mx-auto px-6 py-16">
           <div className="mb-8">
             <span className="text-xs uppercase tracking-wide text-accent">Reflections</span>
-            <h2 className="mt-2 font-grotesk font-semibold text-headings text-3xl mb-6">What I learned</h2>
+            <h2 className="mt-2 font-grotesk font-semibold text-heading text-3xl mb-4">What I learned</h2>
           </div>
 
-          <div className="space-y-8">
-            <p className="text-lg text-body2">This project deepened my understanding of how small UX decisions shape emotional experience.</p>
+          <div className="space-y-6">
+            <p className="text-lg text-muted">This project deepened my understanding of how small UX decisions shape emotional experience.</p>
 
             <div className="space-y-6">
-              <div className="bg-secondary border border-stroke/30 lg p-6">
-                <h3 className="font-grotesk font-semibold text-headings text-lg mb-3">Microcopy matters more than I thought</h3>
+              <div className="border border-border lg p-6">
+                <h3 className="font-grotesk font-semibold text-heading text-lg mb-3">Microcopy matters more than I thought</h3>
                 <p className="text-sm text-body">
                   Changing "Next" to "Let's go" or "Complete" to "You're done" made the experience feel more human and supportive. Small words, big impact.
                 </p>
               </div>
 
-              <div className="bg-secondary border border-stroke/30 lg p-6">
-                <h3 className="font-grotesk font-semibold text-headings text-lg mb-3">Visual rhythm creates calm</h3>
+              <div className="border border-border lg p-6">
+                <h3 className="font-grotesk font-semibold text-heading text-lg mb-3">Visual rhythm creates calm</h3>
                 <p className="text-sm text-body">
                   Consistent spacing, subtle animations, and dark UI all contributed to a feeling of "calm focus" that users mentioned in testing.
                 </p>
               </div>
 
-              <div className="bg-secondary border border-stroke/30 lg p-6">
-                <h3 className="font-grotesk font-semibold text-headings text-lg mb-3">Less features, more clarity</h3>
+              <div className="border border-border lg p-6">
+                <h3 className="font-grotesk font-semibold text-heading text-lg mb-3">Less features, more clarity</h3>
                 <p className="text-sm text-body">
                   I initially wanted to add journaling, meditation timers, and habit tracking. But keeping it simple made the experience more approachable.
                 </p>
               </div>
             </div>
 
-            <div className="mt-12 bg-tagBg border border-stroke/30 p-8">
-              <p className="text-tagText font-medium italic text-center text-lg">
+            <div className="mt-12 border border-border p-8">
+              <p className="text-accent font-medium italic text-center text-lg">
                 "Good UX isn't always about more features. It's often about fewer, clearer steps."
               </p>
             </div>
@@ -532,7 +534,7 @@ export default function Page() {
         <div className="max-w-4xl mx-auto px-6">
           <div className="mb-8">
             <span className="text-xs uppercase tracking-wide text-accent">Future Vision</span>
-            <h2 className="mt-2 font-grotesk font-semibold text-headings text-3xl mb-6">If I had more time...</h2>
+            <h2 className="mt-2 font-grotesk font-semibold text-heading text-3xl mb-4">If I had more time...</h2>
           </div>
 
           <div className="space-y-6 text-body">
@@ -542,21 +544,21 @@ export default function Page() {
               <li className="flex items-start gap-4">
                 <span className="text-accent text-xl mt-1">→</span>
                 <div>
-                  <h3 className="font-grotesk font-semibold text-headings mb-1">Personalized insights</h3>
+                  <h3 className="font-grotesk font-semibold text-heading mb-1">Personalized insights</h3>
                   <p className="text-sm">Adapt the experience based on user patterns, offering relevant tips without being pushy</p>
                 </div>
               </li>
               <li className="flex items-start gap-4">
                 <span className="text-accent text-xl mt-1">→</span>
                 <div>
-                  <h3 className="font-grotesk font-semibold text-headings mb-1">Reflection tools</h3>
+                  <h3 className="font-grotesk font-semibold text-heading mb-1">Reflection tools</h3>
                   <p className="text-sm">Simple exercises or prompts that users can engage with when they want to go deeper</p>
                 </div>
               </li>
               <li className="flex items-start gap-4">
                 <span className="text-accent text-xl mt-1">→</span>
                 <div>
-                  <h3 className="font-grotesk font-semibold text-headings mb-1">More interactive insights</h3>
+                  <h3 className="font-grotesk font-semibold text-heading mb-1">More interactive insights</h3>
                   <p className="text-sm">Let users explore their data in more meaningful ways, connecting mood to sleep, stress to activity, etc.</p>
                 </div>
               </li>
@@ -566,16 +568,17 @@ export default function Page() {
       </section>
 
       {/* Next Project Navigation */}
-      <section className="py-16 border-t border-stroke/30">
+      <section className="py-16 border-t border-border/30">
         <div className="max-w-4xl mx-auto px-6 text-center">
           <div className="space-y-4 mb-8">
-            <p className="text-body2 text-lg">Thanks for reading! 🙌</p>
+            <p className="text-heading text-xl">Thanks for reading! 🙌</p>
             <p className="text-body">I hope you enjoyed learning about Loggi.</p>
             <p className="text-body">Feel free to explore more of my work or get in touch.</p>
           </div>
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <Link href="/case-studies/treebula" className="btn btn-primary">
-              Next Project: Treebula →
+            <Link href="/case-studies/treebula" className="btn btn-primary btn-arrow">
+              Next Project: Treebula
+              <span className="arrow">→</span>
             </Link>
             <Link href="/#projects" className="btn">
               All Projects
