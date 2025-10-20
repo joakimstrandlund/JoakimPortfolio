@@ -40,11 +40,9 @@ export default function Page() {
         <div className="max-w-4xl mx-auto px-6">
           <div className="space-y-16">
             {/* The Challenge */}
-            <div>
-              <div className="mb-8">
-                <span className="text-xs uppercase tracking-wide text-accent">The Challenge</span>
-                <h2 className="mt-2 font-heading font-semibold text-heading text-3xl">Distance creates worry</h2>
-              </div>
+            <div className="mb-8">
+              <span className="text-xs uppercase tracking-wide text-accent">The Challenge</span>
+              <h2 className="mt-2 font-heading font-semibold text-heading text-3xl mb-4">Distance creates worry</h2>
               <div className="space-y-6 text-body leading-relaxed">
                 <p className="text-lg text-muted">
                   Many forest owners live far from their property. They worry about storm damage, bark beetle attacks, and other risks but have no easy way to
@@ -65,11 +63,9 @@ export default function Page() {
             </div>
 
             {/* Target Users */}
-            <div>
-              <div className="mb-8">
-                <span className="text-xs uppercase tracking-wide text-accent">Target Users</span>
-                <h2 className="mt-2 font-heading font-semibold text-heading text-3xl">Designing for forest owners</h2>
-              </div>
+            <div className="mb-8">
+              <span className="text-xs uppercase tracking-wide text-accent">Target Users</span>
+              <h2 className="mt-2 font-heading font-semibold text-heading text-3xl mb-4">Designing for forest owners</h2>
               <div className="border border-border p-8 space-y-6">
                 <div className="flex items-center gap-4 mb-4">
                   <div className="w-16 h-16 bg-accent/20 full flex items-center justify-center">
@@ -106,11 +102,9 @@ export default function Page() {
             </div>
 
             {/* Research Approach */}
-            <div>
-              <div className="mb-8">
-                <span className="text-xs uppercase tracking-wide text-accent">Discovery</span>
-                <h2 className="mt-2 font-heading font-semibold text-heading text-3xl">Building on internal expertise</h2>
-              </div>
+            <div className="mb-8">
+              <span className="text-xs uppercase tracking-wide text-accent">Discovery</span>
+              <h2 className="mt-2 font-heading font-semibold text-heading text-3xl mb-4">Building on internal expertise</h2>
               <div className="space-y-6">
                 <p>
                   Unlike traditional UX projects with formal user interviews, we built this service on internal expertise and long industry experience. Many of
@@ -159,7 +153,7 @@ export default function Page() {
       {/* Design Principles */}
       <section className="pb-16 bg-secondary-bg/10">
         <div className="max-w-4xl mx-auto px-6 py-16">
-          <div className="max-w-4xl mx-auto mb-12">
+          <div className="max-w-4xl mx-auto mb-8">
             <span className="text-xs uppercase tracking-wide text-accent">Strategy</span>
             <h2 className="mt-2 font-heading font-semibold text-heading text-3xl mb-4">Balancing modern innovation with accessibility</h2>
             <p className="text-muted text-lg">
@@ -205,7 +199,7 @@ export default function Page() {
       {/* Key Features */}
       <section className="py-16">
         <div className="max-w-4xl mx-auto px-6">
-          <div className="mb-12">
+          <div className="mb-8">
             <span className="text-xs uppercase tracking-wide text-accent">Solution</span>
             <h2 className="mt-2 font-heading font-semibold text-heading text-3xl mb-4">What we built</h2>
           </div>
@@ -256,7 +250,7 @@ export default function Page() {
       {/* Design Process */}
       <section className="pb-16 bg-secondary-bg/10">
         <div className="max-w-4xl mx-auto px-6 py-16">
-          <div className="mb-12">
+          <div className="mb-8">
             <span className="text-xs uppercase tracking-wide text-accent">Process</span>
             <h2 className="mt-2 font-heading font-semibold text-heading text-3xl mb-4">From idea to product</h2>
           </div>
@@ -331,7 +325,7 @@ export default function Page() {
       {/* Collaboration */}
       <section className="py-16">
         <div className="max-w-4xl mx-auto px-6">
-          <div className="mb-12">
+          <div className="mb-8">
             <span className="text-xs uppercase tracking-wide text-accent">Team Dynamics</span>
             <h2 className="mt-2 font-heading font-semibold text-heading text-3xl mb-4">Close collaboration was key</h2>
           </div>
@@ -371,7 +365,7 @@ export default function Page() {
       {/* Impact */}
       <section className="pb-16 bg-accent/5">
         <div className="max-w-4xl mx-auto px-6 py-16">
-          <div className="mb-12">
+          <div className="mb-8">
             <span className="text-xs uppercase tracking-wide text-accent">Impact</span>
             <h2 className="mt-2 font-heading font-semibold text-heading text-3xl mb-4">Bringing forest monitoring to mobile</h2>
           </div>
@@ -398,7 +392,7 @@ export default function Page() {
       {/* Reflections */}
       <section className="py-16">
         <div className="max-w-4xl mx-auto px-6">
-          <div className="mb-12">
+          <div className="mb-8">
             <span className="text-xs uppercase tracking-wide text-accent">Reflections</span>
             <h2 className="mt-2 font-heading font-semibold text-heading text-3xl mb-4">What I learned</h2>
           </div>

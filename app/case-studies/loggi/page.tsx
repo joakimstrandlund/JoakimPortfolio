@@ -40,11 +40,9 @@ export default function Page() {
         <div className="max-w-4xl mx-auto px-6">
           <div className="space-y-16">
             {/* The Problem */}
-            <div>
-              <div className="mb-8">
-                <span className="text-xs uppercase tracking-wide text-accent">The Challenge</span>
-                <h2 className="mt-2 font-heading font-semibold text-heading text-3xl">Why another wellness app?</h2>
-              </div>
+            <div className="mb-8">
+              <span className="text-xs uppercase tracking-wide text-accent">The Challenge</span>
+              <h2 className="mt-2 font-heading font-semibold text-heading text-3xl mb-4">Why another wellness app?</h2>
               <div className="space-y-6 text-body leading-relaxed">
                 <p className="text-lg text-muted">
                   Most wellness apps feel overwhelming. They push you to track everything, gamify your emotions, and guilt you when you miss a day. I wanted to
@@ -65,11 +63,9 @@ export default function Page() {
             </div>
 
             {/* Who I designed for */}
-            <div>
-              <div className="mb-8">
-                <span className="text-xs uppercase tracking-wide text-accent">Target Users</span>
-                <h2 className="mt-2 font-heading font-semibold text-heading text-3xl">Who needs this?</h2>
-              </div>
+            <div className="mb-8">
+              <span className="text-xs uppercase tracking-wide text-accent">Target Users</span>
+              <h2 className="mt-2 font-heading font-semibold text-heading text-3xl mb-4">Who needs this?</h2>
               <div className="bg-secondary-bg xl p-8 space-y-4 border-l-4 border-accent">
                 <p className="text-muted text-lg">
                   Loggi was created for people who want to build healthy daily habits but feel overwhelmed by wellness tools that are too intense or rigid.
@@ -81,11 +77,9 @@ export default function Page() {
             </div>
 
             {/* Research & Insights */}
-            <div>
-              <div className="mb-8">
-                <span className="text-xs uppercase tracking-wide text-accent">Research</span>
-                <h2 className="mt-2 font-heading font-semibold text-heading text-3xl">Understanding the landscape</h2>
-              </div>
+            <div className="mb-8">
+              <span className="text-xs uppercase tracking-wide text-accent">Research</span>
+              <h2 className="mt-2 font-heading font-semibold text-heading text-3xl mb-4">Understanding the landscape</h2>
               <div className="space-y-6">
                 <p>
                   I started by analyzing existing wellness apps, focusing on how they structure their flows, communicate with users, and balance clarity with
@@ -133,11 +127,9 @@ export default function Page() {
             </div>
 
             {/* Defining the Experience */}
-            <div>
-              <div className="mb-8">
-                <span className="text-xs uppercase tracking-wide text-accent">Strategy</span>
-                <h2 className="mt-2 font-heading font-semibold text-heading text-3xl">Shaping the emotional tone</h2>
-              </div>
+            <div className="mb-8">
+              <span className="text-xs uppercase tracking-wide text-accent">Strategy</span>
+              <h2 className="mt-2 font-heading font-semibold text-heading text-3xl mb-4">Shaping the emotional tone</h2>
               <div className="space-y-6">
                 <p>Before diving into screens, I defined the emotional foundation. Loggi needed to feel like a supportive friend, not a demanding coach.</p>
 
@@ -170,10 +162,8 @@ export default function Page() {
       {/* Onboarding Flow - Story */}
       <section className="pb-16 bg-secondary-bg/10">
         <div className="max-w-4xl mx-auto px-6 py-16">
-          <div className="max-w-4xl mx-auto mb-12">
-            <div className="mb-8">
-              <span className="text-xs uppercase tracking-wide text-accent">Onboarding Flow</span>
-            </div>
+          <div className="max-w-4xl mx-auto mb-8">
+            <span className="text-xs uppercase tracking-wide text-accent">Onboarding Flow</span>
             <h2 className="mt-2 font-heading font-semibold text-heading text-3xl mb-4">Welcoming users without pressure</h2>
             <p className="text-muted text-lg">
               The onboarding needed to set the right tone from the start. I designed a 4-step flow that feels calm and goal-oriented without overwhelming new
@@ -249,10 +239,10 @@ export default function Page() {
       {/* Daily Check-in Flow - Story */}
       <section className="pb-16">
         <div className="max-w-4xl mx-auto px-6 py-8">
-          <div className="max-w-4xl mx-auto mb-12">
+          <div className="max-w-4xl mx-auto mb-8">
             <span className="text-xs uppercase tracking-wide text-accent">Core Experience</span>
             <h2 className="mt-2 font-heading font-semibold text-heading text-3xl mb-4">The heart of Loggi: Daily check-ins</h2>
-            <p className="text-muted text-lg mb-4">
+            <p className="text-muted text-lg">
               This is where the design philosophy comes to life. A 5-step flow designed to take under 60 seconds, with clear visual feedback and no judgment.
             </p>
             <p className="text-body">The goal was to make checking in feel like an act of self-care, not another task on a to-do list.</p>
@@ -347,7 +337,7 @@ export default function Page() {
       {/* Insights & Profile - Story */}
       <section className="pb-16 bg-secondary-bg/10">
         <div className="max-w-4xl mx-auto px-6 py-16">
-          <div className="max-w-4xl mx-auto mb-12">
+          <div className="max-w-4xl mx-auto mb-8">
             <span className="text-xs uppercase tracking-wide text-accent">Making Data Meaningful</span>
             <h2 className="mt-2 font-heading font-semibold text-heading text-3xl mb-4">Seeing patterns over time</h2>
             <p className="text-muted text-lg">
@@ -429,7 +419,7 @@ export default function Page() {
       {/* Testing & Iteration */}
       <section className="py-16">
         <div className="max-w-4xl mx-auto px-6">
-          <div className="mb-12">
+          <div className="mb-8">
             <span className="text-xs uppercase tracking-wide text-accent">Validation</span>
             <h2 className="mt-2 font-heading font-semibold text-heading text-3xl mb-4">Testing with real users</h2>
           </div>

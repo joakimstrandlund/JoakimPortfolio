@@ -40,11 +40,9 @@ export default function Page() {
         <div className="max-w-4xl mx-auto px-6">
           <div className="space-y-16">
             {/* The Challenge */}
-            <div>
-              <div className="mb-8">
-                <span className="text-xs uppercase tracking-wide text-accent">The Challenge</span>
-                <h2 className="mt-2 font-heading font-semibold text-heading text-3xl">A beloved restaurant with a broken website</h2>
-              </div>
+            <div className="mb-8">
+              <span className="text-xs uppercase tracking-wide text-accent">The Challenge</span>
+              <h2 className="mt-2 font-heading font-semibold text-heading text-3xl mb-4">A beloved restaurant with a broken website</h2>
               <div className="space-y-6 text-body leading-relaxed">
                 <p className="text-lg text-muted">
                   Restaurang Apotek is a locally renowned restaurant known for its bold interior and modern take on traditional dining. But their website? It
@@ -62,11 +60,9 @@ export default function Page() {
             </div>
 
             {/* Research */}
-            <div>
-              <div className="mb-8">
-                <span className="text-xs uppercase tracking-wide text-accent">Discovery</span>
-                <h2 className="mt-2 font-heading font-semibold text-heading text-3xl">Understanding what was broken</h2>
-              </div>
+            <div className="mb-8">
+              <span className="text-xs uppercase tracking-wide text-accent">Discovery</span>
+              <h2 className="mt-2 font-heading font-semibold text-heading text-3xl mb-4">Understanding what was broken</h2>
               <div className="space-y-6">
                 <p>
                   I started by conducting usability reviews, user interviews, and accessibility audits. The goal was to uncover the biggest pain points and
@@ -133,7 +129,7 @@ export default function Page() {
       {/* Landing Page Design */}
       <section className="pb-16 bg-secondary-bg/10">
         <div className="max-w-4xl mx-auto px-6 py-16">
-          <div className="max-w-4xl mx-auto mb-12">
+          <div className="max-w-4xl mx-auto mb-8">
             <span className="text-xs uppercase tracking-wide text-accent">Solution</span>
             <h2 className="mt-2 font-heading font-semibold text-heading text-3xl mb-4">A welcoming first impression</h2>
             <p className="text-muted text-lg">
@@ -184,10 +180,10 @@ export default function Page() {
       {/* Navigation Solution */}
       <section className="py-16">
         <div className="max-w-4xl mx-auto px-6">
-          <div className="max-w-4xl mx-auto mb-12">
+          <div className="max-w-4xl mx-auto mb-8">
             <span className="text-xs uppercase tracking-wide text-accent">Navigation</span>
             <h2 className="mt-2 font-heading font-semibold text-heading text-3xl mb-4">Making navigation intuitive</h2>
-            <p className="text-muted text-lg mb-4">
+            <p className="text-muted text-lg">
               The old navigation was cluttered and confusing. Users couldn't find what they needed, and the mobile experience was broken.
             </p>
             <p className="text-body">
@@ -241,7 +237,7 @@ export default function Page() {
       {/* Menus Section */}
       <section className="pb-16 bg-secondary-bg/10">
         <div className="max-w-4xl mx-auto px-6 py-16">
-          <div className="max-w-4xl mx-auto mb-12">
+          <div className="max-w-4xl mx-auto mb-8">
             <span className="text-xs uppercase tracking-wide text-accent">Content Design</span>
             <h2 className="mt-2 font-heading font-semibold text-heading text-3xl mb-4">Making menus readable and accessible</h2>
             <p className="text-muted text-lg">
@@ -315,7 +311,7 @@ export default function Page() {
       {/* Gallery */}
       <section className="py-16">
         <div className="max-w-4xl mx-auto px-6">
-          <div className="max-w-4xl mx-auto mb-12">
+          <div className="max-w-4xl mx-auto mb-8">
             <span className="text-xs uppercase tracking-wide text-accent">Visual Storytelling</span>
             <h2 className="mt-2 font-heading font-semibold text-heading text-3xl mb-4">Showcasing the atmosphere</h2>
             <p className="text-muted text-lg">
@@ -366,7 +362,7 @@ export default function Page() {
       {/* Footer */}
       <section className="pb-16 bg-secondary-bg/10">
         <div className="max-w-4xl mx-auto px-6 py-16">
-          <div className="max-w-4xl mx-auto mb-12">
+          <div className="max-w-4xl mx-auto mb-8">
             <span className="text-xs uppercase tracking-wide text-accent">Information Architecture</span>
             <h2 className="mt-2 font-heading font-semibold text-heading text-3xl mb-4">Making contact easy</h2>
             <p className="text-muted text-lg">
@@ -417,7 +413,7 @@ export default function Page() {
       {/* Testing & Iteration */}
       <section className="py-16">
         <div className="max-w-4xl mx-auto px-6">
-          <div className="mb-12">
+          <div className="mb-8">
             <span className="text-xs uppercase tracking-wide text-accent">Validation</span>
             <h2 className="mt-2 font-heading font-semibold text-heading text-3xl mb-4">Testing and refining</h2>
           </div>

@@ -219,7 +219,7 @@ export default function Home() {
                                   alt="Treebula forest monitoring app preview"
                                   width={400}
                                   height={300}
-                                  className="object-contain object-center w-full h-full scale-150 lg:scale-100"
+                                  className="object-contain object-center w-full h-full scale-125 lg:scale-100"
                                 />
                                 {/* Clean image display */}
                               </>
