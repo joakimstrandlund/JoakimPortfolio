@@ -33,7 +33,7 @@ export default function TestimonialCard() {
       className={`bg-secondary-bg p-8 sm:p-12 transition-all duration-700 ease-out ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}
     >
       {/* Quote */}
-      <blockquote className="font-grotesk text-heading text-lg sm:text-xl leading-relaxed mb-8 text-center">
+      <blockquote className="font-heading text-heading text-lg sm:text-xl leading-relaxed mb-8 text-center">
         &quot;It&apos;s been a real pleasure working with Joakim. He&apos;s fast, pragmatic, and has a great instinct for delivering MVPs and PoCs that move
         things forward. At the same time, he builds on solid design principles and creates solutions that are easy to grow and iterate on. A dependable team
         player with a strong foundation—highly recommended.&quot;
@@ -42,10 +42,10 @@ export default function TestimonialCard() {
       {/* Attribution */}
       <div className="flex items-center justify-center gap-4 pt-4 border-t border-border">
         <div className="w-12 h-12 bg-accent/20 border border-accent/30 flex items-center justify-center">
-          <span className="text-accent font-grotesk font-semibold text-lg">ML</span>
+          <span className="text-accent font-heading font-semibold text-lg">ML</span>
         </div>
         <div className="text-left">
-          <div className="font-grotesk font-semibold text-heading text-lg">Mattin Lofti</div>
+          <div className="font-heading font-semibold text-heading text-lg">Mattin Lofti</div>
           <div className="text-body text-sm">
             CTO at <span className="text-accent font-medium">Treebula</span>
           </div>

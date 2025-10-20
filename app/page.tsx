@@ -124,7 +124,7 @@ export default function Home() {
         <div className="max-w-6xl mx-auto px-6">
           <div className="mb-8">
             <div className="text-xs uppercase tracking-wide text-body">Selected</div>
-            <h2 className="mt-2 font-grotesk font-semibold text-2xl sm:text-3xl text-heading">Case studies</h2>
+            <h2 className="mt-2 font-heading font-semibold text-2xl sm:text-3xl text-heading">Case studies</h2>
           </div>
 
           <div className="grid grid-cols-1 gap-8 sm:gap-10">
@@ -139,7 +139,7 @@ export default function Home() {
                 >
                   {/* Card container with border */}
                   <div
-                    className="relative transition-all duration-500 min-h-[480px] lg:min-h-[420px]"
+                    className="relative transition-all duration-500 min-h-[480px] lg:min-h-[420px] shadow-[0_8px_24px_rgba(0,0,0,0.25)] hover:shadow-[0_12px_32px_rgba(0,0,0,0.28)]"
                     style={{
                       backgroundColor: '#242329',
                       background: '#242329',
@@ -219,7 +219,7 @@ export default function Home() {
                                   alt="Treebula forest monitoring app preview"
                                   width={400}
                                   height={300}
-                                  className="object-contain object-center w-full h-full scale-125 lg:scale-100"
+                                  className="object-contain object-center w-full h-full scale-150 lg:scale-100"
                                 />
                                 {/* Clean image display */}
                               </>

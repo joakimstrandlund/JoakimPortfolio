@@ -36,7 +36,7 @@ export default function About() {
         <div className="space-y-16">
           {/* Story */}
           <section>
-            <h2 className="font-grotesk font-semibold text-heading text-2xl mb-6">My story</h2>
+            <h2 className="font-heading font-semibold text-heading text-2xl mb-6">My story</h2>
             <div className="space-y-4 text-body leading-relaxed">
               <p>
                 I&apos;m a UX designer with front-end skills and a background as an Account Manager in the startup and SaaS world. My curiosity for how design
@@ -57,31 +57,31 @@ export default function About() {
 
           {/* Approach */}
           <section>
-            <h2 className="font-grotesk font-semibold text-heading text-2xl mb-6">My approach</h2>
+            <h2 className="font-heading font-semibold text-heading text-2xl mb-6">My approach</h2>
             <div className="grid md:grid-cols-2 gap-8">
               <div className="space-y-4">
-                <h3 className="font-grotesk font-semibold text-heading text-lg">User-first thinking</h3>
+                <h3 className="font-heading font-semibold text-heading text-lg">User-first thinking</h3>
                 <p className="text-body leading-relaxed">
                   Every design decision starts with understanding the user. I spend time researching, interviewing, and observing to ensure solutions address
                   real needs.
                 </p>
               </div>
               <div className="space-y-4">
-                <h3 className="font-grotesk font-semibold text-heading text-lg">Collaborative process</h3>
+                <h3 className="font-heading font-semibold text-heading text-lg">Collaborative process</h3>
                 <p className="text-body leading-relaxed">
                   Great products come from great teams. I work closely with developers, product managers, and stakeholders to align on goals and create cohesive
                   experiences.
                 </p>
               </div>
               <div className="space-y-4">
-                <h3 className="font-grotesk font-semibold text-heading text-lg">Iterative design</h3>
+                <h3 className="font-heading font-semibold text-heading text-lg">Iterative design</h3>
                 <p className="text-body leading-relaxed">
                   I believe in shipping early and often. Rapid prototyping and user testing help validate ideas quickly and refine solutions based on real
                   feedback.
                 </p>
               </div>
               <div className="space-y-4">
-                <h3 className="font-grotesk font-semibold text-heading text-lg">Accessible design</h3>
+                <h3 className="font-heading font-semibold text-heading text-lg">Accessible design</h3>
                 <p className="text-body leading-relaxed">
                   Good design is inclusive design. I ensure products work for everyone, regardless of ability, device, or context of use.
                 </p>
@@ -91,32 +91,32 @@ export default function About() {
 
           {/* Skills */}
           <section>
-            <h2 className="font-grotesk font-semibold text-heading text-2xl mb-6">What I do</h2>
+            <h2 className="font-heading font-semibold text-heading text-2xl mb-6">What I do</h2>
             <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
               <div className="bg-secondary-bg xl p-6">
-                <h3 className="font-grotesk font-semibold text-heading text-lg mb-3">User Research</h3>
+                <h3 className="font-heading font-semibold text-heading text-lg mb-3">User Research</h3>
                 <p className="text-body text-sm leading-relaxed">
                   Interviews, usability testing, user journeys, and persona development to understand user needs.
                 </p>
               </div>
               <div className="bg-secondary-bg xl p-6">
-                <h3 className="font-grotesk font-semibold text-heading text-lg mb-3">Interface Design</h3>
+                <h3 className="font-heading font-semibold text-heading text-lg mb-3">Interface Design</h3>
                 <p className="text-body text-sm leading-relaxed">Creating intuitive and beautiful interfaces that guide users toward their goals.</p>
               </div>
               <div className="bg-secondary-bg xl p-6">
-                <h3 className="font-grotesk font-semibold text-heading text-lg mb-3">Prototyping</h3>
+                <h3 className="font-heading font-semibold text-heading text-lg mb-3">Prototyping</h3>
                 <p className="text-body text-sm leading-relaxed">Interactive prototypes to test ideas and communicate design concepts effectively.</p>
               </div>
               <div className="bg-secondary-bg xl p-6">
-                <h3 className="font-grotesk font-semibold text-heading text-lg mb-3">Design Systems</h3>
+                <h3 className="font-heading font-semibold text-heading text-lg mb-3">Design Systems</h3>
                 <p className="text-body text-sm leading-relaxed">Building scalable design systems that ensure consistency and efficiency across products.</p>
               </div>
               <div className="bg-secondary-bg xl p-6">
-                <h3 className="font-grotesk font-semibold text-heading text-lg mb-3">Strategy</h3>
+                <h3 className="font-heading font-semibold text-heading text-lg mb-3">Strategy</h3>
                 <p className="text-body text-sm leading-relaxed">Aligning design decisions with business goals and user needs for sustainable growth.</p>
               </div>
               <div className="bg-secondary-bg xl p-6">
-                <h3 className="font-grotesk font-semibold text-heading text-lg mb-3">Collaboration</h3>
+                <h3 className="font-heading font-semibold text-heading text-lg mb-3">Collaboration</h3>
                 <p className="text-body text-sm leading-relaxed">Working closely with cross-functional teams to bring designs to life.</p>
               </div>
             </div>
@@ -124,7 +124,7 @@ export default function About() {
 
           {/* Contact CTA */}
           <section className="text-center pt-8 border-t border-border">
-            <h2 className="font-grotesk font-semibold text-heading text-2xl mb-4">Let&apos;s work together</h2>
+            <h2 className="font-heading font-semibold text-heading text-2xl mb-4">Let&apos;s work together</h2>
             <p className="text-muted mb-8 max-w-2xl mx-auto">
               I&apos;m always interested in new opportunities and collaborations. Whether you have a project in mind or just want to chat about design, I&apos;d
               love to hear from you.
