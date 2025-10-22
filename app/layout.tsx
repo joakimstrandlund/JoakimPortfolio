@@ -33,36 +33,15 @@ export default function RootLayout({
           <div className="max-w-6xl mx-auto px-6 py-12">
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
               {/* Brand / Blurb */}
-              <div className="space-y-3">
+              <div className="space-y-2">
                 <div className="font-display text-heading text-lg">Joakim Strandlund</div>
-                <p className="text-sm text-body">
-                  UX/UI Designer crafting user-friendly, modern digital experiences. Calm, pragmatic, and focused on outcomes.
-                </p>
-                <div className="flex items-center gap-3 pt-1">
-                  <a
-                    href="https://github.com/joakimstrandlund"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    aria-label="GitHub"
-                    className="inline-flex h-9 w-9 items-center justify-center border border-border bg-tertiary-bg/60 text-heading hover:border-border-hover transition"
-                  >
-                    <Github className="h-4 w-4" />
-                  </a>
-                  <a
-                    href="https://www.linkedin.com/in/joakim-strandlund-14717817a/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    aria-label="LinkedIn"
-                    className="inline-flex h-9 w-9 items-center justify-center border border-border bg-tertiary-bg/60 text-heading hover:border-border-hover transition"
-                  >
-                    <Linkedin className="h-4 w-4" />
-                  </a>
-                </div>
+                <p className="text-sm text-body">UX/UI Designer</p>
+                <p className="text-sm text-muted">Based in Stockholm, Sweden</p>
               </div>
 
               {/* Contact Information */}
               <nav className="space-y-3">
-                <div className="text-xs uppercase tracking-wide text-body">Contact Information</div>
+                <div className="text-xs uppercase tracking-wide text-accent">Contact Information</div>
                 <ul className="space-y-2 text-sm">
                   <li>
                     <a href="mailto:joakimstrandlund@gmail.com" className="text-body hover:text-heading transition-colors inline-flex items-center gap-2">
@@ -89,7 +68,7 @@ export default function RootLayout({
 
               {/* CTA */}
               <div className="space-y-3">
-                <div className="text-xs uppercase tracking-wide text-body">Work together</div>
+                <div className="text-xs uppercase tracking-wide text-accent">Work together</div>
                 <p className="text-sm text-body">Have a product idea or MVP to shape? I can help bring it to life.</p>
                 <div className="flex gap-3">
                   <a href="mailto:joakimstrandlund@gmail.com" className="btn btn-primary">
@@ -104,7 +83,7 @@ export default function RootLayout({
 
             <div className="mt-10 border-t border-border pt-6 text-xs text-body flex flex-col sm:flex-row gap-3 sm:items-center sm:justify-between">
               <div>© {new Date().getFullYear()} Joakim Strandlund. All rights reserved.</div>
-              <div className="text-body">Based in Sweden · Available for remote work</div>
+              <div className="text-body">Available for remote work</div>
             </div>
           </div>
         </footer>
