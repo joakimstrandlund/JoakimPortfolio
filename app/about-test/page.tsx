@@ -142,6 +142,160 @@ export default function AboutTest() {
         </div>
       </section>
 
+      {/* Option 4: Card-Based Layout */}
+      <section className="py-16 border-t border-border">
+        <div className="max-w-6xl mx-auto px-6">
+          <div className="text-center mb-8">
+            <span className="text-xs uppercase tracking-wide text-accent">Option 4</span>
+            <h2 className="font-heading text-heading text-2xl mt-2">Card-Based Layout</h2>
+          </div>
+
+          <div className="bg-secondary-bg border border-border p-12">
+            <div className="max-w-5xl mx-auto">
+              {/* Header with image */}
+              <div className="text-center mb-16">
+                <div className="w-32 h-32 border border-border overflow-hidden mx-auto mb-6">
+                  <Image src="/Bild joakim .png" alt="Joakim" width={128} height={128} className="w-full h-full object-cover" />
+                </div>
+                <h1 className="font-display text-4xl text-heading mb-4">Joakim Strandlund</h1>
+                <p className="text-accent text-sm uppercase tracking-wide mb-4">UX/UI Designer</p>
+                <p className="text-muted max-w-2xl mx-auto">
+                  Creating thoughtful digital experiences. Based in Stockholm, working with startups and product teams.
+                </p>
+              </div>
+
+              {/* Cards grid */}
+              <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div className="bg-tertiary-bg border border-border p-6">
+                  <h3 className="font-heading font-semibold text-heading text-lg mb-3">My Background</h3>
+                  <p className="text-body text-sm leading-relaxed">
+                    UX designer with front-end skills and account management experience. Studied UX and joined Treebula as an intern, learning to balance user
+                    needs with business goals.
+                  </p>
+                </div>
+
+                <div className="bg-tertiary-bg border border-border p-6">
+                  <h3 className="font-heading font-semibold text-heading text-lg mb-3">My Approach</h3>
+                  <p className="text-body text-sm leading-relaxed">
+                    Start with user research, collaborate early with developers, ship quickly and iterate. I believe in designing for accessibility from day
+                    one.
+                  </p>
+                </div>
+
+                <div className="bg-tertiary-bg border border-border p-6">
+                  <h3 className="font-heading font-semibold text-heading text-lg mb-3">What I Do</h3>
+                  <p className="text-body text-sm leading-relaxed">
+                    User research, interface design, prototyping, and design systems. I work with Figma, HTML/CSS, and collaborate closely with development
+                    teams.
+                  </p>
+                </div>
+              </div>
+
+              <div className="text-center mt-12">
+                <a href="mailto:joakimstrandlund@gmail.com" className="btn btn-primary">
+                  Get in touch
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Option 5: Split Screen */}
+      <section className="py-16 border-t border-border">
+        <div className="max-w-6xl mx-auto px-6">
+          <div className="text-center mb-8">
+            <span className="text-xs uppercase tracking-wide text-accent">Option 5</span>
+            <h2 className="font-heading text-heading text-2xl mt-2">Split Screen Layout</h2>
+          </div>
+
+          <div className="bg-secondary-bg border border-border">
+            <div className="grid lg:grid-cols-2 min-h-[600px]">
+              {/* Left: Image */}
+              <div className="relative">
+                <div className="absolute inset-0">
+                  <Image src="/Bild joakim .png" alt="Joakim" fill className="object-cover" />
+                </div>
+              </div>
+
+              {/* Right: Content */}
+              <div className="p-12 flex flex-col justify-center">
+                <div className="max-w-md">
+                  <h1 className="font-display text-4xl text-heading mb-4">About me</h1>
+                  <p className="text-lg text-muted mb-8">I'm a UX/UI designer passionate about creating digital experiences that make a difference.</p>
+
+                  <div className="space-y-6">
+                    <div>
+                      <h3 className="font-heading font-semibold text-heading text-lg mb-2">My story</h3>
+                      <p className="text-body leading-relaxed">
+                        UX designer with front-end skills and account management background. Joined Treebula as an intern, learning to balance user needs with
+                        business goals through hands-on collaboration.
+                      </p>
+                    </div>
+
+                    <div>
+                      <h3 className="font-heading font-semibold text-heading text-lg mb-2">How I work</h3>
+                      <ul className="space-y-2 text-body">
+                        <li>• Start with user research, not assumptions</li>
+                        <li>• Collaborate early with developers</li>
+                        <li>• Ship quickly, iterate based on feedback</li>
+                        <li>• Design for accessibility from the start</li>
+                      </ul>
+                    </div>
+
+                    <div className="pt-4">
+                      <a href="mailto:joakimstrandlund@gmail.com" className="btn btn-primary">
+                        Get in touch
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Option 6: Minimal Text-Only */}
+      <section className="py-16 border-t border-border mb-16">
+        <div className="max-w-6xl mx-auto px-6">
+          <div className="text-center mb-8">
+            <span className="text-xs uppercase tracking-wide text-accent">Option 6</span>
+            <h2 className="font-heading text-heading text-2xl mt-2">Minimal Text-Only</h2>
+          </div>
+
+          <div className="bg-secondary-bg border border-border p-12">
+            <div className="max-w-3xl mx-auto text-center">
+              <h1 className="font-display text-5xl text-heading mb-6">Joakim Strandlund</h1>
+              <p className="text-accent text-lg uppercase tracking-wide mb-12">UX/UI Designer</p>
+
+              <div className="space-y-8 text-body leading-relaxed">
+                <p className="text-xl">
+                  I'm a UX designer with front-end skills and a background in account management. My curiosity about how design shapes real experiences led me
+                  to study UX and join Treebula as an intern.
+                </p>
+
+                <p>
+                  Working closely with developers and stakeholders taught me how to balance user needs, business goals, and technical constraints. I thrive in
+                  teams where ideas move fast and feedback is valued.
+                </p>
+
+                <p>
+                  I start with user research, collaborate early with developers, ship quickly and iterate based on feedback. I believe in designing for
+                  accessibility from day one.
+                </p>
+
+                <div className="pt-8">
+                  <a href="mailto:joakimstrandlund@gmail.com" className="btn btn-primary">
+                    Get in touch
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Option 3: Minimal Timeline Style */}
       <section className="py-16 border-t border-border mb-16">
         <div className="max-w-6xl mx-auto px-6">

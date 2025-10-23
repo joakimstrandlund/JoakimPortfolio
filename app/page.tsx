@@ -158,7 +158,7 @@ export default function Home() {
                         style={{ gridArea: 'text' }}
                       >
                         {/* Title - large and prominent, multi-line */}
-                        <h3 className="font-display font-semibold text-heading text-3xl lg:text-6xl leading-tight mb-6 lg:mb-8 transform transition-transform duration-300 group-hover:-translate-y-[1px]">
+                        <h3 className="font-display font-semibold text-heading text-3xl lg:text-6xl leading-tight mb-2 transform transition-transform duration-300 group-hover:-translate-y-[1px]">
                           {card.title.split(' — ').map((part, index) => (
                             <div key={index}>{part}</div>
                           ))}
@@ -177,7 +177,7 @@ export default function Home() {
                         </div>
 
                         {/* CTA Button - accent button */}
-                        <div className="btn btn-primary btn-arrow opacity-0 group-hover:opacity-100 transform translate-y-2 group-hover:translate-y-0 transition-all duration-300">
+                        <div className="btn btn-primary btn-arrow opacity-100 lg:opacity-0 lg:group-hover:opacity-100 transform translate-y-2 group-hover:translate-y-0 transition-all duration-300">
                           <span>View project</span>
                           <span className="arrow">→</span>
                         </div>
