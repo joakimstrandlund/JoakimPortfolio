@@ -9,135 +9,86 @@ export default function About() {
       <div className="max-w-4xl mx-auto px-6 py-8">
         <Link href="/" className="inline-flex items-center gap-2 text-body hover:text-heading transition-colors">
           <ArrowLeft className="h-4 w-4" />
-          Back
+          Back to home
         </Link>
       </div>
 
       {/* Main content */}
-      <div className="max-w-4xl mx-auto px-6 pb-16">
-        {/* Hero section */}
-        <div className="text-center mb-16">
-          <h1 className="font-display text-4xl sm:text-5xl md:text-6xl text-heading leading-tight mb-6">About me</h1>
-          <p className="text-lg md:text-xl text-muted leading-relaxed max-w-2xl mx-auto">
-            I&apos;m a UX/UI designer passionate about creating digital experiences that make a difference.
-          </p>
-        </div>
-
-        {/* Profile image */}
-        <div className="flex justify-center mb-16">
-          <div className="relative">
-            <div className="w-48 h-48 sm:w-56 sm:h-56 2xl border border-border/30 overflow-hidden">
-              <Image src="/Bild joakim .png" alt="Joakim Strandlund profile photo" width={224} height={224} className="w-full h-full object-cover" />
-            </div>
+      <div className="max-w-3xl mx-auto px-6 pb-16">
+        {/* Compact header with image */}
+        <div className="flex flex-col sm:flex-row items-center sm:items-start gap-8 mb-16 pb-12 border-b border-border">
+          <div className="w-40 h-40 border border-border overflow-hidden flex-shrink-0">
+            <Image src="/Bild joakim .png" alt="Joakim Strandlund" width={160} height={160} className="w-full h-full object-cover" />
+          </div>
+          <div className="text-center sm:text-left">
+            <h1 className="font-display text-3xl text-heading mb-3">Joakim Strandlund</h1>
+            <p className="text-accent text-sm uppercase tracking-wide mb-4">UX/UI Designer</p>
+            <p className="text-body leading-relaxed">
+              I design digital products and do a bit of low vibe coding on the side. When I'm not designing, you'll probably find me skiing, training, or
+              exploring new restaurants.
+            </p>
           </div>
         </div>
 
-        {/* Content sections */}
-        <div className="space-y-16">
-          {/* Story */}
-          <section>
-            <h2 className="font-heading font-semibold text-heading text-2xl mb-6">My story</h2>
+        {/* Timeline-style content */}
+        <div className="space-y-12">
+          <div className="border-l-2 border-accent pl-6">
+            <span className="text-xs uppercase tracking-wide text-accent">Background</span>
+            <h2 className="font-heading font-semibold text-heading text-xl mt-2 mb-4">My story</h2>
             <div className="space-y-4 text-body leading-relaxed">
               <p>
-                I&apos;m a UX designer with front-end skills and a background as an Account Manager in the startup and SaaS world. My curiosity for how design
-                shapes real experiences led me to study UX, where I&apos;ve focused on creating intuitive, user-centered digital solutions.
+                I'm a UX designer with front-end skills and a background in sales (account manager), combining creativity, structure, and an understanding of
+                both users and business.
               </p>
               <p>
-                At Treebula, I first joined as a UX intern and later continued working with the team, collaborating closely with developers and the marketing
-                department. That experience gave me a deep understanding of how design, technology, and business goals intersect in practice. It also taught me
-                the value of early collaboration, clear communication, and designing with both the user and the development process in mind.
+                Working closely with developers and stakeholders taught me how to balance user needs, business goals, and technical constraints. I believe the
+                best products come from close collaboration and continuous learning.
               </p>
-              <p>
-                I&apos;m driven by solving meaningful problems and thrive in teams that share that mindset, where ideas move fast, feedback is valued, and
-                everyone works toward the same goal.
-              </p>
-              <p>When I&apos;m not designing, I&apos;m usually at the gym, chasing powder, or exploring new restaurants around Stockholm.</p>
             </div>
-          </section>
+          </div>
 
-          {/* Approach */}
-          <section>
-            <h2 className="font-heading font-semibold text-heading text-2xl mb-6">My approach</h2>
-            <div className="grid md:grid-cols-2 gap-8">
-              <div className="space-y-4">
-                <h3 className="font-heading font-semibold text-heading text-lg">User-first thinking</h3>
-                <p className="text-body leading-relaxed">
-                  Every design decision starts with understanding the user. I spend time researching, interviewing, and observing to ensure solutions address
-                  real needs.
-                </p>
-              </div>
-              <div className="space-y-4">
-                <h3 className="font-heading font-semibold text-heading text-lg">Collaborative process</h3>
-                <p className="text-body leading-relaxed">
-                  Great products come from great teams. I work closely with developers, product managers, and stakeholders to align on goals and create cohesive
-                  experiences.
-                </p>
-              </div>
-              <div className="space-y-4">
-                <h3 className="font-heading font-semibold text-heading text-lg">Iterative design</h3>
-                <p className="text-body leading-relaxed">
-                  I believe in shipping early and often. Rapid prototyping and user testing help validate ideas quickly and refine solutions based on real
-                  feedback.
-                </p>
-              </div>
-              <div className="space-y-4">
-                <h3 className="font-heading font-semibold text-heading text-lg">Accessible design</h3>
-                <p className="text-body leading-relaxed">
-                  Good design is inclusive design. I ensure products work for everyone, regardless of ability, device, or context of use.
-                </p>
-              </div>
-            </div>
-          </section>
+          <div className="border-l-2 border-accent pl-6">
+            <span className="text-xs uppercase tracking-wide text-accent">Approach</span>
+            <h2 className="font-heading font-semibold text-heading text-xl mt-2 mb-4">How I work</h2>
+            <ul className="space-y-3 text-body">
+              <li className="flex items-start gap-3">
+                <span className="text-accent mt-1">→</span>
+                <span>Focus on understanding users before designing solutions</span>
+              </li>
+              <li className="flex items-start gap-3">
+                <span className="text-accent mt-1">→</span>
+                <span>Collaborate early with developers and stakeholders</span>
+              </li>
+              <li className="flex items-start gap-3">
+                <span className="text-accent mt-1">→</span>
+                <span>Ship quickly, iterate based on feedback</span>
+              </li>
+              <li className="flex items-start gap-3">
+                <span className="text-accent mt-1">→</span>
+                <span>Design for accessibility from the start</span>
+              </li>
+            </ul>
+          </div>
 
-          {/* Skills */}
-          <section>
-            <h2 className="font-heading font-semibold text-heading text-2xl mb-6">What I do</h2>
-            <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-              <div className="bg-secondary-bg xl p-6">
-                <h3 className="font-heading font-semibold text-heading text-lg mb-3">User Research</h3>
-                <p className="text-body text-sm leading-relaxed">
-                  Interviews, usability testing, user journeys, and persona development to understand user needs.
-                </p>
-              </div>
-              <div className="bg-secondary-bg xl p-6">
-                <h3 className="font-heading font-semibold text-heading text-lg mb-3">Interface Design</h3>
-                <p className="text-body text-sm leading-relaxed">Creating intuitive and beautiful interfaces that guide users toward their goals.</p>
-              </div>
-              <div className="bg-secondary-bg xl p-6">
-                <h3 className="font-heading font-semibold text-heading text-lg mb-3">Prototyping</h3>
-                <p className="text-body text-sm leading-relaxed">Interactive prototypes to test ideas and communicate design concepts effectively.</p>
-              </div>
-              <div className="bg-secondary-bg xl p-6">
-                <h3 className="font-heading font-semibold text-heading text-lg mb-3">Design Systems</h3>
-                <p className="text-body text-sm leading-relaxed">Building scalable design systems that ensure consistency and efficiency across products.</p>
-              </div>
-              <div className="bg-secondary-bg xl p-6">
-                <h3 className="font-heading font-semibold text-heading text-lg mb-3">Strategy</h3>
-                <p className="text-body text-sm leading-relaxed">Aligning design decisions with business goals and user needs for sustainable growth.</p>
-              </div>
-              <div className="bg-secondary-bg xl p-6">
-                <h3 className="font-heading font-semibold text-heading text-lg mb-3">Collaboration</h3>
-                <p className="text-body text-sm leading-relaxed">Working closely with cross-functional teams to bring designs to life.</p>
-              </div>
+          <div className="border-l-2 border-accent pl-6">
+            <span className="text-xs uppercase tracking-wide text-accent">Skills</span>
+            <h2 className="font-heading font-semibold text-heading text-xl mt-2 mb-4">What I do</h2>
+            <div className="flex flex-wrap gap-2">
+              <span className="px-3 py-1 bg-tertiary-bg border border-border text-sm">User Research</span>
+              <span className="px-3 py-1 bg-tertiary-bg border border-border text-sm">Interface Design</span>
+              <span className="px-3 py-1 bg-tertiary-bg border border-border text-sm">Prototyping</span>
+              <span className="px-3 py-1 bg-tertiary-bg border border-border text-sm">Design Systems</span>
+              <span className="px-3 py-1 bg-tertiary-bg border border-border text-sm">Figma</span>
+              <span className="px-3 py-1 bg-tertiary-bg border border-border text-sm">HTML/CSS</span>
             </div>
-          </section>
+          </div>
 
-          {/* Contact CTA */}
-          <section className="text-center pt-8 border-t border-border">
-            <h2 className="font-heading font-semibold text-heading text-2xl mb-4">Let&apos;s work together</h2>
-            <p className="text-muted mb-8 max-w-2xl mx-auto">
-              I&apos;m always interested in new opportunities and collaborations. Whether you have a project in mind or just want to chat about design, I&apos;d
-              love to hear from you.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link href="mailto:joakimstrandlund@gmail.com" className="btn btn-primary">
-                Get in touch
-              </Link>
-              <Link href="/" className="btn">
-                View my work
-              </Link>
-            </div>
-          </section>
+          <div className="pt-8 border-t border-border text-center">
+            <p className="text-muted mb-6">Interested in working together?</p>
+            <Link href="mailto:joakimstrandlund@gmail.com" className="btn btn-primary">
+              Get in touch
+            </Link>
+          </div>
         </div>
       </div>
     </div>

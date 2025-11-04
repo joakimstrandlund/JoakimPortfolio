@@ -308,14 +308,15 @@ export default function AboutTest() {
             <div className="max-w-3xl mx-auto">
               {/* Compact header with image */}
               <div className="flex flex-col sm:flex-row items-center sm:items-start gap-8 mb-16 pb-12 border-b border-border">
-                <div className="w-32 h-32 border border-border overflow-hidden flex-shrink-0">
-                  <Image src="/Bild joakim .png" alt="Joakim" width={128} height={128} className="w-full h-full object-cover" />
+                <div className="w-40 h-40 border border-border overflow-hidden flex-shrink-0">
+                  <Image src="/Bild joakim .png" alt="Joakim" width={160} height={160} className="w-full h-full object-cover" />
                 </div>
                 <div className="text-center sm:text-left">
                   <h1 className="font-display text-3xl text-heading mb-3">Joakim Strandlund</h1>
                   <p className="text-accent text-sm uppercase tracking-wide mb-4">UX/UI Designer</p>
                   <p className="text-body leading-relaxed">
-                    Creating thoughtful digital experiences. Based in Stockholm, working with startups and product teams.
+                    I design digital products and do a bit of low vibe coding on the side. When I'm not designing, you'll probably find me skiing, training, or
+                    exploring new restaurants.
                   </p>
                 </div>
               </div>
@@ -327,12 +328,12 @@ export default function AboutTest() {
                   <h2 className="font-heading font-semibold text-heading text-xl mt-2 mb-4">My story</h2>
                   <div className="space-y-4 text-body leading-relaxed">
                     <p>
-                      I'm a UX designer with front-end skills and a background in account management. My curiosity about how design shapes real experiences led
-                      me to study UX and join Treebula as an intern.
+                      I'm a UX designer with front-end skills and a background in sales (account manager), combining creativity, structure, and an understanding
+                      of both users and business.
                     </p>
                     <p>
-                      Working closely with developers and stakeholders taught me how to balance user needs, business goals, and technical constraints. I thrive
-                      in teams where ideas move fast and feedback is valued.
+                      Working closely with developers and stakeholders taught me how to balance user needs, business goals, and technical constraints. I believe
+                      the best products come from close collaboration and continuous learning.
                     </p>
                   </div>
                 </div>
@@ -343,7 +344,7 @@ export default function AboutTest() {
                   <ul className="space-y-3 text-body">
                     <li className="flex items-start gap-3">
                       <span className="text-accent mt-1">→</span>
-                      <span>Start with user research, not assumptions</span>
+                      <span>Focus on understanding users before designing solutions</span>
                     </li>
                     <li className="flex items-start gap-3">
                       <span className="text-accent mt-1">→</span>
