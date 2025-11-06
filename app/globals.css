@@ -58,6 +58,11 @@ body {
   color: var(--color-body);
 }
 
+/* Override body background for pages with light backgrounds */
+body:has(section#footer-new) {
+  background-color: #fafafa !important;
+}
+
 /* Reusable buttons */
 .btn {
   display: inline-flex;
@@ -2280,4 +2285,9 @@ button:focus-visible {
 }
 .link-underline:hover::after {
   width: 100%;
+}
+
+/* Hide global footer on landing page (home page) */
+body:has(footer#footer-new) footer#contact {
+  display: none !important;
 }

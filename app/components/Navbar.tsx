@@ -44,42 +44,39 @@ export default function Navbar() {
 
   return (
     <>
-      <header className="sticky top-0 z-40 bg-primary-bg/70 backdrop-blur border-b border-border">
-        <div className="max-w-6xl mx-auto px-6 h-14 flex items-center justify-between">
-          <Link href="/" className="font-heading font-semibold text-heading tracking-wide">
+      {/* Minimal Transparent Navbar */}
+      <nav className="sticky top-0 z-50 border-b backdrop-blur-md" style={{ background: '#FAFAFA', borderColor: 'rgba(0, 0, 0, 0.1)' }}>
+        <div className="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
+          <Link href="/" className="font-grotesk font-semibold text-lg tracking-wide" style={{ color: '#000000' }}>
             J.STRANDLUND
           </Link>
-
-          {/* Desktop nav */}
-          <nav className="hidden sm:flex items-center gap-6 text-sm">
-            <Link href="/#projects" className="link-underline">
+          <div className="hidden sm:flex items-center gap-8 text-sm">
+            <Link href="/#projects" className="font-grotesk font-semibold link-underline" style={{ color: '#4a4a4a' }}>
               Projects
             </Link>
-            <Link href="/about" className="link-underline">
+            <Link href="/about" className="font-grotesk font-semibold link-underline" style={{ color: '#4a4a4a' }}>
               About me
             </Link>
-            <Link href="/#contact" className="link-underline">
+            <Link href="/#footer-new" className="font-grotesk font-semibold link-underline" style={{ color: '#4a4a4a' }}>
               Contact
             </Link>
-          </nav>
-
-          {/* Mobile toggle */}
+          </div>
           <button
-            className="sm:hidden inline-flex h-10 w-10 items-center justify-center border border-border bg-tertiary-bg/60 text-heading hover:border-border-hover transition touch-manipulation"
+            className="sm:hidden inline-flex h-10 w-10 items-center justify-center border rounded-lg transition-colors"
+            style={{ borderColor: 'rgba(0, 0, 0, 0.1)', color: '#000000' }}
             aria-label={open ? 'Close menu' : 'Open menu'}
             onClick={() => setOpen(!open)}
-            style={{ touchAction: 'manipulation' }}
           >
             {open ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
           </button>
         </div>
-      </header>
+      </nav>
 
       {/* Mobile full-screen overlay */}
       {open && (
         <aside
           className="fixed inset-0 z-50 sm:hidden"
-          style={{ backgroundColor: 'var(--color-primary-bg)' }}
+          style={{ backgroundColor: 'rgba(255, 255, 255, 0.98)', backdropFilter: 'blur(10px)' }}
           aria-modal="true"
           role="dialog"
           onClick={(e) => {
@@ -90,29 +87,30 @@ export default function Navbar() {
           }}
         >
           {/* Header with logo and close button */}
-          <div className="absolute top-0 left-0 right-0 h-14 flex items-center justify-between px-6 z-20" style={{ pointerEvents: 'auto' }}>
-            {/* Logo - same as desktop */}
-            <Link href="/" className="font-heading font-semibold text-heading tracking-wide">
+          <div
+            className="absolute top-0 left-0 right-0 h-16 flex items-center justify-between px-6 z-20 border-b"
+            style={{ borderColor: 'rgba(0, 0, 0, 0.1)' }}
+          >
+            {/* Logo */}
+            <Link href="/" className="font-grotesk font-semibold text-lg tracking-wide" style={{ color: '#000000' }}>
               J.STRANDLUND
             </Link>
 
-            {/* Close button - same styling as hamburger */}
+            {/* Close button */}
             <button
               onClick={(e) => {
-                console.log('Close button clicked');
                 e.preventDefault();
                 e.stopPropagation();
                 setOpen(false);
               }}
               onTouchEnd={(e) => {
-                console.log('Close button touched');
                 e.preventDefault();
                 e.stopPropagation();
                 setOpen(false);
               }}
               aria-label="Close menu"
-              className="inline-flex h-10 w-10 items-center justify-center border border-border bg-tertiary-bg/60 text-heading hover:border-border-hover transition touch-manipulation relative z-10"
-              style={{ touchAction: 'manipulation', pointerEvents: 'auto' }}
+              className="inline-flex h-10 w-10 items-center justify-center border rounded-lg transition-colors relative z-10"
+              style={{ borderColor: 'rgba(0, 0, 0, 0.1)', color: '#000000', touchAction: 'manipulation', pointerEvents: 'auto' }}
             >
               <X className="h-5 w-5" />
             </button>
@@ -122,17 +120,32 @@ export default function Navbar() {
           <nav className="absolute inset-0 flex items-center justify-end pr-6">
             <ul className="text-right flex flex-col items-end gap-8">
               <li>
-                <Link onClick={() => setOpen(false)} href="/#projects" className="font-heading font-semibold text-heading text-2xl link-underline">
+                <Link
+                  onClick={() => setOpen(false)}
+                  href="/#projects"
+                  className="font-grotesk font-semibold text-2xl transition-colors"
+                  style={{ color: '#000000' }}
+                >
                   Projects
                 </Link>
               </li>
               <li>
-                <Link onClick={() => setOpen(false)} href="/about" className="font-heading font-semibold text-heading text-2xl link-underline">
+                <Link
+                  onClick={() => setOpen(false)}
+                  href="/about"
+                  className="font-grotesk font-semibold text-2xl transition-colors"
+                  style={{ color: '#000000' }}
+                >
                   About me
                 </Link>
               </li>
               <li>
-                <Link onClick={() => setOpen(false)} href="/#contact" className="font-heading font-semibold text-heading text-2xl link-underline">
+                <Link
+                  onClick={() => setOpen(false)}
+                  href="/#footer-new"
+                  className="font-grotesk font-semibold text-2xl transition-colors"
+                  style={{ color: '#000000' }}
+                >
                   Contact
                 </Link>
               </li>

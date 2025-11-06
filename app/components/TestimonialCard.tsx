@@ -15,8 +15,8 @@ export default function TestimonialCard() {
         }
       },
       {
-        threshold: 0.2, // Trigger when 20% of the element is visible
-        rootMargin: '0px 0px -50px 0px', // Start animation slightly before element enters viewport
+        threshold: 0.2,
+        rootMargin: '0px 0px -50px 0px',
       }
     );
 
@@ -28,27 +28,60 @@ export default function TestimonialCard() {
   }, []);
 
   return (
-    <div
-      ref={cardRef}
-      className={`bg-secondary-bg p-8 sm:p-12 transition-all duration-700 ease-out ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}
-    >
-      {/* Quote */}
-      <blockquote className="font-heading text-heading text-lg sm:text-xl leading-relaxed mb-8 text-center">
-        &quot;It&apos;s been a real pleasure working with Joakim. He&apos;s fast, pragmatic, and has a great instinct for delivering MVPs and PoCs that move
-        things forward. At the same time, he builds on solid design principles and creates solutions that are easy to grow and iterate on. A dependable team
-        player with a strong foundation—highly recommended.&quot;
-      </blockquote>
+    <div ref={cardRef} className="relative" style={{ overflow: 'visible' }}>
+      {/* Quote block with centered text and subtle quotation mark */}
+      <div className="relative" style={{ overflow: 'visible' }}>
+        {/* Quote text - centered, refined typography */}
+        <blockquote
+          className={`relative z-10 font-grotesk font-medium text-heading text-center transition-all duration-700 ease-out ${
+            isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
+          }`}
+          style={{
+            fontSize: '1.75rem', // Increased to 28px for better visibility
+            lineHeight: '1.45',
+            maxWidth: '760px', // Increased from 680px
+            margin: '0 auto',
+            transitionDelay: isVisible ? '200ms' : '0ms',
+          }}
+        >
+          {/* Large subtle quotation mark - positioned to the left of "It's" */}
+          <span
+            className={`absolute transition-opacity duration-700 ease-out ${isVisible ? 'opacity-100' : 'opacity-0'}`}
+            style={{
+              fontSize: '6.25rem', // 6-6.5rem range, visually balanced
+              lineHeight: '1',
+              fontFamily: 'Familjen Grotesk, sans-serif',
+              fontWeight: '700',
+              color: '#E5E5E5',
+              opacity: isVisible ? '0.85' : '0', // 85% opacity
+              left: '-0.25rem', // Very close to the text, right next to "It's"
+              top: '-1rem', // Raised more above the first line
+              zIndex: 1,
+              transitionDelay: isVisible ? '200ms' : '0ms',
+              pointerEvents: 'none',
+            }}
+          >
+            &ldquo;
+          </span>
+          It&apos;s been a real pleasure working with Joakim. He&apos;s fast, pragmatic, and has a great instinct for delivering MVPs and PoCs that move things
+          forward. At the same time, he builds on <span style={{ color: '#ff6b2c' }}>solid design principles</span> and creates solutions that are easy to grow
+          and iterate on. A dependable team player with a <span style={{ color: '#ff6b2c' }}>strong foundation</span>—highly recommended.&rdquo;
+        </blockquote>
+      </div>
 
-      {/* Attribution */}
-      <div className="flex items-center justify-center gap-4 pt-4 border-t border-border">
-        <div className="w-12 h-12 bg-accent/20 border border-accent/30 flex items-center justify-center">
-          <span className="text-accent font-heading font-semibold text-lg">ML</span>
+      {/* Author info - centered, clean typography */}
+      <div
+        className={`text-center transition-all duration-700 ease-out ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}
+        style={{
+          marginTop: '2.5rem',
+          transitionDelay: isVisible ? '400ms' : '0ms',
+        }}
+      >
+        <div className="font-grotesk font-bold text-base mb-1" style={{ color: '#000000' }}>
+          Mattin Lofti
         </div>
-        <div className="text-left">
-          <div className="font-heading font-semibold text-heading text-lg">Mattin Lofti</div>
-          <div className="text-body text-sm">
-            CTO at <span className="text-accent font-medium">Treebula</span>
-          </div>
+        <div className="text-sm" style={{ color: '#6b6b6b' }}>
+          CTO at <span style={{ color: '#C84F1A' }}>Treebula</span>
         </div>
       </div>
     </div>
