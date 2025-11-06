@@ -2288,6 +2288,6 @@ button:focus-visible {
 }
 
 /* Hide global footer on landing page (home page) */
-body:has(footer#footer-new) footer#contact {
+body:has(section#footer-new) footer#contact {
   display: none !important;
 }

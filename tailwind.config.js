@@ -21,6 +21,12 @@ module.exports = {
         'accent-hover': '#E55A1F',
         'accent-soft': '#FF6B2C1A',
 
+        // OSMO-INSPIRED COLORS
+        purple: '#9333ea',
+        'purple-hover': '#7e22ce',
+        green: '#10b981',
+        'green-hover': '#059669',
+
         // TEXT / TYPOGRAPHY
         heading: '#E6E6E8',
         body: '#BDBDC2',
