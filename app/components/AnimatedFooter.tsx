@@ -119,10 +119,10 @@ export default function AnimatedFooter() {
           width: '100%',
           backgroundColor: '#FAFAFA',
           marginTop: '0',
-          paddingTop: '2rem',
-          paddingBottom: '1.5rem',
-          paddingLeft: '0',
-          paddingRight: '0',
+          paddingTop: '0.5rem',
+          paddingBottom: '0.5rem',
+          paddingLeft: '0.5rem',
+          paddingRight: '0.5rem',
           zIndex: 0,
           overflow: 'visible',
         }}
@@ -140,9 +140,9 @@ export default function AnimatedFooter() {
             transformOrigin: 'center center',
             zIndex: 10,
             willChange: 'transform',
-            width: '100vw',
-            marginLeft: 'calc(-50vw + 50%)',
-            marginRight: 'calc(-50vw + 50%)',
+            width: '100%',
+            marginLeft: 0,
+            marginRight: 0,
             position: 'relative',
           }}
         >

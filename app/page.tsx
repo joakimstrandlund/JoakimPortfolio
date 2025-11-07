@@ -78,9 +78,7 @@ export default function Home() {
   // ============================================
   const customColors = {
     // Background Colors
-    primaryBg: '#FFFFFF',
     secondaryBg: '#F4F4F4',
-    tertiaryBg: '#B7C2B4',
     whiteBg: '#FAFAFA',
 
     // Accent Colors
@@ -104,9 +102,7 @@ export default function Home() {
         .landing-test-override,
         .landing-test-override * {
           /* Background Colors */
-          --color-primary-bg: ${customColors.primaryBg} !important;
           --color-secondary-bg: ${customColors.secondaryBg} !important;
-          --color-tertiary-bg: ${customColors.tertiaryBg} !important;
 
           /* Accent Color */
           --color-accent: ${customColors.accent} !important;
@@ -127,16 +123,8 @@ export default function Home() {
           color: ${customColors.body} !important;
         }
 
-        .landing-test-override .bg-primary-bg {
-          background-color: ${customColors.whiteBg} !important;
-        }
-
         .landing-test-override .bg-secondary-bg {
           background-color: ${customColors.secondaryBg} !important;
-        }
-
-        .landing-test-override .bg-tertiary-bg {
-          background-color: ${customColors.tertiaryBg} !important;
         }
 
         .landing-test-override .text-heading {
@@ -164,7 +152,7 @@ export default function Home() {
         }
 
         .landing-test-override #testimonial-section .bg-secondary-bg {
-          background-color: ${customColors.tertiaryBg} !important;
+          background-color: ${customColors.secondaryBg} !important;
           border-radius: 1.5rem;
           border: 1px solid ${customColors.border} !important;
         }
@@ -191,7 +179,7 @@ export default function Home() {
       `}</style>
 
       <main
-        className="bg-primary-bg text-body landing-test-override"
+        className="text-body landing-test-override"
         style={{
           backgroundColor: customColors.whiteBg,
           overflowX: 'visible',
@@ -205,7 +193,7 @@ export default function Home() {
         {/* Hero */}
         <section
           ref={heroRef}
-          className="relative min-h-screen px-6 flex items-center overflow-hidden transition-all duration-300 ease-out"
+          className="relative min-h-screen px-4 lg:px-6 flex items-center overflow-hidden transition-all duration-300 ease-out"
           style={{
             backgroundColor: customColors.secondaryBg,
             transform: `scale(${1 - Math.min(scrollY / 300, 1) * 0.15})`,
@@ -228,7 +216,9 @@ export default function Home() {
 
                   {/* Greeting */}
                   <div className="bg-white border border-border rounded-2xl px-6 py-3 relative">
-                    <p className="text-body text-lg">Hello, I'm Joakim 👋</p>
+                    <p className="text-lg" style={{ color: customColors.body }}>
+                      Hello, I'm Joakim 👋
+                    </p>
                     {/* Speech bubble tail pointing up */}
                     <div className="absolute -top-2 left-1/2 transform -translate-x-1/2 w-4 h-4 bg-white border-l border-t border-border rotate-45"></div>
                   </div>
@@ -311,11 +301,13 @@ export default function Home() {
         </section>
 
         {/* Case Studies */}
-        <section id="projects" className="bg-primary-bg pt-10 pb-16 -mt-6 relative z-20">
-          <div className="max-w-6xl mx-auto px-6">
+        <section id="projects" className="pt-10 pb-16 -mt-6 relative z-20" style={{ backgroundColor: customColors.whiteBg }}>
+          <div className="max-w-6xl mx-auto px-4 lg:px-6">
             <Reveal>
               <div className="mb-8">
-                <div className="text-xs uppercase tracking-wide text-body">Selected</div>
+                <div className="text-xs uppercase tracking-wide" style={{ color: customColors.body }}>
+                  Selected
+                </div>
                 <h2 className="mt-2 font-grotesk font-semibold text-2xl sm:text-3xl text-heading">Case studies</h2>
               </div>
             </Reveal>
@@ -367,7 +359,7 @@ export default function Home() {
                         >
                           {/* Title - large and prominent, multi-line */}
                           <h3
-                            className="font-grotesk font-semibold text-3xl lg:text-6xl leading-tight mb-2 transform transition-transform duration-300 group-hover:-translate-y-[1px] project-card-heading"
+                            className="font-grotesk font-semibold text-[28px] lg:text-5xl leading-tight mb-2 transform transition-transform duration-300 group-hover:-translate-y-[1px] project-card-heading"
                             style={{ color: '#FFFFFF' }}
                           >
                             {card.title.split(' — ').map((part, index) => (
@@ -485,7 +477,7 @@ export default function Home() {
           className="relative z-20"
           style={{ paddingTop: '5rem', paddingBottom: '5rem', overflow: 'visible' }}
         >
-          <div className="max-w-4xl mx-auto px-6" style={{ overflow: 'visible' }}>
+          <div className="max-w-4xl mx-auto px-4 lg:px-6" style={{ overflow: 'visible' }}>
             <TestimonialCard />
           </div>
         </section>
@@ -498,7 +490,7 @@ const cards = [
   {
     title: 'Loggi — Wellness App',
     year: '2025',
-    tags: ['UX/UI', 'Accessibility', 'Mobile'],
+    tags: ['UI/UX', 'Accessibility', 'Mobile'],
     description: 'Concept app for calm, accessible daily check-ins on mood, sleep and stress. Designed for reflection without pressure.',
     href: '/case-studies/loggi',
   },
@@ -512,7 +504,7 @@ const cards = [
   {
     title: 'Restaurang Apotek — Website',
     year: '2024',
-    tags: ['UX/UI', 'Web', 'Restaurant'],
+    tags: ['UI/UX', 'Web', 'Restaurant'],
     description: 'Modern restaurant website design focusing on user experience and visual storytelling.',
     href: '/case-studies/restaurang-apotek',
   },

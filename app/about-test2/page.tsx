@@ -4,37 +4,37 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { MagnifyingGlassIcon, UsersIcon, PaintBrushIcon, BeakerIcon, CodeBracketIcon, DevicePhoneMobileIcon } from '@heroicons/react/24/outline';
 
-export default function About() {
+export default function Page() {
+  // Dark theme colors
   const customColors = {
     // Background Colors
-    secondaryBg: '#F4F4F4',
-    darkBg: '#0F0F0F',
-    whiteBg: '#FAFAFA',
-    lightBeige: '#F5F3EF',
-    mutedGreen: '#A8B5A0',
+    primaryBg: '#0C0D0F',
+    secondaryBg: '#141518',
+    whiteBg: '#0C0D0F', // Use primaryBg for dark theme
+    lightBeige: '#141518', // Use secondaryBg for dark theme
 
     // Accent Colors
     accent: '#ff6b2c',
     accentHover: '#e55a1f',
-    accentDark: '#C84F1A', // Darker accent for WCAG compliance on light backgrounds
+    accentDark: '#ff6b2c', // Use accent color for dark theme
 
     // Text Colors
-    heading: '#000000',
-    body: '#6b6b6b',
+    heading: '#EBEBEB',
+    body: '#A5A5A5',
     muted: '#9a9a9f',
 
     // Border Colors
-    border: '#e0e0e0',
-    borderHover: '#d0d0d0',
+    border: '#2a2b2e',
+    borderHover: '#3a3b3e',
   };
 
   return (
-    <article style={{ backgroundColor: customColors.whiteBg, minHeight: '100vh' }}>
-      {/* Hero - White Background */}
-      <section className="pt-32 pb-40" style={{ backgroundColor: customColors.whiteBg }}>
-        <div className="max-w-5xl mx-auto px-4 lg:px-6">
+    <article style={{ backgroundColor: customColors.primaryBg, minHeight: '100vh' }}>
+      {/* Hero - Dark Background */}
+      <section className="pt-32 pb-40" style={{ backgroundColor: customColors.primaryBg }}>
+        <div className="max-w-5xl mx-auto px-6">
           <div className="text-center mb-16">
-            <span className="text-xs uppercase tracking-wider mb-6 block font-semibold" style={{ color: customColors.accentDark }}>
+            <span className="text-xs uppercase tracking-wider mb-6 block font-semibold" style={{ color: customColors.accent }}>
               About
             </span>
             <h1
@@ -55,16 +55,16 @@ export default function About() {
       </section>
 
       {/* Divider */}
-      <div className="max-w-5xl mx-auto px-4 lg:px-6">
+      <div className="max-w-5xl mx-auto px-6">
         <div style={{ height: '1px', backgroundColor: customColors.border }}></div>
       </div>
 
       {/* Background - Split Layout */}
-      <section className="py-32" style={{ backgroundColor: customColors.whiteBg }}>
-        <div className="max-w-5xl mx-auto px-4 lg:px-6">
+      <section className="py-32" style={{ backgroundColor: customColors.primaryBg }}>
+        <div className="max-w-5xl mx-auto px-6">
           <div className="grid md:grid-cols-2 gap-16 items-center">
             <div>
-              <span className="text-xs uppercase tracking-wider mb-4 block font-semibold" style={{ color: customColors.accentDark }}>
+              <span className="text-xs uppercase tracking-wider mb-4 block font-semibold" style={{ color: customColors.accent }}>
                 Background
               </span>
               <h2 className="font-grotesk font-semibold text-4xl md:text-5xl mb-8 leading-tight" style={{ color: customColors.heading }}>
@@ -84,11 +84,11 @@ export default function About() {
             <div
               className="rounded-2xl p-8 md:p-12"
               style={{
-                background: `linear-gradient(to bottom, ${customColors.lightBeige}, ${customColors.lightBeige}dd)`,
+                background: `linear-gradient(to bottom, ${customColors.secondaryBg}, ${customColors.secondaryBg}dd)`,
               }}
             >
               <div className="flex items-center gap-6 mb-6">
-                <div className="w-40 h-40 rounded-full flex items-center justify-center flex-shrink-0" style={{ backgroundColor: customColors.whiteBg }}>
+                <div className="w-40 h-40 rounded-full flex items-center justify-center flex-shrink-0" style={{ backgroundColor: customColors.primaryBg }}>
                   <Image src="/jocke-home.png" alt="Joakim Strandlund" width={160} height={160} className="w-full h-full object-cover rounded-full" />
                 </div>
                 <div>
@@ -109,15 +109,15 @@ export default function About() {
       </section>
 
       {/* Divider */}
-      <div className="max-w-5xl mx-auto px-4 lg:px-6">
+      <div className="max-w-5xl mx-auto px-6">
         <div style={{ height: '1px', backgroundColor: customColors.border }}></div>
       </div>
 
       {/* How I Work - Split Layout */}
-      <section className="py-32" style={{ backgroundColor: customColors.whiteBg }}>
-        <div className="max-w-5xl mx-auto px-4 lg:px-6">
+      <section className="py-32" style={{ backgroundColor: customColors.primaryBg }}>
+        <div className="max-w-5xl mx-auto px-6">
           <div className="text-center mb-16">
-            <span className="text-xs uppercase tracking-wider mb-4 block font-semibold" style={{ color: customColors.accentDark }}>
+            <span className="text-xs uppercase tracking-wider mb-4 block font-semibold" style={{ color: customColors.accent }}>
               Approach
             </span>
             <h2 className="font-grotesk font-semibold text-4xl md:text-5xl mb-8 leading-tight" style={{ color: customColors.heading }}>
@@ -141,8 +141,8 @@ export default function About() {
               </h3>
               <ul className="space-y-3 text-sm">
                 {['Focus on understanding users before designing solutions', 'Research-driven decisions', 'Accessibility as a priority'].map((item, index) => (
-                  <li key={index} className="flex items-start gap-3">
-                    <span className="text-lg font-bold leading-none" style={{ color: customColors.accent, marginTop: '2px' }}>
+                  <li key={index} className="flex items-baseline gap-3">
+                    <span className="text-lg font-bold leading-none" style={{ color: customColors.accent }}>
                       •
                     </span>
                     <span className="leading-relaxed" style={{ color: customColors.body }}>
@@ -166,8 +166,8 @@ export default function About() {
               <ul className="space-y-3 text-sm">
                 {['Close collaboration with developers and stakeholders', 'Balancing user needs with business goals', 'Continuous learning and iteration'].map(
                   (item, index) => (
-                    <li key={index} className="flex items-start gap-3">
-                      <span className="text-lg font-bold leading-none" style={{ color: customColors.accent, marginTop: '2px' }}>
+                    <li key={index} className="flex items-baseline gap-3">
+                      <span className="text-lg font-bold leading-none" style={{ color: customColors.accent }}>
                         •
                       </span>
                       <span className="leading-relaxed" style={{ color: customColors.body }}>
@@ -183,15 +183,15 @@ export default function About() {
       </section>
 
       {/* Divider */}
-      <div className="max-w-5xl mx-auto px-4 lg:px-6">
+      <div className="max-w-5xl mx-auto px-6">
         <div style={{ height: '1px', backgroundColor: customColors.border }}></div>
       </div>
 
       {/* Skills & Tools - Grid Layout */}
-      <section className="py-32" style={{ backgroundColor: customColors.whiteBg }}>
-        <div className="max-w-5xl mx-auto px-4 lg:px-6">
+      <section className="py-32" style={{ backgroundColor: customColors.primaryBg }}>
+        <div className="max-w-5xl mx-auto px-6">
           <div className="text-center mb-16">
-            <span className="text-xs uppercase tracking-wider mb-4 block font-semibold" style={{ color: customColors.accentDark }}>
+            <span className="text-xs uppercase tracking-wider mb-4 block font-semibold" style={{ color: customColors.accent }}>
               Skills
             </span>
             <h2 className="font-grotesk font-semibold text-4xl md:text-5xl mb-8 leading-tight" style={{ color: customColors.heading }}>
@@ -229,13 +229,13 @@ export default function About() {
       </section>
 
       {/* Divider */}
-      <div className="max-w-5xl mx-auto px-4 lg:px-6">
+      <div className="max-w-5xl mx-auto px-6">
         <div style={{ height: '1px', backgroundColor: customColors.border }}></div>
       </div>
 
       {/* Contact CTA - Full Width */}
-      <section id="lets-work-together" className="py-32" style={{ backgroundColor: customColors.whiteBg }}>
-        <div className="max-w-5xl mx-auto px-4 lg:px-6">
+      <section className="py-32" style={{ backgroundColor: customColors.primaryBg }}>
+        <div className="max-w-5xl mx-auto px-6">
           <div className="text-center mb-16">
             <h2 className="font-grotesk font-semibold text-4xl md:text-5xl mb-8 leading-tight" style={{ color: customColors.heading }}>
               Let's work together
@@ -246,7 +246,7 @@ export default function About() {
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
               <a
                 href="mailto:joakimstrandlund@gmail.com"
-                className="text-base px-10 py-4 font-bold transition-all duration-300 hover:scale-105 relative overflow-hidden group inline-flex items-center justify-center"
+                className="inline-flex items-center px-10 py-5 font-bold text-lg transition-all duration-300 hover:scale-105"
                 style={{
                   background: `linear-gradient(180deg, ${customColors.accent} 0%, ${customColors.accentHover} 100%)`,
                   color: '#000000',
@@ -264,13 +264,13 @@ export default function About() {
                   e.currentTarget.style.boxShadow = '0 2px 8px rgba(0, 0, 0, 0.1)';
                 }}
               >
-                <span className="relative z-10">Get in touch</span>
+                Get in touch
               </a>
               <a
                 href="https://www.linkedin.com/in/joakim-strandlund-14717817a/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-base px-10 py-4 font-bold transition-all duration-300 hover:scale-105 relative overflow-hidden group inline-flex items-center justify-center"
+                className="inline-flex items-center px-10 py-5 font-semibold text-lg transition-all duration-300 hover:scale-105"
                 style={{
                   backgroundColor: 'transparent',
                   color: customColors.heading,
@@ -280,14 +280,14 @@ export default function About() {
                 }}
                 onMouseEnter={(e) => {
                   e.currentTarget.style.backgroundColor = customColors.secondaryBg;
-                  e.currentTarget.style.borderColor = customColors.border;
+                  e.currentTarget.style.borderColor = customColors.borderHover;
                 }}
                 onMouseLeave={(e) => {
                   e.currentTarget.style.backgroundColor = 'transparent';
                   e.currentTarget.style.borderColor = customColors.border;
                 }}
               >
-                <span className="relative z-10">LinkedIn</span>
+                LinkedIn
               </a>
             </div>
           </div>

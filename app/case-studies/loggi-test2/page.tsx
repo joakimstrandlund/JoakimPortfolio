@@ -1,9 +1,7 @@
 'use client';
 
-import { useEffect, useRef } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
-import { ArrowRight } from 'lucide-react';
 import {
   LightBulbIcon,
   CursorArrowRaysIcon,
@@ -16,56 +14,42 @@ import {
 } from '@heroicons/react/24/outline';
 
 export default function Page() {
-  const thanksSectionRef = useRef<HTMLElement>(null);
-
-  useEffect(() => {
-    const thanks = thanksSectionRef.current;
-    if (thanks) {
-      const observer = new IntersectionObserver(
-        ([entry]) => {
-          if (entry.isIntersecting) thanks.classList.add('is-visible');
-        },
-        { threshold: 0.2 }
-      );
-      observer.observe(thanks);
-      return () => observer.disconnect();
-    }
-  }, []);
-
+  // Dark theme colors
   const customColors = {
     // Background Colors
-    secondaryBg: '#F4F4F4',
-    darkBg: '#0F0F0F',
-    whiteBg: '#FAFAFA',
-    lightBeige: '#F5F3EF',
+    primaryBg: '#0C0D0F',
+    secondaryBg: '#141518',
+    darkBg: '#0C0D0F',
+    whiteBg: '#0C0D0F', // Use primaryBg for dark theme
+    lightBeige: '#141518', // Use secondaryBg for dark theme
     mutedGreen: '#A8B5A0',
 
     // Accent Colors
     accent: '#ff6b2c',
     accentHover: '#e55a1f',
-    accentDark: '#C84F1A', // Darker accent for WCAG compliance on light backgrounds
+    accentDark: '#ff6b2c', // Use accent color for dark theme
 
     // Text Colors
-    heading: '#000000',
-    body: '#6b6b6b',
+    heading: '#EBEBEB',
+    body: '#A5A5A5',
     muted: '#9a9a9f',
 
     // Border Colors
-    border: '#e0e0e0',
-    borderHover: '#d0d0d0',
+    border: '#2a2b2e',
+    borderHover: '#3a3b3e',
   };
 
   return (
-    <article style={{ backgroundColor: customColors.whiteBg, minHeight: '100vh' }}>
-      {/* Hero - White Background, Large Image */}
-      <section className="pt-32 pb-40" style={{ backgroundColor: customColors.whiteBg }}>
-        <div className="max-w-5xl mx-auto px-4 lg:px-6">
+    <article style={{ backgroundColor: customColors.primaryBg, minHeight: '100vh' }}>
+      {/* Hero - Dark Background, Large Image */}
+      <section className="pt-32 pb-40" style={{ backgroundColor: customColors.primaryBg }}>
+        <div className="max-w-5xl mx-auto px-6">
           <div className="text-center mb-16">
-            <span className="text-xs uppercase tracking-wider mb-4 block font-semibold" style={{ color: customColors.accentDark }}>
+            <span className="text-xs uppercase tracking-wider mb-6 block font-semibold" style={{ color: customColors.accent }}>
               Case Study
             </span>
             <h1
-              className="font-grotesk font-semibold text-5xl sm:text-6xl md:text-7xl tracking-tight mb-6 leading-tight"
+              className="font-grotesk font-semibold text-5xl sm:text-6xl md:text-7xl tracking-tight mb-8 leading-tight"
               style={{ color: customColors.heading }}
             >
               Loggi Wellness App
@@ -73,7 +57,7 @@ export default function Page() {
             <p className="text-xl mb-4" style={{ color: customColors.muted }}>
               2025 · UI/UX · Accessibility · Mobile
             </p>
-            <p className="text-lg max-w-2xl mx-auto leading-relaxed mb-12" style={{ color: customColors.body }}>
+            <p className="text-lg max-w-2xl mx-auto leading-relaxed" style={{ color: customColors.body }}>
               A 2-week concept sprint designing a calm, accessible wellness app for daily mood and sleep tracking.
             </p>
           </div>
@@ -130,22 +114,22 @@ export default function Page() {
       </section>
 
       {/* Divider */}
-      <div className="max-w-5xl mx-auto px-4 lg:px-6">
+      <div className="max-w-5xl mx-auto px-6">
         <div style={{ height: '1px', backgroundColor: customColors.border }}></div>
       </div>
 
       {/* Challenge - Split Layout */}
-      <section className="py-32" style={{ backgroundColor: customColors.whiteBg }}>
-        <div className="max-w-5xl mx-auto px-4 lg:px-6">
+      <section className="py-32" style={{ backgroundColor: customColors.primaryBg }}>
+        <div className="max-w-5xl mx-auto px-6">
           <div className="grid md:grid-cols-2 gap-16 items-center">
             <div>
-              <span className="text-xs uppercase tracking-wider mb-4 block font-semibold" style={{ color: customColors.accentDark }}>
+              <span className="text-xs uppercase tracking-wider mb-4 block font-semibold" style={{ color: customColors.accent }}>
                 The Challenge
               </span>
-              <h2 className="font-grotesk font-semibold text-4xl md:text-5xl mb-6 leading-tight" style={{ color: customColors.heading }}>
+              <h2 className="font-grotesk font-semibold text-4xl md:text-5xl mb-8 leading-tight" style={{ color: customColors.heading }}>
                 Why another wellness app?
               </h2>
-              <div className="space-y-6 mb-12" style={{ color: customColors.body }}>
+              <div className="space-y-6" style={{ color: customColors.body }}>
                 <p className="text-lg leading-relaxed">
                   Most wellness apps feel overwhelming. They push you to track everything, gamify your emotions, and guilt you when you miss a day. I wanted to
                   explore a different approach.
@@ -159,7 +143,7 @@ export default function Page() {
             <div
               className="rounded-2xl p-8 md:p-12"
               style={{
-                background: `linear-gradient(to bottom, ${customColors.lightBeige}, ${customColors.lightBeige}dd)`,
+                background: `linear-gradient(to bottom, ${customColors.secondaryBg}, ${customColors.secondaryBg}dd)`,
               }}
             >
               <p className="text-base leading-relaxed" style={{ color: customColors.body }}>
@@ -175,44 +159,54 @@ export default function Page() {
       </section>
 
       {/* Divider */}
-      <div className="max-w-5xl mx-auto px-4 lg:px-6">
+      <div className="max-w-5xl mx-auto px-6">
         <div style={{ height: '1px', backgroundColor: customColors.border }}></div>
       </div>
 
-      {/* Target Users - White Background */}
-      <section className="py-32" style={{ backgroundColor: customColors.whiteBg }}>
-        <div className="max-w-5xl mx-auto px-4 lg:px-6">
+      {/* Target Users - Dark Background */}
+      <section className="py-32" style={{ backgroundColor: customColors.primaryBg }}>
+        <div className="max-w-5xl mx-auto px-6">
           <div className="text-center mb-16">
-            <span className="text-xs uppercase tracking-wider mb-4 block font-semibold" style={{ color: customColors.accentDark }}>
+            <span className="text-xs uppercase tracking-wider mb-4 block font-semibold" style={{ color: customColors.accent }}>
               Target Users
             </span>
-            <h2 className="font-grotesk font-semibold text-4xl md:text-5xl mb-6 leading-tight" style={{ color: customColors.heading }}>
+            <h2 className="font-grotesk font-semibold text-4xl md:text-5xl mb-8 leading-tight" style={{ color: customColors.heading }}>
               Who needs this?
             </h2>
-            <p className="text-lg max-w-2xl mx-auto leading-relaxed mb-12" style={{ color: customColors.body }}>
-              Loggi was created for people who want to build healthy daily habits but feel overwhelmed by wellness tools that are too intense or rigid. The goal
-              was to create a space that feels calming, safe, and easy to return to, even on off days. No pressure. No guilt. Just gentle support.
+          </div>
+
+          <div
+            className="rounded-2xl p-8 md:p-12 mb-12"
+            style={{
+              background: `linear-gradient(to bottom, ${customColors.secondaryBg}, ${customColors.secondaryBg}dd)`,
+            }}
+          >
+            <p className="text-lg leading-relaxed mb-4" style={{ color: customColors.muted }}>
+              Loggi was created for people who want to build healthy daily habits but feel overwhelmed by wellness tools that are too intense or rigid.
+            </p>
+            <p className="leading-relaxed" style={{ color: customColors.body }}>
+              The goal was to create a space that feels calming, safe, and easy to return to, even on off days. No pressure. No guilt. Just gentle support.
             </p>
           </div>
         </div>
       </section>
 
       {/* Divider */}
-      <div className="max-w-5xl mx-auto px-4 lg:px-6">
+      <div className="max-w-5xl mx-auto px-6">
         <div style={{ height: '1px', backgroundColor: customColors.border }}></div>
       </div>
 
       {/* Research - Full Width Centered Text */}
-      <section className="py-32" style={{ backgroundColor: customColors.whiteBg }}>
-        <div className="max-w-5xl mx-auto px-4 lg:px-6">
-          <span className="text-xs uppercase tracking-wider mb-4 block font-semibold text-center" style={{ color: customColors.accentDark }}>
+      <section className="py-32" style={{ backgroundColor: customColors.primaryBg }}>
+        <div className="max-w-5xl mx-auto px-6">
+          <span className="text-xs uppercase tracking-wider mb-4 block font-semibold text-center" style={{ color: customColors.accent }}>
             Research
           </span>
-          <h2 className="font-grotesk font-semibold text-4xl md:text-5xl mb-6 text-center leading-tight" style={{ color: customColors.heading }}>
+          <h2 className="font-grotesk font-semibold text-4xl md:text-5xl mb-12 text-center leading-tight" style={{ color: customColors.heading }}>
             Understanding the landscape
           </h2>
 
-          <div className="space-y-8 mb-12" style={{ color: '#6b6b6b' }}>
+          <div className="space-y-8 mb-16" style={{ color: '#6b6b6b' }}>
             <p className="text-lg leading-relaxed">
               I started by analyzing existing wellness apps, focusing on how they structure their flows, communicate with users, and balance clarity with calm.
               I also drew from personal experience, reflecting on why some tools feel harder to return to than others.
@@ -266,7 +260,7 @@ export default function Page() {
                 <CursorArrowRaysIcon className="w-6 h-6" style={{ color: customColors.accent }} />
                 Design Hypothesis
               </h3>
-              <p className="text-sm italic leading-relaxed" style={{ color: customColors.accentDark }}>
+              <p className="text-sm italic leading-relaxed" style={{ color: customColors.accent }}>
                 "If we create a check-in flow under one minute with gentle, supportive language and consistent visual rhythm, users will feel more in control of
                 their wellness journey without the pressure."
               </p>
@@ -276,21 +270,21 @@ export default function Page() {
       </section>
 
       {/* Divider */}
-      <div className="max-w-5xl mx-auto px-4 lg:px-6">
+      <div className="max-w-5xl mx-auto px-6">
         <div style={{ height: '1px', backgroundColor: customColors.border }}></div>
       </div>
 
       {/* Strategy - Grid Layout */}
-      <section className="py-32" style={{ backgroundColor: customColors.whiteBg }}>
-        <div className="max-w-5xl mx-auto px-4 lg:px-6">
+      <section className="py-32" style={{ backgroundColor: customColors.primaryBg }}>
+        <div className="max-w-5xl mx-auto px-6">
           <div className="text-center mb-16">
-            <span className="text-xs uppercase tracking-wider mb-4 block font-semibold" style={{ color: customColors.accentDark }}>
+            <span className="text-xs uppercase tracking-wider mb-4 block font-semibold" style={{ color: customColors.accent }}>
               Strategy
             </span>
             <h2 className="font-grotesk font-semibold text-4xl md:text-5xl mb-6 leading-tight" style={{ color: customColors.heading }}>
               Shaping the emotional tone
             </h2>
-            <p className="text-lg max-w-2xl mx-auto leading-relaxed mb-12" style={{ color: customColors.muted }}>
+            <p className="text-lg max-w-2xl mx-auto leading-relaxed" style={{ color: customColors.muted }}>
               Before diving into screens, I defined the emotional foundation. Loggi needed to feel like a supportive friend, not a demanding coach.
             </p>
           </div>
@@ -329,21 +323,21 @@ export default function Page() {
       </section>
 
       {/* Divider */}
-      <div className="max-w-5xl mx-auto px-4 lg:px-6">
+      <div className="max-w-5xl mx-auto px-6">
         <div style={{ height: '1px', backgroundColor: customColors.border }}></div>
       </div>
 
       {/* Onboarding Flow */}
-      <section className="py-32" style={{ backgroundColor: customColors.whiteBg }}>
-        <div className="max-w-5xl mx-auto px-4 lg:px-6">
+      <section className="py-32" style={{ backgroundColor: customColors.primaryBg }}>
+        <div className="max-w-5xl mx-auto px-6">
           <div className="text-center mb-16">
-            <span className="text-xs uppercase tracking-wider mb-4 block font-semibold" style={{ color: customColors.accentDark }}>
+            <span className="text-xs uppercase tracking-wider mb-4 block font-semibold" style={{ color: customColors.accent }}>
               Onboarding Flow
             </span>
-            <h2 className="font-grotesk font-semibold text-4xl md:text-5xl mb-6 leading-tight" style={{ color: customColors.heading }}>
+            <h2 className="font-grotesk font-semibold text-4xl md:text-5xl mb-8 leading-tight" style={{ color: customColors.heading }}>
               Welcoming users without pressure
             </h2>
-            <p className="text-lg max-w-2xl mx-auto leading-relaxed mb-12" style={{ color: customColors.muted }}>
+            <p className="text-lg max-w-2xl mx-auto leading-relaxed" style={{ color: customColors.muted }}>
               The onboarding needed to set the right tone from the start. I designed a 4-step flow that feels calm and goal-oriented without overwhelming new
               users.
             </p>
@@ -375,21 +369,21 @@ export default function Page() {
       </section>
 
       {/* Divider */}
-      <div className="max-w-5xl mx-auto px-4 lg:px-6">
+      <div className="max-w-5xl mx-auto px-6">
         <div style={{ height: '1px', backgroundColor: customColors.border }}></div>
       </div>
 
       {/* Core Experience - Daily Check-in */}
-      <section className="py-32" style={{ backgroundColor: customColors.whiteBg }}>
-        <div className="max-w-5xl mx-auto px-4 lg:px-6">
+      <section className="py-32" style={{ backgroundColor: customColors.primaryBg }}>
+        <div className="max-w-5xl mx-auto px-6">
           <div className="text-center mb-16">
-            <span className="text-xs uppercase tracking-wider mb-4 block font-semibold" style={{ color: customColors.accentDark }}>
+            <span className="text-xs uppercase tracking-wider mb-4 block font-semibold" style={{ color: customColors.accent }}>
               Core Experience
             </span>
-            <h2 className="font-grotesk font-semibold text-4xl md:text-5xl mb-6 leading-tight" style={{ color: customColors.heading }}>
+            <h2 className="font-grotesk font-semibold text-4xl md:text-5xl mb-8 leading-tight" style={{ color: customColors.heading }}>
               The heart of Loggi: Daily check-ins
             </h2>
-            <p className="text-lg max-w-2xl mx-auto leading-relaxed mb-12" style={{ color: customColors.muted }}>
+            <p className="text-lg max-w-2xl mx-auto leading-relaxed" style={{ color: customColors.muted }}>
               This is where the design philosophy comes to life. A 5-step flow designed to take under 60 seconds, with clear visual feedback and no judgment.
             </p>
           </div>
@@ -424,7 +418,7 @@ export default function Page() {
               Each step uses simple icons, clear labels, and supportive microcopy. The progress is visible but not overwhelming. Users can go back, skip, or
               pause anytime.
             </p>
-            <p className="text-base italic font-medium" style={{ color: customColors.accentDark }}>
+            <p className="text-base italic font-medium" style={{ color: customColors.accent }}>
               "The flow respects the user's time while gathering meaningful insights. No guilt. No pressure. Just care."
             </p>
           </div>
@@ -432,21 +426,21 @@ export default function Page() {
       </section>
 
       {/* Divider */}
-      <div className="max-w-5xl mx-auto px-4 lg:px-6">
+      <div className="max-w-5xl mx-auto px-6">
         <div style={{ height: '1px', backgroundColor: customColors.border }}></div>
       </div>
 
       {/* Insights & Profile - Split Layout */}
-      <section className="py-32" style={{ backgroundColor: customColors.whiteBg }}>
-        <div className="max-w-5xl mx-auto px-4 lg:px-6">
+      <section className="py-32" style={{ backgroundColor: customColors.primaryBg }}>
+        <div className="max-w-5xl mx-auto px-6">
           <div className="text-center mb-16">
-            <span className="text-xs uppercase tracking-wider mb-4 block font-semibold" style={{ color: customColors.accentDark }}>
+            <span className="text-xs uppercase tracking-wider mb-4 block font-semibold" style={{ color: customColors.accent }}>
               Making Data Meaningful
             </span>
-            <h2 className="font-grotesk font-semibold text-4xl md:text-5xl mb-6 leading-tight" style={{ color: customColors.heading }}>
+            <h2 className="font-grotesk font-semibold text-4xl md:text-5xl mb-8 leading-tight" style={{ color: customColors.heading }}>
               Seeing patterns over time
             </h2>
-            <p className="text-lg max-w-2xl mx-auto leading-relaxed mb-12" style={{ color: customColors.muted }}>
+            <p className="text-lg max-w-2xl mx-auto leading-relaxed" style={{ color: customColors.muted }}>
               Check-ins are just the beginning. The real value comes from helping users see patterns, understand trends, and feel more aware of their wellness
               journey.
             </p>
@@ -477,22 +471,22 @@ export default function Page() {
       </section>
 
       {/* Divider */}
-      <div className="max-w-5xl mx-auto px-4 lg:px-6">
+      <div className="max-w-5xl mx-auto px-6">
         <div style={{ height: '1px', backgroundColor: customColors.border }}></div>
       </div>
 
       {/* Validation - Split Layout */}
-      <section className="py-32" style={{ backgroundColor: customColors.whiteBg }}>
-        <div className="max-w-5xl mx-auto px-4 lg:px-6">
+      <section className="py-32" style={{ backgroundColor: customColors.primaryBg }}>
+        <div className="max-w-5xl mx-auto px-6">
           <div className="grid md:grid-cols-2 gap-16 items-start">
             <div>
-              <span className="text-xs uppercase tracking-wider mb-4 block font-semibold" style={{ color: customColors.accentDark }}>
+              <span className="text-xs uppercase tracking-wider mb-4 block font-semibold" style={{ color: customColors.accent }}>
                 Validation
               </span>
-              <h2 className="font-grotesk font-semibold text-4xl md:text-5xl mb-6 leading-tight" style={{ color: customColors.heading }}>
+              <h2 className="font-grotesk font-semibold text-4xl md:text-5xl mb-8 leading-tight" style={{ color: customColors.heading }}>
                 Testing with real users
               </h2>
-              <p className="text-lg leading-relaxed mb-12" style={{ color: customColors.body }}>
+              <p className="text-lg leading-relaxed" style={{ color: customColors.body }}>
                 I tested the high-fidelity prototype with 5 peers to validate the emotional tone, flow clarity, and overall usability.
               </p>
             </div>
@@ -539,8 +533,8 @@ export default function Page() {
                     'Changed "Next" button copy to more human language',
                     'Added back button and progress indicators',
                   ].map((item, index) => (
-                    <li key={index} className="flex items-start gap-3">
-                      <span className="text-lg font-bold leading-none" style={{ color: customColors.accent, marginTop: '4px' }}>
+                    <li key={index} className="flex items-baseline gap-3">
+                      <span className="text-lg font-bold leading-none" style={{ color: customColors.accent }}>
                         •
                       </span>
                       <span className="leading-relaxed" style={{ color: customColors.body }}>
@@ -557,7 +551,7 @@ export default function Page() {
           <div
             className="rounded-xl p-8 mt-12"
             style={{
-              background: `linear-gradient(to bottom, ${customColors.lightBeige}, ${customColors.lightBeige}dd)`,
+              background: `linear-gradient(to bottom, ${customColors.secondaryBg}, ${customColors.secondaryBg}dd)`,
             }}
           >
             <h3 className="font-grotesk font-semibold text-xl mb-4" style={{ color: customColors.heading }}>
@@ -567,7 +561,7 @@ export default function Page() {
               Testing revealed that small changes in button copy had a huge impact. Changing "Next" to "Let's go" or "Complete" to "You're done" made the
               experience feel more human and supportive.
             </p>
-            <p className="text-sm italic font-medium" style={{ color: customColors.accentDark }}>
+            <p className="text-sm italic font-medium" style={{ color: customColors.accent }}>
               Lesson learned: Words aren't just information—they set the emotional tone of the entire experience.
             </p>
           </div>
@@ -575,35 +569,30 @@ export default function Page() {
       </section>
 
       {/* Divider */}
-      <div className="max-w-5xl mx-auto px-4 lg:px-6">
+      <div className="max-w-5xl mx-auto px-6">
         <div style={{ height: '1px', backgroundColor: customColors.border }}></div>
       </div>
 
       {/* Reflection - Large Quote Block */}
-      <section className="py-32" style={{ backgroundColor: customColors.whiteBg }}>
-        <div className="max-w-5xl mx-auto px-4 lg:px-6">
+      <section className="py-32" style={{ backgroundColor: customColors.primaryBg }}>
+        <div className="max-w-5xl mx-auto px-6">
           <div className="text-center mb-16">
-            <span className="text-xs uppercase tracking-wider mb-4 block font-semibold" style={{ color: customColors.accentDark }}>
+            <span className="text-xs uppercase tracking-wider mb-4 block font-semibold" style={{ color: customColors.accent }}>
               Reflections
             </span>
-            <h2 className="font-grotesk font-semibold text-4xl md:text-5xl mb-6 leading-tight" style={{ color: customColors.heading }}>
+            <h2 className="font-grotesk font-semibold text-4xl md:text-5xl mb-12 leading-tight" style={{ color: customColors.heading }}>
               What I learned
             </h2>
-            <p className="text-lg max-w-2xl mx-auto leading-relaxed mb-12" style={{ color: customColors.muted }}>
-              Reflections on the design process and key learnings from this project.
-            </p>
           </div>
 
           {/* Large Quote Block */}
           <div
             className="rounded-2xl p-12 md:p-16 mb-12"
             style={{
-              background: `linear-gradient(to bottom, ${customColors.lightBeige}, ${customColors.lightBeige}dd)`,
-              boxShadow: 'inset 0 2px 8px rgba(0, 0, 0, 0.03)',
-              borderLeft: '3px solid #ff6b2c',
+              background: `linear-gradient(to bottom, ${customColors.secondaryBg}, ${customColors.secondaryBg}dd)`,
             }}
           >
-            <p className="text-3xl md:text-4xl font-medium leading-relaxed text-center" style={{ color: customColors.heading, letterSpacing: '-0.02em' }}>
+            <p className="text-2xl md:text-3xl font-medium leading-relaxed text-center" style={{ color: customColors.heading }}>
               "Good UX isn't always about more features. It's often about fewer, clearer steps."
             </p>
           </div>
@@ -642,15 +631,17 @@ export default function Page() {
         </div>
       </section>
 
-      {/* Thanks Section - Editorial Style */}
-      <section ref={thanksSectionRef} className="thanks-section">
-        <div className="content max-w-5xl mx-auto px-4 lg:px-6">
-          <h2 className="font-grotesk font-semibold mb-4" style={{ color: customColors.heading }}>
-            Thanks for reading!
-          </h2>
-          <p className="mb-12" style={{ color: customColors.body }}>
-            I hope you enjoyed learning about Loggi.
-          </p>
+      {/* Footer - Full Width mutedGreen */}
+      <section className="py-32" style={{ backgroundColor: customColors.mutedGreen }}>
+        <div className="max-w-4xl mx-auto px-6 text-center">
+          <div className="space-y-6 mb-12">
+            <p className="text-3xl font-semibold" style={{ color: customColors.heading }}>
+              Thanks for reading! 🙌
+            </p>
+            <p className="text-lg" style={{ color: customColors.body }}>
+              I hope you enjoyed learning about Loggi.
+            </p>
+          </div>
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <Link
               href="/case-studies/treebula"
@@ -675,10 +666,7 @@ export default function Page() {
                 e.currentTarget.style.boxShadow = '0 2px 8px rgba(0, 0, 0, 0.1)';
               }}
             >
-              <span className="relative z-10 flex items-center gap-2">
-                Next Project: Treebula
-                <ArrowRight className="h-5 w-5" />
-              </span>
+              <span className="relative z-10">Next Project: Treebula</span>
             </Link>
             <Link
               href="/#projects"
@@ -694,8 +682,8 @@ export default function Page() {
                 textDecoration: 'none',
               }}
               onMouseEnter={(e) => {
-                e.currentTarget.style.backgroundColor = customColors.whiteBg;
-                e.currentTarget.style.borderColor = customColors.border;
+                e.currentTarget.style.backgroundColor = customColors.secondaryBg;
+                e.currentTarget.style.borderColor = customColors.borderHover;
               }}
               onMouseLeave={(e) => {
                 e.currentTarget.style.backgroundColor = 'transparent';
@@ -706,51 +694,6 @@ export default function Page() {
             </Link>
           </div>
         </div>
-        <style jsx>{`
-          .thanks-section {
-            position: relative;
-            overflow: hidden;
-            padding: clamp(140px, 18vh, 220px) 0;
-            background-color: #f4f4f4;
-          }
-
-          .thanks-section .content {
-            position: relative;
-            z-index: 1;
-            text-align: center;
-            max-width: 960px;
-            margin: 0 auto;
-            opacity: 1;
-            transform: translateY(0);
-          }
-
-          .thanks-section h2 {
-            font-family: 'Familjen Grotesk', sans-serif;
-            color: #000000;
-            font-weight: 600;
-            font-size: clamp(28px, 3vw, 44px);
-            letter-spacing: -0.015em;
-            margin-bottom: 16px;
-          }
-
-          .thanks-section p {
-            font-family: 'Inter', sans-serif;
-            color: #6b6b6b;
-            font-size: 1.125rem;
-            line-height: 1.7;
-            margin-bottom: 48px;
-          }
-
-          .thanks-section::after {
-            content: '';
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            width: 100%;
-            height: 1px;
-            background: rgba(0, 0, 0, 0.05);
-          }
-        `}</style>
       </section>
     </article>
   );

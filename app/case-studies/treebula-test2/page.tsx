@@ -1,9 +1,7 @@
 'use client';
 
-import { useEffect, useRef } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
-import { ArrowRight } from 'lucide-react';
 import {
   UserIcon,
   SignalIcon,
@@ -23,56 +21,42 @@ import {
 } from '@heroicons/react/24/outline';
 
 export default function Page() {
-  const thanksSectionRef = useRef<HTMLElement>(null);
-
-  useEffect(() => {
-    const thanks = thanksSectionRef.current;
-    if (thanks) {
-      const observer = new IntersectionObserver(
-        ([entry]) => {
-          if (entry.isIntersecting) thanks.classList.add('is-visible');
-        },
-        { threshold: 0.2 }
-      );
-      observer.observe(thanks);
-      return () => observer.disconnect();
-    }
-  }, []);
-
+  // Dark theme colors
   const customColors = {
     // Background Colors
-    secondaryBg: '#F4F4F4',
-    darkBg: '#0F0F0F',
-    whiteBg: '#FAFAFA',
-    lightBeige: '#F5F3EF',
+    primaryBg: '#0C0D0F',
+    secondaryBg: '#141518',
+    darkBg: '#0C0D0F',
+    whiteBg: '#0C0D0F', // Use primaryBg for dark theme
+    lightBeige: '#141518', // Use secondaryBg for dark theme
     mutedGreen: '#A8B5A0',
 
     // Accent Colors
     accent: '#ff6b2c',
     accentHover: '#e55a1f',
-    accentDark: '#C84F1A', // Darker accent for WCAG compliance on light backgrounds
+    accentDark: '#ff6b2c', // Use accent color for dark theme
 
     // Text Colors
-    heading: '#000000',
-    body: '#6b6b6b',
+    heading: '#EBEBEB',
+    body: '#A5A5A5',
     muted: '#9a9a9f',
 
     // Border Colors
-    border: '#e0e0e0',
-    borderHover: '#d0d0d0',
+    border: '#2a2b2e',
+    borderHover: '#3a3b3e',
   };
 
   return (
-    <article style={{ backgroundColor: customColors.whiteBg, minHeight: '100vh' }}>
-      {/* Hero - White Background, Large Image */}
-      <section className="pt-32 pb-40" style={{ backgroundColor: customColors.whiteBg }}>
-        <div className="max-w-5xl mx-auto px-4 lg:px-6">
+    <article style={{ backgroundColor: customColors.primaryBg, minHeight: '100vh' }}>
+      {/* Hero - Dark Background, Large Image */}
+      <section className="pt-32 pb-40" style={{ backgroundColor: customColors.primaryBg }}>
+        <div className="max-w-5xl mx-auto px-6">
           <div className="text-center mb-16">
-            <span className="text-xs uppercase tracking-wider mb-4 block font-semibold" style={{ color: customColors.accentDark }}>
+            <span className="text-xs uppercase tracking-wider mb-6 block font-semibold" style={{ color: customColors.accent }}>
               Case Study
             </span>
             <h1
-              className="font-grotesk font-semibold text-5xl sm:text-6xl md:text-7xl tracking-tight mb-6 leading-tight"
+              className="font-grotesk font-semibold text-5xl sm:text-6xl md:text-7xl tracking-tight mb-8 leading-tight"
               style={{ color: customColors.heading }}
             >
               Treebula Forest Monitoring
@@ -80,7 +64,7 @@ export default function Page() {
             <p className="text-xl mb-4" style={{ color: customColors.muted }}>
               2025 · Product · Mobile · AI/Satellite
             </p>
-            <p className="text-lg max-w-2xl mx-auto leading-relaxed mb-12" style={{ color: customColors.body }}>
+            <p className="text-lg max-w-2xl mx-auto leading-relaxed" style={{ color: customColors.body }}>
               Designing a mobile-first service that helps forest owners monitor their property remotely using AI and satellite data.
             </p>
           </div>
@@ -137,22 +121,22 @@ export default function Page() {
       </section>
 
       {/* Divider */}
-      <div className="max-w-5xl mx-auto px-4 lg:px-6">
+      <div className="max-w-5xl mx-auto px-6">
         <div style={{ height: '1px', backgroundColor: customColors.border }}></div>
       </div>
 
       {/* Challenge - Split Layout (Text Left, Image/Stat Right) */}
-      <section className="py-32" style={{ backgroundColor: customColors.whiteBg }}>
-        <div className="max-w-5xl mx-auto px-4 lg:px-6">
+      <section className="py-32" style={{ backgroundColor: customColors.primaryBg }}>
+        <div className="max-w-5xl mx-auto px-6">
           <div className="grid md:grid-cols-2 gap-16 items-center">
             <div>
-              <span className="text-xs uppercase tracking-wider mb-4 block font-semibold" style={{ color: customColors.accentDark }}>
+              <span className="text-xs uppercase tracking-wider mb-4 block font-semibold" style={{ color: customColors.accent }}>
                 The Challenge
               </span>
-              <h2 className="font-grotesk font-semibold text-4xl md:text-5xl mb-6 leading-tight" style={{ color: customColors.heading }}>
+              <h2 className="font-grotesk font-semibold text-4xl md:text-5xl mb-8 leading-tight" style={{ color: customColors.heading }}>
                 Distance creates worry
               </h2>
-              <div className="space-y-6 mb-12" style={{ color: customColors.body }}>
+              <div className="space-y-6" style={{ color: customColors.body }}>
                 <p className="text-lg leading-relaxed">
                   Many forest owners live far from their property. They worry about storm damage, bark beetle attacks, and other risks but have no easy way to
                   monitor what's happening.
@@ -165,7 +149,7 @@ export default function Page() {
             <div
               className="rounded-2xl p-8 md:p-12"
               style={{
-                background: `linear-gradient(to bottom, ${customColors.lightBeige}, ${customColors.lightBeige}dd)`,
+                background: `linear-gradient(to bottom, ${customColors.secondaryBg}, ${customColors.secondaryBg}dd)`,
               }}
             >
               <p className="text-base leading-relaxed mb-4" style={{ color: customColors.body }}>
@@ -181,21 +165,21 @@ export default function Page() {
       </section>
 
       {/* Divider */}
-      <div className="max-w-5xl mx-auto px-4 lg:px-6">
+      <div className="max-w-5xl mx-auto px-6">
         <div style={{ height: '1px', backgroundColor: customColors.border }}></div>
       </div>
 
-      {/* Target Users - White Background, Icon Row */}
-      <section className="py-32" style={{ backgroundColor: customColors.whiteBg }}>
-        <div className="max-w-5xl mx-auto px-4 lg:px-6">
+      {/* Target Users - Dark Background, Icon Row */}
+      <section className="py-32" style={{ backgroundColor: customColors.primaryBg }}>
+        <div className="max-w-5xl mx-auto px-6">
           <div className="text-center mb-16">
-            <span className="text-xs uppercase tracking-wider mb-4 block font-semibold" style={{ color: customColors.accentDark }}>
+            <span className="text-xs uppercase tracking-wider mb-4 block font-semibold" style={{ color: customColors.accent }}>
               Target Users
             </span>
-            <h2 className="font-grotesk font-semibold text-4xl md:text-5xl mb-6 leading-tight" style={{ color: customColors.heading }}>
+            <h2 className="font-grotesk font-semibold text-4xl md:text-5xl mb-8 leading-tight" style={{ color: customColors.heading }}>
               Designing for forest owners
             </h2>
-            <p className="text-lg max-w-2xl mx-auto leading-relaxed mb-12" style={{ color: customColors.body }}>
+            <p className="text-lg max-w-2xl mx-auto leading-relaxed" style={{ color: customColors.body }}>
               Our target group is often engaged but not always technically savvy. This made clarity, simplicity, and accessibility crucial in every design
               decision.
             </p>
@@ -208,7 +192,7 @@ export default function Page() {
             }}
           >
             <div className="flex items-center gap-6 mb-6">
-              <div className="w-20 h-20 rounded-full flex items-center justify-center flex-shrink-0" style={{ backgroundColor: customColors.whiteBg }}>
+              <div className="w-20 h-20 rounded-full flex items-center justify-center flex-shrink-0" style={{ backgroundColor: customColors.primaryBg }}>
                 <UserIcon className="w-10 h-10" style={{ color: customColors.accent }} />
               </div>
               <div>
@@ -251,21 +235,21 @@ export default function Page() {
       </section>
 
       {/* Divider */}
-      <div className="max-w-5xl mx-auto px-4 lg:px-6">
+      <div className="max-w-5xl mx-auto px-6">
         <div style={{ height: '1px', backgroundColor: customColors.border }}></div>
       </div>
 
       {/* Discovery / Insights - Full Width Centered Text */}
-      <section className="py-32" style={{ backgroundColor: customColors.whiteBg }}>
-        <div className="max-w-5xl mx-auto px-4 lg:px-6">
-          <span className="text-xs uppercase tracking-wider mb-4 block font-semibold text-center" style={{ color: customColors.accentDark }}>
+      <section className="py-32" style={{ backgroundColor: customColors.primaryBg }}>
+        <div className="max-w-5xl mx-auto px-6">
+          <span className="text-xs uppercase tracking-wider mb-4 block font-semibold text-center" style={{ color: customColors.accent }}>
             Discovery
           </span>
-          <h2 className="font-grotesk font-semibold text-4xl md:text-5xl mb-6 text-center leading-tight" style={{ color: customColors.heading }}>
+          <h2 className="font-grotesk font-semibold text-4xl md:text-5xl mb-12 text-center leading-tight" style={{ color: customColors.heading }}>
             Building on internal expertise
           </h2>
 
-          <div className="space-y-8 mb-12" style={{ color: '#6b6b6b' }}>
+          <div className="space-y-8 mb-16" style={{ color: '#6b6b6b' }}>
             <p className="text-lg leading-relaxed">
               Unlike traditional UX projects with formal user interviews, we built this service on internal expertise and long industry experience. Many of our
               stakeholders and team members are forest owners themselves.
@@ -309,21 +293,21 @@ export default function Page() {
       </section>
 
       {/* Divider */}
-      <div className="max-w-5xl mx-auto px-4 lg:px-6">
+      <div className="max-w-5xl mx-auto px-6">
         <div style={{ height: '1px', backgroundColor: customColors.border }}></div>
       </div>
 
       {/* Strategy - Grid Layout */}
-      <section className="py-32" style={{ backgroundColor: customColors.whiteBg }}>
-        <div className="max-w-5xl mx-auto px-4 lg:px-6">
+      <section className="py-32" style={{ backgroundColor: customColors.primaryBg }}>
+        <div className="max-w-5xl mx-auto px-6">
           <div className="text-center mb-16">
-            <span className="text-xs uppercase tracking-wider mb-4 block font-semibold" style={{ color: customColors.accentDark }}>
+            <span className="text-xs uppercase tracking-wider mb-4 block font-semibold" style={{ color: customColors.accent }}>
               Strategy
             </span>
             <h2 className="font-grotesk font-semibold text-4xl md:text-5xl mb-6 leading-tight" style={{ color: customColors.heading }}>
               Balancing modern innovation with accessibility
             </h2>
-            <p className="text-lg max-w-2xl mx-auto leading-relaxed mb-12" style={{ color: customColors.muted }}>
+            <p className="text-lg max-w-2xl mx-auto leading-relaxed" style={{ color: customColors.muted }}>
               The biggest challenge was designing for users aged 55–80 while maintaining Treebula's identity as a modern, innovative tech company.
             </p>
           </div>
@@ -364,23 +348,23 @@ export default function Page() {
       </section>
 
       {/* Divider */}
-      <div className="max-w-5xl mx-auto px-4 lg:px-6">
+      <div className="max-w-5xl mx-auto px-6">
         <div style={{ height: '1px', backgroundColor: customColors.border }}></div>
       </div>
 
       {/* Solution / UI Showcase - Dark Background, Narrow Centered */}
-      <section className="py-32" style={{ backgroundColor: customColors.whiteBg }}>
-        <div className="max-w-5xl mx-auto px-4 lg:px-6">
+      <section className="py-32" style={{ backgroundColor: customColors.primaryBg }}>
+        <div className="max-w-5xl mx-auto px-6">
           <div
             className="rounded-2xl p-12 md:p-16"
             style={{
               backgroundColor: '#0C0D0F',
             }}
           >
-            <span className="text-xs uppercase tracking-wider mb-4 block font-semibold" style={{ color: customColors.accentDark }}>
+            <span className="text-xs uppercase tracking-wider mb-4 block font-semibold" style={{ color: customColors.accent }}>
               Solution
             </span>
-            <h2 className="font-grotesk font-semibold text-white text-4xl md:text-5xl mb-6 leading-tight">What we built</h2>
+            <h2 className="font-grotesk font-semibold text-white text-4xl md:text-5xl mb-8 leading-tight">What we built</h2>
 
             <p className="text-lg leading-relaxed text-white/80 mb-12">
               Forest Monitoring combines AI and satellite data to give forest owners real-time insights about their property, all accessible from their mobile
@@ -427,22 +411,22 @@ export default function Page() {
       </section>
 
       {/* Divider */}
-      <div className="max-w-5xl mx-auto px-4 lg:px-6">
+      <div className="max-w-5xl mx-auto px-6">
         <div style={{ height: '1px', backgroundColor: customColors.border }}></div>
       </div>
 
       {/* Process - Split Layout */}
-      <section className="py-32" style={{ backgroundColor: customColors.whiteBg }}>
-        <div className="max-w-5xl mx-auto px-4 lg:px-6">
+      <section className="py-32" style={{ backgroundColor: customColors.primaryBg }}>
+        <div className="max-w-5xl mx-auto px-6">
           <div className="grid md:grid-cols-2 gap-16 items-start">
             <div>
-              <span className="text-xs uppercase tracking-wider mb-4 block font-semibold" style={{ color: customColors.accentDark }}>
+              <span className="text-xs uppercase tracking-wider mb-4 block font-semibold" style={{ color: customColors.accent }}>
                 Process
               </span>
-              <h2 className="font-grotesk font-semibold text-4xl md:text-5xl mb-6 leading-tight" style={{ color: customColors.heading }}>
+              <h2 className="font-grotesk font-semibold text-4xl md:text-5xl mb-8 leading-tight" style={{ color: customColors.heading }}>
                 From idea to product
               </h2>
-              <div className="space-y-6 mb-12" style={{ color: customColors.body }}>
+              <div className="space-y-6" style={{ color: customColors.body }}>
                 <p className="text-lg leading-relaxed">
                   My role was to transform ideas and insights from the team into a working, visual, and user-friendly product. It was far from linear, more like
                   a roller coaster of rapid iterations and new insights.
@@ -485,35 +469,30 @@ export default function Page() {
       </section>
 
       {/* Divider */}
-      <div className="max-w-5xl mx-auto px-4 lg:px-6">
+      <div className="max-w-5xl mx-auto px-6">
         <div style={{ height: '1px', backgroundColor: customColors.border }}></div>
       </div>
 
       {/* Reflection / Learnings - Large Quote Block */}
-      <section className="py-32" style={{ backgroundColor: customColors.whiteBg }}>
-        <div className="max-w-5xl mx-auto px-4 lg:px-6">
+      <section className="py-32" style={{ backgroundColor: customColors.primaryBg }}>
+        <div className="max-w-5xl mx-auto px-6">
           <div className="text-center mb-16">
-            <span className="text-xs uppercase tracking-wider mb-4 block font-semibold" style={{ color: customColors.accentDark }}>
+            <span className="text-xs uppercase tracking-wider mb-4 block font-semibold" style={{ color: customColors.accent }}>
               Reflections
             </span>
-            <h2 className="font-grotesk font-semibold text-4xl md:text-5xl mb-6 leading-tight" style={{ color: customColors.heading }}>
+            <h2 className="font-grotesk font-semibold text-4xl md:text-5xl mb-12 leading-tight" style={{ color: customColors.heading }}>
               What I learned
             </h2>
-            <p className="text-lg max-w-2xl mx-auto leading-relaxed mb-12" style={{ color: customColors.muted }}>
-              Reflections on the design process and key learnings from this project.
-            </p>
           </div>
 
           {/* Large Quote Block */}
           <div
             className="rounded-2xl p-12 md:p-16 mb-12"
             style={{
-              background: `linear-gradient(to bottom, ${customColors.lightBeige}, ${customColors.lightBeige}dd)`,
-              boxShadow: 'inset 0 2px 8px rgba(0, 0, 0, 0.03)',
-              borderLeft: '3px solid #ff6b2c',
+              background: `linear-gradient(to bottom, ${customColors.secondaryBg}, ${customColors.secondaryBg}dd)`,
             }}
           >
-            <p className="text-3xl md:text-4xl font-medium leading-relaxed text-center" style={{ color: customColors.heading, letterSpacing: '-0.02em' }}>
+            <p className="text-2xl md:text-3xl font-medium leading-relaxed text-center" style={{ color: customColors.heading }}>
               "This project proved how close collaboration between design, development, and business can create products that strengthen the brand and meet real
               needs in a traditionally analog industry."
             </p>
@@ -553,15 +532,17 @@ export default function Page() {
         </div>
       </section>
 
-      {/* Thanks Section - Editorial Style */}
-      <section ref={thanksSectionRef} className="thanks-section" style={{ backgroundColor: customColors.secondaryBg }}>
-        <div className="content max-w-5xl mx-auto px-4 lg:px-6">
-          <h2 className="font-grotesk font-semibold mb-4" style={{ color: customColors.heading }}>
-            Thanks for reading!
-          </h2>
-          <p className="mb-12" style={{ color: customColors.body }}>
-            I hope you enjoyed learning about Treebula.
-          </p>
+      {/* Footer - Full Width mutedGreen */}
+      <section className="py-32" style={{ backgroundColor: customColors.mutedGreen }}>
+        <div className="max-w-4xl mx-auto px-6 text-center">
+          <div className="space-y-6 mb-12">
+            <p className="text-3xl font-semibold" style={{ color: customColors.heading }}>
+              Thanks for reading! 🙌
+            </p>
+            <p className="text-lg" style={{ color: customColors.body }}>
+              I hope you enjoyed learning about Treebula.
+            </p>
+          </div>
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <Link
               href="/case-studies/restaurang-apotek"
@@ -586,10 +567,7 @@ export default function Page() {
                 e.currentTarget.style.boxShadow = '0 2px 8px rgba(0, 0, 0, 0.1)';
               }}
             >
-              <span className="relative z-10 flex items-center gap-2">
-                Next Project: Restaurang Apotek
-                <ArrowRight className="h-5 w-5" />
-              </span>
+              <span className="relative z-10">Next Project: Restaurang Apotek</span>
             </Link>
             <Link
               href="/#projects"
@@ -605,8 +583,8 @@ export default function Page() {
                 textDecoration: 'none',
               }}
               onMouseEnter={(e) => {
-                e.currentTarget.style.backgroundColor = customColors.whiteBg;
-                e.currentTarget.style.borderColor = customColors.border;
+                e.currentTarget.style.backgroundColor = customColors.secondaryBg;
+                e.currentTarget.style.borderColor = customColors.borderHover;
               }}
               onMouseLeave={(e) => {
                 e.currentTarget.style.backgroundColor = 'transparent';
@@ -617,51 +595,6 @@ export default function Page() {
             </Link>
           </div>
         </div>
-        <style jsx>{`
-          .thanks-section {
-            position: relative;
-            overflow: hidden;
-            padding: clamp(140px, 18vh, 220px) 0;
-            background-color: ${customColors.secondaryBg};
-          }
-
-          .thanks-section .content {
-            position: relative;
-            z-index: 1;
-            text-align: center;
-            max-width: 960px;
-            margin: 0 auto;
-            opacity: 1;
-            transform: translateY(0);
-          }
-
-          .thanks-section h2 {
-            font-family: 'Familjen Grotesk', sans-serif;
-            color: ${customColors.heading};
-            font-weight: 600;
-            font-size: clamp(28px, 3vw, 44px);
-            letter-spacing: -0.015em;
-            margin-bottom: 16px;
-          }
-
-          .thanks-section p {
-            font-family: 'Inter', sans-serif;
-            color: ${customColors.body};
-            font-size: 1.125rem;
-            line-height: 1.7;
-            margin-bottom: 48px;
-          }
-
-          .thanks-section::after {
-            content: '';
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            width: 100%;
-            height: 1px;
-            background: rgba(0, 0, 0, 0.05);
-          }
-        `}</style>
       </section>
     </article>
   );

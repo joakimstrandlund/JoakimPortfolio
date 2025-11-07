@@ -8,7 +8,7 @@ import AnimatedFooter from './components/AnimatedFooter';
 // Fonts are wired via CSS variables set in :root in globals.css
 
 export const metadata: Metadata = {
-  title: 'Joakim Strandlund | UX/UI Designer | Portfolio',
+  title: 'Joakim Strandlund | UI/UX Designer | Portfolio',
 };
 
 export default function RootLayout({
