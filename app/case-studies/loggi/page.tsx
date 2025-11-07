@@ -150,7 +150,7 @@ export default function Page() {
                   Most wellness apps feel overwhelming. They push you to track everything, gamify your emotions, and guilt you when you miss a day. I wanted to
                   explore a different approach.
                 </p>
-                <p className="leading-relaxed">
+                <p className="text-lg leading-relaxed">
                   This was a 2-week concept sprint where I explored the full UX process, from defining user needs and emotional tone to prototyping and testing
                   high-fidelity flows.
                 </p>
@@ -290,7 +290,7 @@ export default function Page() {
             <h2 className="font-grotesk font-semibold text-4xl md:text-5xl mb-6 leading-tight" style={{ color: customColors.heading }}>
               Shaping the emotional tone
             </h2>
-            <p className="text-lg max-w-2xl mx-auto leading-relaxed mb-12" style={{ color: customColors.muted }}>
+            <p className="text-lg max-w-2xl mx-auto leading-relaxed mb-12" style={{ color: customColors.body }}>
               Before diving into screens, I defined the emotional foundation. Loggi needed to feel like a supportive friend, not a demanding coach.
             </p>
           </div>
@@ -343,7 +343,7 @@ export default function Page() {
             <h2 className="font-grotesk font-semibold text-4xl md:text-5xl mb-6 leading-tight" style={{ color: customColors.heading }}>
               Welcoming users without pressure
             </h2>
-            <p className="text-lg max-w-2xl mx-auto leading-relaxed mb-12" style={{ color: customColors.muted }}>
+            <p className="text-lg max-w-2xl mx-auto leading-relaxed mb-12" style={{ color: customColors.body }}>
               The onboarding needed to set the right tone from the start. I designed a 4-step flow that feels calm and goal-oriented without overwhelming new
               users.
             </p>
@@ -389,7 +389,7 @@ export default function Page() {
             <h2 className="font-grotesk font-semibold text-4xl md:text-5xl mb-6 leading-tight" style={{ color: customColors.heading }}>
               The heart of Loggi: Daily check-ins
             </h2>
-            <p className="text-lg max-w-2xl mx-auto leading-relaxed mb-12" style={{ color: customColors.muted }}>
+            <p className="text-lg max-w-2xl mx-auto leading-relaxed mb-12" style={{ color: customColors.body }}>
               This is where the design philosophy comes to life. A 5-step flow designed to take under 60 seconds, with clear visual feedback and no judgment.
             </p>
           </div>
@@ -446,7 +446,7 @@ export default function Page() {
             <h2 className="font-grotesk font-semibold text-4xl md:text-5xl mb-6 leading-tight" style={{ color: customColors.heading }}>
               Seeing patterns over time
             </h2>
-            <p className="text-lg max-w-2xl mx-auto leading-relaxed mb-12" style={{ color: customColors.muted }}>
+            <p className="text-lg max-w-2xl mx-auto leading-relaxed mb-12" style={{ color: customColors.body }}>
               Check-ins are just the beginning. The real value comes from helping users see patterns, understand trends, and feel more aware of their wellness
               journey.
             </p>
@@ -589,7 +589,7 @@ export default function Page() {
             <h2 className="font-grotesk font-semibold text-4xl md:text-5xl mb-6 leading-tight" style={{ color: customColors.heading }}>
               What I learned
             </h2>
-            <p className="text-lg max-w-2xl mx-auto leading-relaxed mb-12" style={{ color: customColors.muted }}>
+            <p className="text-lg max-w-2xl mx-auto leading-relaxed mb-12" style={{ color: customColors.body }}>
               Reflections on the design process and key learnings from this project.
             </p>
           </div>

@@ -141,7 +141,7 @@ export default function Page() {
                   Restaurang Apotek is a locally renowned restaurant known for its bold interior and modern take on traditional dining. But their website? It
                   didn't match.
                 </p>
-                <p className="leading-relaxed">
+                <p className="text-lg leading-relaxed">
                   It lacked accessibility, was difficult to navigate especially on mobile, and couldn't be updated without technical help. Menus were buried in
                   PDFs, the booking flow was confusing, and the design felt disconnected from the restaurant's actual brand.
                 </p>
@@ -271,7 +271,7 @@ export default function Page() {
             <h2 className="font-grotesk font-semibold text-4xl md:text-5xl mb-6 leading-tight" style={{ color: customColors.heading }}>
               A welcoming first impression
             </h2>
-            <p className="text-lg max-w-2xl mx-auto leading-relaxed mb-12" style={{ color: customColors.muted }}>
+            <p className="text-lg max-w-2xl mx-auto leading-relaxed mb-12" style={{ color: customColors.body }}>
               The landing page needed to immediately communicate the restaurant's character while making it easy to find key information like hours, location,
               and booking.
             </p>
@@ -378,7 +378,7 @@ export default function Page() {
             <h2 className="font-grotesk font-semibold text-4xl md:text-5xl mb-6 leading-tight" style={{ color: customColors.heading }}>
               Making menus readable and accessible
             </h2>
-            <p className="text-lg max-w-2xl mx-auto leading-relaxed mb-12" style={{ color: customColors.muted }}>
+            <p className="text-lg max-w-2xl mx-auto leading-relaxed mb-12" style={{ color: customColors.body }}>
               The old PDF menus were impossible for screen readers to parse. I redesigned them as web-native content with clear typography, pricing, and
               categories.
             </p>
@@ -632,7 +632,7 @@ export default function Page() {
             <h2 className="font-grotesk font-semibold text-4xl md:text-5xl mb-6 leading-tight" style={{ color: customColors.heading }}>
               What I learned
             </h2>
-            <p className="text-lg max-w-2xl mx-auto leading-relaxed mb-12" style={{ color: customColors.muted }}>
+            <p className="text-lg max-w-2xl mx-auto leading-relaxed mb-12" style={{ color: customColors.body }}>
               Reflections on the design process and key learnings from this project.
             </p>
           </div>

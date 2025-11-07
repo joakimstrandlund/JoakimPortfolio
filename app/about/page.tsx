@@ -2,7 +2,7 @@
 
 import Image from 'next/image';
 import Link from 'next/link';
-import { MagnifyingGlassIcon, UsersIcon, PaintBrushIcon, BeakerIcon, CodeBracketIcon, DevicePhoneMobileIcon } from '@heroicons/react/24/outline';
+import { MagnifyingGlassIcon, UsersIcon, BeakerIcon, CursorArrowRaysIcon, Squares2X2Icon } from '@heroicons/react/24/outline';
 
 export default function About() {
   const customColors = {
@@ -123,7 +123,7 @@ export default function About() {
             <h2 className="font-grotesk font-semibold text-4xl md:text-5xl mb-8 leading-tight" style={{ color: customColors.heading }}>
               How I work
             </h2>
-            <p className="text-lg max-w-2xl mx-auto leading-relaxed" style={{ color: customColors.muted }}>
+            <p className="text-lg max-w-2xl mx-auto leading-relaxed" style={{ color: customColors.body }}>
               My design process is rooted in understanding users, collaborating closely, and building solutions that work for both people and business.
             </p>
           </div>
@@ -201,10 +201,10 @@ export default function About() {
 
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
             {[
-              { icon: PaintBrushIcon, title: 'UI Design' },
-              { icon: BeakerIcon, title: 'UX Research' },
-              { icon: CodeBracketIcon, title: 'Front-end' },
-              { icon: DevicePhoneMobileIcon, title: 'Mobile' },
+              { icon: MagnifyingGlassIcon, title: 'User Research' },
+              { icon: CursorArrowRaysIcon, title: 'Interaction Design' },
+              { icon: BeakerIcon, title: 'Prototyping' },
+              { icon: Squares2X2Icon, title: 'Design Systems' },
             ].map((item, index) => {
               const IconComponent = item.icon;
               return (

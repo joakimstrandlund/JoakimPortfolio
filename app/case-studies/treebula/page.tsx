@@ -157,7 +157,7 @@ export default function Page() {
                   Many forest owners live far from their property. They worry about storm damage, bark beetle attacks, and other risks but have no easy way to
                   monitor what's happening.
                 </p>
-                <p className="leading-relaxed">
+                <p className="text-lg leading-relaxed">
                   Traditional solutions require physical visits or expensive consultants. By the time damage is discovered, it's often too late.
                 </p>
               </div>
@@ -215,7 +215,7 @@ export default function Page() {
                 <h3 className="font-grotesk font-semibold text-2xl mb-2" style={{ color: customColors.heading }}>
                   Private forest owners
                 </h3>
-                <p style={{ color: customColors.muted }}>Age group: 55–80 years</p>
+                <p style={{ color: customColors.body }}>Age group: 55–80 years</p>
               </div>
             </div>
           </div>
@@ -323,7 +323,7 @@ export default function Page() {
             <h2 className="font-grotesk font-semibold text-4xl md:text-5xl mb-6 leading-tight" style={{ color: customColors.heading }}>
               Balancing modern innovation with accessibility
             </h2>
-            <p className="text-lg max-w-2xl mx-auto leading-relaxed mb-12" style={{ color: customColors.muted }}>
+            <p className="text-lg max-w-2xl mx-auto leading-relaxed mb-12" style={{ color: customColors.body }}>
               The biggest challenge was designing for users aged 55–80 while maintaining Treebula's identity as a modern, innovative tech company.
             </p>
           </div>
@@ -447,7 +447,7 @@ export default function Page() {
                   My role was to transform ideas and insights from the team into a working, visual, and user-friendly product. It was far from linear, more like
                   a roller coaster of rapid iterations and new insights.
                 </p>
-                <p className="leading-relaxed">
+                <p className="text-lg leading-relaxed">
                   Since we were building something that didn't exist on the market before, flexibility and close collaboration were essential throughout the
                   process.
                 </p>
@@ -499,7 +499,7 @@ export default function Page() {
             <h2 className="font-grotesk font-semibold text-4xl md:text-5xl mb-6 leading-tight" style={{ color: customColors.heading }}>
               What I learned
             </h2>
-            <p className="text-lg max-w-2xl mx-auto leading-relaxed mb-12" style={{ color: customColors.muted }}>
+            <p className="text-lg max-w-2xl mx-auto leading-relaxed mb-12" style={{ color: customColors.body }}>
               Reflections on the design process and key learnings from this project.
             </p>
           </div>
