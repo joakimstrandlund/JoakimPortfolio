@@ -25,14 +25,16 @@ export default function AnimatedFooter() {
       rafId = requestAnimationFrame(() => {
         // Try to find trigger sections in order of priority:
         // 1. Thanks for reading section (case study pages) - uses .thanks-section class
-        // 2. Let's work together section (about page) - uses #lets-work-together ID
-        // 3. Testimonial section (landing page) - uses #testimonial-section ID
+        // 2. Elements explicitly marked with data-footer-trigger
+        // 3. Legacy Let's work together section (about page) - uses #lets-work-together ID
+        // 4. Testimonial section (landing page) - uses #testimonial-section ID
         const thanksSection = document.querySelector('.thanks-section');
+        const dataTriggerSection = document.querySelector('[data-footer-trigger]');
         const letsWorkSection = document.getElementById('lets-work-together');
         const testimonialElement = document.getElementById('testimonial-section');
 
         // Use the first available trigger section
-        const triggerElement = thanksSection || letsWorkSection || testimonialElement;
+        const triggerElement = thanksSection || dataTriggerSection || letsWorkSection || testimonialElement;
 
         if (triggerElement && footerRef.current) {
           const triggerRect = triggerElement.getBoundingClientRect();
@@ -154,7 +156,7 @@ export default function AnimatedFooter() {
                   Let&apos;s work together
                 </h2>
                 <p className="text-xl leading-relaxed" style={{ color: '#D8E0DA' }}>
-                  Have a product idea or MVP to shape? I can help bring it to life.
+                  Have a project in mind or want to chat about design? I'd love to hear from you.
                 </p>
                 <div className="pt-4">
                   <a

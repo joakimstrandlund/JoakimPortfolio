@@ -609,7 +609,7 @@ export default function LandingTest2() {
               {/* Left Column - Bold CTA */}
               <div className="space-y-6">
                 <h2 className="font-grotesk font-bold text-heading text-4xl sm:text-5xl lg:text-6xl leading-tight">Let&apos;s work together</h2>
-                <p className="text-body text-xl leading-relaxed">Have a product idea or MVP to shape? I can help bring it to life.</p>
+                <p className="text-body text-xl leading-relaxed">Have a project in mind or want to chat about design? I'd love to hear from you.</p>
                 <div className="pt-4">
                   <a
                     href="mailto:joakimstrandlund@gmail.com"

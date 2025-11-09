@@ -193,7 +193,7 @@ export default function Home() {
         {/* Hero */}
         <section
           ref={heroRef}
-          className="relative min-h-screen px-4 lg:px-6 flex items-center overflow-hidden transition-all duration-300 ease-out"
+          className="relative min-h-screen px-4 lg:px-6 py-24 lg:py-32 flex items-center overflow-hidden transition-all duration-300 ease-out"
           style={{
             backgroundColor: customColors.secondaryBg,
             transform: `scale(${1 - Math.min(scrollY / 300, 1) * 0.15})`,
@@ -301,7 +301,7 @@ export default function Home() {
         </section>
 
         {/* Case Studies */}
-        <section id="projects" className="pt-10 pb-16 -mt-6 relative z-20" style={{ backgroundColor: customColors.whiteBg }}>
+        <section id="projects" className="pt-16 pb-24 lg:pt-24 lg:pb-32 -mt-6 relative z-20" style={{ backgroundColor: customColors.whiteBg }}>
           <div className="max-w-6xl mx-auto px-4 lg:px-6">
             <Reveal>
               <div className="mb-8">

@@ -26,7 +26,7 @@ export default function Footer() {
               Let&apos;s work together
             </h2>
             <p className="text-xl leading-relaxed" style={{ color: '#D8E0DA' }}>
-              Have a product idea or MVP to shape? I can help bring it to life.
+              Have a project in mind or want to chat about design? I'd love to hear from you.
             </p>
             <div className="pt-4">
               <a
