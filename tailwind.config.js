@@ -48,6 +48,10 @@ module.exports = {
         'card-hover-bg': '#2C2A30',
         'card-hover-border': '#3A383F',
       },
+      spacing: {
+        '5p': '20px',
+        '7p': '28px',
+      },
     },
   },
   plugins: [],
