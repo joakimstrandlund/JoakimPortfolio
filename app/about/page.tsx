@@ -3,6 +3,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { MagnifyingGlassIcon, UsersIcon, BeakerIcon, CursorArrowRaysIcon, Squares2X2Icon } from '@heroicons/react/24/outline';
+import SectionHeader from '../components/SectionHeader';
 
 export default function About() {
   const customColors = {
@@ -31,7 +32,7 @@ export default function About() {
   return (
     <article style={{ backgroundColor: customColors.whiteBg, minHeight: '100vh' }}>
       {/* Hero - White Background */}
-      <section className="pt-32 pb-40" style={{ backgroundColor: customColors.whiteBg }}>
+      <section className="pt-24 pb-32 lg:pt-32 lg:pb-40" style={{ backgroundColor: customColors.whiteBg }}>
         <div className="max-w-5xl mx-auto px-4 lg:px-6">
           <div className="text-center mb-16">
             <span className="text-xs uppercase tracking-wider mb-6 block font-semibold" style={{ color: customColors.accentDark }}>
@@ -60,29 +61,38 @@ export default function About() {
       </div>
 
       {/* Background - Split Layout */}
-      <section className="py-32" style={{ backgroundColor: customColors.whiteBg }}>
+      <section className="py-24 lg:py-32" style={{ backgroundColor: customColors.whiteBg }}>
         <div className="max-w-5xl mx-auto px-4 lg:px-6">
-          <div className="grid md:grid-cols-2 gap-16 items-center">
+          <div className="space-y-6 md:space-y-0 md:grid md:grid-cols-2 md:gap-16 items-center">
             <div>
-              <span className="text-xs uppercase tracking-wider mb-4 block font-semibold" style={{ color: customColors.accentDark }}>
-                Background
-              </span>
-              <h2 className="font-grotesk font-semibold text-4xl md:text-5xl mb-8 leading-tight" style={{ color: customColors.heading }}>
-                From sales to design
-              </h2>
-              <div className="space-y-6" style={{ color: customColors.body }}>
-                <p className="text-lg leading-relaxed">
-                  I'm a UX designer with front-end skills and a background in sales as an account manager. This combination allows me to blend creativity with
-                  structure, and to design with a deep understanding of both user needs and business goals.
-                </p>
-                <p className="text-lg leading-relaxed">
-                  Working closely with developers and stakeholders taught me how to balance user needs, business goals, and technical constraints. I believe the
-                  best products come from close collaboration and continuous learning.
-                </p>
-              </div>
+              <SectionHeader
+                label="Background"
+                title="From sales to design"
+                description={
+                  <>
+                    <p className="text-lg leading-relaxed">
+                      I'm a UX designer with front-end skills and a background in sales as an account manager. This combination allows me to blend creativity
+                      with structure, and to design with a deep understanding of both user needs and business goals.
+                    </p>
+                    <p className="text-lg leading-relaxed mt-6">
+                      Working closely with developers and stakeholders taught me how to balance user needs, business goals, and technical constraints. I believe
+                      the best products come from close collaboration and continuous learning.
+                    </p>
+                  </>
+                }
+                accentColor={customColors.accentDark}
+                headingColor={customColors.heading}
+                bodyColor={customColors.body}
+                descriptionClassName="space-y-6 text-lg leading-relaxed"
+                mobileSpacingClassName="mb-6"
+                desktopSpacingClassName="md:mb-12"
+                className="mb-6 md:mb-16"
+                descriptionWidthClassName=""
+                align="left"
+              />
             </div>
             <div
-              className="rounded-2xl p-8 md:p-12"
+              className="rounded-2xl p-7p md:p-12"
               style={{
                 background: `linear-gradient(to bottom, ${customColors.lightBeige}, ${customColors.lightBeige}dd)`,
               }}
@@ -114,23 +124,24 @@ export default function About() {
       </div>
 
       {/* How I Work - Split Layout */}
-      <section className="py-32" style={{ backgroundColor: customColors.whiteBg }}>
+      <section className="py-24 lg:py-32" style={{ backgroundColor: customColors.whiteBg }}>
         <div className="max-w-5xl mx-auto px-4 lg:px-6">
-          <div className="text-center mb-16">
-            <span className="text-xs uppercase tracking-wider mb-4 block font-semibold" style={{ color: customColors.accentDark }}>
-              Approach
-            </span>
-            <h2 className="font-grotesk font-semibold text-4xl md:text-5xl mb-8 leading-tight" style={{ color: customColors.heading }}>
-              How I work
-            </h2>
-            <p className="text-lg max-w-2xl mx-auto leading-relaxed" style={{ color: customColors.body }}>
-              My design process is rooted in understanding users, collaborating closely, and building solutions that work for both people and business.
-            </p>
-          </div>
+          <SectionHeader
+            label="Approach"
+            title="How I work"
+            description="My design process is rooted in understanding users, collaborating closely, and building solutions that work for both people and business."
+            accentColor={customColors.accentDark}
+            headingColor={customColors.heading}
+            bodyColor={customColors.body}
+            descriptionClassName="text-lg leading-relaxed"
+            mobileSpacingClassName="mb-6"
+            className="mb-6 md:mb-16"
+            align="center"
+          />
 
-          <div className="grid md:grid-cols-2 gap-8">
+          <div className="space-y-6 md:space-y-0 md:grid md:grid-cols-2 md:gap-8">
             <div
-              className="rounded-xl p-8"
+              className="rounded-xl p-5p md:p-8"
               style={{
                 background: `linear-gradient(to bottom, ${customColors.secondaryBg}, ${customColors.secondaryBg}dd)`,
               }}
@@ -154,7 +165,7 @@ export default function About() {
             </div>
 
             <div
-              className="rounded-xl p-8"
+              className="rounded-xl p-5p md:p-8"
               style={{
                 background: `linear-gradient(to bottom, ${customColors.secondaryBg}, ${customColors.secondaryBg}dd)`,
               }}
@@ -188,16 +199,20 @@ export default function About() {
       </div>
 
       {/* Skills & Tools - Grid Layout */}
-      <section className="py-32" style={{ backgroundColor: customColors.whiteBg }}>
-        <div className="max-w-5xl mx-auto px-4 lg:px-6">
-          <div className="text-center mb-16">
-            <span className="text-xs uppercase tracking-wider mb-4 block font-semibold" style={{ color: customColors.accentDark }}>
-              Skills
-            </span>
-            <h2 className="font-grotesk font-semibold text-4xl md:text-5xl mb-8 leading-tight" style={{ color: customColors.heading }}>
-              What I bring
-            </h2>
-          </div>
+      <section className="py-24 lg:py-32" style={{ backgroundColor: customColors.whiteBg }}>
+        <div className="max-w-5xl mx-auto px-4 lg:px-6" data-footer-trigger>
+          <SectionHeader
+            label="Skills"
+            title="What I bring"
+            accentColor={customColors.accentDark}
+            headingColor={customColors.heading}
+            bodyColor={customColors.body}
+            descriptionClassName="" // no description
+            align="center"
+            mobileAlign="center"
+            mobileSpacingClassName="mb-6"
+            className="mb-6 md:mb-16"
+          />
 
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
             {[
@@ -210,7 +225,7 @@ export default function About() {
               return (
                 <div
                   key={index}
-                  className="rounded-xl p-8 text-center"
+                  className="rounded-xl p-5p md:p-8 text-center"
                   style={{
                     background: `linear-gradient(to bottom, ${customColors.secondaryBg}, ${customColors.secondaryBg}dd)`,
                   }}
@@ -224,72 +239,6 @@ export default function About() {
                 </div>
               );
             })}
-          </div>
-        </div>
-      </section>
-
-      {/* Divider */}
-      <div className="max-w-5xl mx-auto px-4 lg:px-6">
-        <div style={{ height: '1px', backgroundColor: customColors.border }}></div>
-      </div>
-
-      {/* Contact CTA - Full Width */}
-      <section id="lets-work-together" className="py-32" style={{ backgroundColor: customColors.whiteBg }}>
-        <div className="max-w-5xl mx-auto px-4 lg:px-6">
-          <div className="text-center mb-16">
-            <h2 className="font-grotesk font-semibold text-4xl md:text-5xl mb-8 leading-tight" style={{ color: customColors.heading }}>
-              Let's work together
-            </h2>
-            <p className="text-lg max-w-2xl mx-auto leading-relaxed mb-8" style={{ color: customColors.body }}>
-              Have a project in mind or want to chat about design? I'd love to hear from you.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-              <a
-                href="mailto:joakimstrandlund@gmail.com"
-                className="text-base px-10 py-4 font-bold transition-all duration-300 hover:scale-105 relative overflow-hidden group inline-flex items-center justify-center"
-                style={{
-                  background: `linear-gradient(180deg, ${customColors.accent} 0%, ${customColors.accentHover} 100%)`,
-                  color: '#000000',
-                  borderRadius: '1.5rem',
-                  boxShadow: '0 2px 8px rgba(0, 0, 0, 0.1)',
-                  border: 'none',
-                  textDecoration: 'none',
-                }}
-                onMouseEnter={(e) => {
-                  e.currentTarget.style.background = `linear-gradient(180deg, ${customColors.accentHover} 0%, #c84f1a 100%)`;
-                  e.currentTarget.style.boxShadow = '0 4px 12px rgba(0, 0, 0, 0.2)';
-                }}
-                onMouseLeave={(e) => {
-                  e.currentTarget.style.background = `linear-gradient(180deg, ${customColors.accent} 0%, ${customColors.accentHover} 100%)`;
-                  e.currentTarget.style.boxShadow = '0 2px 8px rgba(0, 0, 0, 0.1)';
-                }}
-              >
-                <span className="relative z-10">Get in touch</span>
-              </a>
-              <a
-                href="https://www.linkedin.com/in/joakim-strandlund-14717817a/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-base px-10 py-4 font-bold transition-all duration-300 hover:scale-105 relative overflow-hidden group inline-flex items-center justify-center"
-                style={{
-                  backgroundColor: 'transparent',
-                  color: customColors.heading,
-                  borderRadius: '1.5rem',
-                  border: `2px solid ${customColors.border}`,
-                  textDecoration: 'none',
-                }}
-                onMouseEnter={(e) => {
-                  e.currentTarget.style.backgroundColor = customColors.secondaryBg;
-                  e.currentTarget.style.borderColor = customColors.border;
-                }}
-                onMouseLeave={(e) => {
-                  e.currentTarget.style.backgroundColor = 'transparent';
-                  e.currentTarget.style.borderColor = customColors.border;
-                }}
-              >
-                <span className="relative z-10">LinkedIn</span>
-              </a>
-            </div>
           </div>
         </div>
       </section>

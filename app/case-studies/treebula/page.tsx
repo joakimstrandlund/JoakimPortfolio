@@ -21,6 +21,7 @@ import {
   ExclamationTriangleIcon,
   ChartBarIcon,
 } from '@heroicons/react/24/outline';
+import SectionHeader from '../../components/SectionHeader';
 
 export default function Page() {
   const thanksSectionRef = useRef<HTMLElement>(null);
@@ -65,7 +66,7 @@ export default function Page() {
   return (
     <article style={{ backgroundColor: customColors.whiteBg, minHeight: '100vh' }}>
       {/* Hero - White Background, Large Image */}
-      <section className="pt-32 pb-40" style={{ backgroundColor: customColors.whiteBg }}>
+      <section className="pt-24 pb-32 lg:pt-32 lg:pb-40" style={{ backgroundColor: customColors.whiteBg }}>
         <div className="max-w-5xl mx-auto px-4 lg:px-6">
           <div className="text-center mb-16">
             <span className="text-xs uppercase tracking-wider mb-4 block font-semibold" style={{ color: customColors.accentDark }}>
@@ -142,33 +143,39 @@ export default function Page() {
       </div>
 
       {/* Challenge - Split Layout (Text Left, Image/Stat Right) */}
-      <section className="py-32" style={{ backgroundColor: customColors.whiteBg }}>
+      <section className="py-24 lg:py-32" style={{ backgroundColor: customColors.whiteBg }}>
         <div className="max-w-5xl mx-auto px-4 lg:px-6">
-          <div className="grid md:grid-cols-2 gap-16 items-center">
+          <div className="md:grid md:grid-cols-2 md:gap-16 md:items-start">
             <div>
-              <span className="text-xs uppercase tracking-wider mb-4 block font-semibold" style={{ color: customColors.accentDark }}>
-                The Challenge
-              </span>
-              <h2 className="font-grotesk font-semibold text-4xl md:text-5xl mb-6 leading-tight" style={{ color: customColors.heading }}>
-                Distance creates worry
-              </h2>
-              <div className="space-y-6 mb-12" style={{ color: customColors.body }}>
-                <p className="text-lg leading-relaxed">
-                  Many forest owners live far from their property. They worry about storm damage, bark beetle attacks, and other risks but have no easy way to
-                  monitor what's happening.
-                </p>
-                <p className="text-lg leading-relaxed">
-                  Traditional solutions require physical visits or expensive consultants. By the time damage is discovered, it's often too late.
-                </p>
-              </div>
+              <SectionHeader
+                label="The Challenge"
+                title="Distance creates worry"
+                description={
+                  <div className="space-y-6">
+                    <p className="text-lg leading-relaxed">
+                      Many forest owners live far from their property. They worry about storm damage, bark beetle attacks, and other risks but have no easy way
+                      to monitor what's happening.
+                    </p>
+                    <p className="text-lg leading-relaxed">
+                      Traditional solutions require physical visits or expensive consultants. By the time damage is discovered, it's often too late.
+                    </p>
+                  </div>
+                }
+                accentColor={customColors.accentDark}
+                headingColor={customColors.heading}
+                bodyColor={customColors.body}
+                align="left"
+                descriptionWidthClassName=""
+                className="mb-6 md:mb-0"
+              />
             </div>
             <div
-              className="rounded-2xl p-8 md:p-12"
+              className="rounded-2xl p-7p md:p-12 mb-8 md:mb-0"
               style={{
                 background: `linear-gradient(to bottom, ${customColors.lightBeige}, ${customColors.lightBeige}dd)`,
               }}
             >
-              <p className="text-base leading-relaxed mb-4" style={{ color: customColors.body }}>
+              <p className="text-base leading-relaxed" style={{ color: customColors.body }}>
                 <span className="font-semibold" style={{ color: customColors.heading }}>
                   The challenge:{' '}
                 </span>
@@ -186,66 +193,67 @@ export default function Page() {
       </div>
 
       {/* Target Users - White Background, Icon Row */}
-      <section className="py-32" style={{ backgroundColor: customColors.whiteBg }}>
+      <section className="py-24 lg:py-32" style={{ backgroundColor: customColors.whiteBg }}>
         <div className="max-w-5xl mx-auto px-4 lg:px-6">
-          <div className="text-center mb-16">
-            <span className="text-xs uppercase tracking-wider mb-4 block font-semibold" style={{ color: customColors.accentDark }}>
-              Target Users
-            </span>
-            <h2 className="font-grotesk font-semibold text-4xl md:text-5xl mb-6 leading-tight" style={{ color: customColors.heading }}>
-              Designing for forest owners
-            </h2>
-            <p className="text-lg max-w-2xl mx-auto leading-relaxed mb-12" style={{ color: customColors.body }}>
-              Our target group is often engaged but not always technically savvy. This made clarity, simplicity, and accessibility crucial in every design
-              decision.
-            </p>
-          </div>
+          <SectionHeader
+            label="Target Users"
+            title="Designing for forest owners"
+            description="Our target group is often engaged but not always technically savvy. This made clarity, simplicity, and accessibility crucial in every design decision."
+            accentColor={customColors.accentDark}
+            headingColor={customColors.heading}
+            bodyColor={customColors.body}
+            align="center"
+            mobileSpacingClassName="mb-6"
+            className="mb-6 md:mb-16"
+          />
 
-          <div
-            className="rounded-2xl p-8 md:p-12 mb-12"
-            style={{
-              background: `linear-gradient(to bottom, ${customColors.secondaryBg}, ${customColors.secondaryBg}dd)`,
-            }}
-          >
-            <div className="flex items-center gap-6 mb-6">
-              <div className="w-20 h-20 rounded-full flex items-center justify-center flex-shrink-0" style={{ backgroundColor: customColors.whiteBg }}>
-                <UserIcon className="w-10 h-10" style={{ color: customColors.accent }} />
-              </div>
-              <div>
-                <h3 className="font-grotesk font-semibold text-2xl mb-2" style={{ color: customColors.heading }}>
-                  Private forest owners
-                </h3>
-                <p style={{ color: customColors.body }}>Age group: 55–80 years</p>
+          <div className="grid gap-6 md:gap-8">
+            <div
+              className="rounded-2xl p-7p md:p-12"
+              style={{
+                background: `linear-gradient(to bottom, ${customColors.secondaryBg}, ${customColors.secondaryBg}dd)`,
+              }}
+            >
+              <div className="flex items-center gap-6 mb-6">
+                <div className="w-20 h-20 rounded-full flex items-center justify-center flex-shrink-0" style={{ backgroundColor: customColors.whiteBg }}>
+                  <UserIcon className="w-10 h-10" style={{ color: customColors.accent }} />
+                </div>
+                <div>
+                  <h3 className="font-grotesk font-semibold text-2xl mb-2" style={{ color: customColors.heading }}>
+                    Private forest owners
+                  </h3>
+                  <p style={{ color: customColors.body }}>Age group: 55–80 years</p>
+                </div>
               </div>
             </div>
-          </div>
 
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
-            {[
-              { icon: SignalIcon, text: 'Remote monitoring' },
-              { icon: BoltIcon, text: 'Quick updates' },
-              { icon: ShieldCheckIcon, text: 'Security' },
-              { icon: CursorArrowRaysIcon, text: 'Simplicity' },
-            ].map((item, index) => {
-              const IconComponent = item.icon;
-              if (!IconComponent) return null;
-              return (
-                <div
-                  key={index}
-                  className="rounded-xl p-6 text-center"
-                  style={{
-                    background: `linear-gradient(to bottom, ${customColors.secondaryBg}, ${customColors.secondaryBg}dd)`,
-                  }}
-                >
-                  <div className="flex justify-center mb-3">
-                    <IconComponent className="w-8 h-8" style={{ color: customColors.accent }} />
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8">
+              {[
+                { icon: SignalIcon, text: 'Remote monitoring' },
+                { icon: BoltIcon, text: 'Quick updates' },
+                { icon: ShieldCheckIcon, text: 'Security' },
+                { icon: CursorArrowRaysIcon, text: 'Simplicity' },
+              ].map((item, index) => {
+                const IconComponent = item.icon;
+                if (!IconComponent) return null;
+                return (
+                  <div
+                    key={index}
+                    className="rounded-xl p-5p md:p-8 text-center"
+                    style={{
+                      background: `linear-gradient(to bottom, ${customColors.secondaryBg}, ${customColors.secondaryBg}dd)`,
+                    }}
+                  >
+                    <div className="flex justify-center mb-3">
+                      <IconComponent className="w-8 h-8" style={{ color: customColors.accent }} />
+                    </div>
+                    <div className="text-sm font-grotesk font-semibold" style={{ color: customColors.heading }}>
+                      {item.text}
+                    </div>
                   </div>
-                  <div className="text-sm font-grotesk font-semibold" style={{ color: customColors.heading }}>
-                    {item.text}
-                  </div>
-                </div>
-              );
-            })}
+                );
+              })}
+            </div>
           </div>
         </div>
       </section>
@@ -256,32 +264,31 @@ export default function Page() {
       </div>
 
       {/* Discovery / Insights - Full Width Centered Text */}
-      <section className="py-32" style={{ backgroundColor: customColors.whiteBg }}>
+      <section className="py-24 lg:py-32" style={{ backgroundColor: customColors.whiteBg }}>
         <div className="max-w-5xl mx-auto px-4 lg:px-6">
-          <span className="text-xs uppercase tracking-wider mb-4 block font-semibold text-center" style={{ color: customColors.accentDark }}>
-            Discovery
-          </span>
-          <h2 className="font-grotesk font-semibold text-4xl md:text-5xl mb-6 text-center leading-tight" style={{ color: customColors.heading }}>
-            Building on internal expertise
-          </h2>
-
-          <div className="space-y-8 mb-12" style={{ color: '#6b6b6b' }}>
-            <p className="text-lg leading-relaxed">
-              Unlike traditional UX projects with formal user interviews, we built this service on internal expertise and long industry experience. Many of our
-              stakeholders and team members are forest owners themselves.
-            </p>
-            <p className="text-lg leading-relaxed">
-              Through structured workshops, ongoing discussions, and joint decisions, I gained deep knowledge of the target group's needs, daily life, and
-              challenges. This made it possible to quickly test ideas, iterate, and ensure every function created real value.
-            </p>
-          </div>
-
-          {/* Subtle divider with mutedGreen accent */}
-          <div className="flex items-center gap-4 mb-12">
-            <div style={{ flex: 1, height: '1px', backgroundColor: customColors.border }}></div>
-            <div style={{ width: '4px', height: '4px', borderRadius: '50%', backgroundColor: customColors.mutedGreen }}></div>
-            <div style={{ flex: 1, height: '1px', backgroundColor: customColors.border }}></div>
-          </div>
+          <SectionHeader
+            label="Discovery"
+            title="Building on internal expertise"
+            description={
+              <div className="space-y-6">
+                <p className="text-lg leading-relaxed">
+                  Unlike traditional UX projects with formal user interviews, we built this service on internal expertise and long industry experience. Many of
+                  our stakeholders and team members are forest owners themselves.
+                </p>
+                <p className="text-lg leading-relaxed">
+                  Through structured workshops, ongoing discussions, and joint decisions, I gained deep knowledge of the target group's needs, daily life, and
+                  challenges. This made it possible to quickly test ideas, iterate, and ensure every function created real value.
+                </p>
+              </div>
+            }
+            accentColor={customColors.accentDark}
+            headingColor={customColors.heading}
+            bodyColor={customColors.body}
+            align="center"
+            descriptionClassName="text-lg leading-relaxed"
+            mobileSpacingClassName="mb-6"
+            className="mb-6 md:mb-16"
+          />
 
           <div>
             <h3 className="font-grotesk font-semibold text-2xl mb-8" style={{ color: customColors.heading }}>
@@ -314,19 +321,19 @@ export default function Page() {
       </div>
 
       {/* Strategy - Grid Layout */}
-      <section className="py-32" style={{ backgroundColor: customColors.whiteBg }}>
+      <section className="py-24 lg:py-32" style={{ backgroundColor: customColors.whiteBg }}>
         <div className="max-w-5xl mx-auto px-4 lg:px-6">
-          <div className="text-center mb-16">
-            <span className="text-xs uppercase tracking-wider mb-4 block font-semibold" style={{ color: customColors.accentDark }}>
-              Strategy
-            </span>
-            <h2 className="font-grotesk font-semibold text-4xl md:text-5xl mb-6 leading-tight" style={{ color: customColors.heading }}>
-              Balancing modern innovation with accessibility
-            </h2>
-            <p className="text-lg max-w-2xl mx-auto leading-relaxed mb-12" style={{ color: customColors.body }}>
-              The biggest challenge was designing for users aged 55–80 while maintaining Treebula's identity as a modern, innovative tech company.
-            </p>
-          </div>
+          <SectionHeader
+            label="Strategy"
+            title="Balancing modern innovation with accessibility"
+            description="The biggest challenge was designing for users aged 55–80 while maintaining Treebula's identity as a modern, innovative tech company."
+            accentColor={customColors.accentDark}
+            headingColor={customColors.heading}
+            bodyColor={customColors.body}
+            align="center"
+            mobileSpacingClassName="mb-6"
+            className="mb-6 md:mb-16"
+          />
 
           <div className="grid md:grid-cols-3 gap-8">
             {[
@@ -342,7 +349,7 @@ export default function Page() {
               return (
                 <div
                   key={index}
-                  className="rounded-xl p-8"
+                  className="rounded-xl p-5p md:p-8"
                   style={{
                     background: `linear-gradient(to bottom, ${customColors.secondaryBg}, ${customColors.secondaryBg}dd)`,
                   }}
@@ -369,25 +376,28 @@ export default function Page() {
       </div>
 
       {/* Solution / UI Showcase - Dark Background, Narrow Centered */}
-      <section className="py-32" style={{ backgroundColor: customColors.whiteBg }}>
+      <section className="py-24 lg:py-32" style={{ backgroundColor: customColors.whiteBg }}>
         <div className="max-w-5xl mx-auto px-4 lg:px-6">
           <div
-            className="rounded-2xl p-12 md:p-16"
+            className="rounded-2xl p-7p md:p-16 mb-8 md:mb-12"
             style={{
               backgroundColor: '#0C0D0F',
             }}
           >
-            <span className="text-xs uppercase tracking-wider mb-4 block font-semibold" style={{ color: customColors.accentDark }}>
-              Solution
-            </span>
-            <h2 className="font-grotesk font-semibold text-white text-4xl md:text-5xl mb-6 leading-tight">What we built</h2>
+            <SectionHeader
+              label="Solution"
+              title="What we built"
+              description="Forest Monitoring combines AI and satellite data to give forest owners real-time insights about their property, all accessible from their mobile phone."
+              accentColor={customColors.accentDark}
+              headingColor="white"
+              bodyColor="rgba(255, 255, 255, 0.75)"
+              align="left"
+              mobileSpacingClassName="mb-6"
+              className="mb-6 md:mb-16"
+              titleClassName="font-grotesk font-semibold text-4xl md:text-5xl leading-tight"
+            />
 
-            <p className="text-lg leading-relaxed text-white/80 mb-12">
-              Forest Monitoring combines AI and satellite data to give forest owners real-time insights about their property, all accessible from their mobile
-              phone.
-            </p>
-
-            <div className="grid md:grid-cols-2 gap-8 mb-12">
+            <div className="space-y-6 md:space-y-0 md:grid md:grid-cols-2 md:gap-8 mb-12">
               {[
                 {
                   icon: RectangleStackIcon,
@@ -399,15 +409,23 @@ export default function Page() {
                   title: 'Risk Alerts',
                   desc: 'Real-time notifications about storm damage, bark beetle risks, and other threats',
                 },
-                { icon: ChartBarIcon, title: 'Wind Analysis', desc: 'Interactive wind rose showing wind patterns specific to the property' },
-                { icon: ChartBarIcon, title: 'Weather Forecast', desc: 'Local weather data tied directly to the forest location' },
+                {
+                  icon: ChartBarIcon,
+                  title: 'Wind Analysis',
+                  desc: 'Interactive wind rose showing wind patterns specific to the property',
+                },
+                {
+                  icon: ChartBarIcon,
+                  title: 'Weather Forecast',
+                  desc: 'Local weather data tied directly to the forest location',
+                },
               ].map((item, index) => {
                 const IconComponent = item.icon;
                 if (!IconComponent) return null;
                 return (
                   <div
                     key={index}
-                    className="rounded-lg p-6"
+                    className="rounded-lg p-5p md:p-6"
                     style={{
                       backgroundColor: 'rgba(255, 255, 255, 0.05)',
                       border: `1px solid rgba(255, 255, 255, 0.1)`,
@@ -432,26 +450,35 @@ export default function Page() {
       </div>
 
       {/* Process - Split Layout */}
-      <section className="py-32" style={{ backgroundColor: customColors.whiteBg }}>
+      <section className="py-24 lg:py-32" style={{ backgroundColor: customColors.whiteBg }}>
         <div className="max-w-5xl mx-auto px-4 lg:px-6">
-          <div className="grid md:grid-cols-2 gap-16 items-start">
+          <div className="space-y-6 md:space-y-0 md:grid md:grid-cols-2 md:gap-16 md:items-start">
             <div>
-              <span className="text-xs uppercase tracking-wider mb-4 block font-semibold" style={{ color: customColors.accentDark }}>
-                Process
-              </span>
-              <h2 className="font-grotesk font-semibold text-4xl md:text-5xl mb-6 leading-tight" style={{ color: customColors.heading }}>
-                From idea to product
-              </h2>
-              <div className="space-y-6 mb-12" style={{ color: customColors.body }}>
-                <p className="text-lg leading-relaxed">
-                  My role was to transform ideas and insights from the team into a working, visual, and user-friendly product. It was far from linear, more like
-                  a roller coaster of rapid iterations and new insights.
-                </p>
-                <p className="text-lg leading-relaxed">
-                  Since we were building something that didn't exist on the market before, flexibility and close collaboration were essential throughout the
-                  process.
-                </p>
-              </div>
+              <SectionHeader
+                label="Process"
+                title="From idea to product"
+                description={
+                  <div className="space-y-6">
+                    <p className="text-lg leading-relaxed">
+                      My role was to transform ideas and insights from the team into a working, visual, and user-friendly product. It was far from linear, more
+                      like a roller coaster of rapid iterations and new insights.
+                    </p>
+                    <p className="text-lg leading-relaxed">
+                      Since we were building something that didn't exist on the market before, flexibility and close collaboration were essential throughout the
+                      process.
+                    </p>
+                  </div>
+                }
+                accentColor={customColors.accentDark}
+                headingColor={customColors.heading}
+                bodyColor={customColors.body}
+                align="left"
+                descriptionWidthClassName=""
+                descriptionClassName="text-lg leading-relaxed space-y-6"
+                mobileSpacingClassName="mb-6"
+                desktopSpacingClassName="md:mb-12"
+                className="mb-6 md:mb-16"
+              />
             </div>
             <div className="space-y-6">
               {[
@@ -464,7 +491,7 @@ export default function Page() {
                 return (
                   <div
                     key={index}
-                    className="rounded-xl p-8"
+                    className="rounded-xl p-5p md:p-8"
                     style={{
                       background: `linear-gradient(to bottom, ${customColors.secondaryBg}, ${customColors.secondaryBg}dd)`,
                     }}
@@ -490,30 +517,30 @@ export default function Page() {
       </div>
 
       {/* Reflection / Learnings - Large Quote Block */}
-      <section className="py-32" style={{ backgroundColor: customColors.whiteBg }}>
+      <section className="py-24 lg:py-32" style={{ backgroundColor: customColors.whiteBg }}>
         <div className="max-w-5xl mx-auto px-4 lg:px-6">
-          <div className="text-center mb-16">
-            <span className="text-xs uppercase tracking-wider mb-4 block font-semibold" style={{ color: customColors.accentDark }}>
-              Reflections
-            </span>
-            <h2 className="font-grotesk font-semibold text-4xl md:text-5xl mb-6 leading-tight" style={{ color: customColors.heading }}>
-              What I learned
-            </h2>
-            <p className="text-lg max-w-2xl mx-auto leading-relaxed mb-12" style={{ color: customColors.body }}>
-              Reflections on the design process and key learnings from this project.
-            </p>
-          </div>
+          <SectionHeader
+            label="Reflections"
+            title="What I learned"
+            description="Reflections on the design process and key learnings from this project."
+            accentColor={customColors.accentDark}
+            headingColor={customColors.heading}
+            bodyColor={customColors.body}
+            align="center"
+            mobileSpacingClassName="mb-6"
+            className="mb-6 md:mb-16"
+          />
 
           {/* Large Quote Block */}
           <div
-            className="rounded-2xl p-12 md:p-16 mb-12"
+            className="rounded-2xl p-7p md:p-16 mb-8 md:mb-12"
             style={{
               background: `linear-gradient(to bottom, ${customColors.lightBeige}, ${customColors.lightBeige}dd)`,
               boxShadow: 'inset 0 2px 8px rgba(0, 0, 0, 0.03)',
               borderLeft: '3px solid #ff6b2c',
             }}
           >
-            <p className="text-3xl md:text-4xl font-medium leading-relaxed text-center" style={{ color: customColors.heading, letterSpacing: '-0.02em' }}>
+            <p className="text-xl md:text-2xl font-medium leading-relaxed text-center" style={{ color: customColors.heading, letterSpacing: '-0.02em' }}>
               "This project proved how close collaboration between design, development, and business can create products that strengthen the brand and meet real
               needs in a traditionally analog industry."
             </p>

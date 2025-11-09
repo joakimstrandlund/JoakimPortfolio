@@ -5,6 +5,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { ArrowRight } from 'lucide-react';
 import { ExclamationTriangleIcon, CursorArrowRaysIcon, CheckCircleIcon } from '@heroicons/react/24/outline';
+import SectionHeader from '../../components/SectionHeader';
 
 export default function Page() {
   const thanksSectionRef = useRef<HTMLElement>(null);
@@ -49,7 +50,7 @@ export default function Page() {
   return (
     <article style={{ backgroundColor: customColors.whiteBg, minHeight: '100vh' }}>
       {/* Hero - White Background, Large Image */}
-      <section className="pt-32 pb-40" style={{ backgroundColor: customColors.whiteBg }}>
+      <section className="pt-24 pb-32 lg:pt-32 lg:pb-40" style={{ backgroundColor: customColors.whiteBg }}>
         <div className="max-w-5xl mx-auto px-4 lg:px-6">
           <div className="text-center mb-16">
             <span className="text-xs uppercase tracking-wider mb-4 block font-semibold" style={{ color: customColors.accentDark }}>
@@ -126,39 +127,46 @@ export default function Page() {
       </div>
 
       {/* Challenge - Split Layout */}
-      <section className="py-32" style={{ backgroundColor: customColors.whiteBg }}>
+      <section className="py-24 lg:py-32" style={{ backgroundColor: customColors.whiteBg }}>
         <div className="max-w-5xl mx-auto px-4 lg:px-6">
-          <div className="grid md:grid-cols-2 gap-16 items-center">
+          <div className="md:grid md:grid-cols-2 md:gap-16 md:items-start">
             <div>
-              <span className="text-xs uppercase tracking-wider mb-4 block font-semibold" style={{ color: customColors.accentDark }}>
-                The Challenge
-              </span>
-              <h2 className="font-grotesk font-semibold text-4xl md:text-5xl mb-6 leading-tight" style={{ color: customColors.heading }}>
-                A beloved restaurant with a broken website
-              </h2>
-              <div className="space-y-6 mb-12" style={{ color: customColors.body }}>
-                <p className="text-lg leading-relaxed">
-                  Restaurang Apotek is a locally renowned restaurant known for its bold interior and modern take on traditional dining. But their website? It
-                  didn't match.
-                </p>
-                <p className="text-lg leading-relaxed">
-                  It lacked accessibility, was difficult to navigate especially on mobile, and couldn't be updated without technical help. Menus were buried in
-                  PDFs, the booking flow was confusing, and the design felt disconnected from the restaurant's actual brand.
-                </p>
-              </div>
+              <SectionHeader
+                label="The Challenge"
+                title="A beloved restaurant with a broken website"
+                description={
+                  <div className="space-y-6">
+                    <p className="text-lg leading-relaxed">
+                      Restaurang Apotek is a locally renowned restaurant known for its bold interior and modern take on traditional dining. But their website?
+                      It didn't match.
+                    </p>
+                    <p className="text-lg leading-relaxed">
+                      It lacked accessibility, was difficult to navigate especially on mobile, and couldn't be updated without technical help. Menus were buried
+                      in PDFs, the booking flow was confusing, and the design felt disconnected from the restaurant's actual brand.
+                    </p>
+                  </div>
+                }
+                accentColor={customColors.accentDark}
+                headingColor={customColors.heading}
+                bodyColor={customColors.body}
+                align="left"
+                descriptionWidthClassName=""
+                className="mb-6 md:mb-16"
+                mobileSpacingClassName="mb-6"
+              />
             </div>
             <div
-              className="rounded-2xl p-8 md:p-12"
+              className="rounded-2xl p-7p md:p-12 mb-8 md:mb-0"
               style={{
                 background: `linear-gradient(to bottom, ${customColors.lightBeige}, ${customColors.lightBeige}dd)`,
               }}
             >
               <p className="text-base leading-relaxed" style={{ color: customColors.body }}>
                 <span className="font-semibold" style={{ color: customColors.heading }}>
-                  My role:{' '}
+                  The challenge:{' '}
                 </span>
-                To redesign the website from the ground up, creating a modern, accessible experience that aligned with the restaurant's personality while making
-                it easy for the team to maintain.
+                How might we create an online experience that matches the restaurant's atmosphere while staying accessible, easy to update, and
+                conversion-focused?
               </p>
             </div>
           </div>
@@ -171,32 +179,23 @@ export default function Page() {
       </div>
 
       {/* Discovery - Full Width Centered Text */}
-      <section className="py-32" style={{ backgroundColor: customColors.whiteBg }}>
+      <section className="py-24 lg:py-32" style={{ backgroundColor: customColors.whiteBg }}>
         <div className="max-w-5xl mx-auto px-4 lg:px-6">
-          <span className="text-xs uppercase tracking-wider mb-4 block font-semibold text-center" style={{ color: customColors.accentDark }}>
-            Discovery
-          </span>
-          <h2 className="font-grotesk font-semibold text-4xl md:text-5xl mb-6 text-center leading-tight" style={{ color: customColors.heading }}>
-            Understanding what was broken
-          </h2>
+          <SectionHeader
+            label="Discovery"
+            title="Understanding what was broken"
+            description="I started by conducting usability reviews, user interviews, and accessibility audits. The goal was to uncover the biggest pain points and understand what users actually needed."
+            accentColor={customColors.accentDark}
+            headingColor={customColors.heading}
+            bodyColor={customColors.body}
+            align="center"
+            mobileSpacingClassName="mb-6"
+            className="mb-6 md:mb-16"
+          />
 
-          <div className="space-y-8 mb-12" style={{ color: '#6b6b6b' }}>
-            <p className="text-lg leading-relaxed">
-              I started by conducting usability reviews, user interviews, and accessibility audits. The goal was to uncover the biggest pain points and
-              understand what users actually needed.
-            </p>
-          </div>
-
-          {/* Subtle divider */}
-          <div className="flex items-center gap-4 mb-12">
-            <div style={{ flex: 1, height: '1px', backgroundColor: customColors.border }}></div>
-            <div style={{ width: '4px', height: '4px', borderRadius: '50%', backgroundColor: customColors.mutedGreen }}></div>
-            <div style={{ flex: 1, height: '1px', backgroundColor: customColors.border }}></div>
-          </div>
-
-          <div className="grid md:grid-cols-2 gap-8">
+          <div className="space-y-6 md:space-y-0 md:grid md:grid-cols-2 md:gap-8">
             <div
-              className="rounded-xl p-8"
+              className="rounded-xl p-5p md:p-8"
               style={{
                 background: `linear-gradient(to bottom, ${customColors.secondaryBg}, ${customColors.secondaryBg}dd)`,
               }}
@@ -225,7 +224,7 @@ export default function Page() {
             </div>
 
             <div
-              className="rounded-xl p-8"
+              className="rounded-xl p-5p md:p-8"
               style={{
                 background: `linear-gradient(to bottom, ${customColors.secondaryBg}, ${customColors.secondaryBg}dd)`,
               }}
@@ -262,23 +261,22 @@ export default function Page() {
       </div>
 
       {/* Solution - Landing Page - Split Layout */}
-      <section className="py-32" style={{ backgroundColor: customColors.whiteBg }}>
+      <section className="py-24 lg:py-32" style={{ backgroundColor: customColors.whiteBg }}>
         <div className="max-w-5xl mx-auto px-4 lg:px-6">
-          <div className="text-center mb-16">
-            <span className="text-xs uppercase tracking-wider mb-4 block font-semibold" style={{ color: customColors.accentDark }}>
-              Solution
-            </span>
-            <h2 className="font-grotesk font-semibold text-4xl md:text-5xl mb-6 leading-tight" style={{ color: customColors.heading }}>
-              A welcoming first impression
-            </h2>
-            <p className="text-lg max-w-2xl mx-auto leading-relaxed mb-12" style={{ color: customColors.body }}>
-              The landing page needed to immediately communicate the restaurant's character while making it easy to find key information like hours, location,
-              and booking.
-            </p>
-          </div>
+          <SectionHeader
+            label="Solution"
+            title="A welcoming first impression"
+            description="The landing page needed to immediately communicate the restaurant's character while making it easy to find key information like hours, location, and booking."
+            accentColor={customColors.accentDark}
+            headingColor={customColors.heading}
+            bodyColor={customColors.body}
+            align="center"
+            mobileSpacingClassName="mb-6"
+            className="mb-6 md:mb-16"
+          />
 
-          <div className="grid md:grid-cols-2 gap-12 items-center">
-            <div className="flex justify-center">
+          <div className="space-y-6 md:space-y-0 md:grid md:grid-cols-2 md:gap-16 md:items-center">
+            <div className="flex justify-center md:justify-center md:items-center">
               <Image
                 src="/Rstaurang apotek - landingpage phone.png"
                 alt="Restaurang Apotek landing page mobile view"
@@ -287,11 +285,11 @@ export default function Page() {
                 className="w-full max-w-[240px] h-auto"
               />
             </div>
-            <div>
-              <h3 className="font-grotesk font-semibold text-2xl mb-4" style={{ color: customColors.heading }}>
+            <div className="space-y-4 md:flex md:flex-col md:justify-center md:items-start text-left">
+              <h3 className="font-grotesk font-semibold text-2xl" style={{ color: customColors.heading }}>
                 Landing Page
               </h3>
-              <p className="text-base mb-6 leading-relaxed" style={{ color: customColors.body }}>
+              <p className="text-base leading-relaxed" style={{ color: customColors.body }}>
                 Clean hero section with immediate access to booking and essential information.
               </p>
               <ul className="space-y-3 text-sm">
@@ -299,8 +297,8 @@ export default function Page() {
                   'Clear visual hierarchy guiding users to key actions',
                   'Mobile-first design with touch-friendly elements',
                   "Bold imagery reflecting the restaurant's personality",
-                ].map((item, index) => (
-                  <li key={index} className="flex items-baseline gap-3">
+                ].map((item) => (
+                  <li key={item} className="flex items-baseline gap-3">
                     <span className="text-lg font-bold leading-none" style={{ color: customColors.accent }}>
                       •
                     </span>
@@ -320,11 +318,69 @@ export default function Page() {
         <div style={{ height: '1px', backgroundColor: customColors.border }}></div>
       </div>
 
-      {/* Navigation - Split Layout (Reversed) */}
-      <section className="py-32" style={{ backgroundColor: customColors.whiteBg }}>
+      {/* Menus - Grid Layout */}
+      <section className="py-24 lg:py-32" style={{ backgroundColor: customColors.whiteBg }}>
         <div className="max-w-5xl mx-auto px-4 lg:px-6">
-          <div className="grid md:grid-cols-2 gap-12 items-center">
-            <div className="order-2 md:order-1">
+          <SectionHeader
+            label="Accessibility"
+            title="Menus that work for everyone"
+            description="The old PDF menus were impossible for screen readers to parse. I redesigned them as web-native content with clear typography, pricing, and categories."
+            accentColor={customColors.accentDark}
+            headingColor={customColors.heading}
+            bodyColor={customColors.body}
+            align="center"
+            mobileSpacingClassName="mb-6"
+            className="mb-6 md:mb-16"
+          />
+
+          <div className="space-y-6 md:space-y-0 md:grid md:grid-cols-2 md:gap-8 md:items-center">
+            {[
+              {
+                image: '/Rstaurang apotek - foodmeny phone.png',
+                title: 'Food Menu',
+                text: 'Clean layout with clear categories, pricing, and descriptions.',
+              },
+              {
+                image: '/Rstaurang apotek - cocktail phone.png',
+                title: 'Cocktail Menu',
+                text: 'Visual menu design highlighting drinks with proper categorization.',
+              },
+            ].map(({ image, title, text }) => (
+              <div key={title} className="text-center md:text-center">
+                <div className="mb-6 flex justify-center">
+                  <Image src={image} alt={title} width={300} height={600} className="w-full max-w-[240px] mx-auto h-auto" />
+                </div>
+                <h3 className="font-grotesk font-semibold text-xl mb-2" style={{ color: customColors.heading }}>
+                  {title}
+                </h3>
+                <p className="text-sm leading-relaxed" style={{ color: customColors.body }}>
+                  {text}
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Divider */}
+      <div className="max-w-5xl mx-auto px-4 lg:px-6">
+        <div style={{ height: '1px', backgroundColor: customColors.border }}></div>
+      </div>
+
+      {/* Navigation - Split Layout (Reversed) */}
+      <section className="py-24 lg:py-32" style={{ backgroundColor: customColors.whiteBg }}>
+        <div className="max-w-5xl mx-auto px-4 lg:px-6">
+          <div className="space-y-6 md:space-y-0 md:grid md:grid-cols-2 md:gap-12 md:items-center">
+            <div className="md:order-2 flex justify-center">
+              <Image
+                src="/Rstaurang apotek - navabar open phone.png"
+                alt="Restaurang Apotek mobile navigation menu"
+                width={300}
+                height={600}
+                className="w-full max-w-[240px] h-auto"
+              />
+            </div>
+            <div className="md:order-1">
               <h3 className="font-grotesk font-semibold text-2xl mb-4" style={{ color: customColors.heading }}>
                 Mobile Navigation
               </h3>
@@ -350,76 +406,6 @@ export default function Page() {
                 ))}
               </ul>
             </div>
-            <div className="order-1 md:order-2 flex justify-center">
-              <Image
-                src="/Rstaurang apotek - navabar open phone.png"
-                alt="Restaurang Apotek mobile navigation menu"
-                width={300}
-                height={600}
-                className="w-full max-w-[240px] h-auto"
-              />
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Divider */}
-      <div className="max-w-5xl mx-auto px-4 lg:px-6">
-        <div style={{ height: '1px', backgroundColor: customColors.border }}></div>
-      </div>
-
-      {/* Menus - Grid Layout */}
-      <section className="py-32" style={{ backgroundColor: customColors.whiteBg }}>
-        <div className="max-w-5xl mx-auto px-4 lg:px-6">
-          <div className="text-center mb-16">
-            <span className="text-xs uppercase tracking-wider mb-4 block font-semibold" style={{ color: customColors.accentDark }}>
-              Content Design
-            </span>
-            <h2 className="font-grotesk font-semibold text-4xl md:text-5xl mb-6 leading-tight" style={{ color: customColors.heading }}>
-              Making menus readable and accessible
-            </h2>
-            <p className="text-lg max-w-2xl mx-auto leading-relaxed mb-12" style={{ color: customColors.body }}>
-              The old PDF menus were impossible for screen readers to parse. I redesigned them as web-native content with clear typography, pricing, and
-              categories.
-            </p>
-          </div>
-
-          <div className="grid md:grid-cols-2 gap-8">
-            <div className="text-center">
-              <div className="mb-6">
-                <Image
-                  src="/Rstaurang apotek - foodmeny phone.png"
-                  alt="Restaurang Apotek food menu mobile view"
-                  width={300}
-                  height={600}
-                  className="w-full max-w-[240px] mx-auto h-auto"
-                />
-              </div>
-              <h3 className="font-grotesk font-semibold text-xl mb-3" style={{ color: customColors.heading }}>
-                Food Menu
-              </h3>
-              <p className="text-sm mb-4 leading-relaxed" style={{ color: customColors.body }}>
-                Clean layout with clear categories, pricing, and descriptions.
-              </p>
-            </div>
-
-            <div className="text-center">
-              <div className="mb-6">
-                <Image
-                  src="/Rstaurang apotek - cocktail phone.png"
-                  alt="Restaurang Apotek cocktail menu mobile view"
-                  width={300}
-                  height={600}
-                  className="w-full max-w-[240px] mx-auto h-auto"
-                />
-              </div>
-              <h3 className="font-grotesk font-semibold text-xl mb-3" style={{ color: customColors.heading }}>
-                Cocktail Menu
-              </h3>
-              <p className="text-sm mb-4 leading-relaxed" style={{ color: customColors.body }}>
-                Visual menu design highlighting drinks with proper categorization.
-              </p>
-            </div>
           </div>
         </div>
       </section>
@@ -430,9 +416,9 @@ export default function Page() {
       </div>
 
       {/* Gallery - Split Layout */}
-      <section className="py-32" style={{ backgroundColor: customColors.whiteBg }}>
+      <section className="py-24 lg:py-32" style={{ backgroundColor: customColors.whiteBg }}>
         <div className="max-w-5xl mx-auto px-4 lg:px-6">
-          <div className="grid md:grid-cols-2 gap-12 items-center">
+          <div className="space-y-6 md:space-y-0 md:grid md:grid-cols-2 md:gap-12 md:items-center">
             <div className="flex justify-center">
               <Image
                 src="/Rstaurang apotek - galleri phone.png"
@@ -447,22 +433,23 @@ export default function Page() {
                 Gallery
               </h3>
               <p className="text-base mb-6 leading-relaxed" style={{ color: customColors.body }}>
-                A restaurant's atmosphere is everything. I designed a gallery section that lets the images speak for themselves while maintaining fast load
-                times and accessibility.
+                Modern gallery layout showcasing dishes with responsive image handling and clear labeling.
               </p>
               <ul className="space-y-3 text-sm">
-                {['Responsive grid layout adapting to screen size', 'Optimized images for fast loading', 'Alt text for all images for accessibility'].map(
-                  (item, index) => (
-                    <li key={index} className="flex items-baseline gap-3">
-                      <span className="text-lg font-bold leading-none" style={{ color: customColors.accent }}>
-                        •
-                      </span>
-                      <span className="leading-relaxed" style={{ color: customColors.body }}>
-                        {item}
-                      </span>
-                    </li>
-                  )
-                )}
+                {[
+                  'Full-width layout that adapts beautifully on mobile',
+                  'Soft hover states that match the brand’s tone',
+                  'Lazy-loaded images for performance',
+                ].map((item, index) => (
+                  <li key={index} className="flex items-baseline gap-3">
+                    <span className="text-lg font-bold leading-none" style={{ color: customColors.accent }}>
+                      •
+                    </span>
+                    <span className="leading-relaxed" style={{ color: customColors.body }}>
+                      {item}
+                    </span>
+                  </li>
+                ))}
               </ul>
             </div>
           </div>
@@ -475,10 +462,19 @@ export default function Page() {
       </div>
 
       {/* Footer Section - Split Layout (Reversed) */}
-      <section className="py-32" style={{ backgroundColor: customColors.whiteBg }}>
+      <section className="py-24 lg:py-32" style={{ backgroundColor: customColors.whiteBg }}>
         <div className="max-w-5xl mx-auto px-4 lg:px-6">
-          <div className="grid md:grid-cols-2 gap-12 items-center">
-            <div className="order-2 md:order-1">
+          <div className="space-y-6 md:space-y-0 md:grid md:grid-cols-2 md:gap-12 md:items-center">
+            <div className="md:order-2 flex justify-center">
+              <Image
+                src="/Rstaurang apotek - footer phone.png"
+                alt="Restaurang Apotek footer section mobile view"
+                width={300}
+                height={600}
+                className="w-full max-w-[240px] h-auto"
+              />
+            </div>
+            <div className="md:order-1">
               <h3 className="font-grotesk font-semibold text-2xl mb-4" style={{ color: customColors.heading }}>
                 Footer
               </h3>
@@ -503,15 +499,6 @@ export default function Page() {
                 ))}
               </ul>
             </div>
-            <div className="order-1 md:order-2 flex justify-center">
-              <Image
-                src="/Rstaurang apotek - footer phone.png"
-                alt="Restaurang Apotek footer section mobile view"
-                width={300}
-                height={600}
-                className="w-full max-w-[240px] h-auto"
-              />
-            </div>
           </div>
         </div>
       </section>
@@ -522,38 +509,51 @@ export default function Page() {
       </div>
 
       {/* Validation - Split Layout */}
-      <section className="py-32" style={{ backgroundColor: customColors.whiteBg }}>
+      <section className="py-24 lg:py-32" style={{ backgroundColor: customColors.whiteBg }}>
         <div className="max-w-5xl mx-auto px-4 lg:px-6">
-          <div className="grid md:grid-cols-2 gap-16 items-start">
-            <div>
-              <span className="text-xs uppercase tracking-wider mb-4 block font-semibold" style={{ color: customColors.accentDark }}>
-                Validation
-              </span>
-              <h2 className="font-grotesk font-semibold text-4xl md:text-5xl mb-6 leading-tight" style={{ color: customColors.heading }}>
-                Testing and refining
-              </h2>
-              <p className="text-lg leading-relaxed mb-12" style={{ color: customColors.body }}>
-                I tested the redesign with users and iterated based on feedback. Some decisions needed adjusting.
-              </p>
-            </div>
-            <div className="space-y-6">
+          <SectionHeader
+            label="Validation"
+            title="Testing and refining"
+            description="I tested the redesign with users and iterated based on feedback. Some decisions needed adjusting."
+            accentColor={customColors.accentDark}
+            headingColor={customColors.heading}
+            bodyColor={customColors.body}
+            align="left"
+            mobileSpacingClassName="mb-6"
+            className="mb-6 md:mb-16"
+          />
+
+          <div className="grid gap-6 md:grid-cols-2 md:gap-8">
+            {[
+              {
+                icon: CheckCircleIcon,
+                title: 'What worked',
+                points: [
+                  'Booking button became immediately findable',
+                  'Navigation clarity improved significantly',
+                  'Users described design as "clean and professional"',
+                ],
+              },
+              {
+                icon: CursorArrowRaysIcon,
+                title: 'Impact',
+                points: ['All users could complete booking flow', 'Keyboard navigation fully functional', 'Staff could update content without developer help'],
+              },
+            ].map(({ icon: IconComponent, title, points }) => (
               <div
-                className="rounded-xl p-6"
+                key={title}
+                className="rounded-xl p-6 md:p-8"
                 style={{
                   background: `linear-gradient(to bottom, ${customColors.secondaryBg}, ${customColors.secondaryBg}dd)`,
                 }}
               >
                 <h3 className="font-grotesk font-semibold text-lg mb-3 flex items-center gap-2" style={{ color: customColors.heading }}>
-                  <CheckCircleIcon className="w-6 h-6" style={{ color: customColors.accent }} />
-                  What worked
+                  <IconComponent className="w-6 h-6" style={{ color: customColors.accent }} />
+                  {title}
                 </h3>
                 <ul className="space-y-3 text-sm">
-                  {[
-                    'Booking button became immediately findable',
-                    'Navigation clarity improved significantly',
-                    'Users described design as "clean and professional"',
-                  ].map((item, index) => (
-                    <li key={index} className="flex items-baseline gap-3">
+                  {points.map((item) => (
+                    <li key={item} className="flex items-baseline gap-3">
                       <span className="text-lg font-bold leading-none" style={{ color: customColors.accent }}>
                         •
                       </span>
@@ -564,54 +564,28 @@ export default function Page() {
                   ))}
                 </ul>
               </div>
-
-              <div
-                className="rounded-xl p-6"
-                style={{
-                  background: `linear-gradient(to bottom, ${customColors.secondaryBg}, ${customColors.secondaryBg}dd)`,
-                }}
-              >
-                <h3 className="font-grotesk font-semibold text-lg mb-3 flex items-center gap-2" style={{ color: customColors.heading }}>
-                  <CursorArrowRaysIcon className="w-6 h-6" style={{ color: customColors.accent }} />
-                  Impact
-                </h3>
-                <ul className="space-y-3 text-sm">
-                  {['All users could complete booking flow', 'Keyboard navigation fully functional', 'Staff could update content without developer help'].map(
-                    (item, index) => (
-                      <li key={index} className="flex items-baseline gap-3">
-                        <span className="text-lg font-bold leading-none" style={{ color: customColors.accent }}>
-                          •
-                        </span>
-                        <span className="leading-relaxed" style={{ color: customColors.body }}>
-                          {item}
-                        </span>
-                      </li>
-                    )
-                  )}
-                </ul>
-              </div>
-            </div>
+            ))}
           </div>
 
-          {/* Key Iteration */}
           <div
-            className="rounded-xl p-8 mt-12"
+            className="rounded-xl p-6 md:p-8 mt-6 md:mt-8"
             style={{
               background: `linear-gradient(to bottom, ${customColors.lightBeige}, ${customColors.lightBeige}dd)`,
             }}
           >
-            <h3 className="font-grotesk font-semibold text-xl mb-4" style={{ color: customColors.heading }}>
-              Key Iteration: Mobile Navigation
+            <h3 className="font-grotesk font-semibold text-lg mb-3" style={{ color: customColors.heading }}>
+              Key Insight: Mobile Navigation
             </h3>
-            <p className="text-sm mb-4 leading-relaxed" style={{ color: customColors.body }}>
-              Initially, I placed the phone number and booking button at the top of the navigation. Testing revealed this created a "fast food chain" feeling
-              and caused confusion.
+            <p className="text-sm leading-relaxed mb-4" style={{ color: customColors.body }}>
+              Initially, the phone number and booking button sat at the very top of the navigation. Testing showed it felt like a "fast food chain" homepage and
+              created confusion.
             </p>
-            <p className="text-sm mb-4 leading-relaxed" style={{ color: customColors.body }}>
-              Moving these elements into the dropdown menu resulted in clearer visual hierarchy, a more intuitive flow, and better focus on navigation.
+            <p className="text-sm leading-relaxed mb-4" style={{ color: customColors.body }}>
+              Moving these elements into the dropdown menu clarified the hierarchy, focused attention on primary navigation, and kept critical actions easy to
+              find.
             </p>
-            <p className="text-sm italic font-medium" style={{ color: customColors.accentDark }}>
-              Lesson learned: Sometimes less visible doesn't mean less accessible. Context and clarity matter more than prominence.
+            <p className="text-sm italic" style={{ color: customColors.accentDark }}>
+              Lesson learned: The most prominent placement isn’t always the most usable—context and flow matter.
             </p>
           </div>
         </div>
@@ -623,31 +597,29 @@ export default function Page() {
       </div>
 
       {/* Reflection - Large Quote Block */}
-      <section className="py-32" style={{ backgroundColor: customColors.whiteBg }}>
+      <section className="py-24 lg:py-32" style={{ backgroundColor: customColors.whiteBg }}>
         <div className="max-w-5xl mx-auto px-4 lg:px-6">
-          <div className="text-center mb-16">
-            <span className="text-xs uppercase tracking-wider mb-4 block font-semibold" style={{ color: customColors.accentDark }}>
-              Reflections
-            </span>
-            <h2 className="font-grotesk font-semibold text-4xl md:text-5xl mb-6 leading-tight" style={{ color: customColors.heading }}>
-              What I learned
-            </h2>
-            <p className="text-lg max-w-2xl mx-auto leading-relaxed mb-12" style={{ color: customColors.body }}>
-              Reflections on the design process and key learnings from this project.
-            </p>
-          </div>
+          <SectionHeader
+            label="Reflections"
+            title="What I learned"
+            description="Reflections on the design process and key learnings from this project."
+            accentColor={customColors.accentDark}
+            headingColor={customColors.heading}
+            bodyColor={customColors.body}
+            align="center"
+          />
 
           {/* Large Quote Block */}
           <div
-            className="rounded-2xl p-12 md:p-16 mb-12"
+            className="rounded-2xl p-7p md:p-16 mb-8 md:mb-12"
             style={{
               background: `linear-gradient(to bottom, ${customColors.lightBeige}, ${customColors.lightBeige}dd)`,
               boxShadow: 'inset 0 2px 8px rgba(0, 0, 0, 0.03)',
               borderLeft: '3px solid #ff6b2c',
             }}
           >
-            <p className="text-3xl md:text-4xl font-medium leading-relaxed text-center" style={{ color: customColors.heading, letterSpacing: '-0.02em' }}>
-              "The best designs solve problems you didn't know existed until users showed you."
+            <p className="text-xl md:text-2xl font-medium leading-relaxed text-center" style={{ color: customColors.heading, letterSpacing: '-0.02em' }}>
+              "The more we aligned the visual experience with the physical restaurant, the more the digital experience felt authentic and trustworthy."
             </p>
           </div>
 
@@ -668,7 +640,7 @@ export default function Page() {
             ].map((item, index) => (
               <div
                 key={index}
-                className="rounded-lg p-8"
+                className="rounded-lg p-5p md:p-8"
                 style={{
                   background: `linear-gradient(to bottom, ${customColors.secondaryBg}, ${customColors.secondaryBg}dd)`,
                 }}
