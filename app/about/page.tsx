@@ -2,7 +2,7 @@
 
 import Image from 'next/image';
 import Link from 'next/link';
-import { MagnifyingGlassIcon, UsersIcon, BeakerIcon, CursorArrowRaysIcon, Squares2X2Icon } from '@heroicons/react/24/outline';
+import { MagnifyingGlassIcon, UsersIcon, BeakerIcon, CursorArrowRaysIcon, Squares2X2Icon, WrenchScrewdriverIcon } from '@heroicons/react/24/outline';
 import SectionHeader from '../components/SectionHeader';
 
 export default function About() {
@@ -48,8 +48,10 @@ export default function About() {
               UI/UX Designer
             </p>
             <p className="text-lg max-w-2xl mx-auto leading-relaxed" style={{ color: customColors.body }}>
-              I design digital products and do a bit of low vibe coding on the side. When I'm not designing, you'll probably find me skiing, training, or
-              exploring new restaurants.
+              I design digital products with a focus on clarity and intuitive flow. I explore ideas quickly using tools like Cursor and Lovable, then refine everything in Figma to build interfaces that feel effortless.
+            </p>
+            <p className="text-lg max-w-2xl mx-auto leading-relaxed mt-4" style={{ color: customColors.body }}>
+              When I'm not designing, you'll probably find me skiing, training or exploring new restaurants.
             </p>
           </div>
         </div>
@@ -139,7 +141,7 @@ export default function About() {
             align="center"
           />
 
-          <div className="space-y-6 md:space-y-0 md:grid md:grid-cols-2 md:gap-8">
+          <div className="space-y-6 md:space-y-0 md:grid md:grid-cols-3 md:gap-8">
             <div
               className="rounded-xl p-5p md:p-8"
               style={{
@@ -189,6 +191,30 @@ export default function About() {
                 )}
               </ul>
             </div>
+
+            <div
+              className="rounded-xl p-5p md:p-8"
+              style={{
+                background: `linear-gradient(to bottom, ${customColors.secondaryBg}, ${customColors.secondaryBg}dd)`,
+              }}
+            >
+              <h3 className="font-grotesk font-semibold text-xl mb-4 flex items-center gap-2" style={{ color: customColors.heading }}>
+                <WrenchScrewdriverIcon className="w-6 h-6" style={{ color: customColors.accent }} />
+                Tools I use
+              </h3>
+              <ul className="space-y-3 text-sm">
+                {['Cursor & Lovable to explore ideas and test flows fast', 'Figma to build the final structure, layout and interaction details', 'Notion to organise insights, decisions and documentation'].map((item, index) => (
+                  <li key={index} className="flex items-start gap-3">
+                    <span className="text-lg font-bold leading-none" style={{ color: customColors.accent, marginTop: '2px' }}>
+                      •
+                    </span>
+                    <span className="leading-relaxed" style={{ color: customColors.body }}>
+                      {item}
+                    </span>
+                  </li>
+                ))}
+              </ul>
+            </div>
           </div>
         </div>
       </section>
@@ -216,10 +242,10 @@ export default function About() {
 
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
             {[
-              { icon: MagnifyingGlassIcon, title: 'User Research' },
-              { icon: CursorArrowRaysIcon, title: 'Interaction Design' },
-              { icon: BeakerIcon, title: 'Prototyping' },
-              { icon: Squares2X2Icon, title: 'Design Systems' },
+              { icon: MagnifyingGlassIcon, title: 'User Research', description: 'Ask the right questions, uncover the real problem.' },
+              { icon: CursorArrowRaysIcon, title: 'Interaction Design', description: 'Create flows that feel fast, logical and intuitive.' },
+              { icon: BeakerIcon, title: 'Prototyping', description: 'Test assumptions early, iterate fast.' },
+              { icon: Squares2X2Icon, title: 'Design Systems', description: 'Consistent, scalable interfaces that reduce friction.' },
             ].map((item, index) => {
               const IconComponent = item.icon;
               return (
@@ -233,8 +259,11 @@ export default function About() {
                   <div className="flex justify-center mb-4">
                     <IconComponent className="w-10 h-10" style={{ color: customColors.accent }} />
                   </div>
-                  <div className="text-sm font-grotesk font-semibold" style={{ color: customColors.heading }}>
+                  <div className="text-base font-grotesk font-semibold mb-2" style={{ color: customColors.heading }}>
                     {item.title}
+                  </div>
+                  <div className="text-sm leading-relaxed" style={{ color: customColors.body }}>
+                    {item.description}
                   </div>
                 </div>
               );

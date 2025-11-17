@@ -84,6 +84,7 @@ export default function Home() {
     // Accent Colors
     accent: '#ff6b2c',
     accentHover: '#e55a1f',
+    accentDark: '#C84F1A', // Darker accent for WCAG compliance on light backgrounds
 
     // Text Colors
     heading: '#000000',
@@ -305,9 +306,9 @@ export default function Home() {
           <div className="max-w-6xl mx-auto px-4 lg:px-6">
             <Reveal>
               <div className="mb-8">
-                <div className="text-xs uppercase tracking-wide" style={{ color: customColors.body }}>
+                <span className="text-xs uppercase tracking-wider mb-2 block font-semibold" style={{ color: customColors.accentDark }}>
                   Selected
-                </div>
+                </span>
                 <h2 className="mt-2 font-grotesk font-semibold text-2xl sm:text-3xl text-heading">Case studies</h2>
               </div>
             </Reveal>
@@ -370,7 +371,7 @@ export default function Home() {
                           </h3>
 
                           {/* Description */}
-                          <p className="text-body leading-relaxed mb-4 text-base lg:text-lg" style={{ color: 'rgba(255,255,255,0.72)' }}>
+                          <p className="text-body leading-relaxed mb-4 text-base lg:text-lg" style={{ color: 'rgba(255,255,255,0.75)' }}>
                             {card.description}
                           </p>
 
