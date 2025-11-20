@@ -44,26 +44,7 @@ export default function TestimonialCard() {
             transitionDelay: isVisible ? '200ms' : '0ms',
           }}
         >
-          {/* Large subtle quotation mark - positioned to the left of "It's" */}
-          <span
-            className={`absolute transition-opacity duration-700 ease-out ${isVisible ? 'opacity-100' : 'opacity-0'}`}
-            style={{
-              fontSize: '6.25rem', // 6-6.5rem range, visually balanced
-              lineHeight: '1',
-              fontFamily: 'Familjen Grotesk, sans-serif',
-              fontWeight: '700',
-              color: '#E5E5E5',
-              opacity: isVisible ? '0.85' : '0', // 85% opacity
-              left: '-0.25rem', // Very close to the text, right next to "It's"
-              top: '-1rem', // Raised more above the first line
-              zIndex: 1,
-              transitionDelay: isVisible ? '200ms' : '0ms',
-              pointerEvents: 'none',
-            }}
-          >
-            &ldquo;
-          </span>
-          It&apos;s been a real pleasure working with Joakim. He&apos;s fast, pragmatic, and has a great instinct for delivering MVPs and PoCs that move things
+          &ldquo;It&apos;s been a real pleasure working with Joakim. He&apos;s fast, pragmatic, and has a great instinct for delivering MVPs and PoCs that move things
           forward. At the same time, he builds on <span style={{ color: '#ff6b2c' }}>solid design principles</span> and creates solutions that are easy to grow
           and iterate on. A dependable team player with a <span style={{ color: '#ff6b2c' }}>strong foundation</span>—highly recommended.&rdquo;
         </blockquote>
@@ -80,7 +61,7 @@ export default function TestimonialCard() {
         <div className="font-grotesk font-bold text-base mb-1" style={{ color: '#000000' }}>
           Mattin Lofti
         </div>
-        <div className="text-sm" style={{ color: '#6b6b6b' }}>
+        <div className="text-sm font-medium" style={{ color: '#6b6b6b' }}>
           CTO at <span style={{ color: '#C84F1A' }}>Treebula</span>
         </div>
       </div>

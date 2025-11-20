@@ -153,10 +153,10 @@ export default function AnimatedFooter() {
               {/* Left Column - Bold CTA */}
               <div className="space-y-6">
                 <h2 className="font-grotesk font-bold text-4xl sm:text-5xl lg:text-6xl leading-tight" style={{ color: '#FFFFFF' }}>
-                  Let&apos;s work together
+                  Looking for a UX/UI Designer?
                 </h2>
                 <p className="text-xl leading-relaxed" style={{ color: '#D8E0DA' }}>
-                  Have a project in mind or want to chat about design? I'd love to hear from you.
+                  I'm available for new projects, remote or on-site. Let's connect!
                 </p>
                 <div className="pt-4">
                   <a
@@ -247,7 +247,7 @@ export default function AnimatedFooter() {
                 © {new Date().getFullYear()} Joakim Strandlund
               </div>
               <div className="text-sm" style={{ color: '#D8E0DA' }}>
-                Available for remote work
+                Open to Remote Collaborations
               </div>
             </div>
           </div>

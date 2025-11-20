@@ -238,10 +238,10 @@ export default function Page() {
         <div className="max-w-5xl mx-auto px-6">
           <div className="text-center mb-16">
             <h2 className="font-grotesk font-semibold text-4xl md:text-5xl mb-8 leading-tight" style={{ color: customColors.heading }}>
-              Let's work together
+              Looking for a UX/UI Designer?
             </h2>
             <p className="text-lg max-w-2xl mx-auto leading-relaxed mb-8" style={{ color: customColors.body }}>
-              Have a project in mind or want to chat about design? I'd love to hear from you.
+              I'm available for new projects, remote or on-site. Let's connect!
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
               <a

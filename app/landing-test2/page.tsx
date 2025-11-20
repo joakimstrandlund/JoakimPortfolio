@@ -608,8 +608,8 @@ export default function LandingTest2() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-16 mb-16">
               {/* Left Column - Bold CTA */}
               <div className="space-y-6">
-                <h2 className="font-grotesk font-bold text-heading text-4xl sm:text-5xl lg:text-6xl leading-tight">Let&apos;s work together</h2>
-                <p className="text-body text-xl leading-relaxed">Have a project in mind or want to chat about design? I'd love to hear from you.</p>
+                <h2 className="font-grotesk font-bold text-heading text-4xl sm:text-5xl lg:text-6xl leading-tight">Looking for a UX/UI Designer?</h2>
+                <p className="text-body text-xl leading-relaxed">I'm available for new projects, remote or on-site. Let's connect!</p>
                 <div className="pt-4">
                   <a
                     href="mailto:joakimstrandlund@gmail.com"
@@ -681,7 +681,7 @@ export default function LandingTest2() {
             {/* Bottom Bar */}
             <div className="pt-12 border-t border-border/50 flex flex-col sm:flex-row justify-between items-center gap-4">
               <div className="text-body text-sm">© {new Date().getFullYear()} Joakim Strandlund</div>
-              <div className="text-body text-sm">Available for remote work</div>
+              <div className="text-body text-sm">Open to Remote Collaborations</div>
             </div>
           </div>
         </section>
