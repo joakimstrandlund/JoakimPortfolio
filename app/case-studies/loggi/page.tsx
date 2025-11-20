@@ -404,7 +404,7 @@ export default function Page() {
               { image: '/loggi - checkin step2.png', title: 'Sleep', desc: 'How have you slept?' },
               { image: '/loggi - checkin step3.png', title: 'Stress', desc: 'Stress level today?' },
               { image: '/loggi - checkin step4.png', title: 'Reflection', desc: 'Optional note' },
-              { image: '/loggi - checkin step5.png', title: 'Complete', desc: 'Thank you for checking in' },
+              { image: '/loggi ny checkin5.png', title: 'Complete', desc: 'Thank you for checking in' },
             ].map((item, index) => (
               <div key={index} className="text-center">
                 <Image src={item.image} alt={`Loggi check-in step ${index + 1}`} width={200} height={400} className="w-full h-auto mb-4" />

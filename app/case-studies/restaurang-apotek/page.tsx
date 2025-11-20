@@ -373,7 +373,7 @@ export default function Page() {
           <div className="space-y-6 md:space-y-0 md:grid md:grid-cols-2 md:gap-12 md:items-center">
             <div className="md:order-2 flex justify-center">
               <Image
-                src="/Rstaurang apotek - navabar open phone.png"
+                src="/restaurang menuOpen.png"
                 alt="Restaurang Apotek mobile navigation menu"
                 width={300}
                 height={600}
