@@ -587,9 +587,9 @@ export default function Page() {
             Thanks for reading!
           </h2>
           <p className="mb-12" style={{ color: customColors.body }}>
-            I hope you enjoyed learning about Treebula.
+            Up next: See how I approached Restaurang Apotek.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+          <div className="flex justify-center items-center">
             <Link
               href="/case-studies/restaurang-apotek"
               className="text-base px-10 py-4 font-bold transition-all duration-300 hover:scale-105 relative overflow-hidden group"
@@ -614,33 +614,9 @@ export default function Page() {
               }}
             >
               <span className="relative z-10 flex items-center gap-2">
-                Next Project: Restaurang Apotek
+                View Restaurang Apotek Case Study
                 <ArrowRight className="h-5 w-5" />
               </span>
-            </Link>
-            <Link
-              href="/#projects"
-              className="text-base px-10 py-4 font-bold transition-all duration-300 hover:scale-105 relative overflow-hidden group"
-              style={{
-                backgroundColor: 'transparent',
-                color: customColors.heading,
-                borderRadius: '1.5rem',
-                border: `2px solid ${customColors.border}`,
-                display: 'inline-flex',
-                alignItems: 'center',
-                justifyContent: 'center',
-                textDecoration: 'none',
-              }}
-              onMouseEnter={(e) => {
-                e.currentTarget.style.backgroundColor = customColors.whiteBg;
-                e.currentTarget.style.borderColor = customColors.border;
-              }}
-              onMouseLeave={(e) => {
-                e.currentTarget.style.backgroundColor = 'transparent';
-                e.currentTarget.style.borderColor = customColors.border;
-              }}
-            >
-              <span className="relative z-10">All Projects</span>
             </Link>
           </div>
         </div>
