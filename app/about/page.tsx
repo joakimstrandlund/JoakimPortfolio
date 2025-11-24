@@ -153,7 +153,7 @@ export default function About() {
                 User-centered
               </h3>
               <ul className="space-y-3 text-sm">
-                {['Focus on understanding users before designing solutions', 'Research-driven decisions', 'Accessibility as a priority'].map((item, index) => (
+                {['Grounded in user needs through continuous qualitative and quantitative research.', 'Validate assumptions and drive decisions using research methods and data.', 'Designing inclusively with WCAG standards and diverse user needs in mind.'].map((item, index) => (
                   <li key={index} className="flex items-start gap-3">
                     <span className="text-lg font-bold leading-none" style={{ color: customColors.accent, marginTop: '2px' }}>
                       •
@@ -177,7 +177,7 @@ export default function About() {
                 Collaborative
               </h3>
               <ul className="space-y-3 text-sm">
-                {['Close collaboration with developers and stakeholders', 'Balancing user needs with business goals', 'Continuous learning and iteration'].map(
+                {['Partnership with Devs & Stakeholders to find technical feasibility and business value.', 'Optimising for impact by aligning user delight with measurable business outcomes.', 'Iterative mindset for continuous delivery, testing, and rapid adaptation to feedback.'].map(
                   (item, index) => (
                     <li key={index} className="flex items-start gap-3">
                       <span className="text-lg font-bold leading-none" style={{ color: customColors.accent, marginTop: '2px' }}>
@@ -203,7 +203,7 @@ export default function About() {
                 Tools I use
               </h3>
               <ul className="space-y-3 text-sm">
-                {['Cursor & Lovable to explore ideas and test flows fast', 'Figma to build the final structure, layout and interaction details', 'Notion to organise insights, decisions and documentation'].map((item, index) => (
+                {['Cursor & Lovable to explore ideas and test flows fast', 'Figma for prototyping, creating final designs (layout, components, interaction details), and maintaining Design Systems including component libraries and design tokens.', 'Notion to organise insights, decisions and documentation'].map((item, index) => (
                   <li key={index} className="flex items-start gap-3">
                     <span className="text-lg font-bold leading-none" style={{ color: customColors.accent, marginTop: '2px' }}>
                       •
