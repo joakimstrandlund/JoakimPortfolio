@@ -244,7 +244,7 @@ export default function Home() {
                   <Magnetic>
                     <a
                       href="#projects"
-                      className="text-base px-10 py-4 font-bold transition-all duration-300 hover:scale-105 relative overflow-hidden group"
+                      className="text-base px-10 py-4 font-bold transition-all duration-300 hover:scale-105 relative overflow-hidden group w-[220px]"
                       style={{
                         background: `linear-gradient(180deg, ${customColors.accent} 0%, ${customColors.accentHover} 100%)`,
                         color: '#000000',
@@ -271,7 +271,7 @@ export default function Home() {
                   <Magnetic>
                     <a
                       href="mailto:joakimstrandlund@gmail.com"
-                      className="text-base px-10 py-4 font-bold transition-all duration-300 hover:scale-105 relative overflow-hidden group"
+                      className="text-base px-10 py-4 font-bold transition-all duration-300 hover:scale-105 relative overflow-hidden group w-[220px]"
                       style={{
                         backgroundColor: 'transparent',
                         color: customColors.heading,
