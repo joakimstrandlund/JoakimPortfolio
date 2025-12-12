@@ -59,7 +59,7 @@ export default function TestimonialCard() {
         }}
       >
         <div className="font-grotesk font-bold text-base mb-1" style={{ color: '#000000' }}>
-          Mattin Lofti
+          Mattin Lotfi
         </div>
         <div className="text-sm font-medium" style={{ color: '#6b6b6b' }}>
           CTO at <span style={{ color: '#C84F1A' }}>Treebula</span>
