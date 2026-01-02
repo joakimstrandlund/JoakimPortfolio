@@ -11,21 +11,34 @@ export default function Navbar() {
   useEffect(() => {
     if (open) {
       const scrollY = window.scrollY;
-      const original = document.body.style.overflow;
-      const originalPosition = document.body.style.position;
-      const originalTop = document.body.style.top;
-      const originalWidth = document.body.style.width;
-
+      const originalHtmlOverflow = document.documentElement.style.overflow;
+      const originalHtmlPosition = document.documentElement.style.position;
+      const originalHtmlTop = document.documentElement.style.top;
+      const originalHtmlWidth = document.documentElement.style.width;
+      const originalBodyOverflow = document.body.style.overflow;
+      const originalBodyPosition = document.body.style.position;
+      const originalBodyTop = document.body.style.top;
+      const originalBodyWidth = document.body.style.width;
+      
+      // Lock scroll on both html and body
+      document.documentElement.style.overflow = 'hidden';
+      document.documentElement.style.position = 'fixed';
+      document.documentElement.style.top = `-${scrollY}px`;
+      document.documentElement.style.width = '100%';
+      document.body.style.overflow = 'hidden';
       document.body.style.position = 'fixed';
       document.body.style.top = `-${scrollY}px`;
       document.body.style.width = '100%';
-      document.body.style.overflow = 'hidden';
 
       return () => {
-        document.body.style.position = originalPosition;
-        document.body.style.top = originalTop;
-        document.body.style.width = originalWidth;
-        document.body.style.overflow = original;
+        document.documentElement.style.overflow = originalHtmlOverflow;
+        document.documentElement.style.position = originalHtmlPosition;
+        document.documentElement.style.top = originalHtmlTop;
+        document.documentElement.style.width = originalHtmlWidth;
+        document.body.style.overflow = originalBodyOverflow;
+        document.body.style.position = originalBodyPosition;
+        document.body.style.top = originalBodyTop;
+        document.body.style.width = originalBodyWidth;
         window.scrollTo(0, scrollY);
       };
     }
@@ -45,7 +58,7 @@ export default function Navbar() {
   return (
     <>
       {/* Minimal Transparent Navbar */}
-      <nav className="sticky top-0 z-50 border-b backdrop-blur-md" style={{ background: '#FAFAFA', borderColor: 'rgba(0, 0, 0, 0.1)' }}>
+      <nav className="fixed top-0 left-0 right-0 z-[60] border-b backdrop-blur-md" style={{ background: '#FAFAFA', borderColor: 'rgba(0, 0, 0, 0.1)' }}>
         <div className="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
           <Link href="/" className="font-grotesk font-semibold text-lg tracking-wide" style={{ color: '#000000' }}>
             J.STRANDLUND
@@ -72,87 +85,134 @@ export default function Navbar() {
         </div>
       </nav>
 
-      {/* Mobile full-screen overlay */}
-      {open && (
+      {/* Mobile full-screen overlay - slides in from left */}
+      <div
+        className="fixed inset-0 z-50 sm:hidden pointer-events-none"
+        style={{ visibility: open ? 'visible' : 'hidden' }}
+      >
+        {/* Backdrop overlay */}
+        <div
+          className="fixed inset-0 bg-black/20 backdrop-blur-sm transition-opacity duration-300"
+          style={{
+            opacity: open ? 1 : 0,
+            pointerEvents: open ? 'auto' : 'none',
+          }}
+          onClick={() => setOpen(false)}
+          aria-hidden="true"
+        />
+        
+        {/* Menu panel - slides in from left to right */}
         <aside
-          className="fixed inset-0 z-50 sm:hidden"
-          style={{ backgroundColor: 'rgba(255, 255, 255, 0.98)', backdropFilter: 'blur(10px)' }}
+          className="fixed inset-0 transition-transform duration-300 ease-out overflow-hidden"
+          style={{
+            backgroundColor: 'rgba(255, 255, 255, 0.98)',
+            backdropFilter: 'blur(10px)',
+            transform: open ? 'translateX(0)' : 'translateX(-100%)',
+            pointerEvents: open ? 'auto' : 'none',
+            overscrollBehavior: 'none',
+          }}
           aria-modal="true"
           role="dialog"
-          onClick={(e) => {
-            // Close menu when clicking on the overlay background
-            if (e.target === e.currentTarget) {
-              setOpen(false);
+          aria-hidden={!open}
+          onTouchMove={(e) => {
+            // Only prevent scrolling if touching the overlay itself, not interactive elements
+            const target = e.target as HTMLElement;
+            if (target.tagName !== 'BUTTON' && target.tagName !== 'A' && !target.closest('button') && !target.closest('a')) {
+              e.preventDefault();
             }
           }}
         >
-          {/* Header with logo and close button */}
-          <div
-            className="absolute top-0 left-0 right-0 h-16 flex items-center justify-between px-6 z-20 border-b"
-            style={{ borderColor: 'rgba(0, 0, 0, 0.1)' }}
-          >
-            {/* Logo */}
-            <Link href="/" className="font-grotesk font-semibold text-lg tracking-wide" style={{ color: '#000000' }}>
-              J.STRANDLUND
-            </Link>
-
-            {/* Close button */}
-            <button
-              onClick={(e) => {
-                e.preventDefault();
-                e.stopPropagation();
-                setOpen(false);
+            {/* Header with logo and close button */}
+            <div
+              className="absolute top-0 left-0 right-0 h-16 flex items-center justify-between px-6 z-20 border-b transition-opacity duration-300 delay-100"
+              style={{ 
+                borderColor: 'rgba(0, 0, 0, 0.1)',
+                opacity: open ? 1 : 0,
               }}
-              onTouchEnd={(e) => {
-                e.preventDefault();
-                e.stopPropagation();
-                setOpen(false);
-              }}
-              aria-label="Close menu"
-              className="inline-flex h-10 w-10 items-center justify-center border rounded-lg transition-colors relative z-10"
-              style={{ borderColor: 'rgba(0, 0, 0, 0.1)', color: '#000000', touchAction: 'manipulation', pointerEvents: 'auto' }}
             >
-              <X className="h-5 w-5" />
-            </button>
-          </div>
+              {/* Logo */}
+              <Link href="/" className="font-grotesk font-semibold text-lg tracking-wide" style={{ color: '#000000' }}>
+                J.STRANDLUND
+              </Link>
 
-          {/* Navigation links */}
-          <nav className="absolute inset-0 flex items-center justify-end pr-6">
-            <ul className="text-right flex flex-col items-end gap-8">
-              <li>
-                <Link
-                  onClick={() => setOpen(false)}
-                  href="/#projects"
-                  className="font-grotesk font-semibold text-2xl transition-colors"
-                  style={{ color: '#000000' }}
+              {/* Close button */}
+              <button
+                onClick={(e) => {
+                  e.preventDefault();
+                  e.stopPropagation();
+                  setOpen(false);
+                }}
+                onTouchEnd={(e) => {
+                  e.preventDefault();
+                  e.stopPropagation();
+                  setOpen(false);
+                }}
+                aria-label="Close menu"
+                className="inline-flex h-10 w-10 items-center justify-center border rounded-lg transition-colors relative z-10"
+                style={{ borderColor: 'rgba(0, 0, 0, 0.1)', color: '#000000', touchAction: 'manipulation', pointerEvents: 'auto' }}
+              >
+                <X className="h-5 w-5" />
+              </button>
+            </div>
+
+            {/* Navigation links */}
+            <nav className="absolute inset-0 flex items-center justify-end pr-6">
+              <ul className="text-right flex flex-col items-end gap-8">
+                <li
+                  style={{
+                    transform: open ? 'translateX(0)' : 'translateX(-30px)',
+                    opacity: open ? 1 : 0,
+                    transition: 'transform 0.4s ease-out, opacity 0.4s ease-out',
+                    transitionDelay: open ? '200ms' : '0ms',
+                  }}
                 >
-                  Projects
-                </Link>
-              </li>
-              <li>
-                <Link
-                  onClick={() => setOpen(false)}
-                  href="/about"
-                  className="font-grotesk font-semibold text-2xl transition-colors"
-                  style={{ color: '#000000' }}
+                  <Link
+                    onClick={() => setOpen(false)}
+                    href="/#projects"
+                    className="font-grotesk font-semibold text-2xl transition-colors"
+                    style={{ color: '#000000' }}
+                  >
+                    Projects
+                  </Link>
+                </li>
+                <li
+                  style={{
+                    transform: open ? 'translateX(0)' : 'translateX(-30px)',
+                    opacity: open ? 1 : 0,
+                    transition: 'transform 0.4s ease-out, opacity 0.4s ease-out',
+                    transitionDelay: open ? '300ms' : '0ms',
+                  }}
                 >
-                  About me
-                </Link>
-              </li>
-              <li>
-                <Link
-                  onClick={() => setOpen(false)}
-                  href="/#footer-new"
-                  className="font-grotesk font-semibold text-2xl transition-colors"
-                  style={{ color: '#000000' }}
+                  <Link
+                    onClick={() => setOpen(false)}
+                    href="/about"
+                    className="font-grotesk font-semibold text-2xl transition-colors"
+                    style={{ color: '#000000' }}
+                  >
+                    About me
+                  </Link>
+                </li>
+                <li
+                  style={{
+                    transform: open ? 'translateX(0)' : 'translateX(-30px)',
+                    opacity: open ? 1 : 0,
+                    transition: 'transform 0.4s ease-out, opacity 0.4s ease-out',
+                    transitionDelay: open ? '400ms' : '0ms',
+                  }}
                 >
-                  Contact
-                </Link>
-              </li>
-            </ul>
-          </nav>
-        </aside>
-      )}
+                  <Link
+                    onClick={() => setOpen(false)}
+                    href="/#footer-new"
+                    className="font-grotesk font-semibold text-2xl transition-colors"
+                    style={{ color: '#000000' }}
+                  >
+                    Contact
+                  </Link>
+                </li>
+              </ul>
+            </nav>
+          </aside>
+      </div>
     </>
   );
 }
